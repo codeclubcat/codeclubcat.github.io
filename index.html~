@@ -1,0 +1,223 @@
+---
+layout: default
+title: Home
+---
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+<div class="row introduction">
+  <div class="seven columns">
+    <h2>Nossa missão</h2>
+
+    <p><b>A missão do  CodeClubWorld.org</b> é fazer com que cada criança tenha a oportunidade de aprender a programar. 
+    Para isso, fornecemos
+    material de ensino e uma estrutura de voluntariado que apoia a realização de atividades extra-curriculares ligadas à programação de computadores.</p>
+  </div>
+
+  <div class="five columns">
+    <h2>Apoie</h2>
+    <p> Nós precisamos de sua ajuda para que projeto Code Club Brasil cresça.</p>
+    <p><a href="/contato" class="button primary round">Apoie</a></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+<div class="row how-it-works">
+  <div class="twelve columns">
+
+    <div class="row">
+      <div class="ten columns">
+        <h2>Como criar um clube</h2>
+        <p >Nós fornecemos projetos para que os voluntários possam orientar clubes de programação em atividades extra-curriculares.
+        Nossos projetos ensinam as crianças a programar através de jogos, animações e páginas internet.
+        Os voluntários atuam em escolas próximas de suas casa, uma hora por semana orientando projetos.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="/img/club-steps/1.png">
+        </div>
+        <h4>Voluntário</h4>
+        <div class="caption"><p> Um voluntário que sabe programar computadores</p></div>
+	
+      </div>
+      <div class="bit">
+        <div class="image">
+          <img src="/img/club-steps/2.png">
+        </div>
+        <h4>Material</h4>
+        <div class="caption"><p> usa o nosso material de ensino</p></div>
+      </div>
+      <div class="bit">
+        <div class="image">
+          <img src="/img/club-steps/3.png">
+        </div>
+        <h4>Local</h4>
+        <div class="caption"><p> nas escolas da redondeza </p></div>
+      </div>
+      <div class="bit">
+        <div class="image">
+          <img src="/img/club-steps/4.png">
+        </div>
+        <h4>Crianças</h4>
+        <div class="caption"><p> para ensinar crianças a programar </p></div>
+      </div>
+      <div class="bit">
+        <img src="/img/logo-150x150.png">
+        <p><a href="/oquee/creating-a-club.html" class="button secondary round">Saiba mais</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+<div class="row">
+  <div class="twelve columns">
+
+    <div class="white panel map-wrapper">
+      <div class="row">
+        <div class="ten columns club-count">
+          <h2>Já são <span class="counter"></span> <span class="counter-after"> clubes espalhados pelo mundo!</span></h2>
+        </div>
+        <div class="two columns start-club">
+          <a href="/contato"  class="button primary round">Crie um clube</a>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <div class="panel" id="register" style="display:none;">
+
+      <form novalidate>
+
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Cadastre seu clube de programação e junte-se a nós!</h3>
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="nine columns">
+            <div class="row">
+
+              <div class="six columns">
+                <div class="custom-placeholder required">
+                  <label for="venue[name]">Nome do clube</label>
+                  <input class="medium input-text" name="venue[name]" id="venue[name]" type="text" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label>Site do clube</label>
+                  <input class="medium input-text" type="text" name="venue[website]" data-trigger="change">
+                </div>
+
+                <p>O site do clube será exibido no mapa.</p>
+
+                <br class="separator">
+
+                <div class="custom-placeholder">
+                  <label for="venue[address_1]">Endereço do clube 1</label>
+                  <input class="medium input-text" name="venue[address_1]" id="venue[address_1]" type="text" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[address_2]">Endereço do clube 2</label>
+                  <input class="medium input-text" name="venue[address_2]" id="venue[address_2]" type="text">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[region]">Estado</label>
+                  <input class="medium input-text" name="venue[region]" id="venue[region]" type="text">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[city]">Cidade</label>
+                  <input class="medium input-text" name="venue[city]" id="venue[city]" type="text">
+                </div>
+
+                <p>O endereço do local onde as atividades serão realizados NÃO será visível no mapa, ele é usado somente para localizar o clube de programação no mapa.
+               </p>
+
+                <br class="separator">
+
+                <div class="custom-placeholder required">
+                  <label>País</label>
+                  {% include country_select.html %}
+                </div>
+              </div>
+
+              <div class="six columns">
+                <div class="custom-placeholder required">
+                  <label for="contact[name]"> Seu nome</label>
+                  <input class="medium input-text" type="text" name="contact[name]" id="contact[name]" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder required">
+                  <label for="contact[email]">Endereço e-mail</label>
+                  <input class="medium input-text input-email" type="email" name="contact[email]" id="contact[email]" data-trigger="change" required="required">
+                </div>
+
+                <p class="mini-notice">Seu nome e endereço e-mail não serão visíveis</p>
+
+                <div class="custom-placeholder">
+                  <label for="contact[skype]">Nome de usuário Skype</label>
+                  <input class="medium input-text" type="text" name="contact[skype]" id="contact[skype]">
+                </div>
+
+                <p>Crie uma conta skype para o seu clube de programação para que você possa discutir com outros clubes.
+                Esta informação será visível no mapa.</p>
+
+                <label id="terms-and-conditions">
+                  <input type="checkbox" name="contact[agreed]" value="1" required="required" data-error-message="You must agree to the terms and conditions to continue.">
+                  <strong>Li e concordo com<a href="http://codeclub-assets.s3.amazonaws.com/public/CodeClubWorld-Terms-of-Service-v1-clean.pdf">os termos e condições</a></strong>
+                </label>
+
+                <button type="submit" class="button primary round" id="create-a-club">Crie um clube</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="three columns">
+            <p><strong>Por que se cadastrar?</strong></p>
+            <p>Ao cadastrar seu clube você terá acesso a certificados, pôsteres e modelos de crachás, para completar o material do seu clube.</p>
+
+            <img src="/img/robots/giddy.png" class="giddy" />
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="seven columns">
+    <h2>Materiais de ensino</h2>
+
+    <p>Nós estamos constantemente criando novos Cursos a cada trimestre. Em cada série os alunos aprendem usando a imaginação e criatividade realizando projetos.
+    Os cursos 1 e 2 utilizam a ferramenta Scratch para ensinar as bases de programação de computadores. 
+    O curso 3 introduz o desenvolvimento web usando HTML e CSS. No curso 4 nós ensinaremos Python e assim por diante. 
+    </p>
+    <br>
+  
+  </div>
+</div>
+

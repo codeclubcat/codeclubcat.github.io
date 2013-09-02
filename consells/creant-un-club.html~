@@ -1,0 +1,160 @@
+---
+layout: default
+title: Com engegar un club?
+---
+
+<div class="row">
+  <div class="twelve columns">
+    <h2>Com engegar un Club</h2>
+
+    <p>Hem après molt del desenvolupament del CodeClub al Regne Unit.
+     En  aquesta pàgina compartirem algunes de les coses  que varem aprendre </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns">
+    <p class="jumplinks">
+      <a href="#finding-a-venue" class="button primary round">Escolliu un lloc </a>
+      <a href="#running-your-club" class="button primary round">Funcionament del Club</a>
+      <a href="#finding-a-volunteer" class="button primary round">Trobant voluntaris</a>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+
+<div class="row">
+  <div class="eight columns">
+
+    
+    <div class="row" id="finding-a-venue">
+      <div class="twelve columns indent">
+        <h3>Escolliu un local</h3>
+
+	
+	<p>vSi esteu disposats a començar un club de programació, el primer que heu de fer és trobar un lloc que estigui condicionat per poder començar. És precís trobar un lloc que disposi d'una sala d'informàtica amb accés a internet.</p>
+
+	<p>Per exemple, les escoles solen ser llocs molt adients, perquè els alumnes poden aprendre amb els seus amics i anar progressant junts. Les biblioteques i els centres cívics també poder ser bons llocs per engegar un club perquè us poden permetre fer classe fora de l'horari escolar o fins i tot els caps de setmana.</p>
+	<p>El més important és contactar amb els responsables del lloc i fer una reunió per explicar-los que és el CodeClub, i en cas necessari, ensenyar-los alguns projectes de prova. En el moment que us poseu d'acord amb els horaris, no oblideu registrar el club, posar-vos en contacte amb nosaltres i baixar-vos els materials didàctics.</p>.
+
+       
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns"><hr></div>
+    </div>
+
+    <div class="row" id="running-your-club">
+      <div class="twelve columns indent">
+        <h3>Funcionamento do Clube</h3>
+
+        <p><strong>Consells pel bon funcionament dels club</strong></p>
+
+        <ul>
+          <li>Cada sessió del CodeClub dura 1 hora i es fa un cop per setmana.</li>
+          <li>Per cada alumne o parella, haureu d'imprimir una còpia de les instruccions del projecte.</li>
+          <li>Permeteu el treball en parelles. Les parelles s'ajudaran mútuament i seran més independents.</li>
+          <li>Abans d'anar a fer les classes, féu vosaltres els projectes, ja que això us ajudarà molt a solucionar els possibles problemes i respondre a les preguntes amb més facilitat.</li>
+          <li>Tingueu en compte els temps de desplaçament a l'escola per no arribar tard.</li>
+          <li>De cap manera podeu cobrar per donar classes o contribuir d'alguna forma als CodeClubs. CodeClub és gratuït per tothom!</li>
+        </ul>
+
+        <h4>Genereu un ambient d'aprenentatge  positiu</h4>
+
+        <p>Si no esteu acostumats a treballar amb nens, us podríeu espantar. Seguiu aquestes regles bàsiques i en poc temps tindreu un club funcionant de meravella.
+        </p>
+
+        <p><strong>Establiu una rutina</strong></p>
+
+        <p> Un dels principals punts d'èxit és establir una rutina i seguir-la metòdicament. Si el nens saben quin és l'objectiu i que han de fer, us serà molt més senzill a vosaltres ensenyar-los i a ells aprendre. Abans de començar un club, considereu el següent:</p>
+
+        <ul>
+          <li>Què voleu que facin els nens quan entren a la sala d'ordinadors?</li>
+          <li>Els nens, haurien d'esperar-se callats a que tothom estigui preparat abans de començar a treballar? O pel contrari, s'haurien de connectar i començar a treballar tan bon punt arriben?</li>
+          <li>Si un alumne s'encalla en algun punt del projecte, què hauria de fer?</li>
+          <li>Ha d'aixecar la mà i esperar el seu torn?</li>
+          <li>Us poden cridar en qualsevol moment perquè anau al seu lloc de treball?</li>
+          <li>Assegureu-vos d'explicar als nens que facin en cada moment i deixeu-ho clar a l'inici de cada sessió.</li>
+          <li>Com teniu pensat fer perquè tots els alumnes us escoltin?</li>
+          <li>A la majoria d'escoles, els nens estan familiaritzats amb gestos dels professors quan aquests requereixen de la seva atenció (p.ex. aixecar la mà, comptar fins a 5, fer palmes ...). Pregunteu als professors de l'escola si existeix alguna forma de fer que tots els alumnes us escoltin, o inventeu-ne una de nova!</li>    
+	  
+	<p>Aviseu als nens quan arribeu a la meitat de la sessió, i torneu-hi quan faltin 5 minuts per plegar. Això els hi servirà per saber de quant de temps disposen per acabar el projecte.</p>
+	<p>Al final de cada sessió, pot ser interessant disposar de 5 o 10 minuts per discutir amb el grup com ha anat el projecte. Un cop que tothom hagi desat el projecte i apagat els ordinadors, discutiu que heu après durant la sessió, tenint en compte els punts principals Què ha estat el més divertit? Fàcil? Difícil? Com se les han manegat per resoldre les dificultats? No deixeu passar aquesta oportunitat per agrair-los pel treball que de ben segur hauran realitzat i en el cas que ho creieu convenient, per ressaltar algun treball excepcional o l'esforç dels qui hagin treballat especialment dur.
+        
+
+        <p><strong>Sigueu Positius</strong></p>
+	<p>Els nens aprenen molt més en un entorn relaxat i positiu on els seus esforços es veuen reconeguts i elogiats. Aquí hi han algun dels consells per aconseguir-ho:</p>
+        
+        <ul>
+	  <li>Parleu sempre als nens amb tranquil·litat, de forma educada i entusiasta. </li>. 
+          <li>No els critiqueu o els hi aixequeu el to de veu.</li>
+          <li>Vosaltres sou els que teniu que donar exemple sobre com voleu que es comportin. La positivitat genera positivitat!</li>
+	  <li>Moltes escoles disposen de sistemes  de recompensa (estrelles, adhesius, etcètera...). Si l'escola hi està d'acord que les utilitzeu, recompenseu als nens per l'esforç i el comportament positiu sempre que pugueu.</li>.
+	  <li> Intenteu focalitzar més en els comportaments positius més que en els negatius. Elogieu sempre als nens que fan les coses correctament constantment i de forma efusiva. Si un nen no està fent el que espereu, recordeu-li de forma pausada quina és la seva funció. Hi hauria d'haver sempre acompanyant-vos un mestre de l'escola que us pogués ajudar a gestionar aquests comportaments. 
+
+          <li>Focalise-se no bom comprtamento e não no mau. Sempre elogie as crianças que fizeram a coisa certa (de maneira que todos escutem!).
+          Se uma criança não estiver fazendo o que você gostaria que ela fizesse, então discretamente relembre-a o que ela deveria estar fazendo. Deverá sempre ter uma professora da escola por perto para ajudar a resolver eventuais problemas de comportamento. </li>
+            
+          <li>Pergunte às professoras se os certificados do Code Club podem ser distribuídos em uma espécie de cerimonia. 
+          Isso valorizará bastante as conquistas dos alunos que foram até o final com o projeto.</li>
+        </ul>
+
+
+        <p><strong>Diferenciação</strong></p>
+
+        <p>Diferenciação significa adaptar as lições às necessidades individuais de cada criança no grupo.
+Fazer isso significa que todas as crianças estarão contentes com o aprendizado no Code Club.</p>
+
+        <p>Descubra com os professores se existe alguma criança com necessidades especiais no grupo. Pergunte o que você pode fazer para ajudá-la durante as seções.</p>
+
+        <p>Lembre-se que cada criança tem diferente habilidades e aprendem em rítmos diferentes. Então, seja paciente e dê a eles o tempo necessário para descobrir as coisas por eles mesmos.
+         Se existe uma criança que esta constantemente com dificuldades, então pense em colocá-la em dupla com alguém que tenha mais facilidade em alguma das lições</p> 
+          
+
+        <p>No final da maioria dos projetos existem 'Desafios'. Eles podem ser usados para que as crianças com mais facilidade possam se aprofundar no assunto, mas todas as crianças devem ser motivadas a tentar os desafios depois de terem feito a parte principal das tarefas.</p> 
+         
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns"><hr></div>
+    </div>
+
+    <div class="row" id="finding-a-volunteer">
+      <div class="twelve columns indent">
+        <h3>Encontrando um voluntário</h3>
+
+        <p>Se você tem um local apropriado para um criar um Code Club - uma escolha, uma biblioteca, um centro comunitário, por exemplo - mas sente que não tem as qualificações para orientar o clube você mesmo, 
+        então você precisa encontrar um voluntário.</p> 
+        <p>Discuta com amigos. Mande e-mails escreva para os pais, jornais locais, ou sites comunitários. Use Twiter, Facebook, Forums ou qualquer outro meio que você imaginar.</p>
+
+        
+
+        <p>Você deverá se reunir com o voluntário e falar sobre como levar o projeto adiante. Escolham um dia e hora da semana.</p>
+
+        <p>E comecem a fazer propaganda sobre o Clube!</p>
+
+        <p><em>Por favor lembre-se que o Code Club sempre deve ser gratuito! Esta é um dos nossos principais conceitos: 
+        nós fornecemos todo o material e recursos gratuitamente, e você deve fazer o mesmo. </em></p>
+
+        <p><strong>Siga a regulamentação local</strong></p>
+
+        <p>Um ponto importante é garantir que você está conforme com as regras de sua cidade ou estado quanto ao ensino para crianças. Alguns lugares podem exigir certidões de antecedentes criminais ou outras garantias para que você tenha o direito de ensinar crinaças.
+         O que a gente menos quer é que você tenha problemas! Por favor leia nossos <a href="/documentos/Termos de Serviço.pdf">termos de serviço</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="four columns advice-images">
+    <img src="/img/club-advice/1.jpg" />
+    <img src="/img/club-advice/2.jpg" />
+    <img src="/img/club-advice/3.jpg" />
+    <img src="/img/club-advice/4.jpg" />
+    <img src="/img/club-advice/5.jpg" />
+  </div>
+</div>
