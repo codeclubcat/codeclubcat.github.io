@@ -150,3 +150,7 @@ margin-top:10px;
 display: block;
 float: left;
 }
+
+ul {
+  padding-left: 10px;
+}
