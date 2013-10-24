@@ -515,6 +515,10 @@ footer .wrap .button {
   }
 }
 
+ul {
+  padding-left: 10px;
+}
+
 .lte-ie8 * {
   *behavior: url(/js/libs/boxsizing.htc);
 }
