@@ -13,7 +13,7 @@
 
 .save_project
 {
-	background-image: url('save.svg');
+	background-image: url('/img/save.svg');
 	background-repeat: no-repeat;
 	background-size:700px auto;
 	width: 700px; 
@@ -31,7 +31,7 @@
 
 .test_project
 {
-	background-image: url('flag.png');
+	background-image: url('/js/libs/scratchblocks2/block_images/flag.png');
 	background-repeat: no-repeat;
 	background-size:30px auto;
 	width: 600px; 
