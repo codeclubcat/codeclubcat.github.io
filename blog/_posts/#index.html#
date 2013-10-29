@@ -3,7 +3,6 @@ layout: default
 title: Hola Code Club!
 ---
 
-
 <!--
 <div id="home">
   <h1>Blog Posts</h1>
@@ -14,7 +13,6 @@ title: Hola Code Club!
   </ul>
 </div>
 -->
-
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}

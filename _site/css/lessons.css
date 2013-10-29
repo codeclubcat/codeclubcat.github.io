@@ -1,0 +1,60 @@
+.step
+{
+    width: 770px;
+    background-color:#42b23c;
+    border-radius: 10px;  	
+    color:white;
+    padding: 15px;
+    min-height: 30px;
+    font-size:30px;
+    font-weight:normal;
+    /*font-family:cursive;*/
+}
+
+.save_project
+{
+	background-image: url('/img/save.svg');
+	background-repeat: no-repeat;
+	background-size:700px auto;
+	width: 700px; 
+	height: 60px;
+	color: white;
+	position: relative;
+	font-weight: bold;
+	font-size:30px;
+	/*font-family:cursive;*/
+	padding-left:80px;
+	padding-right:20px;
+	padding-top:15px;	
+
+}
+
+.test_project
+{
+	background-image: url('/js/libs/scratchblocks2/block_images/flag.png');
+	background-repeat: no-repeat;
+	background-size:30px auto;
+	width: 600px; 
+	height: 30px;
+	color: green;
+	position: relative;
+	font-weight: bold;
+	font-size: 20px;
+	/*font-family:cursive;*/
+	padding-left:40px;
+	padding-right:20px;
+   padding-top:10px;	
+}
+
+.check
+{
+width: 20px;
+height: 20px;
+border-radius: 5px;
+border-color: #bfeafb;
+border-width: 3px;
+border-style: solid;
+right: 0;
+position: absolute;
+top: 0px;
+}
