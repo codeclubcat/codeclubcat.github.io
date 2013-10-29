@@ -1,24 +1,28 @@
 ---
-layout: defualt
-title:  "Welcome to Jekyll!"
+layout: default
+title:  "Hola CodeClub!"
 date:   2013-10-29 11:40:37
 categories: jekyll update
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Hola a tots, 
 
-Jekyll also offers powerful support for code snippets:
+Això és un post de proves, utilitzant [Jekyll][jekyll] com a motor del blog. Els posts s'escriuen utitlitzant simplement arxius de texte pla formatats en markdown. 
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+Això és una prova amb una imatge:
+
+[imatge_prova]
+
+Els posts s'escriuen a la carpeta `_posts`. 
+
+També es pot publicar codi:
+
+
+{% highlight python %}
+def print_hi(self):
+  print "hello world!"
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
+![imatge_prova](/img/logo.png)
