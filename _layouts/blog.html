@@ -6,18 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Code Club Catalunya | Hola CodeClub!</title>
+    <title>Code Club Catalunya{% if page.title != 'Home' %} | {{ page.title }}{% endif %}</title>
 <meta property="og:description" content="Una xarxa de clubs de programació d'ordinadors per a nens">
 
     <meta name="description" content="Una xarxa de clubs de programació d'ordinadors per a nens">
 
-    <meta property="og:url" content="http://www.codeclubcat.org/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Code Club Catalunya>
-<meta property="og:site_name" content="Code Club Catalunya">
-<meta property="og:description" content="Una xarxa mundial de clubs de programació d'ordinadors per a nens">
-<meta property="og:image" content="http://www.codeclubbrasil.org/img/logo.png">
-
+    {% include open_graph_tags.html %}
 
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.min.js"></script>
@@ -37,7 +31,7 @@
 
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
   </head>
-  <body class="not-home">
+  <body class="{% if page.path == 'index.html' %}home{% else %}not-home{% endif %}">
 
     <div class="row">
       <div class="twelve columns">
@@ -45,22 +39,22 @@
         <header class="row header" role="banner">
           <nav class="twelve columns navigation" role="navigation" id="nav">
             <ul class="main-menu">
-              <li >
+              <li {% if page.title == 'Home' %}class="active"{% endif %}>
                 <a href="/">Inici</a>
               </li>
               
              
-              <li >
+              <li {% if page.title == 'Materials' %}class="active"{% endif %}>
                 <a href="/materials">Materials</a>
               </li>
              
-              <li >
+              <li {% if page.title == 'Què és això?' %}class="active"{% endif %}>
                 <a href="/consells">Què és això?</a>
               </li>
-              <li >
+              <li {% if page.title == 'Com engegar un club?' %}class="active"{% endif %}>
                 <a href="/consells/creant-un-club.html">Com engegar un club?</a>
               </li>
-              <li >
+              <li {% if page.title == 'Contacte' %}class="active"{% endif %}>
                 <a href="/contacte">Contacte</a>
               </li>
             </ul>
@@ -84,17 +78,7 @@
       </div>
     </div>
 
-    
-<p>Hola a tots,</p>
-
-<p>Això és un post de proves, utilitzant <a href="http://jekyllrb.com">Jekyll</a> com a motor del blog. Els posts s’escriuen utitlitzant simplement arxius de text pla formatats en markdown.</p>
-
-<p>Això és una prova amb una imatge:</p>
-
-<p><img src="/img/logo.png" alt="imatge_prova" /></p>
-
-<p>Els posts s’escriuen a la carpeta <code>_posts</code>.</p>
-
+    {{ content }}
 
 
     <footer class="footer" role="contentinfo">

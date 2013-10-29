@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blog
 title: Hola Code Club!
 ---
 
@@ -15,17 +15,21 @@ title: Hola Code Club!
 </div>
 -->
 
-
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
+
+<!-- blog all blog contents -->
+<div class="row">
+  <div class="author"></div>
+  {% for post in paginator.posts %}
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+         <strong>escrit per:</strong> <span class="date">{{ post.author }}</span>, <span class="date">{{ post.date }}</span><br><br><br>
+    {{ post.content }}  
+    <div class="row">
+      <div class="ten columns"><hr></div>
+    </div>  
+ {% endfor %}
+</div>
+</div>
 
 <!-- Pagination links -->
 <div class="pagination">
@@ -41,6 +45,7 @@ title: Hola Code Club!
     <span class="next ">Next</span>
   {% endif %}
 </div>
+
 
 
 {% if paginator.total_pages > 1 %}
@@ -68,3 +73,4 @@ title: Hola Code Club!
   {% endif %}
 </div>
 {% endif %}
+
