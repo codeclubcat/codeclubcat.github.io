@@ -89,7 +89,7 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-<title>Fèlix i Herbert</title>
+<title>Caça_la_bruixa</title>
 
 </head>
 
@@ -109,27 +109,31 @@
 
 <div class="row">
   <div class="nine columns">
-    <h1>Fèlix i Herbert</h1>
+    <h1>Caça la bruixa</h1>
+  
 
-    <p><h2>Introducció:</h2>
-      Construirem un joc on <strong>el gat Fèlix</strong> i el ratolí <strong>Herbert</strong> jugen a atrapar. Vosaltres controlareu en Herbert amb el ratolí i heu d'intentar evitar que en Fèlix us atrapi. Quant més temps eviteu que us atrapi més punts guanyareu, però no us deixeu agafar perquè perdreu punts!</p>
-    
+<p><h2>Introducció:</h2>
+Aquest projecte s´inspira en el joc de fira d´origen anglès anomenat  <a href="http://en.wikipedia.org/wiki/Whac-A-Mole"> Whack-a-Mole</a>. Obtindreu punts en clicar les bruixes que apareixen a la pantalla. L'objectiu del joc és obtenir el màxim de punts en 30 segons!</p>
+
     <br>
       <img src="intro.png" align='middle'>
     <br><br><br>
 
+
+
 <div class="step">
-<strong>PAS 1:</strong> En Fèlix segueix el punter del ratolí
+<strong>PAS 1:</strong> Crear una bruixa que voli
 </div>
 <br>
 
 <ol>
-<li>Creeu un nou projecte.</li>
-<li>Feu doble clic al escenari i canvieu a la pestanya dels Fons, llavors seleccioneu el fons indoors/hall. Suprimiu el fons blanc original.</li>
-<li>Canvieu el nom del personatge per Fèlix. </li>
-<li>Assegureu-vos que en Fèlix només miri a esquerra i dreta utilitzant el bloc <strong>"fixa la rotació a"</strong></li>
-<li>Creeu aquest programa:</li>
-</ol>
+<li>Comenceu un nou projecte d'Scratch.</li>
+<li>Esborreu el personatge del gat i afegiu un nou fons d'escenari carregant el que trobareu a <strong>nature/woods</strong>.</li>
+<li>Feu servir el botó  <strong>escull un personatge des d’un fitxer</strong>  per afegir la bruixa al projecte (vestit <strong>fantasy/witch1</strong>).</li>
+<li>Afegiu una <strong>variable</strong> només per aquesta animació que es digui <strong>velocitat</strong>. A l´escenari,  el monitor d’aquesta variable ha de dir  <strong>“Personatge 1 velocitat”</strong>. Si només diu <strong>velocitat</strong> elimineu la variable i torneu-la a crear, però només
+per a aquesta animació. Desmarqueu la casella de la variable a la paleta de variables perquè no es vegi a l’escenari. La variable velocitat controlarà la velocitat de la bruixa. Fem servir una variable, perquè així més endavant podrem canviar la velocitat.</li>
+<li>Volem que la bruixa es comenci a moure en començar el joc.
+Per fer-ho escriviu aquest script:</li><br>
 
 
 <div class="row">
@@ -139,44 +143,19 @@
        </div>
      </div> 
 </div>
+</ol>
 
-<!--
-<p>```scratch</p>
-
-<pre><code>Quan la bandera verda es premi
-per sempre
-    apunta cap a punter del ratolí
-    mou-te 10 passos
-    següent vestit
-    toca la nota 62 durant 0.3 pulsacions
-(fi del per sempre)
-</code></pre>
-
-<p>```</p>
--->
 
 <div class="test_project">Proveu el projecte</div>
 
-<p><br><strong>Feu clic a la bandera verda.</strong></p>
-<p>En Fèlix, segueix el punter del ratolí? Quan es mou, us sembla com si caminés? Es mou a una velocitat adequada?</p>
+<p><strong>Feu clic a la bandera verda.</strong></p>
 
-<!--<div class="save_project">Deseu el projecte</div>-->
-<br>
-<br>
-<br>
-
-<div class="step"><strong>PAS 2:</strong> En Fèlix persegueix en Herbert</div>
-<br>
-<p><strong>A continuació volem que en Fèlix persegueixi en Herbert, enlloc del punter del ratolí.</strong></p>
+<p>Observeu què fa la bruixa. Com és que s'encalla a la vora de la pantalla?</p>
 
 <ol>
-<li>Creeu una nova animació escollint animals-mouse1.</li>
-<li>Canvieu el nom de l'animació per Herbert.</li>
-<li>Editeu el vestit i feu-l'ho més petit que el de'n Fèlix.
-Proveu fent 6 clics al botó <strong>encongir</strong>.</li>
-<li>Assegureu-vos que en Herbert només miri a esquerra i dreta utilitzant el bloc <strong>"fixa la rotació a"</strong></li>
-<li>Doneu-li aquest programa a en Herbert:</li>
-</ol>
+<li>Per tal que  la bruixa no s'encalli, feu que giri cua al tocar la vora de la pantalla. Sota el bloc <strong>"mou velocitat passos"</strong> afegiu-hi un nou bloc <strong>"rebota a les vores"</strong>.</li>
+
+<li>A més a més, per tal que la bruixa no es giri de caps per avall, utilitzeu el bloc <strong>"fixa rotació a"</strong>.</li><br>
 
 
 <div class="row">
@@ -186,38 +165,43 @@ Proveu fent 6 clics al botó <strong>encongir</strong>.</li>
        </div>
      </div> 
 </div>
+</ol>
 
-<!--
-<p>```scratch</p>
-
-<pre><code>Quan la bandera verda es premi
-per sempre
-    vés a punter del ratolí
-    apunta cap a Fèlix
-(fi del per sempre)
-</code></pre>
-
-<p>´´´</p>
--->
 
 <div class="test_project">Proveu el projecte</div>
-<br>
-<p><strong>Feu clic a la bandera verda.</strong></p>
 
-<p>En Herbert, segueix el punter del ratolí? En Fèlix persegueix al Herbert?</p>
+<p><strong>Feu clic a la bandera verda</strong>.</p>
+<p>Comproveu que la bruixa es mou de banda a banda de la pantalla.</p>
 
-<!--<div class="save_project">Deseu el projecte.</div>-->
-<br>
-<br>
-<br>
-<div class="step"><strong>PAS 3</strong>: En Fèlix diu quan ha atrapat en Herbert</div>
+
+<h3>Per saber-ne més</h3>
+
+<p><strong>Proveu de canviar el valor de la velocitat per fer que la bruixa vagi més ràpida o més lenta.</strong></p>
+
+<p><strong>Com us ho faríeu per fer que la bruixa voli cada vegada més ràpid?</strong> (Fer que la bruixa vagi cada cop més ràpid té truc, no us preocupeu si no veieu la manera de fer-ho. Us anirem donant més pistes al llarg del projecte.)</p>
+
+
+
+<div class="step">
+<strong>PAS 2:</strong> Fer desaparèixer la bruixa en qualsevol moment
+</div>
 <br>
 
-<p><strong>Volem que en Fèlix sàpiga quan ha atrapat en Herbert i que ens ho digui.</strong></p>
+<p>Per fer el joc més interessant, farem que la bruixa aparegui i desaparegui en qualsevol moment. Crearem un altre script que corri al mateix temps que es mou la bruixa. El nou script amagarà la bruixa durant un temps qualsevol, llavors la mostrarà durant un altre interval de temps, i ho anirà repetint per sempre (o fins que s'acabi el joc). Creeu aquest script per la bruixa:</p>
 
-<ol>
-<li>Modifiqueu el programa d'en Felix així:</li>
-</ol>
+<!--
+1
+<p>```</p>
+<pre><code>al prémer BANDERA VERDA
+per sempre
+    amaga
+    espera nombre a l'atzar entre 2 i 5 segons
+    mostra
+    espera nombre a l'atzar entre 2 i 5 segons
+(fi del per sempre)
+</code></pre>
+<p>```</p>
+-->
 
 
 <div class="row">
@@ -228,43 +212,40 @@ per sempre
      </div> 
 </div>
 
-<!--
-<p>´´´scratch</p>
 
-<pre><code>Quan la bandera verda es premi
-per sempre
-    apunta cap al punter del ratolí
-    mou-te 10 passos
-    següent vestit
-    toca la nota 62 durant 0.3 pulsacions
-    si tocant Herbert llavors
-        envia atrapat durant 1 segon
-    (fi del si)
-(fi del per sempre)
-</code></pre>
-
-<p>´´´</p>
--->
 <div class="test_project">Proveu el projecte</div>
-<br>
+
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
-<p>En Fèlix diu quan ha atrapat en Herbert?</p>
-<br>
-<!--<div class="save_project">Deseu el projecte.</div>-->
-<br>
-<br>
+<p>Comproveu si la bruixa es segueix movent de banda a banda de la pantalla.
+Apareix i desapareix en qualsevol moment?</p>
+
+<h3>Per saber-ne més</h3>
+
+<p><strong>Proveu de canviar el rang dels nombres a l'atzar. Què passa si agafeu números molt grans? i molt petits?</strong>
+(Potser això us dóna alguna pista de com fer que la bruixa voli més ràpid a mesura que passa el temps ...)</p>
+
+
+<div class="step">
+<strong>PAS 3:</strong> Fer que la bruixa desaparegui al clicar-la
+</div>
 <br>
 
-<div class="step"><strong>PAS 4</strong>: En Herbert es converteix en un fantasma quan l'atrapen</div>
-<br>
-<p><strong>En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en un fantasma quan l'atrapin.</strong></p>
+<p>Per fer que això sigui un joc, hem de donar als jugadors alguna cosa a fer. Hauran de clicar damunt la bruixa per fer-la desaparèixer. Quan li facin clic a sobre, volem que desaparegui i que s'escolti un so.</p>
 
 <ol>
-<li>Canvieu el programa d'en Fèlix per tal d'enviar aquest missatge quan atrapi en Herbert.</li>
+<li><p>A la pestanya <strong>Sons</strong>,  importeu el so <strong>electronic/fairydust</strong>.</p></li>
+<li><p>Afegiu aquest script a la bruixa:</p></li>
 </ol>
 
-
+<!--
+<p>```</p>
+<pre><code>al prémer Animació1
+amaga
+toca el so Fairydust
+</code></pre>
+<p>```</p>
+-->
 
 <div class="row">
       <div class="bit">
@@ -274,75 +255,24 @@ per sempre
      </div> 
 </div>
 
-<!--
-<p>```scratch</p>
-
-<pre><code>Al prémer la bandera verda
-per sempre
-    apunta cap al punter del ratolí
-    mou-te 10 passos
-    següent vestit
-    toca la nota 62 durant 0.3 pulsacions
-    si tocant Herbert llavors
-        envia a tots atrapat
-        toca la nota 59 durant 0.3 pulsacions
-        espera 1 segon
-    (fi del si)
-(fi del per sempre)
-</code></pre>
-
-<p>´´´</p>
--->
-<ol>
-<li>Importeu un nou vestit per en Herbert de fantasy/ghost2-a.</li>
-<li>Editeu-l'ho per fer-l'ho més petit.
-N'hi hauria d'haver prou amb sis clics al botó <strong>encongir</strong>.</li>
-<li>Canvieu els noms dels vestits d'en Herbert de manera que vestit de ratolí s'anomeni 'viu' i el de fantasma 'fantasma'.</li>
-<li>Creeu un nou programa per tal de convertir en Herbert en un fantasma:</li>
-</ol>
-
-
-<div class="row">
-      <div class="bit">
-        <div class="image">
-          <img src="script5.png">
-       </div>
-     </div> 
-</div>
-
-<!--
-<p>```scratch</p>
-
-<pre><code>al rebre atrapat
-canvia el vestit a fantasma
-espera 0.5 segons
-canvia el vestit a viu
-</code></pre>
-
-<p>´´´ </p>
--->
 
 <div class="test_project">Proveu el projecte</div>
-<br>
-<p><strong>Feu clic a la bandera verda.</strong></p>
 
-<p>Quan atrapeu en Herbert, es converteix en un fantasma?
-En Fèlix fa els sons adequats en cada moment?
-En Fèlix roman quiet prou temps per a que en Herbert es pugui escapar?</p>
+
+<p><strong>Feu clic a la bandera verda.</strong> </p>
+
+<p>Comproveu que la bruixa desapareix i produeix el so escollit en clicar-la.</p>
+
+
+<div class="step">
+<strong>PAS 4:</strong> Afegir un marcador i un cronòmetre
+</div>
 <br>
 
-<!--<div class="save_project">Deseu el projecte</div>-->
-<br>
-<br>
-<div class="step"><strong>PAS 5</strong>: Actualitzar el marcador</div>
-
-<p><strong>Afegirem un marcador de manera que sabrem com de bé mantenim al Herbert en vida.
-Començarem amb el marcador a zero i l'incrementarem una unitat cada segon. Si en Fèlix atrapa en Herbert, reduirem el marcador en cent unitats.</strong></p>
+<p>Tot i que ja tenim llesta la  bruixa, el nostre objectiu és crear un joc! Afegirem un marcador que ens servirà per anar anotant els punts cada cop que cliquem a sobre de la bruixa abans no s'acabi un temps. Per tant, necessitarem una variable per al temps i una altra per al marcador.</p>
 
 <ol>
-<li><p>Creeu una variable per a totes les animacions fent clic a Variables en el menú de dalt, i anomeneu-la <strong>puntuació</strong>.</p></li>
-<li><p>Creeu aquests dos programes a l'escenari</p></li>
-</ol>
+<li><p>Creeu una nova variable <strong>per tots els personatges</strong> que es digui <strong>marcador</strong> i retoqueu l'script perquè s'incrementi en un punt el marcador cada cop que s'atrapa la bruixa.</p></li>
 
 
 <div class="row">
@@ -353,44 +283,63 @@ Començarem amb el marcador a zero i l'incrementarem una unitat cada segon. Si e
      </div> 
 </div>
 
-<!--
-<p>```scratch</p>
 
-<pre><code>Quan la bandera verda es premi
-fixa puntuacio a 0
-per sempre
-    suma 1 a puntuacio
-    espera 1 segon
-(fi del per sempre)
+<li><p>Aneu a l'<strong>escenari</strong> i creeu una nova variable (aquesta <strong>només per l'escenari</strong>) que es digui <strong>temps</strong>. Afegiu un script que posi el temps a 30 i el marcador a 0 al prémer la bandera verda. Feu servir un bloc <strong>"repeteix fins que"</strong> per esperar un segon i reduir el temps un segon. Això s'hauria de repetir fins que el temps arribi a 0. En arribar a zero, cridarem <strong>"atura tot"</strong> per aturar el joc.</p></li>
 
-al rebre atrapat
-suma -100 a puntuacio
-</code></pre>
 
-<p>´´´</p>-->
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script5.png">
+       </div>
+     </div> 
+</div>
 
+</ol>
 
 <div class="test_project">Proveu el projecte</div>
+
+<p><strong>Feu clic a la bandera verda.</strong> </p>
+
+
+<h3>Per saber-ne més</h3>
+
+<p><strong>Molt bé, ja heu completat el joc bàsic!!!</strong>
+<strong>Sabeu ja com fer-ho perquè la bruixa vagi cada vegada més i més ràpid?</strong></p>
+
+
+<div class="step"><strong>REPTE:</strong> Poseu-hi més bruixes!</div>
 <br>
-<p><strong>Feu click a la bandera verda.</strong></p>
+<ol>
+<li> Dupliqueu la bruixa prement el botó dret del ratolí damunt la llista de personatges.</li>
+<li>Ajusteu la mida de cada bruixa, perquè tinguin dimensions diferents.</li>
+<li>Canvieu la variable velocitat de cada bruixa per fer que volin a velocitats diferents.</li>
+<li>Per tal que no estiguin juntes, moveu-les a diferents punts de l'escenari.</li>
+</ol>
 
-<p>El marcador, augmenta una unitat per segon?
-Quan en Fèlix atrapa en Herbert, el marcador disminueix cent unitats?
-Què passa quan atrapeu en Herbert abans que el marcador arrivi a cent unitats?
-Quan comenceu una nova partida, el marcador torna a zero?</p>
-<br>
+<div class="test_project">Proveu el projecte</div>
 
-<!--<div class="save_project">Deseu el projecte</div>-->
+<p><strong>Feu clic a la bandera verda.</strong> </p>
 
-<p><strong>Molt bé, heu acabat. Ara ja podeu gaudir del joc!</strong></p>
+<p>Teniu unes quantes bruixes movent-se d'un costat a l'altre de l'escenari? Apareixen i desapareixen a l'atzar? </p>
 
-<p>No us oblideu que podeu compartir el joc amb amics i familiars fent clic a <strong>Comparteix</strong> al menú.</p>
+
+<h3>Per saber-ne encara més</h3>
+
+<ol>
+<li> Quin creieu que seria el número de bruixes que podríem afegir al joc per fer-lo encara més divertit?</li>
+<li> Podríeu canviar l'aspecte de les bruixes? Proveu a editar-ne els vestits, o utilitzar els blocs d'efectes de la paleta Vestits.</li>
+<li> Podríeu fer que algunes bruixes donessin més puntuació que d’altres?</li>
+</ol>
+
+<p><strong>Ben fet, heu completat el joc, ara a jugar!!!</strong></p>
+
+<p>Recordeu que podeu compartir el joc amb els vostres amics i família prement a <strong>Compartir</strong> a la barra de menú!</p>
 </div>
 </div>
 
 </body>
 </html>
-
 
 
 
