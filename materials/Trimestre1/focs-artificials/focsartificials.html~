@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>focsartificials.md</title>
+
+</head>
+
+<body>
+
+<p>Nivell 1</p>
+
+<h1>Focs artificials</h1>
+
+<p><strong>Introducció:</strong></p>
+
+<p>En aquest projecte, llençarem focs artificials al cel d'una ciutat.</p>
+
+<h2>PAS 1: Crear un coet que vola apuntant el ratolí</h2>
+
+<p><strong>Importem les imatges necessàries per el nostre joc</strong></p>
+
+<ol>
+<li>Creeu un nou projecte Scratch. Esborreu el gat clicant-lo amb el botó dret i seleccionant <strong>Esborra</strong></li>
+<li>Canvieu l'escenari per <strong>outdoor/city-with-water</strong></li>
+<li>Utilitzeu el botó <strong>escull un personatge des d'un fitxer</strong> per afegir el personatge <strong>coet</strong> al projecte (utilitzeu el vestit <strong>recursos/coet.png</strong>)</li>
+<li>Feu que el coet desaparegui quan es premi la bandera verda</li>
+</ol>
+
+<p><strong>Ara volem que el coet apunti el ratolí quan el cliquem</strong></p>
+
+<ol>
+<li>Afegiu el bloc <strong>quan es cliqui la tecla espai</strong>. En aquest bloc feu que el coet aparegui i llisqui en direcció al punter del ratolí</li>
+</ol>
+
+<p>```scratch</p>
+
+<pre><code>Quan la  bandera verda es premi
+amaga
+
+al prémer tecla espai
+mostra
+llisca en 1 segons fins a x: ratolí x y: ratolí y
+</code></pre>
+
+<p>```</p>
+
+<h3>Proveu el projecte</h3>
+
+<p><strong>Premeu la bandera verda, poseu el ratolí sobre l'escenari i premeu la tecla espai.</strong></p>
+
+<p>Us apareix el coet movent-se en la direcció del ratolí?
+Què passa si moveu el ratolí i premeu la tecla espai una segona vegada?</p>
+
+<ol>
+<li>Els focs artificials no es solen moure de costat a costat. Assegureu-vos que el vostre coet llisca en direcció el ratolí sortint sempre des de la part de baix de la pantalla. Abans de mostrar el coet, utilitzeu el bloc <strong>vés a</strong> per dir-li al coet que es mogui cap a la part baixa de la pantalla conservant la seva posició horitzontal.</li>
+</ol>
+
+<p>```scratch</p>
+
+<pre><code>Quan la  bandera verda es premi
+amaga
+
+al prémer tecla espai
+vés a x: ratolí x y: -200
+mostra
+llisca en 1 segons fins a x: ratolí x y: ratolí y
+</code></pre>
+
+<p>```</p>
+
+<h3>Proveu el projecte</h3>
+
+<p><strong>Premeu la bandera verda, poseu el ratolí sobre l'escenari i premeu la tecla espai.</strong>
+El coet vola des de la part baixa de la pantalla en direcció al ratolí? què passa si moveu el ratolí i torneu a prémer la tecla espai?</p>
+
+<ol>
+<li><p>Finalment, feu aquesta operació utilitzant el botó del ratolí en comptes de la tecla espai. Per fer això, podem inserir el nostre codi dins el bloc <strong>per sempre si ratolí clicat? llavors</strong>.</p></li>
+<li><p>Després canvieu el bloc <strong>quan la tecla espai es premi</strong> per <strong>quan la bandera verda es premi</strong> i finalment, assegureu-vos que el coet s'amaga cada vegada que tornem a començar. </p></li>
+</ol>
+
+<p>```scratch</p>
+
+<pre><code>quan la bandera verda es premi
+
+    amaga
+
+    per sempre 
+       si ratolí premut? llavors
+         vés a x: ratolí x y: -200
+         mostra
+         llisca en 1 segons fins a x: ratolí x y: ratolí y
+    (acaba per sempre)
+</code></pre>
+
+<p>```</p>
+
+<h3>Proveu el projecte</h3>
+
+<p><strong>Premeu la bandera verda, i després cliqueu el ratolí sobre l'escenari. Torneu a clicar el ratolí en un altre punt.</strong> </p>
+
+<h3>Per saber-ne més:</h3>
+
+<ol>
+<li><p>Intenteu canviar el moviment del coet: en comptes de lliscar recte cap on és el ratolí feu que faci una trajectòria una mica corbada.</p></li>
+<li><p>Intenteu que alguns coets vagin més lents que d'altres.</p></li>
+</ol>
+
+<h2>PAS 2: Fer explotar el coet</h2>
+
+<ol>
+<li>El primer que us cal per fer explotar el coet és fer que soni una explosió just abans que comenci a moure's. El so el podeu trobar a la carpeta <strong>Recursos/bang</strong>.  Llavors es tracta que s'amagui un cop arribi on és el ratolí. Per importar un so aneu a la <strong>pestanya Sons</strong> i cliqueu <strong>importa</strong>.</li>
+</ol>
+
+<p>```scratch</p>
+
+<pre><code>quan la bandera verda es premi
+
+    amaga
+
+    per sempre 
+       si ratolí premut? llavors
+         vés a x: ratolí x y: -200
+         toca el so bang
+         mostra
+         llisca en 1 segons fins a x: ratolí x y: ratolí y
+         amaga
+    (acaba per sempre)
+</code></pre>
+
+<p>```</p>
+
+<ol>
+<li>Finalment, feu que el coet envii un missatge quan explota. Utilitzarem aquest missatge més endavant.</li>
+</ol>
+
+<p>```scratch</p>
+
+<pre><code>quan la bandera verda es premi
+
+    amaga
+
+    per sempre 
+       si ratolí premut? llavors
+         vés a x: ratolí x y: -200
+         toca el so bang
+         mostra
+         llisca en 1 segons fins a x: ratolí x y: ratolí y
+         amaga
+         envia a tots explode i espera 
+    (acaba per sempre)
+</code></pre>
+
+<p>```</p>
+
+<h3>Proveu el projecte</h3>
+
+<p><strong>Premeu la bandera verda.</strong> 
+Assegureu-vos que el coet toca un so i s'amaga quan arriba al ratolí.</p>
+
+<ol>
+<li><p>Importa un nou personatge des de <strong>Recursos/focartificial1.png</strong></p></li>
+<li><p>Quan rebi el missatge <strong>explode</strong>, s'ha d'amagar i moure's a la posició del coet fent servir la instrucció <strong>vés a</strong>, després s'ha de mostrar i finalment s'ha d'amagar una altra vegada al cap d'un segon.</p></li>
+</ol>
+
+<p>```scratch</p>
+
+<pre><code>Al rebre explode
+amaga
+vés a x:posició x del coet  y:posició y del coet
+mostra
+espera 1 segons
+amaga
+</code></pre>
+
+<p>```</p>
+
+<h3>Proveu el projecte</h3>
+
+<p><strong>Llenceu un altre coet.</strong> 
+Es canvia per un personatge d'explosió quan explota?
+Què passa si manteniu el botó del ratolí clicat mentre moveu el ratolí? (No us preocupeu, ja arreglarem això més tard).</p>
+
+<h2>PAS 3: Fer que cada explosió sigui única</h2>
+
+<ol>
+<li>Ara podem fer que cada explosió sigui única utilitzant el bloc efectes de color i triant un color aleatori entre 1 i 200 abans de mostrar-lo.</li>
+</ol>
+
+<p>```scratch</p>
+
+<pre><code>al rebre explode
+amaga
+fixa l'efecte color a nombre a l'atzar entre 1 i 200
+vés a x: posició x del coet y: posició y del coet
+mostra
+espera 1 segons
+amaga
+</code></pre>
+
+<p>```</p>
+
+<h3>Proveu el projecte</h3>
+
+<p><strong>Premeu la bandera verda.</strong> </p>
+
+<p>Cada explosió té un color diferent?</p>
+
+<ol>
+<li>Afegim ara diferents vestits per l'explosió amb les imatges de <strong>Recursos/focartificial2.png</strong> i <strong>Recursos/focartificial3.png</strong>. Intercanvia'ls per a cada coet abans de mostrar-los.</li>
+</ol>
+
+<h3>Proveu el projecte</h3>
+
+<p><strong>Premeu bandera verda.</strong> </p>
+
+<p>Cada coet té un gràfic diferent quan explota?</p>
+
+<ol>
+<li>Finalment, fem que cada explosió creixi amb el temps en comptes que aparegui i prou. Enlloc d'esperar un segon, fixeu el tamany del personatge al 5% abans de mostrar-lo, i una vegada l'hàgiu mostrat, augmenteu el tamany en 2 unitats cinquanta vegades, utilitzant el bloc <strong>repeteix</strong>.</li>
+</ol>
+
+<p>```scratch</p>
+
+<pre><code>al rebre explode
+amaga
+fixa l'efecte color a nombre a l'atzar entre 1 i 200
+vés a x: posició x del coet y: posició y del coet
+
+fixa la mida a 5%
+
+mostra
+
+repeteix 50
+
+   augmenta 2 la mida
+
+(acaba el repeteix)
+
+amaga
+</code></pre>
+
+<p>```</p>
+
+<h3>Proveu el projecte</h3>
+
+<p><strong>Premeu la bandera verda.</strong> </p>
+
+<p>El gràfic d'explosió d'escampa des del centre del coet i creix lentament?</p>
+
+<h3>Per saber-ne més</h3>
+
+<p>Per què no proveu de fer encara més úniques les explosions? Proveu-ho alterant la mida i velocitat de cada explosió.</p>
+
+<h2>PAS 4: Arreglar l'error de transmissió de missatges</h2>
+
+<p>Recordeu que abans hi havia un error quan manteníem el botó del ratolí clicat? Això passa perquè quan el coet envia el missatge que ha explotat, repetirà immediatament el bloc <strong>per sempre si ratolí clicat</strong> i enviarà un altre missatge d'explosió abans que l'anterior hagi acabat de mostrar-se.</p>
+
+<ol>
+<li>Per arreglar-ho, s'ha de substituir el bloc <strong>envia a tots</strong> amb un bloc <strong>envia a tots i espera</strong>. D'aquesta manera, el bloc no es repetirà fins que l'explosió hagi acabat.</li>
+</ol>
+
+<p>```scratch</p>
+
+<pre><code>al prémer bandera verda
+amaga
+per sempre si ratolí clicat?
+vés a x: ratolí x y: -200
+  toca el so bang
+
+  mostra
+
+  llisca en 1 segons fins a x: ratolí x y: ratolí y
+
+  amaga
+
+  envia a tots explode i espera
+
+(acaba per sempre)
+</code></pre>
+
+<p>```</p>
+
+<h3>Proveu el projecte</h3>
+
+<p><strong>Premeu la bandera verda, mantingueu apretat el botó dret del ratolí i moveu el ratolí per tot l'escenari.</strong> </p>
+
+<p>El gràfic d'explosió apareix en el lloc i el temps correcte?</p>
+
+<p>Deseu el projecte</p>
+
+</body>
+</html>

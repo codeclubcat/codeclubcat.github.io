@@ -89,7 +89,7 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-<title>Caça_la_bruixa</title>
+<title>Focs Artificials</title>
 
 </head>
 
@@ -99,41 +99,46 @@
   <div class="ten columns"><hr></div>
 </div>
 
-
 <div class="row">
-  <div class="ten columns">
+  <div class="ten columns"><hr></div>
     <p><h3>Nivell 1</h3></p>
-  </div>
+ </div>
 </div>
-
 
 <div class="row">
   <div class="nine columns">
-    <h1>Caça la bruixa</h1>
+    <h1>Focs artificials</h1>
   
 
 <p><h2>Introducció:</h2>
-Aquest projecte s´inspira en el joc de fira d´origen anglès anomenat  <a href="http://en.wikipedia.org/wiki/Whac-A-Mole"> Whack-a-Mole</a>. Obtindreu punts en clicar les bruixes que apareixen a la pantalla. L'objectiu del joc és obtenir el màxim de punts en 30 segons!</p>
+En aquest projecte, llençarem focs artificials al cel d'una ciutat.</p>
 
-    <br>
-      <img src="intro.png" align='middle'>
-    <br><br><br>
+
+ <br>
+   <img src="intro.png" align='middle'>
+ <br><br><br>
 
 
 
 <div class="step">
-<strong>PAS 1:</strong> Crear una bruixa que voli
+<strong>PAS 1:</strong> Crear un coet que vola apuntant el ratolí
 </div>
 <br>
 
-<ol>
-<li>Comenceu un nou projecte d'Scratch.</li>
-<li>Esborreu el personatge del gat i afegiu un nou fons d'escenari carregant el que trobareu a <strong>nature/woods</strong>.</li>
-<li>Feu servir el botó  <strong>escull un personatge des d’un fitxer</strong>  per afegir la bruixa al projecte (vestit <strong>fantasy/witch1</strong>).</li>
-<li>Afegiu una <strong>variable</strong> només per aquesta animació que es digui <strong>velocitat</strong>. A l´escenari,  el monitor d’aquesta variable ha de dir  <strong>“Personatge 1 velocitat”</strong>. Si només diu <strong>velocitat</strong> elimineu la variable i torneu-la a crear, però només
-per aquest personatge. Desmarqueu la casella de la variable a la paleta de variables perquè no es vegi a l’escenari. La variable  <strong>velocitat</strong> controlarà la velocitat de la bruixa. Fem servir una variable, perquè així més endavant podrem fer que la bruixa vagi més ràpida o més lenta segons volguem.</li>
-<li>El primer que volem fer és fer que la bruixa es comenci a moure en començar el joc. Per fer-ho escriviu aquest script:</li><br>
+<p><strong>Importem les imatges necessàries per el nostre joc:</strong></p>
 
+<ol>
+<li>Creeu un nou projecte Scratch. Esborreu el gat clicant-lo amb el botó dret i seleccionant <strong>Esborra</strong></li>
+<li>Canvieu l'escenari per <strong>outdoor/city-with-water</strong></li>
+<li>Utilitzeu el botó <strong>escull un personatge des d'un fitxer</strong> per afegir el personatge <strong>coet</strong> al projecte (utilitzeu el vestit <strong>recursos/coet.png</strong>)</li>
+<li>Feu que el coet desaparegui quan es premi la bandera verda</li>
+</ol>
+
+<p><strong>Ara volem que el coet apunti el ratolí quan el cliquem!"</strong></p>
+
+<ol>
+<li>Afegiu el bloc <strong>quan es cliqui la tecla espai</strong>. En aquest bloc feu que el coet aparegui i llisqui en direcció al punter del ratolí</li>
+</ol>
 
 <div class="row">
       <div class="bit">
@@ -142,20 +147,20 @@ per aquest personatge. Desmarqueu la casella de la variable a la paleta de varia
        </div>
      </div> 
 </div>
-</ol>
 
 
 <div class="test_project">Proveu el projecte</div>
 
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
-<p>Observeu què fa la bruixa. Com és que s'encalla a la vora de la pantalla?</p>
+
+<p>Poseu el ratolí sobre l'escenari i premeu la tecla espai.
+Us apareix el coet movent-se en la direcció del ratolí?
+Què passa si moveu el ratolí i premeu la tecla espai una segona vegada?</p>
 
 <ol>
-<li>Per tal que  la bruixa no s'encalli, feu que giri cua al tocar la vora de la pantalla. Sota el bloc <strong>"mou-te velocitat passos"</strong> afegiu-hi un nou bloc <strong>"rebota en tocar una vora"</strong>.</li>
-
-<li>A més a més, per tal que la bruixa no es giri de caps per avall, utilitzeu el bloc <strong>"fixa la rotació a"</strong> on seleccionarem esquerra-dreta.</li><br>
-
+<li>Els focs artificials no es solen moure de costat a costat. Assegureu-vos que el vostre coet llisca en direcció el ratolí sortint sempre des de la part de baix de la pantalla. Abans de mostrar el coet, utilitzeu el bloc <strong>vés a</strong> per dir-li al coet que es mogui cap a la part baixa de la pantalla conservant la seva posició horitzontal.</li>
+</ol>
 
 <div class="row">
       <div class="bit">
@@ -164,42 +169,33 @@ per aquest personatge. Desmarqueu la casella de la variable a la paleta de varia
        </div>
      </div> 
 </div>
-</ol>
-
 
 <div class="test_project">Proveu el projecte</div>
 
-<p><strong>Feu clic a la bandera verda</strong>.</p>
-<p>Comproveu que la bruixa es mou de banda a banda de la pantalla.</p>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<p>Poseu el ratolí sobre l'escenari i premeu la tecla espai.
+El coet vola des de la part baixa de la pantalla en direcció al ratolí? què passa si moveu el ratolí i torneu a prémer la tecla espai?</p>
 
+<ol>
+<li><p>Finalment, feu aquesta operació utilitzant el botó del ratolí en comptes de la tecla espai. Per fer això, podem inserir el nostre codi dins el bloc <strong>per sempre si ratolí clicat? llavors</strong>.</p></li>
+<li><p>Després canvieu el bloc <strong>quan la tecla espai es premi</strong> per <strong>quan la bandera verda es premi</strong> i finalment, assegureu-vos que el coet s'amaga cada vegada que tornem a començar. </p></li>
+</ol>
 
-<h3>Per saber-ne més</h3>
+<p>```scratch</p>
 
-<p><strong>Proveu de canviar el valor de la velocitat per fer que la bruixa vagi més ràpida o més lenta.</strong></p>
+<pre><code>quan la bandera verda es premi
 
-<p><strong>Com us ho faríeu per fer que la bruixa voli cada vegada més ràpid?</strong> (Fer que la bruixa vagi cada cop més ràpid té truc, no us preocupeu si no veieu la manera de fer-ho. Anirem donant més pistes al llarg del projecte.)</p>
-
-
-<div class="step">
-<strong>PAS 2:</strong> Fer desaparèixer la bruixa en qualsevol moment
-</div>
-<br>
-
-<p>Per fer el joc més interessant, farem que la bruixa aparegui i desaparegui en qualsevol moment. Crearem un altre script que corri al mateix temps que es mou la bruixa. El nou script amagarà la bruixa durant un temps qualsevol, llavors la mostrarà durant un altre interval de temps, i ho anirà repetint per sempre (o fins que s'acabi el joc). Creeu aquest script per la bruixa:</p>
-
-<!--
-1
-<p>```</p>
-<pre><code>al prémer BANDERA VERDA
-per sempre
     amaga
-    espera nombre a l'atzar entre 2 i 5 segons
-    mostra
-    espera nombre a l'atzar entre 2 i 5 segons
-(fi del per sempre)
+
+    per sempre 
+       si ratolí premut? llavors
+         vés a x: ratolí x y: -200
+         mostra
+         llisca en 1 segons fins a x: ratolí x y: ratolí y
+    (acaba per sempre)
 </code></pre>
+
 <p>```</p>
--->
 
 
 <div class="row">
@@ -210,40 +206,30 @@ per sempre
      </div> 
 </div>
 
-
 <div class="test_project">Proveu el projecte</div>
 
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
-<p>Comproveu si la bruixa es segueix movent de banda a banda de la pantalla.
-Apareix i desapareix en qualsevol moment?</p>
+<p>Cliqueu el ratolí sobre l'escenari. Torneu a clicar el ratolí en un altre punt.</p>
 
-<h3>Per saber-ne més</h3>
+<h3>Per saber-ne més:</h3>
 
-<p><strong>Proveu de canviar el rang dels nombres a l'atzar. Què passa si agafeu números molt grans? i molt petits?</strong>
-(Potser això us dóna alguna pista de com fer que la bruixa voli més ràpid a mesura que passa el temps ...)</p>
+<ol>
+<li><p>Intenteu canviar el moviment del coet: en comptes de lliscar recte cap on és el ratolí feu que faci una trajectòria una mica corbada.</p></li>
+<li><p>Intenteu que alguns coets vagin més lents que d'altres.</p></li>
+</ol>
 
 
+ 
 <div class="step">
-<strong>PAS 3:</strong> Fer que la bruixa desaparegui al clicar-la
+<strong>PAS 2:</strong> Fer explotar el coetí
 </div>
 <br>
 
-<p>Per fer que això sigui un joc, hem de donar als jugadors alguna cosa a fer. Hauran de clicar damunt la bruixa per fer-la desaparèixer. Quan li facin clic a sobre, volem que desaparegui i que s'escolti un so.</p>
-
 <ol>
-<li><p>A la pestanya <strong>Sons</strong>,  importeu el so <strong>electronic/fairydust</strong>.</p></li>
-<li><p>Afegiu aquest script a la bruixa:</p></li>
+<li>El primer que us cal per fer explotar el coet és fer que soni una explosió just abans que comenci a moure's. El so el podeu trobar a la carpeta <a recursos/bang.wav>recursos/bang</a>. Llavors es tracta que s'amagui un cop arribi a on és el ratolí. Per importar un so aneu a la <strong>pestanya Sons</strong> i cliqueu <strong>importa</strong>.</li>
 </ol>
 
-<!--
-<p>```</p>
-<pre><code>al prémer Animació1
-amaga
-toca el so Fairydust
-</code></pre>
-<p>```</p>
--->
 
 <div class="row">
       <div class="bit">
@@ -253,36 +239,9 @@ toca el so Fairydust
      </div> 
 </div>
 
-
-<div class="test_project">Proveu el projecte</div>
-
-
-<p><strong>Feu clic a la bandera verda.</strong> </p>
-
-<p>Comproveu que la bruixa desapareix i produeix el so escollit en clicar-la.</p>
-
-
-<div class="step">
-<strong>PAS 4:</strong> Afegir un marcador i un cronòmetre
-</div>
-<br>
-
-<p>Tot i que ja tenim llesta la  bruixa, el nostre objectiu és crear un joc! Afegirem un marcador que ens servirà per anar anotant els punts cada cop que cliquem a sobre de la bruixa abans no s'acabi un temps. Per tant, necessitarem una variable per al temps i una altra per al marcador.</p>
-
 <ol>
-<li><p>Creeu una nova variable <strong>per tots els personatges</strong> que es digui <strong>marcador</strong> i retoqueu l'script de la bruixa perquè s'incrementi en un punt el marcador cada cop que s'atrapa la bruixa.</p></li>
-
-
-<div class="row">
-      <div class="bit">
-        <div class="image">
-          <img src="script6.png">
-       </div>
-     </div> 
-</div>
-
-
-<li><p>Aneu a l'<strong>escenari</strong> i creeu una nova variable (aquesta <strong>només per l'escenari</strong>) que es digui <strong>temps</strong>. Afegiu un script que posi el temps a 30 i el marcador a 0 al prémer la bandera verda. Feu servir un bloc <strong>"repeteix fins que"</strong> per esperar un segon i reduir el temps un segon. Això s'hauria de repetir fins que el temps arribi a 0. En arribar a zero, cridarem <strong>"atura tot"</strong> per aturar el joc.</p></li>
+<li>Finalment, feu que el coet envii un missatge quan explota. Utilitzarem aquest missatge més endavant.</li>
+</ol>
 
 
 <div class="row">
@@ -293,49 +252,124 @@ toca el so Fairydust
      </div> 
 </div>
 
+<div class="test_project">Proveu el projecte</div>
+
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Assegureu-vos que el coet toca un so i s'amaga quan arriba al ratolí.</p>
+
+<ol>
+<li><p>Importa un nou personatge des de <a recursos/focartificial1.png> recursos/focartificial1.png</a></li>
+<li><p>Quan rebi el missatge <strong>explode</strong>, s'ha d'amagar i moure's a la posició del coet fent servir la instrucció <strong>vés a</strong>, després s'ha de mostrar i finalment s'ha d'amagar una altra vegada al cap d'un segon.</p></li>
 </ol>
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script6.png">
+       </div>
+     </div> 
+</div>
 
 <div class="test_project">Proveu el projecte</div>
 
-<p><strong>Feu clic a la bandera verda.</strong> </p>
 
+<p><strong>Llenceu un altre coet.</strong> 
+Es canvia per un personatge d'explosió quan explota?
+Què passa si manteniu el botó del ratolí clicat mentre moveu el ratolí? (No us preocupeu, ja arreglarem això més tard).</p>
+
+
+
+<div class="step">
+<strong>PAS 3:</strong> Fer que cada explosió sigui única</div>
+<br>
+
+<ol>
+<li>Ara podem fer que cada explosió sigui única utilitzant el bloc efectes de color i triant un color aleatori entre 1 i 200 abans de mostrar-lo.</li>
+</ol>
+
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script7.png">
+       </div>
+     </div> 
+</div>
+
+<div class="test_project">Proveu el projecte</div>
+
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Cada explosió té un color diferent?</p>
+
+<ol>
+<li>Afegim ara diferents vestits per l'explosió amb les imatges de <a recursos/focartificial2.png>recursos/focartificial2.png</a> i <a recursos/focartificial3.png>recursos/focartificial3.png</a>>. Intercanvia'ls per a cada coet abans de mostrar-los.</li>
+</ol>
+
+
+
+<div class="test_project">Proveu el projecte</div>
+
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Cada coet té un gràfic diferent quan explota?</p>
+
+<ol>
+<li>Finalment, fem que cada explosió creixi amb el temps en comptes que aparegui i prou. Enlloc d'esperar un segon, fixeu el tamany del personatge al 5% abans de mostrar-lo, i una vegada l'hàgiu mostrat, augmenteu el tamany en 2 unitats cinquanta vegades, utilitzant el bloc <strong>repeteix</strong>.</li>
+</ol>
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script8.png">
+       </div>
+     </div> 
+</div>
+
+<div class="test_project">Proveu el projecte</div>
+
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>El gràfic d'explosió d'escampa des del centre del coet i creix lentament?</p>
 
 <h3>Per saber-ne més</h3>
 
-<p><strong>Molt bé, ja heu completat el joc bàsic!!!</strong></p>
-<p><strong>Sabeu ja com fer-ho perquè la bruixa vagi cada vegada més i més ràpid?</strong></p>
+<p>Per què no proveu de fer encara més úniques les explosions? Proveu-ho alterant la mida i velocitat de cada explosió.</p>
 
 
-<div class="step"><strong>REPTE:</strong> Poseu-hi més bruixes!</div>
+
+<div class="step">
+<strong>PAS 4:</strong> Arreglar l'error de transmissió de missatges</div>
 <br>
+
+<p>Recordeu que abans hi havia un error quan manteníem el botó del ratolí clicat? Això passa perquè quan el coet envia el missatge que ha explotat, repetirà immediatament el bloc <strong>per sempre si ratolí clicat</strong> i enviarà un altre missatge d'explosió abans que l'anterior hagi acabat de mostrar-se.</p>
+
 <ol>
-<li> Dupliqueu la bruixa prement el botó dret del ratolí damunt la llista de personatges.</li>
-<li>Ajusteu la mida de cada bruixa, perquè tinguin dimensions diferents.</li>
-<li>Canvieu la variable velocitat de cada bruixa per fer que volin a velocitats diferents.</li>
-<li>Per tal que no estiguin juntes, moveu-les a diferents punts de l'escenari.</li>
+<li>Per arreglar-ho, s'ha de substituir el bloc <strong>envia a tots</strong> amb un bloc <strong>envia a tots i espera</strong>. D'aquesta manera, el bloc no es repetirà fins que l'explosió hagi acabat.</li>
 </ol>
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script9.png">
+       </div>
+     </div> 
+</div>
 
 <div class="test_project">Proveu el projecte</div>
 
-<p><strong>Feu clic a la bandera verda.</strong> </p>
+<p><strong>Feu clic a la bandera verda.</strong></p>
 
-<p>Teniu unes quantes bruixes movent-se d'un costat a l'altre de l'escenari? Apareixen i desapareixen a l'atzar? </p>
+<p>Mantingueu apretat el botó dret del ratolí i moveu el ratolí per tot l'escenari.</p>
 
+<p>El gràfic d'explosió apareix en el lloc i el temps correcte?</p>
 
-<h3>Per saber-ne encara més</h3>
-
-<ol>
-<li> Quin creieu que seria el número de bruixes que podríem afegir al joc per fer-lo encara més divertit?</li>
-<li> Podríeu canviar l'aspecte de les bruixes? Proveu a editar-ne els vestits, o utilitzar els blocs d'efectes de la paleta Vestits.</li>
-<li> Podríeu fer que algunes bruixes donessin més puntuació que d’altres?</li>
-</ol>
-
-<p><strong>Ben fet, heu completat el joc, ara a jugar!!!</strong></p>
-
-<p>Recordeu que podeu compartir el joc amb els vostres amics i família prement a <strong>Compartir</strong> a la barra de menú!</p>
 </div>
 </div>
-
 </body>
 </html>
 
