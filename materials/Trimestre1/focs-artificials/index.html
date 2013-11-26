@@ -33,8 +33,10 @@ En aquest projecte, llençarem focs artificials al cel d'una ciutat.</p>
 
 
 
-<p>Aquest projecte utilitza recursos externs (no inclosos a l'Scratch). Baixeu-vos a una carpeta de l'ordinador que recordeu els següents fitxers:</p>
+<p>Aquest projecte utilitza recursos externs (no inclosos a l'Scratch). Baixeu-vos a una carpeta de l'ordinador que recordeu els fitxers del següent arxiu comprimit <a href=/materials/Trimestre1/focs-artificials/recursos/materials.zip>materials.zip.</a></p>
 
+<!--
+ # discarded option. Now just a zip to download
 <ul>
 <li> Personatge Coet des de <a href=/materials/Trimestre1/focs-artificials/recursos/coet.png> recursos/coet.png</a></li>
 <li> So per la coet des de  <a href=/materials/Trimestre1/focs-artificials/recursos/bang.wav> recursos/bang.wav</a></li>
@@ -42,9 +44,7 @@ En aquest projecte, llençarem focs artificials al cel d'una ciutat.</p>
 <li> Personatge Foc Artificial 2 des de <a href=/materials/Trimestre1/focs-artificials/recursos/focartificial2.png> recursos/focartificial2.png</a></li>
 <li> Personatge Foc Artificial 3 des de <a href=/materials/Trimestre1/focs-artificials/recursos/focartificial3.png> recursos/focartificial3.png</a></li>
 </ul>
-
-
-  
+-->
 
 <div class="step">
 <strong>PAS 1:</strong> Crear un coet que vola apuntant el ratolí
@@ -58,13 +58,22 @@ En aquest projecte, llençarem focs artificials al cel d'una ciutat.</p>
 <li>Canvieu l'escenari per <strong>outdoor/city-with-water</strong></li>
 <li>Utilitzeu el botó <strong>escull un personatge des d'un fitxer</strong> per afegir el personatge <strong>coet</strong> al projecte (utilitzeu el vestit <strong>coet.png</strong> que us heu baixat anteriorment)</li>
 <li>Feu que el coet desaparegui quan es premi la bandera verda</li>
-</ol>
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script0.png">
+       </div>
+     </div> 
+</div>
+
+
 
 <p><strong>Ara volem que el coet apunti el ratolí quan el cliquem!</strong></p>
 
-<ol>
+
 <li>Afegiu el bloc <strong>[quan es cliqui la tecla espai]</strong>. En aquest bloc feu que el coet aparegui i llisqui en direcció al punter del ratolí</li>
-</ol>
+
 
 <div class="row">
       <div class="bit">
@@ -76,7 +85,7 @@ En aquest projecte, llençarem focs artificials al cel d'una ciutat.</p>
 
 
 <div class="test_project">Proveu el projecte</div>
-
+<br>
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
 
@@ -84,9 +93,9 @@ En aquest projecte, llençarem focs artificials al cel d'una ciutat.</p>
 Us apareix el coet movent-se en la direcció del ratolí?
 Què passa si moveu el ratolí i premeu la tecla espai una segona vegada?</p>
 
-<ol>
+
 <li>Els focs artificials no es solen moure de costat a costat. Assegureu-vos que el vostre coet llisca en direcció el ratolí sortint sempre des de la part de baix de la pantalla. Abans de mostrar el coet, utilitzeu el bloc <strong>[vés a]</strong> per dir-li al coet que es mogui cap a la part baixa de la pantalla conservant la seva posició horitzontal.</li>
-</ol>
+
 
 <div class="row">
       <div class="bit">
@@ -97,15 +106,15 @@ Què passa si moveu el ratolí i premeu la tecla espai una segona vegada?</p>
 </div>
 
 <div class="test_project">Proveu el projecte</div>
-
+<br>
 <p><strong>Feu clic a la bandera verda.</strong></p>
 <p>Poseu el ratolí sobre l'escenari i premeu la tecla espai.
 El coet vola des de la part baixa de la pantalla en direcció al ratolí? Què passa si moveu el ratolí i torneu a prémer la tecla espai?</p>
 
-<ol>
+
 <li><p>Finalment, feu aquesta operació utilitzant el botó del ratolí en comptes de la tecla espai. Per fer això, podem inserir el nostre codi dins el bloc <strong>[per sempre si ratolí clicat? llavors]</strong>.</p></li>
 <li><p>Després canvieu el bloc <strong>[quan la tecla espai es premi]</strong> per <strong>[quan la bandera verda es premi]</strong> i finalment, assegureu-vos que el coet s'amaga cada vegada que tornem a començar. </p></li>
-</ol>
+
 
 <div class="row">
       <div class="bit">
@@ -115,18 +124,15 @@ El coet vola des de la part baixa de la pantalla en direcció al ratolí? Què p
      </div> 
 </div>
 
+</ol>
+
+
 <div class="test_project">Proveu el projecte</div>
 
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
 <p>Cliqueu el ratolí sobre l'escenari. Torneu a clicar el ratolí en un altre punt.</p>
 
-<h3>Per saber-ne més:</h3>
-
-<ol>
-<li><p>Intenteu canviar el moviment del coet: en comptes de lliscar recte cap on és el ratolí feu que faci una trajectòria una mica corbada.</p></li>
-<li><p>Intenteu que alguns coets vagin més lents que d'altres.</p></li>
-</ol>
 
 
  
@@ -149,7 +155,7 @@ El coet vola des de la part baixa de la pantalla en direcció al ratolí? Què p
 
 
 <li>Finalment, feu que el coet envii un missatge quan explota. Utilitzarem aquest missatge més endavant.</li>
-</ol>
+
 
 
 <div class="row">
@@ -161,15 +167,15 @@ El coet vola des de la part baixa de la pantalla en direcció al ratolí? Què p
 </div>
 
 <div class="test_project">Proveu el projecte</div>
-
+<br>
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
 <p>Assegureu-vos que el coet toca un so i s'amaga quan arriba al ratolí.</p>
 
-<ol>
+
 <li><p>Importa un nou personatge <strong>focartificial1.png</strong> des de la carpeta d'arxius.</li>
 <li><p>Quan rebi el missatge <strong>[explode]</strong>, s'ha d'amagar i moure's a la posició del coet fent servir la instrucció <strong>[vés a]</strong>, després s'ha de mostrar i finalment s'ha d'amagar una altra vegada al cap d'un segon.</p></li>
-</ol>
+
 
 <div class="row">
       <div class="bit">
@@ -178,6 +184,8 @@ El coet vola des de la part baixa de la pantalla en direcció al ratolí? Què p
        </div>
      </div> 
 </div>
+
+</ol>
 
 <div class="test_project">Proveu el projecte</div>
 
@@ -193,9 +201,6 @@ Què passa si manteniu el botó del ratolí clicat mentre moveu el ratolí? (No 
 
 <ol>
 <li>Ara podem fer que cada explosió sigui única utilitzant el bloc efectes de color i triant un color aleatori entre 1 i 200 abans de mostrar-lo.</li>
-</ol>
-
-
 
 <div class="row">
       <div class="bit">
@@ -206,24 +211,33 @@ Què passa si manteniu el botó del ratolí clicat mentre moveu el ratolí? (No 
 </div>
 
 <div class="test_project">Proveu el projecte</div>
-
+<br>
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
 <p>Cada explosió té un color diferent?</p>
 
-<ol>
+
 <li>Afegim ara diferents vestits per l'explosió amb les imatges <strong>focartificial2.png</strong> i <strong>focartificial3.png</strong>.  Intercanvia'ls per a cada coet abans de mostrar-los.</li>
-</ol>
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script6b.png">
+       </div>
+     </div> 
+</div>
+
 
 <div class="test_project">Proveu el projecte</div>
-
+<br>
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
 <p>Cada coet té un gràfic diferent quan explota?</p>
 
-<ol>
+
 <li>Finalment, fem que cada explosió creixi amb el temps en comptes que aparegui i prou. Enlloc d'esperar un segon, fixeu el tamany del personatge al 5% abans de mostrar-lo, i una vegada l'hàgiu mostrat, augmenteu el tamany en 2 unitats cinquanta vegades, utilitzant el bloc <strong>[repeteix]</strong>.</li>
-</ol>
+
 
 
 <div class="row">
@@ -233,16 +247,14 @@ Què passa si manteniu el botó del ratolí clicat mentre moveu el ratolí? (No 
        </div>
      </div> 
 </div>
+</ol>
 
 <div class="test_project">Proveu el projecte</div>
-
+<br>
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
 <p>El gràfic d'explosió d'escampa des del centre del coet i creix lentament?</p>
 
-<h3>Per saber-ne més</h3>
-
-<p>Per què no proveu de fer encara més úniques les explosions? Proveu-ho alterant la mida i velocitat de cada explosió.</p>
 
 
 
@@ -254,7 +266,7 @@ Què passa si manteniu el botó del ratolí clicat mentre moveu el ratolí? (No 
 
 <ol>
 <li>Per arreglar-ho, s'ha de substituir el bloc <strong>[envia a tots]</strong> amb un bloc <strong>[envia a tots i espera]</strong>. D'aquesta manera, el bloc no es repetirà fins que l'explosió hagi acabat.</li>
-</ol>
+
 
 
 <div class="row">
@@ -264,14 +276,26 @@ Què passa si manteniu el botó del ratolí clicat mentre moveu el ratolí? (No 
        </div>
      </div> 
 </div>
-
+</ol>
 <div class="test_project">Proveu el projecte</div>
-
+<br>
 <p><strong>Feu clic a la bandera verda.</strong></p>
 
 <p>Mantingueu apretat el botó dret del ratolí i moveu el ratolí per tot l'escenari.</p>
 
 <p>El gràfic d'explosió apareix en el lloc i el temps correcte?</p>
+
+
+
+<h3>Per saber-ne més</h3>
+
+<ul>
+<li><p>Intenteu canviar el moviment del coet: en comptes de lliscar recte cap on és el ratolí feu que faci una trajectòria una mica corbada.</p></li>
+<li><p>Intenteu que alguns coets vagin més lents que d'altres.</p></li>
+<li><p>Per què no proveu de fer encara més úniques les explosions? Proveu-ho alterant la mida i velocitat de cada explosió.</p></li>
+
+</ul>
+
 
 </div>
 </div>
