@@ -1,0 +1,52 @@
+---
+layout: default
+title: Material
+---
+
+<!-- Utf-8 encoding. Potser només es nececessari -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<div class="row">
+<div class="eight columns">
+<h1>Scratch Cards</h1>
+
+<p> Les "Scratch Cards" són una forma fàcil i ràpida d'aprendre a programar amb l'<a href="http://scratch.mit.edu">Scratch</a>. La part davantera de la tarja mostra el que pot fer en cada cas, mentre que la part de darrera mostra com fer-ho. Clica als enllaços per baixar-te i imprimir cada una les tarjes, o si ho prefereixes baixa-les totes de cop a través del següent <a href="/materials/scratch_cards/scratch_cards_catala.zip">arxiu comprimit</a>.
+
+ <div class="four columns morepanel">
+   
+   <p><img alt="Scratch" height="200" src="http://upload.wikimedia.org/wikipedia/commons/4/4f/Scratch_Logo.png" width="150"></p>
+          	<h4>Canvia el color</h4>
+		<p><a href="/materials/scratch_cards/01_canvia_el_color.pdf"> Canvia el color </a></p>
+   <p><img alt="Scratch" height="200" src="http://upload.wikimedia.org/wikipedia/commons/4/4f/Scratch_Logo.png" width="150"></p>
+          	<h4>Canvia el color</h4>
+		<p><a href="/materials/scratch_cards/01_canvia_el_color.pdf"> Canvia el color </a></p>
+   <p><img alt="Scratch" height="200" src="http://upload.wikimedia.org/wikipedia/commons/4/4f/Scratch_Logo.png" width="150"></p>
+          	<h4>Canvia el color</h4>
+		<p><a href="/materials/scratch_cards/01_canvia_el_color.pdf"> Canvia el color </a></p>
+   <p><img alt="Scratch" height="200" src="http://upload.wikimedia.org/wikipedia/commons/4/4f/Scratch_Logo.png" width="150"></p>
+          	<h4>Canvia el color</h4>
+		<p><a href="/materials/scratch_cards/01_canvia_el_color.pdf"> Canvia el color </a></p>
+   <p><img alt="Scratch" height="200" src="http://upload.wikimedia.org/wikipedia/commons/4/4f/Scratch_Logo.png" width="150"></p>
+          	<h4>Canvia el color</h4>
+		<p><a href="/materials/scratch_cards/01_canvia_el_color.pdf"> Canvia el color </a></p>
+   
+
+</div>
+
+
+
+
+<ol>
+<li><a href="/materials/scratch_cards/01_canvia_el_color.pdf"> Canvia el color </a></li>
+<li><a href="/materials/Trimestre1/caceu-la-bruixa/index.html"> Caça la bruixa </a></li>
+<li><a href="/materials/Trimestre1/focs-artificials/index.html"> Focs artificials </a></li>
+<li><a href="/materials/Trimestre1/maquina_fruita/Maquina_de_fruita.html"> Màquina de fruita </a></li>
+<li><a href="/materials/Trimestre1/menja-peixos/index.html"> Menja peixos </a></li>
+<li><a href="/materials/Trimestre1"> Cursa pel desert </a></li>
+<li><a href="/materials/Trimestre1"> Què és? </a></li>
+<li><a href="/materials/Trimestre1"> Caixa de pintures </a></li>
+<li><a href="/materials/Trimestre1"> Construïu el vostre joc</a></li>
+
+
+
+
