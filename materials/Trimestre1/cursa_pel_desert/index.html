@@ -1,0 +1,240 @@
+---
+layout: lesson
+title: Home
+---
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+<title>Cursa pel desert</title>
+</head>
+
+
+<body>
+
+
+
+<div class="row">
+  <div class="ten columns"></div>
+    <p><h3>Nivell 2</h3></p>
+ </div>
+</div>
+
+<div class="row">
+  <div class="nine columns">
+   <h1>Cursa pel desert</h1>
+  
+
+<p><h2>Introducció:</h2>
+
+Aquest és un joc per dos jugadors on competeixen un lloro i un lleó pel desert. Cada jugador ha de prémer una tecla tant ràpid com pugui per fer moure l'animal i guanya el primer que arribi a la vora de la pantalla.</p>
+
+<br>
+   <img src="intro.png" align='middle'>
+ <br><br><br>
+
+
+<ol>
+
+
+<div class="step">
+<strong>PAS 1:</strong> Creeu l'escenari in afegiu-hi el objectes
+</div>
+<br>
+
+
+<li>Seleccioneu l'escenari i afegiu-hi el fons 'natura/desert'</li>
+<li>Esborreu el personatge 'Félix'</li>
+<li>Afegiu-hi el personatge lleó que trobareu a la carpeta 'animals'.</li>
+<li>Seguidament, afegiu-hi el personatge 'parrot' (lloro) que també trobareu a la carpeta 'animals'.</li>
+<br>
+<br>
+<div class="step">
+<strong>PAS 2:</strong> Feu que el lleó i el lloro es moguin
+</div>
+<br>
+
+<p>Volem que els objectes es moguin quan premem una tecla.</p>
+
+<li>Primer, seleccioneu l'objecte lleó i feu que faci 4 passes quan premeu la tecla 'L'.</li>
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script1.png">
+       </div>
+     </div> 
+</div>
+
+
+<li>Seguidament, seleccioneu l'objecte lloro i feu que també es mogui 4 passes quan premeu la tecla 'A'.</li>
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script2.png">
+       </div>
+     </div> 
+</div>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>El lleó i el lloro, es mouen per la pantalla quan premeu les tecles 'L' i 'A'?</p>
+
+<br>
+<br>
+<div class="step">
+<strong>PAS 3:</strong> Comenceu la cursa!
+</div>
+<br>
+
+<p>Necessitem un sistema per començar la cursa i saber qui l'ha guanyat. <strong>Primer, crearem un botó d'inici.</strong></p>
+
+<li>Afegiu un nou personatge. De la carpeta 'coses' escolliu el personatge 'Button1'. Canvieu-li el nom per 'ComenceuCursa'</li>
+<li>Modifiqueu el vestit del personatge, afegiu-hi el text 'inici' i feu clic a 'd'acord'. Moveu el personatge al mig de l'escenari.</li>
+<li>Afegiu un programa que mostri l'objecte 'ComenceuCursa' quan comenci el joc.</li>
+
+<li>Finalment, volem que quan premem el botó, compti enrere a partir de 3, digui 'endavant' i s'amagui.  </li>
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script3.png">
+       </div>
+     </div> 
+</div>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Al fer clic sobre el botó d'inici, comença a comptar enrere fins donar la sortida? </p>
+
+<br>
+<br>
+<div class="step">
+<strong>PAS 4:</strong> Acabeu la cursa!
+</div>
+<br>
+
+<p>Volem que els corredors només es moguin després de que s'hagi donat l'inici de la cursa. També volem saber quan la cursa s'ha acabat. Per tant, necessitem una variable que mantingui aquesta informació. </p>
+
+<li><p>Afegiu una variable visible per tots els objectes anomenada 'corrent'. Feu que no sigui visible a l'escenari desmarcant-la al panell de variables.</p></li>
+
+<li><p>Fixeu la variable 'corrent' a 0 a l'inici del joc. Llavors, a l'anterior programa 'al prémer BANDERA' afegiu-hi:</p></li>
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script4.png">
+       </div>
+     </div> 
+</div>
+
+<li><p>A continuació, fixeu la variable 'corrent' a 1 quan el rellotge de sortida hagi finalitzat.</p></li>
+<li><p>Mentre la variable 'corrent' no sigui 1, el lleó i el lloro han d'estar aturats. Feu clic a l'objecte Lloro. <strong>Afegiu un bloc de control a l'objecte</strong> que només permeti al lloro moure's si <strong>corrent = 1</strong>. </p></li>
+
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script5.png">
+       </div>
+     </div> 
+</div>
+
+
+
+<li>Ara cal que feu el mateix per l'objecte lleó.</li>
+
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+Podeu fer clic al botó d'inici i seguidament començar a córrer prement les tecles 'A' i 'L'? Els objectes, toquen el seu corresponent so i missatge de victòria quan arriben al final de la cursa?</p>
+
+<br>
+<br>
+<div class="step">
+<strong>PAS 5:</strong> Reinicieu la partida
+</div>
+<br>
+
+<p>A l' acabar la partida necessitem dir-li a la resta d'objectes que hem guanyat la cursa i reiniciar el joc per poder tornar a jugar-hi.</p>
+
+<p><strong>Necessitem que l'objecte que guanyi enviï un missatge a la resta dient que ha guanyat.</strong></p>
+
+<li>Feu clic a l'objecte Lloro. Afegiu un bloc que enviï "finalitzat" després de que l'objecte digui que ha guanyat. </li>
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+         <img src="script6.png">
+       </div>
+     </div> 
+</div>
+
+<li>Necessitem afegir un nou bloc que escolti els missatges d'acabament i mogui de nou el lloro a la línia de sortida. Què passa si canvieu el valor fixat a x?</li>
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+        <img src="script7.png">
+       </div>
+     </div> 
+</div>
+
+
+<li><p>Afegiu el mateix programa a l'objecte Lleó. Proveu diferents valors de x per assegurar-vos que el lleó i el lloro tornen a la línia de sortida. </p></li>
+<li><p>També ens interessa posar al lleó i el lloro a la mateixa posició de sortida, per tant afegiu un altre programa als dos objectes que els mogui a la línia de sortida al fer clic sobre la bandera. </p></li>
+
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+        <img src="script8.png">
+       </div>
+     </div> 
+</div>
+
+
+<li>Finalment, feu clic a l'objecte botó i afegiu-hi un programa que el torni a mostrar quan rep el missatge 'acabat'.</li>
+</ol>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Podeu competir contra amics si un de vosaltres prem la tecla 'A' per moure el lloro i l'altre la tecla 'L' pel lleó?</p>
+
+
+<h2>Desafiament: Afegiu-hi un turbo</h2>
+
+<ul>
+<li><strong>Intenteu a afegir-hi un turbo</strong> que es pugui fer servir un cop per cursa i faci que el lleó o el lloro es moguin 30 passos de cop. </li>
+<li><strong>Afegiu un nou vestit</strong> pels animals, amb foc sortint pel darrera i que apareixerà en el moment que premeu el turbo. </li>
+<li><strong>Enregistreu nous sons</strong> pels animals, que es sentin quan premeu el turbo.</li>
+</ul>
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p><strong>Ben fet, ja heu acabat. Ara podeu gaudir del joc!</strong> No oblideu de que podeu compartir el vostre joc amb tots els vostres amics i familiars fent clic  <strong>Comparteix</strong> a la barra de menú.</p>
+
+</body>
+</html>
