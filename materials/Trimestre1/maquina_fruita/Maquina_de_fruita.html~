@@ -1,7 +1,11 @@
+# init template ********************
+
 ---
 layout: lesson
 title: Home
 ---
+
+# heading ******************************
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
@@ -29,55 +33,32 @@ title: Home
    <h1>Màquina de fruita</h1>
   
 
+# new section
+
 <p><h2>Introduccció:</h2>
 
-<p>Aquest és un joc semblant a les màquines escurabutxaques. Consisteix en anar canviant el vestit de tres personatges fins que els tres mostrin la mateixa imatge. </p>
 
+# figures 
 
     <br>
       <img src="intro.png" align='middle'>
     <br><br><br>
 
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script1.png">
+       </div>
+     </div> 
+    </
+
+# step class
 
 <div class="step">
 <strong>PAS 1:</strong> Crear un personatge que canviï de vestit
 </div>
 <br>
 
-<p><strong>Anem a importar imatges diferents per el nostre joc:</strong></p>
-
-<ul>
-<li><p>Comenceu un projecte d'Scratch nou. Esborreu el gat clicant amb el botó de la dreta i triant <strong>Esborra.</strong></p></li>
-<li><p>Importeu un nou personatge.</p></li>
-<li><p>Trieu qualsevol imatge de qualsevol carpeta. Nosaltres hem utilitzat <strong>coses/bananas</strong>, però podeu triar qualsevol imatge que us agradi.</p></li>
-<li><p>Cliqueu la pestanya Vestits i importeu-ne dos més pel mateix personatge (nosaltres vam utilitzar <strong>coses/watermelon-1</strong> i <strong>coses/apple</strong>, però podeu utilitzar el que us vingui més de gust).</p></li>
-</ul>
-
-<p><strong>Ara que tenim els vestits, volem que el personatge se'ls vagi canviant.</strong></p>
-
-<div class="step">
-<strong>PAS 2:</strong> Fer que les imatges vagin canviant
-</div>
-<br>
-
-<ul>
-<li><p>Cliqueu la pestanya de <strong>Programes.</strong></p></li>
-<li><p>Seleccioneu la paleta <strong>Esdeveniments</strong> i arrossegueu el bloc  <strong>quan la bandera verda es premi</strong>. El que poseu a continuació passarà cada vegada que el jugador premi la bandera verda.</p></li>
-<li><p>A continuació, aneu a la paleta de <strong>Control</strong> i afegiu el bloc <strong>per sempre</strong>.</p></li>
-<li><p>Cliqueu la bandera verda a dalt a la dreta. Fixeu-vos que ara apareix una petita ombra blanca al voltant del nostre programa. Això significa que  el nostre programa està corrent perquè hem clicat la bandera verda.</p></li>
-<li><p>cliqueu la paleta <strong>Aspecte</strong> i arrossegueu el bloc <strong>següent vestit</strong>.</p></li>
-<li><p>Com alentiríem el programa perquè no canvii de vestit tant ràpidament? Cliqueu de nou a la paleta de <strong>Control</strong> i arrossegueu el bloc <strong>espera 1 segons</strong>.</p></li>
-<li><p>Ajusteu el temps fins que el canvi sigui un pas més ràpid (normalment, un temps de 0.1s és suficient). Què passaria si no haguéssim posat el bloc espera?</p></li>
-
-
-<div class="row">
-      <div class="bit">
-        <div class="image">
-          <img src="script1.png">
-       </div>
-     </div> 
-</div>
-</ul>
 
 
 
