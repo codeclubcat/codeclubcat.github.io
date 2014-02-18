@@ -1,92 +1,13 @@
+# init template ********************
 
-<!doctype html>
-<!--[if lt IE 9]><html class="lte-ie8"><![endif]-->
+---
+layout: lesson
+title: Home
+---
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+# heading ******************************
 
-    <title>Code Club Catalunya</title>
-<meta property="og:description" content="Una xarxa mundial de clubs de programació d'ordinadors per a nens">
-
-    <meta name="description" content="Una xarxa de clubs de programació d'ordinadors per a nens">
-
-    <meta property="og:url" content="http://www.codeclubcat.org/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Code Club Catalunya>
-<meta property="og:site_name" content="Code Club Catalunya">
-<meta property="og:description" content="Una xarxa mundial de clubs de programació d'ordinadors per a nens">
-<meta property="og:image" content="http://www.codeclubbrasil.org/img/logo.png">
-
-
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.min.js"></script>
-    <![endif]-->
-
-    <script>
-      document.write(
-        '<link rel="stylesheet" ' +
-        'href="//f.fontdeck.com/s/css/TFY2aUzEpRLcoEOhQR+42J6Ja8I/' +
-        location.hostname +
-        '/23203.css">'
-      );
-    </script>
-    <link rel="stylesheet" href="/css/lessons.css">    
-    <link rel="stylesheet" href="/css/codeclubcat.css">    
-    <link rel="stylesheet" href="/css/application.css">
-    <link rel="stylesheet" href="/css/style.css">
-
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-  </head>
-  <body class="not-home">
-
-    <div class="row">
-      <div class="twelve columns">
-
-        <header class="row header" role="banner">
-          <nav class="twelve columns navigation" role="navigation" id="nav">
-            <ul class="main-menu">
-              <li class="active">
-                <a href="/">Inici</a>
-              </li>
-              
-             
-              <li >
-                <a href="/material">Materials</a>
-              </li>
-             
-              <li >
-                <a href="/consells">Què és això?</a>
-              </li>
-              <li >
-                <a href="/consells/creant-un-club.html">Com engegar un club?</a>
-              </li>
-              <li >
-                <a href="/contacte">Contacte</a>
-              </li>
-            </ul>
-          </nav>
-
-          <hgroup class="twelve columns">
-            <h1 id="logo">
-              <a href="/">
-              <img src="/img/logo.png"
-                   alt="Code Club World"
-                   onerror="this.onerror=null; this.src='/img/logo.png'"
-                   id="logo"
-                   width="260">
-              </a>
-            </h1>
-            <h2 class="nine centered columns">Una xarxa mundial de clubs de programació d'ordinadors per a nens</h2>
-          </hgroup>
-        </header>
-
-
-      </div>
-    </div>
-
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
 <title>Màquina de fruita</title>
@@ -112,55 +33,32 @@
    <h1>Màquina de fruita</h1>
   
 
+# new section
+
 <p><h2>Introduccció:</h2>
 
-<p>Aquest és un joc semblant a les màquines escurabutxaques. Consisteix en anar canviant el vestit de tres personatges fins que els tres mostrin la mateixa imatge. </p>
 
+# figures 
 
     <br>
       <img src="intro.png" align='middle'>
     <br><br><br>
 
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script1.png">
+       </div>
+     </div> 
+    </
+
+# step class
 
 <div class="step">
 <strong>PAS 1:</strong> Crear un personatge que canviï de vestit
 </div>
 <br>
 
-<p><strong>Anem a importar imatges diferents per el nostre joc:</strong></p>
-
-<ul>
-<li><p>Comenceu un projecte d'Scratch nou. Esborreu el gat clicant amb el botó de la dreta i triant <strong>Esborra.</strong></p></li>
-<li><p>Importeu un nou personatge.</p></li>
-<li><p>Trieu qualsevol imatge de qualsevol carpeta. Nosaltres hem utilitzat <strong>coses/bananas</strong>, però podeu triar qualsevol imatge que us agradi.</p></li>
-<li><p>Cliqueu la pestanya Vestits i importeu-ne dos més pel mateix personatge (nosaltres vam utilitzar <strong>coses/watermelon-1</strong> i <strong>coses/apple</strong>, però podeu utilitzar el que us vingui més de gust).</p></li>
-</ul>
-
-<p><strong>Ara que tenim els vestits, volem que el personatge se'ls vagi canviant.</strong></p>
-
-<div class="step">
-<strong>PAS 2:</strong> Fer que les imatges vagin canviant
-</div>
-<br>
-
-<ul>
-<li><p>Cliqueu la pestanya de <strong>Programes.</strong></p></li>
-<li><p>Seleccioneu la paleta <strong>Esdeveniments</strong> i arrossegueu el bloc  <strong>quan la bandera verda es premi</strong>. El que poseu a continuació passarà cada vegada que el jugador premi la bandera verda.</p></li>
-<li><p>A continuació, aneu a la paleta de <strong>Control</strong> i afegiu el bloc <strong>per sempre</strong>.</p></li>
-<li><p>Cliqueu la bandera verda a dalt a la dreta. Fixeu-vos que ara apareix una petita ombra blanca al voltant del nostre programa. Això significa que  el nostre programa està corrent perquè hem clicat la bandera verda.</p></li>
-<li><p>cliqueu la paleta <strong>Aspecte</strong> i arrossegueu el bloc <strong>següent vestit</strong>.</p></li>
-<li><p>Com alentiríem el programa perquè no canvii de vestit tant ràpidament? Cliqueu de nou a la paleta de <strong>Control</strong> i arrossegueu el bloc <strong>espera 1 segons</strong>.</p></li>
-<li><p>Ajusteu el temps fins que el canvi sigui un pas més ràpid (normalment, un temps de 0.1s és suficient). Què passaria si no haguéssim posat el bloc espera?</p></li>
-
-
-<div class="row">
-      <div class="bit">
-        <div class="image">
-          <img src="script1.png">
-       </div>
-     </div> 
-</div>
-</ul>
 
 
 
@@ -297,121 +195,4 @@ No us oblideu de compartir-lo amb la vostra família i amics!</p>
 <p>Quan engegueu el joc just després de carregar-lo, tots els personatges mostren el mateix vestit i canvien a l'uníson. Com ho faríeu per tal que els personatges canviessin de vestit aleatòriament quan premeu bandera verda? Pista: proveu d'agafar un vestit a l'atzar per a cada personatge un cop hagi començat el joc.</p>
 
 </body>
-</html>
-
-
-
-    <footer class="footer" role="contentinfo">
-      <div class="row"><hr></div>
-      <div class="row">
-<!--
-        <div class="three columns">
-          <div class="wrap">
-            <h4>Donate</h4>
-
-            <img src="/img/money.png" />
-
-            <p>
-              Help sustain the work of Code Club World.org
-            </p>
-
-            <a class="button secondary round" href="/support-us">Make a donation</a>
-          </div>
-        </div>
-
-        <div class="three columns">
-          <div class="wrap">
-            <h4>Shop</h4>
-
-            <img src="/img/shirts.png" />
-
-            <p>
-              Wear a Code Club World t-shirt in your own language!
-            </p>
-
-            <a class="button secondary round" href="http://codeclubworld.spreadshirt.co.uk/">Buy a t-shirt</a>
-          </div>
-        </div>
-
-        <div class="three columns">
-          <div class="wrap">
-            <h4>Mailing list</h4>
-
-            <img src="/img/mailing-list.png" />
-
-            <p>
-              Keep up to date with the latest news from Code Club World.org
-            </p>
-
-            <a class="button secondary round" href="http://codeclub.us4.list-manage1.com/subscribe?u=5a4a6510fb81ffcca91d938de&id=b98b3f8beb">Sign up to the mailing list</a>
-          </div>
-        </div>
--->
-        <div class="twelve columns">
-          <div class="row">
-            <div class="four columns">
-              <a href="https://twitter.com/codeclubcat" class="social-link">
-                  <img alt="Twitter" height="35" src="http://www.codeclub.org.uk/system/files/032013/514af7939d200f0f4000001a/icon/twitter.png" width="35"> Twitter
-                </a><a href="https://www.facebook.com/codeclubcat" class="social-link">
-                  <img alt="Facebook" height="35" src="http://www.codeclub.org.uk/system/files/032013/514af7919d200f0f300000c0/icon/facebook.png" width="35"> Facebook
-                </a>
-              
-            </div>
-          <div class="three columns">
-              <div class="wrap">
-                <p class="useful-links">
-                   Enllaços útils<br>
-                  <a href="http://scratch.mit.edu/scratch_1.4/">Baixeu-vos l'Scratch 1.4</a><br>
-                  <a href="https://github.com/codeclubcat">Code Club Catalunya al Github</a><br>
-                  <!--<a href="http://codeclub-assets.s3.amazonaws.com/public/CodeClubWorld-Terms-of-Service-v1-clean.pdf">Terms of Service</a><br>-->
-                  <a href="http://codeclub.org.uk/">Code Club UK</a><br>
-                  <a href="http://codeclubworld.org/">Code Club World</a><br>
-                </p>
-              </div>
-              
-          </div>
-
-         
-        </div>
-
-         
-        </div>
-
-
-      </div>
-    
-      <div class="row">
-        <p class="legal">
-          Code Club World és una associació sense ànim de lucre amb l'objectiu per donar la oportunitat a tots els nens a aprendre a programar.  
-	  Companyia registrada al Regne Unit amb el número 08140247 &copy; 2013<br> 
-	  Totes les il.lustracions són d'en  <a href="http://www.timothywinchester.com/">Timothy Winchester</a> i utilitzades sota la seva autorització.
-          Web original creada per <a href="http://withassociates.com">With Associates</a>.
-          API desenvolupada per  <a href="http://se.am/">Phil Howell</a>.
-        </p>
-      </div>
-    </footer>
-
- 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-40511561-2', 'codeclubcat.org');
-  ga('send', 'pageview');
-
-</script>
- 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/parsley.js/1.1.16/parsley.min.js"></script>
-    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="/js/libs/infobox.js"></script>
-    <script src="/js/libs/jquery.serialize-hash.js"></script>
-    <script src="/js/libs/marker-clusterer.js"></script>
-    <script src="/js/app.js"></script>
-    <script src="/js/app-cat.js"></script>
-
-  </body>
 </html>
