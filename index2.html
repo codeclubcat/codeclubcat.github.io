@@ -1,0 +1,225 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Utf-8 encoding. Potser només es nececessari -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+<div class="row introduction">
+  <div class="seven columns">
+    <h2>La nostra missió</h2>
+
+    <p><b>La missió del codeclubcat.org</b> és poder oferir a cada infant de Catalunya la possibilitat d'aprendre a programar ordinadors. Disposem d'una sèrie de materials didàctics que han estat pensats amb l'objectiu de que els nens puguin aprendre els fonaments de la programació a través de l'estimulació de la seva creativitat. Aquestes activitats es duen a terme en horari extra-escolar, en forma de "clubs de codi" o "codeclubs" i estan totalment organitzades i gestionades per voluntaris.
+  </div>
+
+  <div class="five columns">
+    <h2>Ajudeu-nos</h2>
+    <p> Ajudeu-nos a fer que la comunitat CodeClub creixi a Catalunya. Necessitem voluntaris amb coneixements informàtics que vulguin engegar nous clubs, dissenyadors gràfics, il·lustradors, programadors de pàgines webs, divulgadors, hackers, etcètera...</p>
+    <p><a href="/contacte" class="button primary round">Ajudeu-nos</a></p>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+<div class="row how-it-works">
+  <div class="twelve columns">
+
+    <div class="row">
+      <div class="ten columns">
+        <h2>Com funcionen els Code Clubs?</h2>
+
+        <p> El funcionament dels Code Clubs és molt senzill:  durant una hora a la setmana, els voluntaris s'acosten fins a l'escola del seu barri (o a la més propera a la feina, etcètera...) i porten a terme tallers de programació als nens de l'escola seguint els materials didàctics que hem preparat. </p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="/img/club-steps/1.png">
+        </div>
+        <h4>Voluntaris</h4>
+        <div class="caption"><p> Un voluntari que sàpiga programar</p></div>
+	
+      </div>
+      <div class="bit">
+        <div class="image">
+          <img src="/img/club-steps/2.png">
+        </div>
+        <h4>Projectes</h4>
+        <div class="caption"><p> Projectes</p></div>
+      </div>
+      <div class="bit">
+        <div class="image">
+          <img src="/img/club-steps/3.png">
+        </div>
+        <h4>Lloc de reunió</h4>
+        <div class="caption"><p> Escoles, biblioteques, ... </p></div>
+      </div>
+      <div class="bit">
+        <div class="image">
+          <img src="/img/club-steps/4.png">
+        </div>
+        <h4>Nens</h4>
+        <div class="caption"><p> que vulguin aprendre a programar </p></div>
+      </div>
+      <div class="bit">
+	<div class="image">
+	  <br><br>
+          <img src="/img/logo-150.png">
+	</div>
+        <p><br><a href="/consells/creant-un-club.html" class="button secondary round">Voleu saber-ne més?</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+<div class="row">
+  <div class="twelve columns">
+
+    <div class="white panel map-wrapper">
+      <div class="row">
+        <div class="ten columns club-count">
+          <h2>Já som  <span class="counter"></span> <span class="counter-after"> clubs per tot el món!</span></h2>
+        </div>
+        <div class="two columns start-club">
+          <a href="/consells/creant-un-club.html"  class="button primary round">Engegueu un club</a>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <div class="panel" id="register" style="display:none;">
+
+      <form novalidate>
+
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Engegueu el vostre club i uniu-vos a nosaltres!</h3>
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="nine columns">
+            <div class="row">
+
+              <div class="six columns">
+                <div class="custom-placeholder required">
+                  <label for="venue[name]">Nom del Club</label>
+                  <input class="medium input-text" name="venue[name]" id="venue[name]" type="text" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label>Pàgina web del club</label>
+                  <input class="medium input-text" type="text" name="venue[website]" data-trigger="change">
+                </div>
+
+                <p>El nom del club es mostrarà al mapa.</p>
+
+                <br class="separator">
+
+                <div class="custom-placeholder">
+                  <label for="venue[address_1]">Direcció del club 1</label>
+                  <input class="medium input-text" name="venue[address_1]" id="venue[address_1]" type="text" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[address_2]">Direcció del club  2</label>
+                  <input class="medium input-text" name="venue[address_2]" id="venue[address_2]" type="text">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[region]">Província</label>
+                  <input class="medium input-text" name="venue[region]" id="venue[region]" type="text">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[city]">Ciutat o Poble</label>
+                  <input class="medium input-text" name="venue[city]" id="venue[city]" type="text">
+                </div>
+
+                <p>O La direcció del lloc on es duran a terme les activitats no serà visible al mapa, simplement serà utilitzada per localitzar el club al mapa. programação no mapa.
+               </p>
+
+                <br class="separator">
+
+                <div class="custom-placeholder required">
+                  <label>País</label>
+                  {% include country_select.html %}
+                </div>
+              </div>
+
+              <div class="six columns">
+                <div class="custom-placeholder required">
+                  <label for="contact[name]"> Nom</label>
+                  <input class="medium input-text" type="text" name="contact[name]" id="contact[name]" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder required">
+                  <label for="contact[email]">Direcció de correu electrònic</label>
+                  <input class="medium input-text input-email" type="email" name="contact[email]" id="contact[email]" data-trigger="change" required="required">
+                </div>
+
+                <p class="mini-notice">La vostra direcció de correu no serà visible</p>
+
+                <div class="custom-placeholder">
+                  <label for="contact[skype]">Nom d'usuari d'Skype</label>
+                  <input class="medium input-text" type="text" name="contact[skype]" id="contact[skype]">
+                </div>
+
+                <p>Creeu un compte d'Skype pel vostre club de programació per poder comunicar-vos amb altres clubs
+		   Aquesta informació no serà visible al mapa.</p>
+
+                <label id="terms-and-conditions">
+                  <input type="checkbox" name="contact[agreed]" value="1" required="required" data-error-message="You must agree to the terms and conditions to continue.">
+                  <strong>He llegir i accepto <a href="http://codeclub-assets.s3.amazonaws.com/public/CodeClubWorld-Terms-of-Service-v1-clean.pdf">els termes i condicions </a></strong>
+                </label>
+
+                <button type="submit" class="button primary roundAo cadastrar seu clube você terá acesso a certificados, pôsteres e modelos de crachás, para completar o material do seu clube.</p>" id="create-a-club">Crie um clube</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="three columns">
+            <p><strong>Perquè registrar-se?</strong></p>
+            <p> El fet de registrar el club us dóna accés a certificats, plantilles de medalles i pòsters que us seran molt útils al vostre club.</p>
+            <img src="/img/robots/giddy.png" class="giddy" />
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="ten columns">
+    <h2>Materials didàctics</h2>
+
+    <p> La nostra intenció és anar creant nous cursos i activitats. A cada nou curs, els nens aniran aprenent nous conceptes mentre utilitzen la seva imaginació per resoldre els reptes proposats a cada projecte. Durant els dos primers cursos, utilitzarem el programari <a href="http://scratch.mit.edu">Scratch</a> per introduir els conceptes més elementals de la programació. A partir d'aquí, durant el tercer curs s'introduiran conceptes bàsics de la programació web amb <a href="http://ca.wikipedia.org/wiki/HTML">HTML</a> i <a href="http://ca.wikipedia.org/wiki/CSS">CSS</a>. Durant el quart curs ampliarem tots els conceptes anteriors a través d'un llenguatge de programació com <a href="http://python.org">Python</a>, i així successivament. 
+ 
+    </p>
+    <br>
+  </div>
+</div>
+

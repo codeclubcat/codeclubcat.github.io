@@ -1,4 +1,9 @@
-name: CodeClubCat
+name: codeclubcat
+authors:
+	sergi:
+		name: Sergi Valverde
+	mireia:
+		name: Mireia Dosil
 markdown: redcarpet
 pygments: true
 paginate: 5

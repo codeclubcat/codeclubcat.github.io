@@ -1,0 +1,392 @@
+---
+layout: lesson
+title: Home
+---
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+<title>Caixa de pintures</title>
+
+</head>
+
+<body>
+
+
+<div class="row">
+  <div class="ten columns"><hr></div>
+</div>
+
+
+<div class="row">
+  <div class="ten columns">
+    <p><h3>Nivell 3</h3></p>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="nine columns">
+    <h1>Caixa de pintures</h1>
+    <br />
+
+
+<h2>Introducció</h2>
+
+<p>Avui construirem una eina per dibuixar. La podreu fer servir per pintar, canviar de color, netejar la pantalla, estampar, i moltes més coses!</p>
+
+    <br>
+      <img src="intro.png" align='middle'>
+    <br><br><br>
+
+
+<div class="step">
+<strong>PAS 1:</strong> Arrossegar i dibuixar
+</div>
+<br>
+
+<p>Començarem amb un llapis que dibuixa quan l'arrossegueu per l'Escenari.</p>
+
+<ol>
+<li>Comenceu un projecte nou. Elimineu el gat (premeu el botó dret damunt del gat i llavors <strong>esborra</strong>)</li>
+<li>Descarregueu-vos al vostre ordinador la carpeta <a href="/materials/Trimestre1/caixa_pintures/recursos.zip">recursos</a>. Utiltizarem els recursos externs que conté per crear la vostra caixa de pintures </li>
+<li>Seleccioneu l'<strong>Escenari</strong> i llavors la pestanya <strong>Fons</strong>. Importeu el fons <strong>indoors/chalkboard</strong>.</li>
+<li>Creeu un nou personatge que es digui <strong>llapis</strong>, usant el recurs de la carpeta <strong>recursos/llapis-verd.</strong></li>
+<li>Canvieu a la pestanya <strong>vestits</strong>, cliqueu <strong>Edita</strong> per aquest vestit, i feu que el centre de la imatge sigui a la punta del llapis. Per fer-ho, cliqueu <strong>Fixa el centre del vestit</strong> i arrossegueu les línies fins que passin per la punta.</li>
+<li>Feu que el llapis segueixi el ratolí per tot l'escenari utilitzant els blocs <strong>per sempre</strong> i <strong>vés a</strong>.</li>
+
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script1.png">
+       </div>
+     </div> 
+    </div>
+
+
+<p><strong>Ara el que volem és fer servir aquest personatge com un llapis de veritat.</strong> Si mireu dins la secció <strong>llapis</strong>, hi veureu diversos blocs per controlar una eina de dibuix. Els que ens interessen ara són <strong>baixa el llapis</strong> i <strong>puja el llapis</strong></p>
+
+<li>Controlarem el llapis amb el ratolí: quan el botó del ratolí estigui premut, el llapis "tocarà el paper" i quan no ho estigui, el llapis estarà aixecat. Una manera de fer-ho és amb un bloc <strong>si… si no</strong> i el bloc <strong>ratolí clicat?</strong>:</li>
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script2.png">
+       </div>
+     </div> 
+    </div>
+
+
+<h2>Proveu el projecte</h2>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<p>Comproveu que el llapis va allà on va el ratolí. Què passa si manteniu el botó del ratolí premut mentre moveu el ratolí? (No cal que us preocupeu encara pel color del llapis).</p>
+
+<li>Ben aviat us trobareu que la pantalla se us omple de gargots. Per netejar la pantalla, podem fer servir el bloc <strong>neteja</strong>.</li>
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script3.png">
+       </div>
+     </div> 
+    </div>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Comproveu que el que havíeu dibuixat desapareix en clicar la bandera verda.</p>
+
+
+<div class="step">
+<strong>PAS 2:</strong> Netejar la pantalla
+</div>
+<br>
+
+<p>Per no haver de parar i reiniciar tot el programa cada cop que volem netejar, afegirem un <strong>botó de neteja</strong> de pantalla. Utilitzarà el mateix bloc <strong>neteja</strong> que hem vist abans.</p>
+
+
+<li>Creeu un nou personatge a partir del vestit de la carpeta recuros <strong>cancelar</strong>. </li>
+<li>Poseu-li un nom. Per exemple <strong>neteja</strong>.</li>
+<li>Posicioneu el personatge a la part baixa de la pantalla, prop del racó esquerre.</li>
+<li>Programeu el personatge amb aquest simple script:</li>
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script4.png">
+       </div>
+     </div> 
+    </div>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Comproveu que el botó neteja sí que neteja la vostra pantalla.</p>
+
+<div class="step">
+<strong>PAS 3:</strong> Canviar el color
+</div>
+<br>
+
+<p>Fins aquí només hem pogut dibuixar línies de color blau. Anem ara a dibuixar amb uns quants colors diferents! Afegirem algunes animacions al peu de la pantalla. Les animacions semblaran botons de colors. Si en cliquem un, canviarà el color de la línia que dibuixem. Per tal de saber quin color tenim activat, el botó canviarà també el color del personatge llapis.</p>
+
+
+<li>Afegiu un personatge nou, que anomenarem <strong>vermell</strong>, a partir del vestit de la carpeta recurosos <strong>/selector-vermell</strong>. </li>
+<li>Poseu-la en algun lloc a la part baixa de la pantalla, prop del <strong>botó neteja</strong>.</li>
+<li>En prémer el personatge vermell, hauria d'enviar a tots el missatge <strong>vermell</strong>.</li>
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script5.png">
+       </div>
+     </div> 
+    </div>
+
+
+<strong>Ja està: això és tot el que fa aquest personatge. El gruix de la feina el farà el llapis.</strong></p>
+
+<p>Al llapis, importeu un nou vestit des de la carpeta recursos  <strong>llapis-vermell</strong>. Feu que el centre del vestit se situi a la punta del llapis, tal com ho heu fet pel vestit verd original.</p>
+
+<li>Afegiu un script nou al llapis. Quan el llapis rebi el missatge <strong>vermell</strong>, hauria de canviar al vestit de llapis vermell i el color amb què pinta hauria de canviar a vermell (utilitzeu el bloc <strong>fixa el color del llapis a</strong>).</li>
+
+<p><strong>Pista:</strong> si cliqueu al quadret de color del bloc <strong>fixa el color del llapis a</strong>, podeu escollir el color exacte del vostre personatge <strong>vermell</strong> amb el recollidor de mostres.</p>
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script6.png">
+       </div>
+     </div> 
+    </div>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Comenceu dibuixant una línia. Cliqueu llavors el selector vermell i dibuixeu una mica més. Canvia de vestit, el llapis? I pinta vermell? I ja pinta des de la punta del llapis? O des d'alguna altra part del llapis?</p>
+
+<li>Repetiu això mateix per als selectors de color blau, groc i verd.</li>
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Comproveu que tots els botons selectors funcionen. Tots ells canvien el vestit al color esperat? Tots ells fan que el llapis dibuixi en el color esperat? Tots ells pinten des de la punta del llapis?</p>
+
+
+<div class="step">
+<strong>PAS 4:</strong> Dibuixar només dins dels límits
+</div>
+<br>
+
+
+<p>Potser ja us heu adonat que es pot pintar per tot l'<strong>Escenari</strong>, fins i tot a les vores. Ara voldríem mantenir els traços només a la part central de l'<strong>Escenari</strong>. Això s'aconsegueix fent que el llapis no pugui sortir de l'àrea de dibuix. La part de color gris clar.</p>
+
+<p>Si ho recordeu, Scratch defineix els punts a partir dels eixos <b>x</b> i <b>y</b> de coordenades. La nostra àrea de dibuix se situa entre els valors 230 i -230 de l'eix x, i els valors 170 i -120 de l'eix y. Aquests valors es poden usar en un bloc <strong>si</strong>, que s'asseguri que el ratolí és dins l'àrea permesa abans de fer-hi anar el llapis.</p>
+
+<p>Per fer-ho, posarem un nou bloc <strong>si</strong> al voltant del bloc <strong>vés a… si</strong> que ja teníem, i dins aquest nou <strong>si</strong> comprovarem la condició següent: <i><b>ratolí y > -120 i ratolí y &lt; 170 i ratolí x > -230 i ratolí x &lt; 230</b></i></p>
+
+<p><strong>Nota</strong>: per construir això us caldran 3 blocs <strong>i</strong>: un per a les dues condicions sobre ratolí x, un altre per les de ratolí y, i finalment un altre per unir-les totes:</p>
+
+<p>Com que no es pot pintar fora de l'àrea de dibuix, podem amagar el llapis al sortir-ne. Per fer-ho, en lloc d'un bloc <strong>si</strong> n'hi posarem un de <strong>si…si no</strong>. En cas que es compleixi la condició, hi posarem una instrucció <strong>mostra</strong>, i en cas que no, <strong>amaga</strong>.</p>
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script7.png">
+       </div>
+     </div> 
+    </div>
+
+ 
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Encara podeu dibuixar dins l'àrea de dibuix? I fora? Què li passa, al llapis, quan sortiu de l'àrea de dibuix i hi torneu a entrar?</p>
+
+<div class="step">
+<strong>PAS 5:</strong> Esborrador
+</div>
+<br>
+
+<p><strong>Pintar línies està bé però a vegades fem algun error que volem esborrar.</strong> Ho farem amb un nou llapis que pinta en gris (el color del fons!).</p>
+
+<p>Afegiu un nou personatge-botó a l'<strong>Escenari</strong> per seleccionar l'esborrador, a partir del vestit <strong>recursos/esborrador</strong>. Feu-lo més petit si cal perquè hi càpiga a la base de la pantalla. Funcionarà com els altres selectors, però enviarà un missatge <strong>ESBORRADOR</strong>.</p>
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script8.png">
+       </div>
+     </div> 
+    </div>
+
+<p>Responent a aquest missatge, el personatge <strong>llapis</strong> canviarà el color de dibuix a gris i el vestit al mateix del botó esborrador (<strong>resources/esborrador</strong>). <strong>Penseu en reposicionar el centre de el personatge també en aquest cas.</strong></p>
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script9.png">
+       </div>
+     </div> 
+    </div>
+
+ 
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Comproveu que l'esborrador elimina les línies dibuixades. Podeu tornar al llapis, un cop heu seleccionat l'esborrador?</p>
+
+<div class="step">
+<strong>PAS 6:</strong> Estampacions
+</div>
+<br>
+
+<p>La propera cosa que podem afegir és una eina d'estampació, per estampar petites imatges al nostre dibuix.</p>
+
+<li>Afegiu un personatge nou, a partir del vestit o imatge que preferiu. Feu-la de la mida dels altres botons que ja hi ha a la base de la pantalla (esborrador, neteja, selectors de color). En clicar aquest personatge, s'enviarà a tots el missatge <strong>ESTAMPA</strong>.</li>
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script10.png">
+       </div>
+     </div> 
+    </div>
+
+<li>A el personatge <strong>llapis</strong>, afegiu el mateix vestit que heu escollit per a l'estampació.</li>
+<li>A el personatge <strong>llapis</strong> hi afegirem una variable, que es dirà <strong>modeLlapis</strong> (només per aquest personatge). La farem servir per recordar si estem pintant o bé estampant.</li>
+<li>També al <strong>llapis</strong>, hi afegirem un script que reaccioni al missatge <strong>ESTAMPA</strong>. Ha de canviar al vestit de l'estampa i posar el <strong>modeLlapis</strong> a <strong>fals</strong>.</li>
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script11.png">
+       </div>
+     </div> 
+    </div>
+
+<li>Canvieu la resposta a la resta de missatges de canvi d'eina (blau,vermell,groc,verd,esborrador) perquè tots posin el <strong>modeLlapis</strong> a <strong>cert</strong>.</li>
+<li>Finalment, allà on hi tenim la instrucció <strong>baixa el llapis</strong>, ara ho farem només si <strong>modeLlapis</strong> està a <strong>cert</strong>, si és <strong>fals</strong>, utilitzarem la instrucció <strong>estampa</strong>. </li>
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script12.png">
+       </div>
+     </div> 
+    </div>
+    </ol>
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Comproveu que l'eina d'estampació funciona. Què passa si torneu a les eines de llapis? Encara funcionen?</p>
+
+<p><strong>Molt ben fet!!! heu completat el projecte bàsic.
+Us atreviu amb uns quants reptes?</strong></p>
+
+
+<h2>Repte 1: Llapis Multicolor</h2>
+
+<p>Ara afegirem un llapis especial que pinta en multicolors. Això no ho podem fer amb els llapis o rotuladors del món real, i per això té la gràcia de mostrar-nos com un ordinador ens permet de fer coses diferents. El secret de com funciona és al bloc de canvi de color de llapis.</p>
+
+<p>Per començar, afegireu el botó per escollir aquesta eina, i el vestit corresponent a el personatge llapis:</p>
+
+<ol>
+<li>Creeu un nou personatge per seleccionar aquest llapis especial i poseu-la amb la resta de selectors a la part baixa de la pantalla. Feu servir el vestit <strong>resources/selector-multicolor</strong> i feu que envii a tots <strong>MULTICOLOR</strong> en ser clicat.</li>
+<li>Afegiu també aquest vestit (<strong>resources/llapis-multicolor</strong>) a el personatge <strong>llapis</strong>.</li>
+</ol>
+
+<p>Fareu un script que canvïi el color de tinta uns quants cops per segon per crear l'efecte Arc de Sant Martí (Nosaltres hem trobat que canviant-lo 5 unitats cada 0.05 segons funciona prou bé, però podeu provar-ho amb altres valors). La tarja Scratch <strong>cronòmetre</strong> mostra com fer que una cosa passi a cada cert interval de temps. Useu un bloc <strong>augmenta 5 el color del llapis</strong> en lloc de <strong>augmenta -1 el temps</strong> dins el bucle.</p>
+
+<p>També us caldrà controlar el bucle perquè només canvii el color quan hi ha seleccionat el llapis multicolor, altrament tots els llapis tindrien el mateix efecte!!! Això es pot controlar amb una nova variable <strong>canviMulticolor</strong> que sigui <strong>cert</strong> per aquest llapis i fals per a la resta d'eines. Cada cop que el llapis respon a un missatge de selecció d'eina s'hauria de posar el valor corresponent a aquesta variable.</p>
+
+<p>Fes servir el que has après per controlar l'efecte multicolor. Els scripts que reaccionen als missatges de selecció de llapis hauran d'actuar sobre dues variables: modeLlapis i canviMulticolor.</p>
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Funciona com esperàveu, el llapis multicolor? Què passa quan torneu a escollir una eina de llapis normal?</p>
+
+
+<h2>Repte 2: Combinacions de tecles</h2>
+
+<p>En lloc d'utilitzar les animacions a la base de l'escenari per seleccionar cada eina, podeu fer servir botons del teclat.
+Per respondre a entrades del teclat, feu server blocs <strong>tecla [] premuda</strong>. Per cada tecla que volgueu fer servir us caldrà un d'aquests blocs, que haurà d'enviar el mateix missatge que estava enviant el selector. Aquests programes s'han d'afegir a l'escenari.</p>
+
+<p>Nosaltres hem fet aquestes dreceres:
+
+<ul>
+   <li> Neteja - n </li>
+   <li> Esborrador - e </li>
+   <li> Llapis vermell - r</li>
+   <li> Llapis blau - b </li>
+   <li> Llapis groc - g </li>
+   <li> Llapis verd - v </li>
+   <li> Llapis multicolor - m </li>
+   <li>Estampar - p </li>
+</ul>
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Totes les tecles seleccionen l'eina que esperàveu? I segueixen funcionant bé, quan les seleccioneu amb el teclat? I els selectors de la part de baix, segueixen funcionant??</p>
+
+
+<h2>Repte 3: Gran i petit</h2>
+
+<p>Una altra cosa que tenen la majoria de kits de dibuix, és la possibilitat de canviar la mida del llapis. Ara la vostra també ho sabrà fer.
+Hi ha una complicació, però: Depenent de si fem servir el llapis o l'estampador, potser haurem de canviar la mida del llapis o el tamany del personatge.</p>
+
+<p>Creeu dos nous personatges selectors: <strong>augmenta</strong> i <strong>redueix</strong>. Podeu fer servir els vestits de Recursos/selector-augmenta i Recursos/selector-redueix i han d'enviar els missatges AUGMENTA i REDUEIX en clicar-los.</p>
+
+<p>El personatge llapis pot respondre a aquests missatges o bé canviant 1 unitat la mida del llapis o bé augmentant 10 unitats la mida del personatge (podeu fer servir un bloc <strong>si  si no</strong>). No us descuideu d'afegir també per aquestes eines una tecla ràpida. Nosaltres hem triat les fletxes amunt i avall.</p>
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Haureu notat que si canvieu la mida de l'estampador, quan canvieu al llapis altre cop es veu d'una mida diferent. Perquè no passi més, haureu de fer que el llapis es posi a mida 100% cada vegada que sigui seleccionat. Així sempre tindrà la mida correcta.</p>
+
+<p>Per fer-ho encaaaaaaaaaara millor, podeu fer que l'estampador "recordi" la mida que tenia abans que seleccionéssiu el llapis, i restaurar aquella mida quan torneu a seleccionar l'estampador. La manera més fàcil de fer-ho és crear una variable <strong>midaEstampador</strong> que s'actualitzi amb el valor de la mida cada vegada que canvii la mida de l'estampador. Quan se seleccioni aquesta eina, es pot fixar la seva mida amb el valor de la variable.</p>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Funciona el control de la mida del llapis?</p>
+
+<p>Què passa quan seleccioneu l'estampador, el canvieu de mida i torneu a seleccionar el llapis?
+DESEU EL PROJECTE</p>
+
+<p><strong>Molt bé, ho heu completat tot, ara ja podem pintar!</strong></p>
+
+<p>Recordeu que podeu compartir el vostre projecte clicant a <strong>Compartir</strong>!</p>
+
+</body>
+</html>

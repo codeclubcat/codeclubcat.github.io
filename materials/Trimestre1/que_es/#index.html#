@@ -1,0 +1,289 @@
+---
+layout: lesson
+title: Home
+---
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+<title>Què és?</title>
+
+</head>
+
+<body>
+
+
+<div class="row">
+  <div class="ten columns"><hr></div>
+</div>
+
+
+<div class="row">
+  <div class="ten columns">
+    <p><h3>Nivell 3</h3></p>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="nine columns">
+    <h1>Què és?</h1>
+    <br />
+
+<p><h2>Introducció</h2></p>
+
+
+Una animació aleatòria apareix a la pissarra completament distorsionada. Haureu d'endevinar què és seleccionant la imatge correcta. Quant més ràpid l'endevineu, més alta serà la vostra puntuació!</p>
+
+
+    <br>
+    <img src="intro.png" align='middle'>
+    <br><br><br><br><br>
+
+<div class="step">
+<strong>PAS 1:</strong> Feu aparèixer personatges diferents a la pissarra
+</div>
+<br>
+
+<p>Volem fer aparèixer uns quants objectes diferents a la pissarra.</p>
+
+<ol>
+<li>Creeu un nou projecte d'Scratch i suprimiu el personatge Fèlix.</li>
+<li>Feu clic a l'escenari i després a la pestanya Fons. Importeu el fons interiors/chalkboard (pissarra). </li>
+<li>Importeu un nou personatge i doneu-li el nom que volgueu. Podeu escollir-ne algun de la carpeta 'coses'.</li>
+<li>Col.loqueu-lo al centre de la pantalla. Feu-lo més gran o més petit si us cal.</li>
+<li>Feu clic a la pestanya de vestits i importeu quatre personatges més. Poden ser el que volgueu! I ara, fem que aparegui una imatge aleatòria. </li>
+<li>Creeu aquest programa:</li>
+
+
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script1.png">
+       </div>
+     </div> 
+</div>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>L´animació canvia de vestit?</p>
+
+<p><strong>Feu-hi clic més vegades.</strong>
+Obteniu vertits diferents cada vegada? A vegades obtindreu el mateix vestit consecutivament, no us amoineu: és normal. Noteu també que el personatge parpelleja quan canvia de vestit. Ho arreglarem en el pas següent.</p>
+
+
+
+<div class="step">
+<strong>PAS 2:</strong> Distorsioneu les imatges
+</div>
+<br>
+
+<p><strong>A continuació distorsionarem les imatges quan apareguin i les corregirem al cap d'uns segons.</strong></p>
+
+<p>Emprarem una variable de puntuació (puntuació) per controlar el grau de distorsió. Si la puntuació és elevada, hi haurà molta distorsió. La distorsió disminuirà, quan ho faci la puntuació. La variable funcionarà també com a cronòmetre, de la mateixa manera que ho fa la variable del bloc de Sensors <strong>cronòmetre.</strong></p>
+
+<li><p>Al bloc de Dades, creeu una nova variable i anomeneu-la <strong>puntuació</strong>. </p></li>
+<li><p>Modifiqueu el programa així:</p></li>
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script2.png">
+       </div>
+     </div> 
+    </div>
+
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Apareix una imatge aleatòria i distorsionada?</p>
+
+<p>El nivell de distorsió disminueix gradualment?</p>
+
+<p>La variable puntuació disminueix quan la imatge redueix el grau de distorsió?</p>
+
+<p>Quan puntuació arriba a zero, observeu una imatge sense cap distorsió?</p>
+
+<p>Cada cop que premeu la bandera verda, observeu una imatge diferent?</p>
+
+<h2>Per saber-ne més</h2>
+
+<p><strong>Proveu de canviar el valor inicial de la variable puntuació i quina quantitat canvia.</strong> Com afecten aquests canvis a la imatge? És més fàcil o més difícil d'endevinar què és?</p>
+
+<p><strong>Proveu efectes gràfics diferents enlloc de pixelar.</strong> Noteu com varia el grau de dificultat per endevinar el personatge.</p>
+
+
+<div class="step">
+<strong>PAS 3:</strong> Permeteu al jugador endevinar 
+</div>
+<br>
+
+<p>Fins ara hem fet aparèixer gradualment la nostra imatge aleatòria, mentre la puntuació decreixia amb el temps, però com ho hem de fer per poder guanyar? Afegirem algunes animacions al final de la pantalla de manera que el jugador pugui seleccionar-los. Si premen la imatge correcta, guanyen al joc, sinó, l'animació desapareixerà i el joc continuarà.</p>
+
+<p>Primer, és necessari conèixer quina és la resposta correcta.</p>
+
+<li>Creeu una variable anomenada <strong>resposta</strong>. Assegureu-vos que és vàlida per a totes les animacions.</li>
+<li>Modifiqueu el programa que heu escrit per emmagatzemar la resposta correcta:</li>
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script3.png">
+       </div>
+     </div> 
+    </div>
+
+
+<strong>Ara afegirem els personatges perquè el jugador els pugui prémer.</strong></p>
+
+
+<li>Dupliqueu el personatge principal i arrosegueu el duplicat fins a la cantonada esquerra i a baix de l'escenari.</li>
+<li>Anomeneu-lo <strong>resposta1.</strong> (Així serà més fàcil referir-s´hi.)</li>
+<li>Elimineu el programa de <strong>resposta1</strong> i tots els seus vestits excepte el primer.</li>
+<li>Repetiu els tres últims passos, anomenant <strong>resposta2</strong> el nou personatge i elimineu el programa i tots els seus vestits excepte el segon. </li>
+<li>Repetiu-ho tres cops més anomenant <strong>resposta3</strong>, <strong>resposta4</strong> i <strong>resposta5.</strong>
+Hauríeu d'obtenir una fila de cinc personatges 'resposta' al final de l'escenari, cadascun mostrant un vestit diferent al del personatge principal. <strong>Cap d'aquests personatges hauria de tenir associat un programa.</strong></li>
+
+
+<p>Arribats aquí, voldrem que quan fem clic en cadascun dels personatges, aquests facin alguna cosa en funció de si la resposta és correcta o no.</p>
+
+<ol>
+<li>Afegiu aquest programa al personatge resposta1:</li>
+</ol>
+
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script4.png">
+       </div>
+     </div> 
+    </div>
+
+
+<li>Arrossega aquest programa a cadascun dels altres personatges resposta. <strong>A cada personatge, canvia 1 per 2, 3, etc.</strong> </li>
+<li>Ara cal afegir alguna cosa que respongui al missatge 'encert'. Torneu al personatge, el que està a la pissarra i afegiu-li aquest programa: </li>
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script5.png">
+       </div>
+     </div> 
+    </div>
+
+<div class="test_project">Proveu el projecte</div>
+<br>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+
+<p>Quan proveu el joc, podeu emprar el camp de l'escenari <strong>resposta monitor</strong>  per escriure quina és la resposta correcta. Això us pot ajudar mentre feu proves.</p>
+
+<p>Què succeeix quan feu clic a <strong>resposta correcta</strong>?</p>
+
+<p>Què succeeix quan feu clic a <strong>resposta incorrecta</strong>?</p>
+
+<p>Què li succeeix a <strong>resposta incorrecta</strong> quan comenceu una nova partida?</p>
+
+<p>Aquesta prova presenta dos problemes. Primer, les respostes errònies no reapareixen al començar una nova partida. Segon, la puntuació continua disminuint un cop s'ha especificat la resposta correcta.</p>
+
+<li>Per solucionar el primer problema, afegeix un programa a les cinc animacions que mostri el personatge al prémer la bandera</li>
+
+<p>Per solucionar el segon, haureu de parar la repetició de  <strong>què és</strong> fins que el jugador faci clic a la resposta correcta. Per fer-ho emprarem una nova variable. Li donarem el valor 0 quan comenci la partida i li donarem el valor 1 quan el jugador guanyi. Farem que la repetició 'repeteix fins' finalitzi quan la puntuació arribi a 0 o bé quan <strong>encert?</strong> s'assigni a 1</p>
+
+<li>Creeu una nova variable i anomeneu-la encertat?</li>
+<li>Modifiqueu els programes de la següent manera:</li>
+
+
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script6.png">
+       </div>
+     </div> 
+    </div>
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="script7.png">
+       </div>
+     </div> 
+    </div>
+
+<p><strong>Felicitats! Heu finalitzat el joc!</strong></p>
+</ol>
+<p>Per saber-ne més, intenteu els següents reptes!</p>
+
+
+<h2>Repte 1: Feu que el joc sigui més fàcil o més difícil</h2>
+
+<p>Modifiqueu el grau de dificultat del joc.</p>
+
+<ul>
+<li>Intenteu modificar la velocitat amb la que la imatge es mostra sense distorsionar i com de ràpid disminueix la puntuació.</li>
+<li>Intenteu modificar els tipus de distorsió aplicades a la imatge.</li>
+<li>Intenteu modificar les imatges per fer-les més semblants o diferents entre elles. Si proveu aquesta part, no us oblideu de modificar la resposta (resposta) de cada vestit.</li>
+</ul>
+
+<h2>Repte 2: Distorsioneu la imatge de forma diferent a cada partida</h2>
+
+<p>Fins ara cada jugada utilitza el mateix tipus de distorsió. En el pas 2, heu provat diferents tipus de distorsions que funcionaben prou bé.</p>
+
+<p>Trobeu distorsions diferents que funcionin bé.</p>
+
+<p>Modifiqueu el joc de manera que cada partida utilitzi una distorsió diferent.</p>
+
+<p><strong>Ajut:</strong> Intenteu crear una nova variable, anomenada 
+<strong>distorsió</strong>. Fixeu-li un valor a l'atzar al començar la partida. Utilitzeu blocs condicionals dins el bucle per tal d'aplicar la distorsió que correspongui.</p>
+
+<h2>Repte 3: Feu que el joc disposi de varis intents</h2>
+
+<p>Fins ara cada joc és independent. Canvieu-lo de manera que tingui varis intents. Per exemple, feu que tingui tres intents de manera que el jugador hagi d'endevinar tres imatges i pugui aconseguir fins a 300 punts.</p>
+
+<p><strong>Ajut:</strong> Necessitareu una variable extra per emmagatzemar la puntuació total dels 3 intents. La podeu anomenar <b>puntuacio_partida</b>. També necesitareu un bucle que passi pels diferents intents.</p>
+
+<p><strong>Ajut:</strong> Haureu de fer reaparèixer de nou totes les imatges de les respostes errònies al principi de cada intent. Podeu enviar el missatge reset, per exemple a través de la instrucció <strong>envia a tots</strong>.</p>
+
+<h2>Repte 4: Incrementeu la dificultat de cada intent</h2>
+
+<p>Quan el jugador avanci pels diferents intents, incrementeu-ne el nivell de dificultat, per exemple modificant-ne els efectes de distorsió.</p>
+
+<p>Cada intent ha de puntuar el mateix? Hi ha alguna manera d'obtenir més punts quan s'endevini més ràpidament la resposta en etapes més difícils? Quina?</p>
+
+<p><strong>Ajut:</strong> Com sabreu en quin intent us trobeu? Com podreu emprar aquesta informació per modificar el nivell de dificultat i la puntuació? </p>
+
+<h2>Repte 5: Continueu el joc fins que el jugador cometi un error</h2>
+
+<p>Enlloc d'assignar un nombre finit d'intents, feu que el joc continui fins que el jugador s'equivoqui. Això només tindrà sentit si el joc es complica a mesura que avancen  els intents.</p>
+
+<h2>Repte 6: Varieu la dificultat del joc en funció de com de bé ho faci el jugador</h2>  
+
+<p>Enlloc d'incrementar sempre la dificultat, feu que el grau de dificultat s'ajusti al nivell de jugador. Si endevina la imatge ràpidament, feu que el següent intent sigui més difícil. Si, al contrari, el jugador no l'encerta o triga molt a fer-ho, feu el següent intent més senzill.</p>
+
+<p>Aquesta idea només funcionarà si no sumeu les puntuacions a través dels intents.</p>
+
+<h2>Repte 7: Guardeu la puntuació més alta</h2>
+
+<p>Si algú aconsegueix millorar la puntuació més alta assolida fins llavors, demaneu-li el nom al jugador i actualitzeu la millor puntuació. Asegureu-vos que la puntuació més alta i el nom del jugador que l´ha aconseguit es mostrin a la pantalla.</p>
+
+<h2>Repte 8: Penalitzeu les respostes errònies</h2>
+
+<p>Fins ara no hi ha cap penalització si el jugador selecciona totes les animacions tan de pressa com pugui. Modifiqueu el joc de manera que la puntuació disminueixi una mica cada vegada que es premi un resposta incorrecta.</p>
+
+<p>Considereu que el joc millora?</p>
+
+<p><strong>Felicitats! Heu finalitzat el joc i ara a gaudir-ne!</strong>
+No oblideu que podeu compartir-lo amb els amics i la familia fent clic al botó <strong>Comparteix</strong> a la barra del menú.</p>
+
+</body>
+</html>
