@@ -6,4 +6,6 @@ tags: test linux updates
 author: Sergi Valverde
 ---
 	
-Simplemenet hola
+Simplemenet hola com estàs Mireia?
+
+

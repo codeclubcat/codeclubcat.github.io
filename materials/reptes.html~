@@ -1,0 +1,34 @@
+---
+layout: default
+title: Material
+---
+
+<!-- Utf-8 encoding. Potser només es nececessari -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<div class="row">
+<div class="eight columns">
+<h1> Primer Curs</h1>
+
+<h2> Introducció i recomanacions </h2>
+<ul>
+  <li><a href="/materials/Trimestre1/recomanacions/funcionament.html"> Proposta de funcionament dels tallers </a></li>
+<li><a href="/materials/Trimestre1/introduccio/introduccio.html"> Introducció a l'entorn Scratch </a></li>
+</ul>
+
+<h2> Projectes </h2>
+<ol>
+<li><a href="/materials/Trimestre1/felix-simple/index.html"> Fèlix i Herbert </a></li>
+<li><a href="/materials/Trimestre1/caceu-la-bruixa/index.html"> Caça la bruixa </a></li>
+<li><a href="/materials/Trimestre1/focs-artificials/index.html"> Focs artificials </a></li>
+<li><a href="/materials/Trimestre1/maquina_fruita/Maquina_de_fruita.html"> Màquina de fruita </a></li>
+<li><a href="/materials/Trimestre1/menja-peixos/index.html"> Menja peixos </a></li>
+<li><a href="/materials/Trimestre1/cursa_pel_desert/index.html"> Cursa pel desert </a></li>
+<li><a href="/materials/Trimestre1/que_es/index.html"> Què és? </a></li>
+<li><a href="/materials/Trimestre1/caixa_pintures/index.html"> Caixa de pintures </a></li>
+<li><a href="/materials/Trimestre1"> Construïu el vostre joc</a></li>
+
+
+
+
+
