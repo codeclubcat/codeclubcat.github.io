@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Code Club Catalunya | Som el CodeClub de Catalunya, Hola! :)</title>
+    <title>Code Club Catalunya | Hola! :)</title>
 <meta property="og:description" content="Una xarxa de clubs de programació d'ordinadors per a nens">
 
     <meta name="description" content="Una xarxa de clubs de programació d'ordinadors per a nens">
@@ -86,15 +86,66 @@
       </div>
     </div>
 
-    <div class="row">
-  <div class="eight columns">
+    <!-- ***************************************************************************************
+     static blog using Jekyll. we have also added two columns to split 
+     the content and the additional information such as the categories and recent posts.
+     Sergi Valverde: sergi@codeclubcat.org
+     26/03/14
+     ***************************************************************************************
+-->
+
+<div id="content">
+
+  <!-- show contents-->
+
+  <div id="left">
     <!-- This loops through the paginated posts -->
     
-    <h1><a href="/blog/2014/02/21/first_test.html">Hola CodeClub2!</a></h1>
-    Escrit per:  <b><span class="author">sergi</span></b> 
-    &nbsp;&nbsp;&nbsp;  <span class="date"> 21/02/2014 </span>
-    &nbsp;&nbsp;&nbsp;  Categories: <span class="tags"> updates </span>
+    <h1><a href="/blog/2014/03/25/criptografia-per-a-infants.html">Criptografia per a infants</a></h1>
+    <!-- header information -->
+    <b>Escrit per:</b>  <span class="author">sergi</span> 
+    &nbsp;&nbsp;&nbsp;  <span class="date"> 25/03/2014 </span>
+    &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   reptes,   competències,   mates, </span>
 
+    <!-- show the contents -->
+    <div class="content">
+      <br/>
+      <br/>
+      
+<p>Aquesta setmana, els alumnes de 5è i 6è curs del CodeClub de Besalú s’han trobat amb una sorpresa quan han arribat a la sala d’ordinadors. Resulta que un dia han deixat de ser alumnes de primària per passar a ser experts ciberespies que es dediquen a desxifrar missatges secrets provinents d’uns pirates informàtics que tenen la intenció de robar un banc molt important.</p>
+
+<p><img src="http://localhost:4000/blog/images_blog/hackers_scaled.png" alt="perill" /></p>
+
+<p>L’objectiu d’aquests joves ciberespies és desxifrar una sèrie de missatges que s’han interceptat per la xarxa i que s’està segur que contenen informació molt vàlida de quan serà el cop al banc. S’ha informat als espies que s’està segur que els missatges s’han codificat utilitzant el <a href="http://en.wikipedia.org/wiki/Caesar_cipher">xifratge del Cèsar</a>.</p>
+
+<p>Aquest mètode de xifratge deu el seu nom degut a que va ser àmpliament utilitzat per l’emperador Juli Cèsar per comunicar-se secretament amb els seus generals al front. El sistema consisteix en una translació de les lletres de l’abecedari, on La clau secreta és el nombre de lletres rotades entre l’emissor i el receptor del missatge.</p>
+
+    </div>
+    <br />
+    
+    <h1><a href="/blog/2014/02/23/testtest.html">Test nous</a></h1>
+    <!-- header information -->
+    <b>Escrit per:</b>  <span class="author">Sergi Valverde</span> 
+    &nbsp;&nbsp;&nbsp;  <span class="date"> 23/02/2014 </span>
+    &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   test,   linux,   updates, </span>
+
+    <!-- show the contents -->
+    <div class="content">
+      <br/>
+      <br/>
+      
+<p>Simplemenet hola com estàs Mireia?</p>
+
+    </div>
+    <br />
+    
+    <h1><a href="/blog/2014/02/21/first_test.html">Hola CodeClub2!</a></h1>
+    <!-- header information -->
+    <b>Escrit per:</b>  <span class="author">sergi</span> 
+    &nbsp;&nbsp;&nbsp;  <span class="date"> 21/02/2014 </span>
+    &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   updates, </span>
+
+    <!-- show the contents -->
     <div class="content">
       <br/>
       <br/>
@@ -105,50 +156,28 @@
 </code></pre></div>
     </div>
     <br />
-    <hr />
-    
-    <h1><a href="/blog/2014/02/23/testtest.html">Test nous</a></h1>
-    Escrit per:  <b><span class="author">Sergi Valverde</span></b> 
-    &nbsp;&nbsp;&nbsp;  <span class="date"> 23/02/2014 </span>
-    &nbsp;&nbsp;&nbsp;  Categories: <span class="tags"> testlinuxupdates </span>
-
-    <div class="content">
-      <br/>
-      <br/>
-      
-<p>Simplemenet hola com estàs Mireia?</p>
-
-    </div>
-    <br />
-    <hr />
     
   </div>
-    
-    <!-- Pagination links
-    <div class="pagination">
-      
-      <span class="previous">Previous</span>
-      
-      <span class="page_number ">Page: 1 of 1</span>
-      
-      <span class="next ">Next</span>
-      
-    </div>
-    -->
 
+  <!-- show additional information -->
+
+  <div id="right"> 
+    <!-- last entries -->
+    <h3>Últimes entrades</h3>
     
-  <!-- On the right, we show all published posts! -->
-  <div class="four columns">
-    <h2>Últimes entrades</h2>
-    
-    <h6><a href="/blog/2014/02/21/first_test.html">Hola CodeClub2!</a></h6>
+    <h6><a href="/blog/2014/03/25/criptografia-per-a-infants.html">Criptografia per a infants</a></h6>
     
     <h6><a href="/blog/2014/02/23/testtest.html">Test nous</a></h6>
     
-
+    <h6><a href="/blog/2014/02/21/first_test.html">Hola CodeClub2!</a></h6>
     
-    <h2>Tags</h2>
 
+    <br />
+    <br />
+    <br />
+    
+    <!--tags! -->
+    <h3>Tags</h3>
     <!-- create a list of categories -->
     
     <a href="/blog/categories/updates.html"> updates</a>
@@ -157,11 +186,17 @@
     
     <a href="/blog/categories/linux.html"> linux</a>
     
+    <a href="/blog/categories/reptes.html"> reptes</a>
+    
+    <a href="/blog/categories/competències.html"> competències</a>
+    
+    <a href="/blog/categories/mates.html"> mates</a>
+    
 
-    <!-- ? -->
     
-    
-</div> 
+  </div>
+
+</div>    
 
 
 

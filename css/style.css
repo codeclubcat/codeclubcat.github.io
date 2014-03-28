@@ -526,3 +526,31 @@ ul {
 .lte-ie8 #register .input-email {
   *height: 22px !important;
 }
+
+/****************************************
+/* 
+/* blog options 
+/*
+/*****************************************/
+        
+#content, html, body {
+    height: 98%;
+    margin-left: 40px;
+}
+
+#left {
+    float: left;
+    width: 70%;
+    background:  #f8fbf4;
+    height: 98%;
+    overflow: scroll;
+}
+
+#right {
+    float: right;
+    width: 20%;
+    background:  #f8fbf4;
+    height: 100%;
+    overflow: auto;
+}
+

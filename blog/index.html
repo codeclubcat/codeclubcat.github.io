@@ -1,60 +1,59 @@
 ---
 layout: default
-title: Som el CodeClub de Catalunya, Hola! :)
+title: Hola! :)
 ---
 
-<div class="row">
-  <div class="eight columns">
-    <!-- This loops through the paginated posts -->
-    {% for post in site.posts reversed %}
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    Escrit per:  <b><span class="author">{{ post.author }}</span></b> 
-    &nbsp;&nbsp;&nbsp;  <span class="date"> {{ post.date | date: "%d/%m/%Y" }} </span>
-    &nbsp;&nbsp;&nbsp;  Categories: <span class="tags"> {{ post.tags }} </span>
+<!-- ***************************************************************************************
+     static blog using Jekyll. we have also added two columns to split 
+     the content and the additional information such as the categories and recent posts.
+     Sergi Valverde: sergi@codeclubcat.org
+     26/03/14
+     ***************************************************************************************
+-->
 
+<div id="content">
+
+  <!-- show contents-->
+
+  <div id="left">
+    <!-- This loops through the paginated posts -->
+    {% for post in site.posts %}
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <!-- header information -->
+    <b>Escrit per:</b>  <span class="author">{{ post.author }}</span> 
+    &nbsp;&nbsp;&nbsp;  <span class="date"> {{ post.date | date: "%d/%m/%Y" }} </span>
+    &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags"> {% for p in post.tags %}  {{ p }}, {% endfor %}</span>
+
+    <!-- show the contents -->
     <div class="content">
       <br/>
       <br/>
       {{ post.content }}
     </div>
     <br />
-    <hr />
     {% endfor %}
   </div>
-    
-    <!-- Pagination links
-    <div class="pagination">
-      {% if paginator.previous_page %}
-      <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
-      {% else %}
-      <span class="previous">Previous</span>
-      {% endif %}
-      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.next_page %}
-      <a href="/page{{ paginator.next_page }}" class="next">Next</a>
-      {% else %}
-      <span class="next ">Next</span>
-      {% endif %}
-    </div>
-    -->
 
-    
-  <!-- On the right, we show all published posts! -->
-  <div class="four columns">
-    <h2>Últimes entrades</h2>
-    {% for post in site.posts reversed %}
+  <!-- show additional information -->
+
+  <div id="right"> 
+    <!-- last entries -->
+    <h3>Últimes entrades</h3>
+    {% for post in site.posts %}
     <h6><a href="{{ post.url }}">{{ post.title }}</a></h6>
     {% endfor %}
 
+    <br />
+    <br />
+    <br />
     
-    <h2>Tags</h2>
-
+    <!--tags! -->
+    <h3>Tags</h3>
     <!-- create a list of categories -->
     {% for tag in site.tags %}
     <a href="/blog/categories/{{ tag[0] }}.html"> {{ tag[0] }}</a>
     {% endfor %}
 
-    <!-- ? -->
     {% for tag in site.tags[page.title] %}
     
     <div class="postmeta extract">
@@ -65,12 +64,8 @@ title: Som el CodeClub de Catalunya, Hola! :)
     </div>
 
     <div class="post extract">
-      
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-
-
-      <p>{{ post.content | strip_html | truncatewords:80 }}</p>
-
+      <p>{{ post.content | strip_html | truncatewords:3 }}</p>
       <div class="blocked tags">
 	<p>
 	  {% for tag in post.categories   %}
@@ -81,9 +76,8 @@ title: Som el CodeClub de Catalunya, Hola! :)
       </div>
       <div class="hr"></div>
     </div>
-
     <div class="c">&nbsp;</div>
+    {% endfor %}
+  </div>
 
-   {% endfor %}
-    
-</div> 
+</div>    
