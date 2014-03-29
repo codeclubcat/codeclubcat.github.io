@@ -535,22 +535,47 @@ ul {
         
 #content, html, body {
     height: 98%;
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 #left {
     float: left;
     width: 70%;
     background:  #f8fbf4;
-    height: 98%;
-    overflow: scroll;
+    height: 79%;
+    overflow: auto;
 }
 
 #right {
     float: right;
     width: 20%;
     background:  #f8fbf4;
-    height: 100%;
-    overflow: auto;
+    height: 2%;
+    overflow: visible;
 }
 
+#post_text {
+    width: 90%;
+    background:  #f8fbf4;
+    height: 98%;
+    margin-left: 15px;
+    margin-right: 10px;
+    
+}
+
+/********************************************/
+/* table options
+/********************************************/
+
+th {
+   background:  #f8fbf4;
+   border: none;
+   width: 400px;
+}
+
+#cell_content {
+    margin-top: 4px;
+    background:  #f8fbf4;
+    margin-left: 10px;
+    margin-right: 10px;
+}

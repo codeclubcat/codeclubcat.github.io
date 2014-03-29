@@ -92,111 +92,245 @@
      Sergi Valverde: sergi@codeclubcat.org
      26/03/14
      ***************************************************************************************
--->
+  -->
 
-<div id="content">
+<div class="row">
+  <div class="twelve rows">
+    <div id="content">
+ 
+     <!-- show contents-->
+      <div id="left">
+	<div id="post_text">
+	  <!-- This loops through the paginated posts -->
+	  
+	  <h1><a href="/blog/2014/03/25/criptografia-per-a-infants.html">Criptografia per a infants</a></h1>
+	  <!-- header information -->
+	  <b>Escrit per:</b>  <span class="author">sergi</span> 
+	  &nbsp;&nbsp;&nbsp;  <span class="date"> 25/03/2014 </span>
+	  &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   reptes,   competencies,   mates, </span>
 
-  <!-- show contents-->
+	  <!-- show the contents -->
+	  <div class="content">
+	    <br/>
+	    <br/>
+	    
+<p>Aquesta setmana, els alumnes de 5è i 6è curs del CodeClub de Besalú s’han trobat amb una sorpresa quan han arribat a la sala d’ordinadors. Resulta que un dia han deixat de ser alumnes de primària per passar a ser experts ciberespies que es dediquen a desxifrar missatges secrets provinents d’uns pirates informàtics que tenen la intenció de robar un banc molt important. L’objectiu d’aquests joves ciberespies és desxifrar una sèrie de missatges que s’han interceptat per la xarxa i que s’està segur que contenen informació molt vàlida de quan serà el cop al banc.</p>
 
-  <div id="left">
-    <!-- This loops through the paginated posts -->
-    
-    <h1><a href="/blog/2014/03/25/criptografia-per-a-infants.html">Criptografia per a infants</a></h1>
-    <!-- header information -->
-    <b>Escrit per:</b>  <span class="author">sergi</span> 
-    &nbsp;&nbsp;&nbsp;  <span class="date"> 25/03/2014 </span>
-    &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   reptes,   competències,   mates, </span>
+<p><img src="/blog/images_blog/hackers_scaled.png" alt="perill" /></p>
 
-    <!-- show the contents -->
-    <div class="content">
-      <br/>
-      <br/>
-      
-<p>Aquesta setmana, els alumnes de 5è i 6è curs del CodeClub de Besalú s’han trobat amb una sorpresa quan han arribat a la sala d’ordinadors. Resulta que un dia han deixat de ser alumnes de primària per passar a ser experts ciberespies que es dediquen a desxifrar missatges secrets provinents d’uns pirates informàtics que tenen la intenció de robar un banc molt important.</p>
+<p>S’està segur que els missatges s’han codificat utilitzant el <a href="http://en.wikipedia.org/wiki/Caesar_cipher">xifratge del Cèsar</a>. Aquest sistema de xifratge deu el seu nom al mateix emperador romà, que el feia servir sovint per protegir les comunicacions amb els seus oficials. El sistema consisteix en una translació determinada de les lletres de l’abecedari, on la clau secreta és el nombre de lletres rotades. Per exemple, suposem que l’emissor i el receptor del missatge es posen d’acord en utilitzar la clau secreta “3”. Llavors, cada lletra de l’abecedari es canviaria per la lletra que estigués tres posicions endavant. Mireu l’exemple següent:</p>
 
-<p><img src="http://localhost:4000/blog/images_blog/hackers_scaled.png" alt="perill" /></p>
+<p><img src="/blog/images_blog/rotacio.png" alt="cesar" /></p>
 
-<p>L’objectiu d’aquests joves ciberespies és desxifrar una sèrie de missatges que s’han interceptat per la xarxa i que s’està segur que contenen informació molt vàlida de quan serà el cop al banc. S’ha informat als espies que s’està segur que els missatges s’han codificat utilitzant el <a href="http://en.wikipedia.org/wiki/Caesar_cipher">xifratge del Cèsar</a>.</p>
+<p>En el cas que volguéssim xifrar la paraula <code>'HOLA'</code> ens trobaríem que es transformaria en <code>'KROD'</code>. Fixeu-vos perquè:</p>
 
-<p>Aquest mètode de xifratge deu el seu nom degut a que va ser àmpliament utilitzat per l’emperador Juli Cèsar per comunicar-se secretament amb els seus generals al front. El sistema consisteix en una translació de les lletres de l’abecedari, on La clau secreta és el nombre de lletres rotades entre l’emissor i el receptor del missatge.</p>
+<p><code>la 'H' que està a la posició 8, passaria a la 8 + 3 = 11, i per tant es xifraria amb una 'K'.</code> <code>la 'O' que està a la posició 15, passaria a la 15 + 3 = 18, i per tant es xifraria amb una 'R'.</code> <code>la 'L' que està a la posició 12, passaria a la 12 + 3 = 15, i per tant es xifraria amb una 'O'.</code> <code>la 'A' que està a la posició 1, passaria a la 1 + 3 = 4, i per tant es xifraria amb una 'D'.</code></p>
 
+<p>L’objectiu de cada un dels nens és fer un programa amb l’<a href="www.scratch.mit.edu">Scratch</a> que desxifri un missatge que ha estat codificat utilitzant aquest mètode. Els infants que vulguin acceptar el repte i aconsegueixin desxifrar el missatge secret seran recompensats amb 10 punts positius i sobretot amb la medalla d’honor del CodeClub Catalunya. A més a més, per fer més interessant el repte, s’ha estipulat que els nens poden demanar ajuda externa a pares, germans, etcètera. Podeu veure amb més detall les instruccions del repte <a href="/materials/reptes/perill_imminent/index.html">aquí</a>.</p>
+
+<p>Activitats com aquesta són molt valuoses pels caps de club, perquè ens permet introduir problemes reals de forma divertida. En aquest cas, tot l’entremat gira al voltant de les <a href="http://ca.wikipedia.org/wiki/Array">llistes o vectors</a>. Aquesta activitat és la primera que introdueix aquesta estructura de dades (el currículum del primer trimestre no inclou el treball amb llistes). De fet, s’introdueixen varis conceptes com el recorregut, l’assignació o les operacions a través de la lectura i escriptura del missatge secret. Per exemple, el següent programa de codi extret del mateix repte realitza un recorregut de les posicions a l’alfabet d’un missatge xifrat i mostra el missatge per pantalla.</p>
+
+<p><img src="/blog/images_blog/res_final.png" alt="codi_scratch" /></p>
+
+<p>Paral.lelament estem treballant el pensament logico-matemàtic, degut a que els nens s’enfronten a un repte important tant per assimilar el codi de xifratge, com per descobrir per ells mateixos que el sistema és reversible, i que per tant, per desxifrar el missatge cal desfer els passos que els espies han realitzat. Tot i això, no s’ha fet incís en conceptes com les operacions amb mòdul. Tots els missatges a desxifrar han estat pensats per evitar aquest tipus d’operacions. Tot i que el problema aquí està simplificat, el fet d’existir 26 possibles claus fa que els nens hagin de plantejar la necessitat de trobar estratègies alternatives a provar totes les claus possibles, a part d’intuir els problemes que comporta l’algorisme per força bruta en el temps de càlcul.</p>
+
+<p>Finalment, l’activitat també ens permet introduir als infants la problemàtica de la seguretat informàtica, com funciona i com s’utilitza a nivell d’usuari tant en dispositius electrònics com en altres casos on es requereixi seguretat, com per exemple en l’ús de les targetes de crèdit.</p>
+
+	    <hr />
+	    <br />
+	    <br />
+	    <br />
+	   
+	  </div>
+	  <br />
+	  
+	  <h1><a href="/blog/2014/02/20/visita-de-tv3.html">Visita de TV3</a></h1>
+	  <!-- header information -->
+	  <b>Escrit per:</b>  <span class="author">mireia</span> 
+	  &nbsp;&nbsp;&nbsp;  <span class="date"> 20/02/2014 </span>
+	  &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   difusio, </span>
+
+	  <!-- show the contents -->
+	  <div class="content">
+	    <br/>
+	    <br/>
+	    
+<p>La setmana passada la <a href="http://www.tv3.cat">Televisió de Catalunya</a> va fer un petit reportatge al <a href="http://codeclubbesalu.blogspot.com.es">CodeClub Besalú</a>. Les periodistes van venir el dimecres, el dia que l’aula està més plena! Van poder comprovar com els nens de primària de <a href="http://iebesalu.cat/">l’escola Salvador Vilarrassa</a> intentaven resoldre el repte de la <a href="/materials/Trimestre1/cursa_pel_desert/index.html">cursa pel desert</a>.</p>
+
+<p><img src="/blog/images_blog/codeclub_tv3.png" alt="imatge_entrevista" /></p>
+
+<p>Podeu veure l’entrevista completa a la pàgina de TV3. Aquí va l’enllaç al <a href="http://www.tv3.cat/videos/4908011/Code-Club-a-lescola-de-Besalu">reportatge</a>.</p>
+
+	    <hr />
+	    <br />
+	    <br />
+	    <br />
+	   
+	  </div>
+	  <br />
+	  
+	  <h1><a href="/blog/2014/02/20/resum-space-invaders.html">Space Invaders reloaded</a></h1>
+	  <!-- header information -->
+	  <b>Escrit per:</b>  <span class="author">mireia</span> 
+	  &nbsp;&nbsp;&nbsp;  <span class="date"> 20/02/2014 </span>
+	  &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   reptes,   difusio,   tallers, </span>
+
+	  <!-- show the contents -->
+	  <div class="content">
+	    <br/>
+	    <br/>
+	    
+<p>Els passats 16 i 17 de desembre ens ho vam passar d’allò més bé jugant amb l’<a href="http://ca.wikipedia.org/wiki/Space_Invaders">Space Invaders</a>. Us enrecordeu? Doncs hem agafat les imatges i n’hem tret un vídeo. En alguns moments sembla més aviat una classe de ball!</p>
+
+<p><a href='https://www.youtube.com/watch?v=7cZZQyyTlwA'>
+	<img alt='space invaders video' border='10' height='180' src='http://img.youtube.com/vi/7cZZQyyTlwA/0.jpg' width='240' />
+	</a></p>
+
+<p>El nostre programa inicialment funcionava amb el teclat: fletxa dreta i fletxa esquerra per els moviments de la nostra nau, i l’espai per disparar. El repte consistia en modificar-lo, de tal manera que funcionés amb la càmera d’infrarojos Kinect. El moviment de la nau, el vam controlar amb el moviment del nostre cos, dreta-esquerra. Fins aquí senzill. Però, com es feia per disparar?</p>
+
+<p><img src="/blog/images_blog/space_invaders_1.png" alt="imatge1" /></p>
+
+<p>Al final, vam trobar que per disparar podíem posar les mans més enlaire que el cap i funcionava! La diversió va venir després quan enlloc d’un hi vam afegir dos jugadors.</p>
+
+<p><img src="/blog/images_blog/space_invaders_2.png" alt="imatge2" /></p>
+
+<p>Segur que quan acabem el Codeclub aquest curs, sereu capaços vosaltres mateixos de dissenyar un joc molt més divertit i enginyós. Us apunteu al repte?</p>
+
+<p><img src="/blog/images_blog/space_invaders_3.png" alt="imatge3" /></p>
+
+	    <hr />
+	    <br />
+	    <br />
+	    <br />
+	   
+	  </div>
+	  <br />
+	  
+	  <h1><a href="/blog/2013/12/15/Visita-punt-diari.html">Programar és de criatures!</a></h1>
+	  <!-- header information -->
+	  <b>Escrit per:</b>  <span class="author">sergi</span> 
+	  &nbsp;&nbsp;&nbsp;  <span class="date"> 15/12/2013 </span>
+	  &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   difusio, </span>
+
+	  <!-- show the contents -->
+	  <div class="content">
+	    <br/>
+	    <br/>
+	    
+<p>El diari català <a href="http://www.elpuntavui.cat">El Punt Avui</a> ens ha vingut a visitar aquesta tarda al taller del Codeclub Besalú. Podeu llegir l’entrevista <a href="http://www.elpuntavui.cat/noticia/article/2-societat/16-educacio/701371-programar-es-de-criatures.html">aquí</a>.</p>
+
+<p><img src="/blog/images_blog/puntdiari.jpg" alt="imatge" /></p>
+
+	    <hr />
+	    <br />
+	    <br />
+	    <br />
+	   
+	  </div>
+	  <br />
+	  
+	  <h1><a href="/blog/2013/12/11/taller-space-invaders.html">1er taller d'interacció i videojocs per nens de primària</a></h1>
+	  <!-- header information -->
+	  <b>Escrit per:</b>  <span class="author">sergi</span> 
+	  &nbsp;&nbsp;&nbsp;  <span class="date"> 11/12/2013 </span>
+	  &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   reptes,   difusio,   tallers, </span>
+
+	  <!-- show the contents -->
+	  <div class="content">
+	    <br/>
+	    <br/>
+	    
+<p>Estem molt contents de poder anunciar el primer mini-taller del CodeClub Besalú. <a href="http://www.udg.edu">La universitat de Girona</a> a través del grup de recerca en Visió per Computador i Robòtica (<a href="http://vicorob.udg.edu">VICOROB</a>) ens ha deixat molt amablement unes quantes càmeres <a href="http://ca.wikipedia.org/wiki/Kinect">Kinect</a> per poder jugar-hi uns dies.</p>
+
+<p><img src="/blog/images_blog/cartell_final.png" alt="imatge3" /></p>
+
+<p>Així doncs, els pròxims 15 i 16 de desembre mourem el CodeClub de lloc per realitzar la primera activitat paral.lela que tenim prevista per aquest curs. I que millor per començar que amb uns dels jocs més coneguts de la història dels videojocs, l’<a href="http://ca.wikipedia.org/wiki/Space_Invaders">Space Invaders</a>. Si mai heu jugat a un joc de marcians, segurament ha sortit o s’ha inspirat a través de l’Space Invaders.</p>
+
+<p>Aquest joc probablement sigui uns dels més importants de la història dels videojocs. El van dissenyar al Japó a finals dels anys setanta (1978), tot i que més endavant es va vendre per tot el món. Avui en dia si mirem el joc no sembla gran cosa, però heu de pensar que en aquells temps varen haver d’inventar una nova màquina recreativa per poder-hi jugar. Recordeu que fa 30 anys, la potència del millor ordinador era 100 vegades més petita que qualsevol telèfon mòbil d’avui en dia.</p>
+
+<p>Heu jugat mai a una màquina recreativa de videojocs? Doncs l’Space Invaders va ser una de les primeres. Fixeu-vos si va ser important que al Japó, degut a que la gent hi jugava tant a les sales de videojocs, varen començar a escassejar les monedes i el govern en va haver de fer més.</p>
+
+<p><img src="/blog/images_blog/arcade_invaders.jpg" alt="imatge3" /></p>
+
+<p>Evidentment en aquells temps tampoc hi havien ni Kinects, ni Wiis, ni res per l’estil, i s’hi jugava a través de palanques de jocs. Per tant, què tal si modifiquem el joc per adaptar-lo als temps que corren?</p>
+
+<p>El que farem en aquest mini-taller serà modificar l’Space Invaders clàssic fent que dos jugadors puguin controlar el joc utilitzant una Kinect.</p>
+
+<p>El que volem aconseguir és que dos persones puguin competir a la mateixa partida per veure qui és capaç de matar més marcians utilitzant el cos com a única eina de control del joc.</p>
+
+<p>Què us sembla, ens hi posem?</p>
+
+	    <hr />
+	    <br />
+	    <br />
+	    <br />
+	   
+	  </div>
+	  <br />
+	  
+	</div>
+      </div>
+
+
+      <!-- show additional information -->  
+      <div id="right"> 
+	<!-- last entries -->
+	<h3>Últimes entrades</h3>
+	
+	<h6><a href="/blog/2014/03/25/criptografia-per-a-infants.html">Criptografia per a infants</a></h6>
+	
+	<h6><a href="/blog/2014/02/20/visita-de-tv3.html">Visita de TV3</a></h6>
+	
+	<h6><a href="/blog/2014/02/20/resum-space-invaders.html">Space Invaders reloaded</a></h6>
+	
+	<h6><a href="/blog/2013/12/15/Visita-punt-diari.html">Programar és de criatures!</a></h6>
+	
+	<h6><a href="/blog/2013/12/11/taller-space-invaders.html">1er taller d'interacció i videojocs per nens de primària</a></h6>
+	
+
+	<br />
+	<br />
+	<br />
+	
+	<!--tags! -->
+	<!-- experimental tag cloud 
+	     7 different font sizes. let's see
+
+	  -->
+
+	<h3>Tags</h3>
+
+	
+	<FONT COLOR="000000" SIZE="4">
+          <a href="categories/reptes.html">
+            reptes
+          </a>
+	
+	<FONT COLOR="000000" SIZE="6">
+          <a href="categories/difusio.html">
+            difusio
+          </a>
+	
+	<FONT COLOR="000000" SIZE="3">
+          <a href="categories/tallers.html">
+            tallers
+          </a>
+	
+	<FONT COLOR="000000" SIZE="1">
+          <a href="categories/competencies.html">
+            competencies
+          </a>
+	
+	<FONT COLOR="000000" SIZE="1">
+          <a href="categories/mates.html">
+            mates
+          </a>
+	
+
+      </div>  
     </div>
-    <br />
-    
-    <h1><a href="/blog/2014/02/23/testtest.html">Test nous</a></h1>
-    <!-- header information -->
-    <b>Escrit per:</b>  <span class="author">Sergi Valverde</span> 
-    &nbsp;&nbsp;&nbsp;  <span class="date"> 23/02/2014 </span>
-    &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   test,   linux,   updates, </span>
-
-    <!-- show the contents -->
-    <div class="content">
-      <br/>
-      <br/>
-      
-<p>Simplemenet hola com estàs Mireia?</p>
-
-    </div>
-    <br />
-    
-    <h1><a href="/blog/2014/02/21/first_test.html">Hola CodeClub2!</a></h1>
-    <!-- header information -->
-    <b>Escrit per:</b>  <span class="author">sergi</span> 
-    &nbsp;&nbsp;&nbsp;  <span class="date"> 21/02/2014 </span>
-    &nbsp;&nbsp;&nbsp;  <b>Categories</b>: <span class="tags">   updates, </span>
-
-    <!-- show the contents -->
-    <div class="content">
-      <br/>
-      <br/>
-      
-<p>Hola, com va tot? I tu?</p>
-<div class='highlight'><pre><code class='python'><span class='k'>def</span> <span class='nf'>hello</span><span class='p'>:</span>
-	<span class='k'>print</span> <span class='s'>&quot;hello&quot;</span>
-</code></pre></div>
-    </div>
-    <br />
-    
   </div>
-
-  <!-- show additional information -->
-
-  <div id="right"> 
-    <!-- last entries -->
-    <h3>Últimes entrades</h3>
-    
-    <h6><a href="/blog/2014/03/25/criptografia-per-a-infants.html">Criptografia per a infants</a></h6>
-    
-    <h6><a href="/blog/2014/02/23/testtest.html">Test nous</a></h6>
-    
-    <h6><a href="/blog/2014/02/21/first_test.html">Hola CodeClub2!</a></h6>
-    
-
-    <br />
-    <br />
-    <br />
-    
-    <!--tags! -->
-    <h3>Tags</h3>
-    <!-- create a list of categories -->
-    
-    <a href="/blog/categories/updates.html"> updates</a>
-    
-    <a href="/blog/categories/test.html"> test</a>
-    
-    <a href="/blog/categories/linux.html"> linux</a>
-    
-    <a href="/blog/categories/reptes.html"> reptes</a>
-    
-    <a href="/blog/categories/competències.html"> competències</a>
-    
-    <a href="/blog/categories/mates.html"> mates</a>
-    
-
-    
-  </div>
-
-</div>    
+</div>   
 
 
 

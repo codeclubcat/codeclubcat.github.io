@@ -1,0 +1,48 @@
+---
+layout: default
+title: Entrades marcades amb l'etiqueta tallers
+---
+
+<div class="row">
+  <div class="twelve rows">
+    <div id="content">
+     <!-- show contents-->
+      <div id="left">
+	<h2>Entrades  amb l'etiqueta tallers:</h2>
+	<div id="post_text">
+	  <!-- make and unnumbered list with each post which have been tagged with "competencies"-->
+	  {% for post in site.posts %}
+	    {% if post.tags contains 'tallers' %}
+	      <li><h5><span class="date"> {{ post.date | date: "%d/%m/%Y" }} </span> <a href="{{ post.url }}">{{ post.title }}</a></h5></li>
+	    {% endif %}
+	  {% endfor %}
+	</div>
+      </div>
+
+
+      <!-- show additional information -->  
+      <div id="right"> 
+	<!-- last entries -->
+	<h3>Últimes entrades</h3>
+	{% for post in site.posts %}
+	<h6><a href="{{ post.url }}">{{ post.title }}</a></h6>
+	{% endfor %}
+
+	<br />
+	<br />
+	<br />
+	
+	<h3>Tags</h3>
+
+	{% for tag in site.tags %}
+	<FONT COLOR="000000" SIZE="{{ tag | last | size | times: 10 | divided_by: site.tags.size }}">
+          <a href="{{ tag | first | slugize }}.html">
+            {{ tag | first }}
+          </a>
+	  {% endfor %}
+
+      </div>  
+    </div>
+  </div>
+</div>   
+ 
