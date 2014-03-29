@@ -18,12 +18,12 @@ S'està segur que els missatges s'han codificat utilitzant el [xifratge del Cès
 ![cesar](/blog/images_blog/rotacio.png)
 
 
-En el cas que volguéssim xifrar la paraula `'HOLA'` ens trobaríem que es transformaria en `'KROD'`. Fixeu-vos perquè:
+En el cas que volguéssim xifrar la paraula *HOLA* ens trobaríem que es transformaria en *KROD*. Fixeu-vos perquè:
 
-`la 'H' que està a la posició 8, passaria a la 8 + 3 = 11, i per tant es xifraria amb una 'K'.`
-`la 'O' que està a la posició 15, passaria a la 15 + 3 = 18, i per tant es xifraria amb una 'R'.`
-`la 'L' que està a la posició 12, passaria a la 12 + 3 = 15, i per tant es xifraria amb una 'O'.`
-`la 'A' que està a la posició 1, passaria a la 1 + 3 = 4, i per tant es xifraria amb una 'D'.`
+* la 'H' que està a la posició 8, passaria a la 8 + 3 = 11, i per tant es xifraria amb una 'K'.
+* la 'O' que està a la posició 15, passaria a la 15 + 3 = 18, i per tant es xifraria amb una 'R'.
+* la 'L' que està a la posició 12, passaria a la 12 + 3 = 15, i per tant es xifraria amb una 'O'.
+* la 'A' que està a la posició 1, passaria a la 1 + 3 = 4, i per tant es xifraria amb una 'D'.
 
 
 L'objectiu de cada un dels nens és fer un programa amb l'[Scratch](www.scratch.mit.edu) que desxifri un missatge que ha estat codificat utilitzant aquest mètode. Els infants que vulguin acceptar el repte i aconsegueixin desxifrar el missatge secret seran recompensats amb 10 punts positius i sobretot amb la medalla d'honor del CodeClub Catalunya. A més a més, per fer més interessant el repte, s'ha estipulat que els nens poden demanar ajuda externa a pares, germans, etcètera. Podeu veure amb més detall les instruccions del repte [aquí](/materials/reptes/perill_imminent/index.html).
