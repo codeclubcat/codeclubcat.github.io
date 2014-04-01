@@ -40,11 +40,15 @@
 
         <header class="row header" role="banner">
           <nav class="twelve columns navigation" role="navigation" id="nav">
-            <ul class="main-menu">
+                      <ul class="main-menu">
               <li {% if page.title == 'Home' %}class="active"{% endif %}>
                 <a href="/">Inici</a>
               </li>
-              
+           
+	      <li {% if page.title == 'Notícies' %}class="active"{% endif %}>
+                <a href="/blog">Notícies</a>
+              </li>
+             
              
               <li {% if page.title == 'Materials' %}class="active"{% endif %}>
                 <a href="/materials">Materials</a>
