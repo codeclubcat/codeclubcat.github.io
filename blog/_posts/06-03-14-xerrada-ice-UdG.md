@@ -2,7 +2,7 @@
 layout: blog
 title:  "Presentació codeclubcat.org a la UdG"
 date:   2014-03-06 
-tags: difusió
+tags: difusio
 author: mireia
 ---
 
