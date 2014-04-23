@@ -7,7 +7,7 @@ author: mireia,sergi
 ---
 
 
-Coneixeu en Pitu Crostó? En [Pitu Crostó](http://www.quevolsfer.cat/pitu-crostro/) és un dels viatges més intrèpids i curiosos que corren pel món. Tot i que és de la Garrotxa, no us penseu que és fàcil coincidir amb ell, ja que es passa la vida viatjant amunt i avall. El més fascinant de tot plegat, és que ho fa dins de les bosses de viatge d'altres viatgers! Visitant Praga, fent tombs per Luxemburg, entre estàtues budistes al Nepal... no para!!!
+Coneixeu en Pitu Crostó? En [Pitu Crostó](http://www.quevolsfer.cat/pitu-crostro/) és un dels viatgers més intrèpids i curiosos que corren pel món. Tot i que és de la Garrotxa, no us penseu que és fàcil coincidir amb ell, ja que es passa la vida viatjant amunt i avall. El més fascinant de tot plegat, és que ho fa dins de les bosses de viatge d'altres viatgers! Visitant Praga, fent tombs per Luxemburg, entre estàtues budistes al Nepal... no para!!!
 
 ![pitu_viatges](/blog/images_blog/pituviatges.jpg)
 
