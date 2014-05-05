@@ -7,7 +7,7 @@ author: sergi
 ---
 
 
-Aquest dimecres 7 de maig visiten el CodeClub de Besalú la Mojdeh Rastgoo i Guillaume LeMaitre, experts internacionals en visió per computador i que actualment estan a la universitat de Girona. Aprofitant la seva visita, els hi hem demanat que ens ensenyin uns quants trucs per als jocs que els nens de 5è i 6è de Besalú estan dissenyant fa tres setmanes. __Els que pogueu venir aquest dimecres al Codeclub, tindreu la sort d'escoltar algunes tècniques que us poden ser molt útils pels vostres jocs! I en anglès!!!!__
+Aquest dimecres 7 de maig visiten el CodeClub de Besalú la [Mojdeh Rastgoo](https://sites.google.com/site/mojdehrastgoo/) i en [Guillaume LeMaitre](https://sites.google.com/site/glemaitre58/), experts internacionals en visió per computador i que actualment estan a la universitat de Girona. Aprofitant la seva visita, els hi hem demanat que ens ensenyin uns quants trucs per als jocs que els nens de 5è i 6è de Besalú estan dissenyant fa tres setmanes. __Els que pogueu venir aquest dimecres al Codeclub, tindreu la sort d'escoltar algunes tècniques que us poden ser molt útils pels vostres jocs! I en anglès!!!!__
 
 Bàsicament, la seva explicació es basarà en com generar aparença de moviment utilitzant objectes que es mouen per la pantalla. A continuació us mostrem les quatres tècniques que ens ensenyaran:
 
