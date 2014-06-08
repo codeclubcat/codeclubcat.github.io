@@ -2,7 +2,7 @@
 layout: blog
 title: Necessitem ajuda!
 date:   2014-06-08 
-tags: difusió
+tags: difusio
 author: sergi mireia
 ---
 
