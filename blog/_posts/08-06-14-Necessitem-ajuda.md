@@ -18,7 +18,7 @@ L'ànima del projecte són els voluntaris! Us hem donat un altre cop les gràcie
 
 __Necessitem voluntaris amb coneixements informàtics que vulguin engegar nous clubs, dissenyadors gràfics, il·lustradors, programadors de pàgines webs, divulgadors, hackers, etcètera.. Pensem que és important que el màxim de gent conegui els CodeClubs. Si sou responsables de conferències relacionades amb l'educació i les noves tecnologies o hi teniu un vincle de col.laboració, si us plau feu-los saber del projecte!__
 
-Ens encanta discutir noves possibilitats per nous clubs. Si voleu saber-ne més, no dubteu a escriure un email a [hola@codeclubcat.org](hola@codeclubcat.org) i en podem parlar tant com vulgueu! 
+Ens encanta discutir noves possibilitats per nous clubs. Si voleu saber-ne més, no dubteu a escriure un email a __hola@codeclubcat.org__ i en podem parlar tant com vulgueu! 
 
 __Ajudeu-nos a fer que la comunitat CodeClub creixi a Catalunya!!!!__ 
 
