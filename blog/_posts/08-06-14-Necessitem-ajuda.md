@@ -23,7 +23,7 @@ Ens encanta discutir noves possibilitats per nous clubs. Si voleu saber-ne més,
 __Ajudeu-nos a fer que la comunitat CodeClub creixi a Catalunya!!!!__ 
 
 
-
+We ```<3``` you!
 
 
 
