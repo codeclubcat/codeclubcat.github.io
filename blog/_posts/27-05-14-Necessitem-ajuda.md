@@ -1,9 +1,9 @@
 ---
 layout: blog
 title: Necessitem ajuda!
-date:   2014-05-27 
+date:   2014-06-08 
 tags: difusió
-author: sergi  mireia
+author: sergi mireia
 ---
 
 ![taller](/blog/images_blog/help_us.png)
