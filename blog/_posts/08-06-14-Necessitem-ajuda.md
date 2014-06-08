@@ -8,7 +8,7 @@ author: sergi mireia
 
 ![taller](/blog/images_blog/help_us.png)
 
-El projecte [codeclubcat.org](www.codeclubcat.org) compleix 10 mesos en breu. Sembla que va ser ahir! Hem muntat un web, hem traduït materials, n'estem creant de nous, hem creat un blog, i hem fet molts de quilòmetres explicant els nostres propòsits: __poder oferir a cada infant de Catalunya la possibilitat d'aprendre a programar ordinadors, independentment d'on vinguin, de la situació econòmica o social__. Ara mateix ja hi han 9 clubs funcionant a Catalunya i ens els pròxims mesos s'incrementaran significativament gràcies a col.laboracions en els que estem treballant.
+El projecte [codeclubcat.org](http://codeclubcat.org) compleix 10 mesos en breu. Sembla que va ser ahir! Hem muntat un web, hem traduït materials, n'estem creant de nous, hem creat un blog, i hem fet molts de quilòmetres explicant els nostres propòsits: __poder oferir a cada infant de Catalunya la possibilitat d'aprendre a programar ordinadors, independentment d'on vinguin, de la situació econòmica o social__. Ara mateix ja hi han 9 clubs funcionant a Catalunya i ens els pròxims mesos s'incrementaran significativament gràcies a col.laboracions en els que estem treballant.
 
 Pels que no coneixeu els Codeclubs, aquests són una xarxa d'activitats gratuïtes totalment gestionades per voluntaris amb l'objectiu de que els infants tinguin la oportunitat d'aprendre a programar. Aquestes activitats es porten normalment a terme en horari extra-escolar, ja sigui a la mateixa escola, a un biblioteca, un centre cívic o qualsevol lloc que disposi d'ordinadors i permeti als infants discutir. El funcionament és molt fàcil i es resumeix així:
 
