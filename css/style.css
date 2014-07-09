@@ -533,11 +533,6 @@ ul {
 /*
 /*****************************************/
         
-#content, html, body {
-    height: 98%;
-    margin-left: 10px;
-}
-
 #left {
     float: left;
     width: 70%;
