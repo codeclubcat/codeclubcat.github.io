@@ -1,0 +1,63 @@
+---
+layout: default
+title: Codeclubcat a les biblioteques
+---
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<!-- buttons -->
+</div>
+<div class="row">
+  <div class="ten columns">
+   <p class="jumplinks"> 
+      <div id="" class="two columns">
+	<center>
+          <a href="/biblioteques/index.html" class="button primary round">Què són? </a> 
+	</center>
+      </div>
+      <div id="" class="three columns">
+	<center>
+	  <a href="/biblioteques/materials.html" class="button primary round">Materials disponibles </a>
+	</center>
+      </div>
+      <div id="" class="three columns">
+	<center>
+	  <a href="/biblioteques/faq.html" class="button primary round">Preguntes freqüents</a>
+	</center>
+      </div>
+      <div id="" class="two columns">
+	<center>
+	  <a href="/biblioteques/contacte.html" class="button primary round">Contacte</a>
+	</center>
+      </div>
+   </p>
+  </div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<!-- el cartell i el text en dos columnes -->
+<div class="row">
+    <!-- cartell -->
+    <div class="five columns">
+      <img src="/img/ccb_cartell.png" width="100%" alt="Cartell dels Codeclubs a les biblioteques" >
+    </div> 
+<div>
+
+<div class="row">
+    <!-- text -->
+    <div class="five columns">  
+      <h2>Què són els Codeclubs a les biblioteques?</h2>
+    
+      <!--text-->
+	 <p>Codeclubs a les biblioteques és una iniciativa de Codeclubcat.org</p> 
+    </div>
+</div>
+
+<div class="row">
+  <div class="ten columns"><hr></div>
+</div>
