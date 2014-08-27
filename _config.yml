@@ -1,4 +1,5 @@
 name: Hello Codeclub
-pygments: true
+highlight: pygments
 paginate: 5
 paginate_path: "blog/page:num"
+markdown: kramdown
