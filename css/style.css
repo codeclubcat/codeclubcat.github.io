@@ -574,3 +574,11 @@ th {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+tr {
+   background:  #f8fbf4;
+   border: 1px solid black;
+   border-color: black;
+}
+
+    
