@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="world"  lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Fèlix i Herbert — Projectes Code Club World</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Fèlix i Herbert</h1>
+      <span class="level-indicator">Nivell 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Idiomes</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Català</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Inicial</a></li><li class="breadcrumbs-item current">Fèlix i Herbert</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduccio" class="level1 intro">
+<h1>Introducció</h1>
+<p>Construirem un joc on <strong>el gat Fèlix</strong> i el ratolí <strong>Herbert</strong> juguen a atrapar. Vosaltres controlareu en Herbert amb el ratolí i heu d’intentar evitar que en Fèlix us atrapi. Quant més temps eviteu que us atrapi més punts guanyareu, però no us deixeu agafar perquè perdreu punts!</p>
+<p><img src="felixherbert_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="pas-1-en-felix-segueix-el-punter-del-ratoli" class="level1 activity">
+<h1>Pas 1: En Fèlix segueix el punter del ratolí</h1>
+<p><a href="http://www.youtube.com/watch?v=N0ipNfQ6Tv4"><img src="1.png" alt="Vídeo del Pas 1 de Fèlix i Herbert" /></a></p>
+<section id="llista-de-tasques" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Creeu un nou projecte.<br /></li>
+<li>Feu doble clic a l’escenari i canvieu a la pestanya dels fons, llavors seleccioneu el fons <strong>indoors/hall</strong>. Suprimiu el fons blanc original.<br /></li>
+<li>Canvieu el nom del personatge per Fèlix.<br /></li>
+<li>Assegureu-vos que en Fèlix només miri a esquerra utilitzant el bloc __“fixa la rotació a__<br /></li>
+<li><p>Creeu aquest programa:</p>
+<p><img src="c8c19305aaf95aa0123489e34194424541bbf0db.png" alt="    Quan la BANDERA VERDA es premi
+    fixa la rotació a [esquerra-dreta v]
+    per sempre
+        apunta cap a [punter del ratolí v]
+        mou-te (10) passos
+        següent vestit
+        toca el so (62 v) durant (0.3) pulsacions
+    end" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Feu clic a la bandera verda.</p>
+<ul>
+<li>En Fèlix, segueix el punter del ratolí?<br /></li>
+<li>Quan es mou, us sembla com si caminés?<br /></li>
+<li>Es mou a una velocitat adequada?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+</section>
+<section id="pas-2-en-felix-persegueix-en-herbert" class="level1 activity">
+<h1>Pas 2: En Fèlix persegueix en Herbert</h1>
+<p><a href="http://www.youtube.com/watch?v=0kuE1m0CdbU"><img src="2.png" alt="Vídeo del Pas 1 de Fèlix i Herbert" /></a></p>
+<p>A continuació volem que en Fèlix persegueixi en Herbert, enlloc del punter del ratolí.</p>
+<section id="llista-de-tasques-1" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Creeu un nou personatge escollint, al costat de <code>Nou personatge:</code> el botó amb la icona d’una cara. Trieu el personatge <strong>Mouse1</strong> de l’apartat d’animals.<br /></li>
+<li>Canvieu el nom del personatge per Herbert tocant la <code>i</code> blava.<br /></li>
+<li>Editeu el vestit i feu-l’ho més petit que el de’n Fèlix. Cal fer clic al vestit i arrossegar un dels extrems de la caixa que apareix.<br /></li>
+<li>Assegureu-vos que en Herbert només miri a esquerra i dreta utilitzant el bloc <strong>“fixa la roació a”</strong>.<br /></li>
+<li><p>Doneu-li aquest programa a en Herbert:</p>
+<p><img src="397ccf7861760305c00e1cf91f60f9ad31c49fb5.png" alt="    Quan la BANDERA VERDA es premi
+    fixa la rotació a [esquerra-dreta v]
+    per sempre
+        vés a [punter del ratolí v]
+        apunta cap a [Fèlix v]
+    end" /></p></li>
+</ul>
+<section id="proveu-el-projecte-1" class="level3">
+<h3>Proveu el projecte</h3>
+<p>Feu clic a la bandera verda.</p>
+<ul>
+<li>En Herbert, segueix el punter del ratolí?<br /></li>
+<li>En Fèlix persegueix al Herbert?</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="pas-3-en-felix-diu-quan-ha-atrapat-en-herbert" class="level1 activity">
+<h1>Pas 3: En Fèlix diu quan ha atrapat en Herbert</h1>
+<p><a href="http://www.youtube.com/watch?v=dQemiwXhDvw"><img src="3.png" alt="Vídeo del Pas 3 de Fèlix i Herbert" /></a></p>
+<p>Volem que en Fèlix sàpiga quan ha atrapat en Herbert i que ens ho digui.</p>
+<section id="llista-de-tasques-2" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li><p>Modifiqueu el programa d’en Felix així:</p>
+<p><img src="da1a15aed80538898906abfca0336ecfb939af97.png" alt="    Quan la BANDERA VERDA es premi
+    fixa la rotació a [esquerra-dreta v]
+    per sempre
+        apunta cap a [punter del ratolí v]
+        mou-te (10) passos
+        següent vestit
+        toca el tambor [3 v] durant (0.3) pulsacions
+        si &lt;tocant [Herbert v]?&gt; llavors
+            digues [Atrapat!] durant (1) segons
+        end
+    end" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-2" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Feu clic a la bandera verda.</p>
+<ul>
+<li>En Fèlix diu quan ha atrapat en Herbert?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-1" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+</section>
+<section id="pas-4-en-herbert-es-converteix-en-un-fantasma-quan-latrapen" class="level1 activity">
+<h1>Pas 4: En Herbert es converteix en un fantasma quan l’atrapen</h1>
+<p><a href="http://www.youtube.com/watch?v=p_jSehpLURg"><img src="4.png" alt="Vídeo del Pas 4 de Fèlix i Herbert" /></a></p>
+<p>En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en un fantasma quan l’atrapin.</p>
+<section id="llista-de-tasques-3" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li><p>Canvieu el programa d’en Fèlix per tal d’enviar aquest missatge quan atrapi en Herbert.</p>
+<p><img src="51db854ff2ae16e242b878b9faa69b288ee04dde.png" alt="    Quan la BANDERA VERDA es premi
+    per sempre
+        apunta cap a [punter del ratolí v]
+        mou-te (10) passos
+        mou-te (20) passos
+        següent vestit
+        toca el tambor [3 v] durant (0.3) pulsacions
+        si &lt;tocant [Herbert v]?&gt; llavors
+            envia a tots [atrapat v]
+            toca el tambor [17 v] durant (0.2) pulsacions
+            espera (1) segons
+        end
+    end" /></p></li>
+<li>Importeu un nou vestit per en Herbert de <strong>fantasy/ghost2-a</strong>.<br /></li>
+<li>Editeu-l’ho per fer-lo més petit. N’hi hauria d’haver prou amb sis clics al botó <strong>encongir</strong>.<br /></li>
+<li>Canvieu els noms dels vestits d’en Herbert de manera que vestit de ratolí s’anomeni <strong>‘viu’</strong> i el de fantasma <strong>’fantasma</strong>’.<br /></li>
+<li><p>Creeu un nou programa per tal de convertir en Herbert en un fantasma:</p>
+<p><img src="086f11a80220c3fe00864314046b21406243d6ad.png" alt="    quan rebi [atrapat v]
+       canvia el vestit a [fantasma v]
+       espera (1) segons
+       canvia el vestit a [viu v]" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-3" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Feu clic a la bandera verda.</p>
+<ul>
+<li>Quan atrapeu en Herbert, es converteix en un fantasma?<br /></li>
+<li>En Fèlix fa els sons adequats en cada moment?<br /></li>
+<li>En Fèlix roman quiet prou temps per a que en Herbert es pugui escapar?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-2" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+</section>
+<section id="pas-5-actualitzar-el-marcador" class="level1">
+<h1>Pas 5: Actualitzar el marcador</h1>
+<p><a href="http://www.youtube.com/watch?v=_HvJGQuyePE"><img src="5.png" alt="Vídeo del Pas 5 de Fèlix i Herbert" /></a></p>
+<p>Afegirem un marcador de manera que sabrem com de bé mantenim al Herbert en vida. Començarem amb el marcador a zero i l’incrementarem una unitat cada segon. Si en Fèlix atrapa en Herbert, reduirem el marcador en cent unitats.</p>
+<section id="llista-de-tasques-4" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li><p>Cliqueu l’apartat <code class="blockorange">Dades</code>, i creeu una variable de nom <code class="blockorange">puntuació</code>, fixant-vos en seleccionar la opció “per a tots els personatges”.</p></li>
+<li><p>Creeu aquests dos programes a l’escenari:</p>
+<p><img src="617f9272921b9e3de2c793bb27129b85523ee95b.png" alt="    Quan la BANDERA VERDA es premi
+       assigna a [puntuació v] el valor [0]
+       per sempre
+          augmenta [puntuació v] en (1) 
+          espera (1) segons
+       end
+
+quan rebi [atrapat v]
+   augmenta [puntuació v] en (-100)" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-4" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Feu click a la bandera verda.</p>
+<ul>
+<li>El marcador, augmenta una unitat per segon?<br /></li>
+<li>Quan en Fèlix atrapa en Herbert, el marcador disminueix cent unitats?<br /></li>
+<li>Què passa quan atrapeu en Herbert abans que el marcador arrivi a cent unitats?<br /></li>
+<li>Quan comenceu una nova partida, el marcador torna a zero?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-3" class="level2 save">
+<h2>Deseu el projecte</h2>
+<p>Molt bé, heu acabat! Ara ja podeu gaudir del joc!</p>
+<p>No us oblideu que podeu compartir el joc amb amics i familiars fent clic a <strong>Comparteix</strong> al menú!</p>
+<p><a href="http://www.youtube.com/watch?v=CevjMU5-ZFc"><img src="6.png" alt="Vídeo de com compartir el projecte Fèlix i Herbert" /></a></p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Llista de Tasques" /></td>
+          <td><span class="check_text">Llista de Tasques</span></td>
+          <td>Segueix aquestes <span class="check_text upper">instruccions</span> una a una</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Prova el Projecte" /></td>
+          <td><span class="flag_text">Prova el Projecte</span></td>
+          <td>Clica la bandera verda per <span class="flag_text upper">provar</span> el teu programa</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Desa el teu Projecte" /></td>
+          <td><span class="save_text">Desa el teu Projecte</span></td>
+          <td>Assegura't de <span class="save_text upper">desar</span> el que has fet</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>
