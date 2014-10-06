@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Felix and Herbert — Projectes Code Club World</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Felix and Herbert</h1>
+      <span class="level-indicator">Level 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Beginner Scratch</a></li><li class="breadcrumbs-item current">Felix and Herbert</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduction" class="level1 intro">
+<h1>Introduction</h1>
+<p>We are going to make a game of catch with <strong>Felix the cat</strong> and <strong>Herbert</strong> the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!</p>
+<p><img src="felixherbert_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="step-1-felix-follows-the-mouse-pointer" class="level1 activity">
+<h1>Step 1: Felix follows the mouse pointer</h1>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Start a new project.<br /></li>
+<li>Click on the <strong>stage</strong> next to the sprite and switch to the <code>Backdrops</code> tab, and then click the <code>Choose Backdrop from library</code> button and choose the backdrop indoors/hall. Delete the original blank backdrop.<br /></li>
+<li>Click on the sprite, and then click on the <code>i</code> button to the top left of the Sprite. Change the name of the sprite to <strong>Felix</strong>.<br /></li>
+<li>Make sure Felix only points left-right by clicking this button: <img alt="" class="inline" src="flip_arrows.png"><br /></li>
+<li><p>Create this script:</p>
+<p><img src="fdeeafd344e1c6ce5654dbc1473fbaf73d4009f7.png" alt="    when FLAG clicked
+    forever
+        point towards [mouse-pointer v]
+        move (10) steps
+        next costume
+        play drum (3 v) for (0.3) beats
+    end" /></p></li>
+</ul>
+</section>
+<section id="test-your-project" class="level2 flag">
+<h2>Test your project</h2>
+<p>Click the green flag.</p>
+<ul>
+<li>Does Felix follow the mouse pointer?<br /></li>
+<li>Does it look like he’s walking when he moves?<br /></li>
+<li>Does he move at the right speed?</li>
+</ul>
+</section>
+<section id="save-your-project" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-2-felix-chases-herbert" class="level1 activity">
+<h1>Step 2: Felix chases Herbert</h1>
+<p>Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.</p>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Create another sprite using the <code class="blockgrey">choose sprite from library</code> button and selecting <strong>animals/mouse1</strong>.<br /></li>
+<li>Change the name of the sprite to <strong>Herbert</strong>.<br /></li>
+<li>Switch to the <strong>Costumes</strong> tab, then click on the costume in the Paint Editor. A box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.<br /></li>
+<li>Make sure Herbert only points left-right by clicking this button:<br />!(flip_arrows.png)<br /></li>
+<li><p><strong>Give Herbert this script:</strong></p>
+<p><img src="7472f0629ea5fa55166d6f23c703df7caa064d36.png" alt="    when FLAG clicked
+    forever
+        go to [mouse-pointer v]
+        point towards [Felix v]
+    end" /></p></li>
+</ul>
+</section>
+<section id="test-your-project-1" class="level2 flag">
+<h2>Test your project</h2>
+<p>Click the green flag.</p>
+<ul>
+<li>Does Herbert move with the mouse pointer?<br /></li>
+<li>Does Felix chase Herbert?</li>
+</ul>
+</section>
+<section id="save-your-project-1" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-3-felix-says-when-hes-caught-herbert" class="level1 activity">
+<h1>Step 3: Felix says when he’s caught Herbert</h1>
+<p>We want Felix to know when he’s caught Herbert, and tell us.</p>
+<section id="activity-checklist-2" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>Change Felix’s script to be this:</p>
+<p><img src="db07646b8f1c5cdb2d55592395f08deb13fba6a0.png" alt="    when FLAG clicked
+    forever
+        point towards [mouse-pointer v]
+        move (10) steps
+        next costume
+        play drum (3 v) for (0.3) beats
+        if &lt;touching [herbert v]?&gt;
+            say [Caught you!] for (1) secs
+        end
+    end" /></p></li>
+</ul>
+</section>
+<section id="test-your-project-2" class="level2 flag">
+<h2>Test your project</h2>
+<p>Click the green flag.</p>
+<ul>
+<li>Does Felix say when he’s caught Herbert?</li>
+</ul>
+</section>
+<section id="save-your-project-2" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-4-herbert-turns-into-a-ghost-when-hes-caught" class="level1 activity">
+<h1>Step 4: Herbert turns into a ghost when he’s caught</h1>
+<p>Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.</p>
+<section id="activity-checklist-3" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>Change Felix’s script to send this message when he catches Herbert:</p>
+<p><img src="ce962457e1a9f0da3419d5bf1d443a0394cf7d14.png" alt="    when FLAG clicked
+    forever
+        point towards [mouse-pointer v]
+        move (10) steps
+        move (20) steps
+        next costume
+        play drum [3 v] for (0.3) beats
+        if &lt;touching [herbert v]?&gt;
+            broadcast [caught v]
+            play drum [17 v] for (0.2) beats
+            wait (1) secs
+        end
+    end" /></p></li>
+<li>Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the <code class="blocklightgrey">Choose costume from Library button</code>. Select the <strong>fantasy/ghost2-a</strong> costume.<br /></li>
+<li>Make the costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.<br /></li>
+<li>Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.<br /></li>
+<li><p>Create a new script for Herbert to turn him into a ghost:</p>
+<p><img src="b12d9cd462ebe9d58f09bf283725bd57a626aae1.png" alt="    when I receive [caught v]
+        switch costume to [dead v]
+        wait (1) secs
+        switch costume to [alive v]" /></p></li>
+</ul>
+</section>
+<section id="test-your-project-3" class="level2 flag">
+<h2>Test your project</h2>
+<p>Click the green flag.</p>
+<ul>
+<li>Does Herbert turn into a ghost when he’s caught?<br /></li>
+<li>Does Felix play the right sounds at the right time?<br /></li>
+<li>Does Felix still stay still for long enough for Herbert to get away?</li>
+</ul>
+</section>
+<section id="save-your-project-3" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-5-keep-score" class="level1 activity">
+<h1>Step 5: Keep score</h1>
+<p>Let’s add a score so we know how well we do at keeping Herbert alive.</p>
+<p>We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.</p>
+<section id="activity-checklist-4" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Make a variable, for all sprites, called Score. Click on <code class="blockorange">Data</code> in the top menu, make a variable and name it <code class="blockorange">score</code>, ensuring that “For all sprites” is selected.<br /></li>
+<li><p>On the stage, create these two scripts:</p>
+<p><img src="3c3768e9975fd634705c985472569d60fbd38f0a.png" alt="    when gf clicked
+        set [score v] to [0]
+        forever
+            change [score v] by (1)
+            wait (1) secs
+        end
+
+when I receive [caught v]
+    change [score v] by (-100)" /></p></li>
+</ul>
+</section>
+<section id="test-your-project-4" class="level2 flag">
+<h2>Test your project</h2>
+<p>Click the green flag.</p>
+<ul>
+<li>Does the score go up by one every second?<br /></li>
+<li>Does the score go down by one hundred when Herbert is caught?<br /></li>
+<li>What happens when Herbert is caught before score reaches one hundred? Does the score go back to zero when you start a new game?</li>
+</ul>
+</section>
+<section id="save-your-project-4" class="level2 save">
+<h2>Save your project</h2>
+<p>Well done, you’ve finished! Now you can enjoy your game!</p>
+<p>Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
+          <td><span class="check_text">Activity Checklist</span></td>
+          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
+          <td><span class="flag_text">Test your Project</span></td>
+          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
+          <td><span class="save_text">Save your Project</span></td>
+          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>

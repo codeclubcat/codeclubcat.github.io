@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Frantic Felix — Projectes Code Club World</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Frantic Felix</h1>
+      <span class="level-indicator">Level 6</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Advanced Scratch</a></li><li class="breadcrumbs-item current">Frantic Felix</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<p>In this project, you’ll build a complex game. It’s a platform game, where Felix the Cat jumps around, dodging baddies and collecting keys to escape the cavern. When he’s done that, he’ll go to the next cavern and do it all over again.</p>
+<p>In the first week of this project, you’ll be learning how to make Felix move and interact with various things. In the second week, you’ll design your own levels. In the third week, you’ll put the levels together into a complete game.</p>
+<section id="week-1-building-blocks" class="level2">
+<h2>Week 1: Building Blocks</h2>
+<p><strong>Platform games</strong>, like <strong>Manic Miner</strong> and <strong>Mario Bros</strong>, are all about the central figure moving around a world and bumping into things. Some things, like walls and floors, just stop you moving. Some things, like baddies, will kill you. Some things, like keys, you want to collect. Some things are just scenery and don’t affect the game at all.</p>
+<p>That means that knowing when you’ve bumped into something (called <strong>collision detection</strong>) is important. Scratch gives you a few blocks for collision detection: <code>&lt;touching? [sprite]&gt;</code>, <code>&lt;touching color []?&gt;</code>, <code>&lt;color [] is touching []?&gt;</code>, and <code>(distance to [sprite])</code>. However, to make the game, you need to know more than just whether you’re touching something: you need to know which <strong>side</strong> is touching it. If you walk up to a wall on the left, you can’t go left any more. But you can still go right, or jump, or fall if there’s no floor.</p>
+<p>Touching a baddie may hurt you; but if you touch it with your feet, you may hurt the baddie. None of the built-in Scratch blocks tell you about <strong>direction of contact</strong>. So we’ve got to build our own collision detectors.</p>
+</section>
+<section id="task-1-collision-detectors" class="level2">
+<h2>Task 1: Collision detectors</h2>
+<p>We’ll have four sprites that follow Frantic Felix around. <strong>Each will detect collisions in one direction and set a variable if it’s detected one</strong>. The main Felix sprite will use these variables to control how Felix can move. Each collision detector will have a bar of colour and use the <code>&lt;color [] is touching [] ?&gt;</code> block to detect things. We’ll use <strong>black</strong> for the floor and <strong>green</strong> for obstacles. We’ll use <strong>red</strong> for the collision detectors.</p>
+<section id="activity-checklist" class="level3">
+<h3>Activity Checklist</h3>
+<ul>
+<li><strong>Open a new project</strong>. Add the <strong>frantic-felix/testlevel</strong> background and delete the plain white <strong>background1</strong>.<br /></li>
+<li><strong>Rename Sprite1 as Felix</strong>. Make sure his costume can only flip left-right.<br /></li>
+<li>Create four new sprites from the images <strong>frantic-felix/top</strong>, <strong>frantic-felix/bottom</strong>, <strong>frantic-felix/left</strong>, and <strong>frantic-felix/right</strong>. These sprites are the collision detectors. Call the new sprites <strong>Top</strong>, <strong>Bottom</strong>, <strong>Left</strong>, and <strong>Right</strong>. Make sure that their costumes can’t rotate or flip.<br /></li>
+<li>Create four <code>variables</code> (for all sprites): <strong>blocked top</strong>, <strong>blocked bottom</strong>, <strong>blocked right</strong>, and <strong>blocked left</strong>.<br /></li>
+<li><p>Give each of the detector sprites this script:</p>
+<p><img src="a7ead5195b1b94b19c8bbca94b8ecc7aa0d24fcf.png" alt="    when FLAG clicked
+        forever
+            go to [Felix v]
+            if &lt;color [] is touching [] ?&gt;
+                set [blocked right v] to (1)
+            else
+                set [blocked right v] to (0)
+            end" /></p></li>
+<li><p>Change the variables for each detector. The bottom detector needs an <strong>or</strong> block so that it sets blocked bottom if it’s touching either green or black. <strong>Hint</strong>: It’s easier to pick the colours in one sprite, then drag the script to the other sprites and change the variables being set. It saves having to find the right colours four times. At the moment, Felix just needs a script to follow the mouse pointer forever.</p></li>
+</ul>
+</section>
+</section>
+<section id="test-your-project" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong></p>
+<p>You should see Felix follow the mouse pointer around, surrounded by a red rectangle. The rectangle is the collision detector. If you watch the variables, you should see them change as you drag Felix around and he touches different parts of the screen. At the moment, Felix moves through the platforms and the green obstacle. We’ll fix that in the next couple of steps.</p>
+</section>
+<section id="save-your-project" class="level2 save">
+<h2>Save Your Project</h2>
+</section>
+<section id="task-2-walking-floors-and-falling" class="level2">
+<h2>Task 2: Walking, floors and falling</h2>
+<ul>
+<li>Next is to make Felix walk. We’ll use the <strong>left</strong> and <strong>right arrow</strong> keys to move him left and right. If he’s not supported by a floor, he’ll fall down. (We’ll do jumping next.) If the left arrow key is pressed, we want Felix to point left and move left a bit. But we also want him not to move left if there’s an obstacle there.<br /></li>
+<li>We could use the <code>&lt;when [key] pressed&gt;</code> hats to make Felix move, but that gives a jerky motion. Things move more smoothly if you put <code>&lt;if key [left arrow] pressed?&gt;</code> blocks in <code>forever</code> loops. Collision detection means we need to include the test of the <strong>blocked left</strong> variable in the <code>if</code>, using an and block so that Felix only moves left if the key is pressed and left blocked is zero. We need to do the same for moving right.<br /></li>
+<li>We could animate Felix’s legs in the same block, but they end up moving too fast. Do the animation in a separate <code>forever</code> block under another when <strong>green flag clicked</strong> hat.<br /></li>
+<li><p>The final thing to do is <strong>falling</strong>. If there’s no solid ground under Felix, we want him to fall. That’s another <code>forever loop</code> under another <strong>green flag</strong> hat.</p>
+<p><img src="9f75b1885e641dbeed02786a1a65785d309fbdaa.png" alt="    when FLAG clicked //handle moving
+        forever
+            if &lt;&lt;key [left arrow v] pressed?&gt; and &lt;(blocked left)=(0)&gt;
+                point in direction (-90 v)
+                move (2) steps
+            end
+
+
+        if &lt;&lt;key [right arrow v] pressed?&gt; and &lt;(blocked left)=(0)&gt;
+            point in direction (90 v)
+            move (2) steps
+        end
+
+
+when FLAG clicked //[animate Felix]
+    forever if &lt;&lt;key [left arrow v] pressed?&gt;or&lt;key [right arrow v] pressed?&gt;&gt;
+        next costume
+        wait (0.1) secs
+    end
+
+when FLAG clicked //handle falling
+    forever
+        if &lt;(blocked bottom)=(0)&gt;
+            change  y by (-2)
+        end
+    end" /></p></li>
+<li><p>We also want the collision detectors to disappear. We can’t just use a <code>hide</code> block, because then they won’t detect any collisions. Instead, put a <code>set [ghost] effect to 100</code> right under the green flag hat in each collision detector. That makes the sprite invisible without hiding it.</p></li>
+</ul>
+</section>
+<section id="test-your-project-1" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Use the mouse to drag Felix to somewhere on the stage and then click the green flag</strong>. If Felix jumps to the mouse pointer, you need to remove that script!</p>
+<p>You should be able to use the left and right buttons to make Felix walk from side to side. If he’s not standing on the floor, he should fall gently.</p>
+<p>When you click the green flag, the collision detectors should disappear. They’ll reappear when you press the red stop sign.</p>
+</section>
+<section id="save-your-project-1" class="level2 save">
+<h2>Save Your Project</h2>
+</section>
+<section id="task-3-jumping" class="level2">
+<h2>Task 3: Jumping</h2>
+<p>The final part of making Felix move is jumping. Let’s have the <strong>space key</strong> make Felix jump. There are a few wrinkles to jumping:</p>
+<ol>
+<li>We don’t want Felix to <strong>fall</strong> if he’s <strong>going up</strong>.<br /></li>
+<li>We don’t want Felix to be stopped by floors when he’s going up, but we still want him to be stopped by <strong>floors</strong> when he’s <strong>coming down</strong>.<br /></li>
+<li>We don’t want Felix to <strong>jump up</strong> into the underside of a <strong>green obstacle</strong>.<br /></li>
+<li>We want the jump to be animated, so we don’t want Felix to instantly move up a large distance.<br /></li>
+<li>Felix should only be able to jump if he’s <strong>standing on a floor</strong>. The game would be too easy if Felix could jump off thin air.</li>
+</ol>
+<ul>
+<li>We’ll control jumping with a new <code>variable</code>, <strong>height to jump</strong>. If this is greater than zero, Felix is going up. If it’s zero, Felix is falling (or has fallen), as per the previous stage.<br /></li>
+<li>We’ll make Felix jump up <strong>100 pixels</strong>, all things being equal. Add another if block inside the <code>forever</code> block that handles key presses. If we press the <strong>space key</strong> and Felix is standing on a floor (that is <strong>blocked below</strong> is set to 1), set <strong>height to jump to 100</strong>.<br /></li>
+<li>We want to change the falling script. Inside the <code>forever</code>, we want an <code>if-else</code> block that detects if Felix is jumping up or not. The condition for this <code>if-else</code> block is whether <strong>height to jump</strong> is <strong>greater than zero</strong>. The existing falling <code>if</code> block goes in the else part of the new <code>if-else</code> block.<br /></li>
+<li>When we know Felix is jumping up, we need to check if he’s bumped his head against something. If <strong>blocked top</strong> is <strong>1</strong>, set <strong>height to jump</strong> to <strong>zero</strong>. (This stops Felix jumping up into obstacles). <strong>Otherwise, move Felix up by ten and reduce height to jump by ten.</strong><br /></li>
+<li><p>You should end up with this:</p>
+<p><img src="c4108f1318b0cd4a7c5c0ad77307883b3507263b.png" alt="    when FLAG clicked //handle falling
+        forever
+            if &lt;(height to jump)&gt;(0)&gt;
+                if &lt;(blocked top)=(1)&gt;
+                    set [height to jump v] to (0)
+                else
+                    change y by (10)
+                    change [height to jump v] by (-10)
+                end
+            else
+                if &lt;(blocked bottom)=(0)&gt;
+                    change y by (-2)
+                end
+            end
+        end" /></p></li>
+</ul>
+</section>
+<section id="test-your-project-2" class="level2 flag">
+<h2>Test your project</h2>
+<p><strong>Click the green flag</strong>. Does Felix jump? Does he jump from one platform to another? Does he still fall when he walks off the end of a platform? What if he jumps off the end of a platform? What if he tries to jump underneath the green block on the right? What happens if you press the space bar while Felix is falling?</p>
+</section>
+<section id="save-your-project-2" class="level2 save">
+<h2>Save Your Project</h2>
+</section>
+<section id="task-4-keys-and-goals" class="level2">
+<h2>Task 4: Keys and goals</h2>
+<p><strong>We’ve got Felix moving around the world. Now to make him finish a level</strong>.<br />We’ll put three keys around the cavern. Felix collects a key by touching it. When he’s collected all three, he’ll be able to climb into an escape pod and flee!</p>
+<ul>
+<li>We’ll have a new <code>variable</code>, <strong>keys to get</strong>, which tracks how many keys there are still to get. A new script on the <strong>stage</strong> should set this to <strong>3</strong> when the <strong>green flag</strong> is clicked.<br /></li>
+<li>The keys and the escape pod will each be sprites. (Use <strong>frantic-felix/key</strong> for the keys and <strong>frantic-felix/escape-pod</strong> for the pod.)<br /></li>
+<li>Each key needs <strong>two scripts</strong>: one places the key in the right position, with the size and angle, then has a <code>forever</code> loop to change the colour (that just makes it easy to see on the screen). The other script is a <code>forever if</code> loop that waits until Felix touches the key. As soon as that happens, the script hides the key and decrements keys to get.<br /></li>
+<li><p>The escape pod has a slightly more complex script. It uses a <code>forever if</code> block to wait for <strong>keys to get</strong> to become <strong>zero</strong>. As soon as that happens, the pod starts flashing (to show the player that they can escape). Then we can use another <code>if</code> to detect when Felix touches the flashing escape pod. As soon as he does, the pod <code>broadcasts</code> a win message and says “You win!”. Felix responds to the win message by hiding.</p>
+<p><img src="58ca5e81c37646208f176034326aa3f6665ec35b.png" alt="    when FLAG clicked
+        go to x:(220) y:(-125)
+        forever if &lt;(key to get) = (0)&gt;
+            change [color v] effect by (25)
+            if &lt;touching [Felix v]?&gt;
+                broadcast [win v]
+                say [You win!]
+            end
+        end" /></p></li>
+</ul>
+</section>
+<section id="test-your-project-3" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong></p>
+</section>
+<section id="save-your-project-3" class="level2 save">
+<h2>Save Your Project</h2>
+</section>
+<section id="task-5-baddies-and-deadly-scenery" class="level2">
+<h2>Task 5: Baddies and deadly scenery</h2>
+<p><strong>Now, baddies!</strong></p>
+<p>We’ll have two types of dangerous things. One type will be baddies that wander around and hurt Felix if he bumps into them. The other type will be bits of dangerous scenery.</p>
+<p><strong>Let’s do the roving baddie first. It will just move along a fixed path.</strong></p>
+</section>
+<section id="activity-checklist-1" class="level2">
+<h2>Activity Checklist</h2>
+<ul>
+<li><strong>Create a new sprite</strong>, using whatever costume you like. Make sure it’s about the same size as Felix (We used the <strong>things/flower-vase</strong> costume, edited to be made smaller by four steps). The baddie needs just a single script that both moves it and detects when it’s touching Felix.<br /></li>
+<li><p>Put three <code>if</code> statements inside a forever loop. The first if checks whether the baddie is touching Felix; if it is, it <code>broadcasts</code> the <strong>lose</strong> message. The other two <code>if</code>’s check whether the baddie has reached the end of its path; if it has, the baddie turns round. Finally, the baddie takes two steps. (Using <strong>move</strong> instead of <strong>glide</strong> blocks makes it easier to control how fast the baddie goes.) <strong>We don’t need to use the collision detector sprites here, as we don’t care which side of Felix touches the baddie.</strong></p>
+<p><img src="0a7040bb417cdc923b2c87c07080c709f88b1dc2.png" alt="    when FLAG clicked
+        go to x:(-50) y:(47)
+        point in direction (-90 v)
+        forever
+            if &lt;touching [Felix v]?&gt;
+                broadcast [lose v]
+            end
+            if &lt;(x position) &gt; (-200)&gt;
+                point in direction (90 v)
+            end
+            if &lt;(x position) &gt; (-50)&gt;
+                point in direction (-90 v)
+            end
+            move (2) steps
+        end" /></p></li>
+<li><p>Add scripts to both Felix and the escape pod to respond to the lose message. Felix should just hide in response. The pod should say [You lose!].</p></li>
+</ul>
+</section>
+<section id="test-your-project-4" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag</strong>. Does the vase move along? Does it stop and turn round at the ends? What happens when Felix walks into it? What happens if Felix jumps into it, whether from below or above? Does Felix disappear? Does the pod say the right thing? Can you still win the game?</p>
+</section>
+<section id="save-your-project-4" class="level2 save">
+<h2>Save Your Project</h2>
+<p><strong>Next, dangerous scenery!</strong> Let’s say that anything bright blue is deadly to Felix.</p>
+<ul>
+<li>Load the background <strong>frantic-felix/level2</strong>, which has a blue rose on the upper level. Add another script to Felix, under a green flag hat: <code>&lt;forever if touching [blue] broadcast [lose]&gt;</code></li>
+</ul>
+</section>
+<section id="test-your-project-5" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag</strong>. Does Felix die if he touches the blue rose? What if he touches other things?</p>
+</section>
+<section id="save-your-project-5" class="level2 save">
+<h2>Save Your Project</h2>
+<section id="recap" class="level3">
+<h3>Recap</h3>
+<p><strong>What you’ve built is a very simple platform game. As it stands, it’s a pretty rubbish game. But that’s not the point. This game is a toolkit for how to build your own platform game levels. You’ll design your own levels next week.</strong></p>
+</section>
+</section>
+<section id="week-2-designing-levels" class="level2">
+<h2>Week 2: Designing levels</h2>
+<p><strong>Last week, you built all the parts of a platform game. This week, you’ll use those pieces to make your own levels.</strong></p>
+<p>To recap, you made several things happen:</p>
+<ol>
+<li>Felix can walk left and right and jump.<br /></li>
+<li>Felix falls unless a black floor stops him.<br /></li>
+<li>Felix can’t move through green obstacles.<br /></li>
+<li>Blue bits of scenery and baddies kill Felix.<br /></li>
+<li>Baddies move around fixed patrol routes.<br /></li>
+<li>Baddies kill Felix if he touches them.<br /></li>
+<li>If Felix moves into a key, he collects it.<br /></li>
+<li>When Felix has all the keys, an escape pod lights up to take him to safety (or the next level).</li>
+</ol>
+<p>Treat these bits as a toolkit. <strong>Use them to build your own levels.</strong></p>
+<p>You want to create a series of levels for Felix to go though. Next week, you’ll look at how to connect the levels.<br />Levels can have large platforms or small ones, many platforms or few. There can be lots of baddies or none. There could be lots of obstacles or lethal bits of scenery. Don’t make the level too constrained; it should like there are a few routes to success, even if one is easier than others. Think about how hard or easy the level is.</p>
+<p>You can change the special colours (black, green, and blue) but you need to <strong>update the colour touching blocks</strong> in all the scripts, but you need to keep the same colours in all the levels. (You could have different colours in different levels, but that would mean putting lots of <code>or</code> blocks around the colour-touching blocks.)</p>
+<p><strong>Test your levels</strong>. If you have time, create your levels in Scratch and play them. Check that they’re <strong>not too hard</strong> and <strong>not too easy</strong>. If you implement the levels, make sure to <strong>save the backgrounds you make</strong> and note the <strong>starting positions</strong> of Felix, they keys, and any baddies. Also make sure you note the directions the baddies move in and how far they go.</p>
+<p>If you’ve already come up with a few levels, and put them in Scratch, try these extension tasks:</p>
+</section>
+<section id="extension-stomping" class="level2">
+<h2>Extension: Stomping</h2>
+<p><strong>How about making baddies die if they’re stomped on?</strong> Perhaps you could add a script to the baddies that does something if the baddie is touching the bottom collision detector sprite.</p>
+</section>
+<section id="extension-power-pills" class="level2">
+<h2>Extension: Power pills</h2>
+<p><strong>You could create a “power pill” that allows Felix to destroy the baddies</strong>. When Felix collects the power pill, Felix destroys any baddie he touches. The effects wear off after a while.</p>
+<p>It’s up to you to think about how to make that work. You might want to make the baddies look different when Felix can destroy them.</p>
+</section>
+<section id="test-your-project-6" class="level2 flag">
+<h2>Test Your Project</h2>
+<p>Click the green flag.</p>
+</section>
+<section id="save-your-project-6" class="level2 save">
+<h2>Save Your Project</h2>
+</section>
+<section id="week-3-assembling-the-game" class="level2">
+<h2>Week 3: Assembling the game</h2>
+<p><strong>You’ve got some levels. You have enough tools to make each one work. Now all you have to do is put them all together into a whole game!</strong> If you’re able to put some levels together quickly, you may want to look at tasks 2 and 3 before playing your games.</p>
+<section id="task-1-displaying-a-new-level" class="level3">
+<h3>Task 1: Displaying a new level</h3>
+<p><strong>When Felix completes one level, we need to move on to the next one</strong>. That means intercepting the escape pod needs to send a <strong>start level message</strong> (instead of the win message) when Felix gets all the keys in climbs in the pod. We can use the start level message to set up the next level. We also need a <code>variable</code>, <strong>current level</strong>, set by the escape pod before it sends the <strong>start level</strong> message.</p>
+<p>Pretty much everything needs to respond to the <strong>start level</strong> message to set up the next level.</p>
+<p><strong>The Stage</strong> needs to display the correct background. Each of the baddies, each of the keys, and the escape pod all need to move to the <strong>correct positions</strong>. The baddies’ paths need <strong>updating</strong>. Felix needs to move to his <strong>new starting position</strong>. Then the level needs to start.</p>
+<p>Most of the sprites will need to respond to the <strong>start level message</strong> instead of the green flag. That means, for most scripts, you need to <strong>change the hat blocks</strong>.</p>
+</section>
+</section>
+<section id="save-your-project-7" class="level2 save">
+<h2>Save Your Project</h2>
+<p><strong>Before you do anything, save your work</strong>. You’ll be making changes throughout the Frantic Felix game, so keep saving your work regularly.</p>
+</section>
+<section id="test-your-project-7" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Keep testing your game after every change. Keep testing the bits you’ve already changed, to make sure they keep working.</strong> We won’t tell you how to make all the changes. However, we’ll show you Felix’s revised scripts to show you the sort of thing you need to do.</p>
+<p><img src="adbd75202363ef2037984a0d3a40a4b076f7139c.png" alt="when I receive [start level v]
+        go to x:(item (current level) of [xs v])y:(item (current level) of [ys v])
+        point in direction (item (current level) of [directions v])
+        show
+        forever
+            if &lt;&lt;key[left arrow v]pressed?&gt;and &lt;(blocked left)=(0)&gt;
+                point in direction (-90)
+                move (2) steps
+            end
+            if &lt;&lt;key[right arrow v]pressed?&gt;and &lt;(blocked right)=(0)&gt;
+                point in direction (90)
+                move (2) steps
+            end
+            if &lt;&lt;key[space v]pressed?&gt;and &lt;(blocked bottom) =(1)&gt;
+                set [height to jump v]to[100]
+            end
+        end" /></p>
+<p>You’ll notice that the initial <strong>x</strong>, <strong>y</strong>, and <strong>direction</strong> for Felix are set with lists. We created some lists for each sprite (each list private to that sprite) to store all the values we need for that sprite. You need one list for each thing you store. You don’t have to use lists: you can use <code>if</code> blocks that check the current level and do the right thing depending on its value.</p>
+<p>And here’s the escape pod, which handles all the level-changing:</p>
+<p><img src="ceb8a565037f9442f6879466c41b57a261809d92.png" alt="        when FLAG clicked
+        set [current level v] to [1]
+        broadcast [start level v]
+
+    when I receive [start level v]
+        go to x:(item (current level) of [xs v])y:(item (current level) of [ys v])
+        forever
+            if &lt;(keys to get) = [0]&gt;
+            change [color v]effect by [25]
+                if &lt;touching [Felix v]?&gt;
+                    if &lt;(current level) = (length of [keys per level v])&gt;
+                        say [You win!]
+                        broadcast [win v]
+                        stop all
+                    else
+                        change [current level v] by [1]
+                        broadcast [start level v]
+                    end
+                end
+            end
+        end" /></p>
+</section>
+<section id="task-2-play" class="level2">
+<h2>Task 2: Play!</h2>
+<p><strong>You’ve got games</strong>. Your fellow Code Clubbers have games. Play all the games! Can you beat theirs? Can they beat yours?</p>
+</section>
+<section id="extension-multiple-lives" class="level2">
+<h2>Extension: Multiple lives</h2>
+<p>Felix will probably need a few lives to try to get through the levels. <strong>Create a new sprite</strong> with three costumes, showing <strong>one</strong>, <strong>two</strong>, and <strong>three hearts</strong>.</p>
+<p>Use the <strong>frantic-felix/1-heart</strong>, <strong>frantic-felix/2-heart</strong>, and <strong>frantic-felix/3-heart</strong> costumes. Make the sprite appear in the corner of the stage. When the <strong>green flag</strong> is clicked, it should show three hearts. Every time it receives a lose message, it should show one fewer heart. Instead of showing zero hearts, it should hide and send a <strong>game over</strong> message.</p>
+<p>The <strong>game over</strong> and <strong>win</strong> messages should be handled by a <strong>new sprite</strong>, which <strong>hides</strong> when the green flag is clicked and shows the right banner when the game over and win messages are sent. This sprite should also stop all the scripts when it displays itself.</p>
+<p>You’ll also need to modify how the escape pod handles winning and losing, as that is now the responsibility of the lives and finish banner sprites.</p>
+<p>You may find that your baddies are a bit too quick on the mark, pouncing on Felix before the level properly restarts. If Felix loses more than one life when he bumps into a baddie. <strong>hide</strong> the baddie as soon as it sends the <strong>lose</strong> message. That gives the rest of the game (including Felix) to reset before the baddie detects another collision with Felix.</p>
+</section>
+<section id="extension-time-limits" class="level2">
+<h2>Extension: Time limits</h2>
+<p><strong>Put Felix against the clock!</strong> Use the <strong>Timer Scratch card</strong> to add a time limit. If the timer runs out, send the <strong>lose</strong> message. Remember to <strong>reset the timer</strong> at the start of each level.</p>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
+          <td><span class="check_text">Activity Checklist</span></td>
+          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
+          <td><span class="flag_text">Test your Project</span></td>
+          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
+          <td><span class="save_text">Save your Project</span></td>
+          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>
