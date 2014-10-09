@@ -138,8 +138,8 @@
 <h2>Proveu el projecte</h2>
 <p>Proveu el joc un altre cop. Hi trobeu algun problema? Fixeu-vos que la presa desapareix en tocar qualsevol part del Peix Gran. A més, també es podria donar la situació que el Peix Gran esperés 3 segons i es tornés a menjar la presa en el moment que tornés a aparèixer. Això no és just!</p>
 <ul>
-<li><p>Com ho podríem fer perquè la presa només desaparegués si està tocant la boca del Peix Gros? Podríem utilitzar el bloc <code class="blocklightblue">tocant el color</code> i veure si està tocant la dent blava del Peix Gros. Per provar aquesta opció, canvieu el bloc <code class="blocklightblue">tocant</code> pel bloc <code class="blocklightblue">tocant el color</code> al programa, cliqueu al selector de color del bloc i seguidament a la dent del Peix Gros.</p></li>
-<li><p>Seguidament, fent servir el bloc <code class="blockblue">ves a</code> amb valors a l’atzar pels valors x i y, podem fer que la presa es mogui a un punt aleatori abans de reaparèixer de nou a l’escenari.</p>
+<li>Com ho podríem fer perquè la presa només desaparegués si està tocant la boca del Peix Gros? Podríem utilitzar el bloc <code class="blocklightblue">tocant el color</code> i veure si està tocant la dent blava del Peix Gros. Per provar aquesta opció, canvieu el bloc <code class="blocklightblue">tocant</code> pel bloc <code class="blocklightblue">tocant el color</code> al programa, cliqueu al selector de color del bloc i seguidament a la dent del Peix Gros.<br /></li>
+<li><p>Seguidament, fent servir el bloc <code class="blockblue">ves a</code> amb valors a l’atzar pels valors <strong>x</strong> i <strong>y</strong>, podem fer que la presa es mogui a un punt aleatori abans de reaparèixer de nou a l’escenari.</p>
 <p><img src="9b574acc9b974d76cae660498e67868c27188146.png" alt="    quan la BANDERA VERDA es premi
     per sempre      
         mou-te (2) passos
@@ -149,11 +149,24 @@
             amaga
             espera (3) segons
             vés a x: (nombre a l&#39;atzar entre (-220) i (220)) y: (nombre a l&#39;atzar entre (-170) i (170))
-            mostra" /></p>
-<h2>Proveu el projecte</h2></li>
+            mostra" /></p></li>
 </ul>
+</section>
+<section id="proveu-el-projecte-4" class="level2 flag">
+<h2>Proveu el projecte</h2>
 <p>Proveu el joc un altre cop: la presa, només desapareix quan toca la boca del peix? Reapareix en un punt a l’atzar de l’escenari en comptes del mateix lloc on el Peix se l’havia menjat?</p>
-<p>El peix ha de saber quan s’ha empassat alguna cosa per poder reproduir un so i canviar de vestit. Per fer això, podem fer que la presa, abans de desaparèixer, enviï un missatge indicant que se l’han empassat. <code>scratch     quan la BANDERA VERDA es premi     per sempre               mou-te (2) passos         gira a la dreta (nombre a l'atzar entre (-20) i (20)) graus         rebota en tocar una vora         si &lt;tocant el color [#000000]?&gt;, llavors             envia a tots [menjat! v]             amaga             espera (3) segons             vés a x: (nombre a l'atzar entre (-220) i (220)) y: (nombre a l'atzar entre (-170) i (170))             mostra</code></p>
+<p>El peix ha de saber quan s’ha empassat alguna cosa per poder reproduir un so i canviar de vestit. Per fer això, podem fer que la presa, abans de desaparèixer, enviï un missatge indicant que se l’han empassat.</p>
+<p><img src="628626178d0fd85cd9e8ad368dcff05950a68dfe.png" alt="    quan la BANDERA VERDA es premi
+    per sempre      
+        mou-te (2) passos
+        gira a la dreta (nombre a l&#39;atzar entre (-20) i (20)) graus
+        rebota en tocar una vora
+        si &lt;tocant el color [#000000]?&gt;, llavors
+            envia a tots [menjat! v]
+            amaga
+            espera (3) segons
+            vés a x: (nombre a l&#39;atzar entre (-220) i (220)) y: (nombre a l&#39;atzar entre (-170) i (170))
+            mostra" /></p>
 <p>Ara volem que el Peix Gros respongui a aquest missatge reproduint el so ‘chomp’ i tancant la boca.</p>
 <ul>
 <li>Afegiu el vestit <strong>mouth-closed.png</strong> i el so <strong>chomp.mp3</strong>, de la carpeta dels recursos, al personatge Peix Gros.<br /></li>
