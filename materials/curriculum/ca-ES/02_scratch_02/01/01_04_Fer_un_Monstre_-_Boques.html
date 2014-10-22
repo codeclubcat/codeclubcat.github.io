@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="world"  lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Targeta Scratch - Boques — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Targeta Scratch - Boques</h1>
+      <span class="level-indicator">Nivell 4</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Idiomes</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Català</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Avançat</a></li><li class="breadcrumbs-item current">Boques</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="llista-de-tasques" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Per fer parlar al monstre utilitzarem l’objecte <code class="blockpurple">digues</code>.</li>
+</ul>
+<p><img src="f1693debf871ae5ceb7792a57203b042217d924b.png" alt="    quan la tecla [espai v] es premi
+        digues [Hola!] durant (2) segons" /></p>
+<ul>
+<li>Per fer-ho més impressionant, podem fer que la boca <em>s’obri</em> i <em>es tenqui</em> mentre el monstre parla. Per fer això, haurem d’editar l’objecte que conté la boca - creant un nou <code class="blockpurple">vestit</code> que tingui la boca tancada. Si anem canviant d’un vestit a l’altre animarem la boca i farem que s’obri i es tenqui.</li>
+</ul>
+<p><img src="dc7cadc0d5f719f4b257a43e567364f581628728.png" alt="    repeteix (8) vegades
+        espera (0.1) segons
+        canvia el vestit a [BocaTancada v]
+        espera (0.1) segons
+        canvia el vestit a  [BocaOberta v]
+    fi" /></p>
+<ul>
+<li>Per connectar els dos apartats anteriors, utilitzarem el bloc <code class="blockpurple">digues</code>, enviant a tots un missatge perquè els altres blocs reaccionin.</li>
+</ul>
+<p><img src="2832ef9e378a7086d6916a5efb65b74297416ba8.png" alt="    quan la tecla [espai v] es premi
+        envia a tots [parla v]
+        digues [Hola!] durant (2) segons
+
+    quan rebi [parla v]
+        repeteix (8) vegades
+            espera (0.1) segons
+            canvia el vestit a [BocaTancada v]
+            espera (0.1) segons
+            canvia el vestit a  [BocaOberta v]
+        fi" /></p>
+<ul>
+<li>Per fer-ho un pèl més flexible, utilitzarem una variable per controlar quan parla el monstre <code class="blockorange">tempsParla</code>, i també controlar quantes vegades es repetirà l’animació.</li>
+</ul>
+<p><img src="a93fbc859cc28b20d4e7a75fff0f70042811361d.png" alt="    quan la tecla [espai v] es premi
+        assigna a [tempsParla v] el valor (2)
+        envia a tots [parla v ]
+        digues [Hola!] durant (tempsParla) segons
+
+    quan la tecla [a v] es premi
+        assigna [tempsParla v] el valor (4)
+        envia a tots [parla v]
+        digues [Alguna cosa més llarga] durant (tempsParla) secs
+
+    quan rebi [parla v]
+        repeteix ((talkTime) * (4)) vegades
+            espera (0.1) segons
+            canvia el vestit a [BocaTancada v]
+            espera (0.1) segons
+            canvia el vestit a  [BocaOberta v]
+        fi" /></p>
+<p><strong>(Fixeu-vos que hem multiplicat la variable ‘tempsParla’ per 4, per assegurar-nos que l’animació es repeteixi les vegades suficients)</strong></p>
+<ul>
+<li>També podem fer que el monstre parli fent servir un dels blocs de so. Assegureu-vos d’importar els sons que necessiteu abans.</li>
+</ul>
+<p><img src="aae67230f6bfe90901d1271f98290ad5e107d372.png" alt="    quan rebi [parlant v]
+        toca el so [Crit v]" /></p>
+<p>Per què no intenteu afegir sons a altres esdeveniments? podríeu afegir un so esgarrifós quan apareix un fantasma volant per la pantalla!</p>
+<p>Si teniu un micròfon a l’ordinador, podeu grabar els vostres propis sons, sorpreneu el vostre cap de club grabant un crit espantós de monstre ROOOAAAAARRRRR!!!</p>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+  </body>
+</html>

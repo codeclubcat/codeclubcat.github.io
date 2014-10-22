@@ -74,10 +74,10 @@
 <p><img src="af8d4416dc5a6ae27af64840c9e05d8043ae3bc2.png" alt="    when FLAG clicked
         show" /></p></li>
 <li><p>Now we want the button to count down from 3 and then say go and then <code class="blockblue">hide</code> when it is clicked. Add another script like this one:</p>
-<p><img src="9ccdf86f3072f36488710ed2fae44f37f15d529b.png" alt="    when this sprite clicked
+<p><img src="2f5d99b1d374bd9574131b14fd589e2327153883.png" alt="    when this sprite clicked
         say [3] for (1) secs
         say [2] for (1) secs
-        say [1] for (1) secs
+        say [2] for (1) secs
         say [GO!] for (1) secs
         hide" /></p></li>
 </ul>
@@ -127,13 +127,13 @@
         set (racing) to [0]" /></p></li>
 <li>Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click <code class="blocklightgrey">sounds</code> and then record the sound of the parrot winning the race!<br /></li>
 <li><p>Now add blocks that <code class="blockpurple">play</code> the sound you recorded and makes the parrot say it has won:</p>
-<p><img src="726c826553ff270076b04fa5491dae651620703d.png" alt="        when [a v] key pressed
+<p><img src="07b0d46809c832b95f8a2da6b7db12274b77ef0f.png" alt="        when [a v] key pressed
         if &lt;(racing) = [1]&gt;
             move (4) steps
             if &lt;touching [edge v]?&gt;
                 set (racing) to [0]
                 play sound [recording1 v]
-                say [The Parrot Wins!] for (3) secs" /></p></li>
+                say [The Parrot Wins! v] for (3) secs" /></p></li>
 <li><p>Now repeat these steps for the lioness.</p></li>
 </ul>
 </section>

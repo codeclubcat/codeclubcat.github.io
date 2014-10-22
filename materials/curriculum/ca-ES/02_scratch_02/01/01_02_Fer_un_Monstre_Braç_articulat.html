@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="world"  lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Targeta Scratch - Braç articulat — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Targeta Scratch - Braç articulat</h1>
+      <span class="level-indicator">Nivell 4</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Idiomes</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Català</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Avançat</a></li><li class="breadcrumbs-item current">Braç Articulat</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="llista-de-tasques" class="level2 check">
+<h2>Llista de tasques</h2>
+<p>Un braç articulat està fet de <strong>dos objectes</strong>. Pot ser bastant difícil de construir ja que cadascun dels dos objectes que formen el braç necessita saber on és l’altre objecte en tot moment, per tal de no separar-se’n i tenir un aspecte estrany.</p>
+<p>Això es fa utilitzant un càlcul matemàtic anomenat <strong>trigonometria</strong>, que s’utilitza molt sovint en la producció de videojocs, robots i altres noves tecnologies. <strong>El nostre primer objecte serà la part superior del braç</strong>, aquest no és complicat ja que només cal que giri a l’espatlla i es mogui conjuntament amb la resta de les parts del cos. Una cosa que haurem d’establir serà la <code class="blockblue">direcció</code> del nostre braç mitjançant una variable (ho farem més endavant).</p>
+<p><img src="ba6908e6a7dac92d88aa23a761c8a8da1ae6384b.png" alt="    quan la tecla [espai v] es premi
+        gira cw (15) graus
+        assigna a [braç esquerre v] el valor (direcció)
+        envia a tots [mogut v]
+        suma (velocitat moviment) a x" /></p>
+<p>El següent càlcul s’utilitza per controlar la <strong>part inferior del braç</strong>. Aquí és on utilitzarem la trigonometria per calcular on s’hauria de col·locar la part inferior del braç (potser necessitaràs demanar ajuda per fer aquest pas).</p>
+<p><img src="baf82253f1e2f03b9073372711947791be5f8105.png" alt="    quan rebi [mogut v]
+        vés a [Part3 v]
+        vés a x: ((posició x) + ((45) * ([sin v] de (braç esquerre)))) y: ((posició y) + ((45) * ([cos v] de (braç esquerre))))" /></p>
+<p>Primer de tot, el nostre braç s’actualitzarà quan s’utilitzi l’envia a tots <code class="blockbrown">mogut</code>. Pots utilitzar qualsevol missatge a envia a tots sempre i quan la part superior del braç estigui enviant el mateix missatge.</p>
+<p>Llavors, la part inferior del braç es situarà per ella mateixa al <strong>punt centre</strong> de la part superior del braç, on aquest s’ajunta amb l’espatlla.</p>
+<p>A continuació, volem col·locar el colze del braç inferior fins a l’altre extrem de la part superior del braç. Imagineu que, com que la part superior del braç gira al voltant de l’espatlla es dibuixa un cercle, en primer lloc: ¿quina és el radi d’aquest cercle? Bé, la longitud del nostre braç en aquest exemple és d’aproximadament <strong>45 píxels</strong> de llarg.</p>
+<p>Finalment, voldrem esbrinar en quin punt al voltant d’aquest cercle es troba l’altre extrem del nostre braç, i posicionar el nostre braç inferior allà. Per fer això utilitzem la trigonometria i així canviar la posició del nostre braç inferior i crear un colze.</p>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+  </body>
+</html>

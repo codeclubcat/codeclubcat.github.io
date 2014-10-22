@@ -119,8 +119,8 @@
 <h2>Save your project</h2>
 </section>
 </section>
-<section id="step-4-creating-the-other-sprites" class="level1 activity">
-<h1>Step 4: Creating the other sprites</h1>
+<section id="step-4-creating-the-other-sprite" class="level1 activity">
+<h1>Step 4: Creating the other sprite</h1>
 <p>Now we need to make the other sprites so we can play our game!</p>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
@@ -204,17 +204,17 @@
 <p>Click the green flag. Does the “Game Over” message appear when you click on Fruit3?</p>
 <p>What happens if you stop Fruit3 before you’ve clicked on both of the other fruit sprites? Let’s<br />modify our script so that it will work regardless of the order in which the sprites are stopped.</p>
 <ol>
-<li><p>To check to see that <strong>all three</strong> fruit sprites have had their <code class="blockorange">stopped</code> variables set to <strong>YES</strong>, we can use the <code>and</code> { . blockgreen } operator. This is a complicated block that can be quite fiddly to assemble, so try and put it together one step at a time.</p>
-<p><img src="ae80cc14ccf2390cf8aad7dae206d064398ca965.png" alt="   when FLAG clicked
-      switch backdrop to [GameOn v]
-      forever
-         if &lt;&lt;&lt;([stopped v] of [Fruit1 v]) = [YES]&gt; and &lt;([stopped v] of [Fruit2 v]) = [YES]&gt;&gt; and &lt;([stopped v] of [Fruit3 v]) = [YES]&gt;&gt; then
-            switch backdrop to [GameOver v]" /></p></li>
+<li><p>To check to see that <strong>all three</strong> fruit sprites have had their <code class="blockorange">stopped</code> variables set to <strong>YES</strong>, we can use the <code>and</code> { . blockgreen } operator. This is a compicated block that can be quite fiddly to assemble, so try and put it together one step at a time.</p>
+<p><img src="89e33cb4d76d31f714f91a71214b2d70bffd6ea2.png" alt="    when FLAG clicked
+switch backdrop to [GameOn v]
+forever
+    if &lt;&lt;&lt;([stopped v]  of [Fruit1 v]) = [YES]&gt; and &lt;([stopped v]  of [Fruit2 v]) = [YES]&gt;&gt; and &lt;([stopped v]  of [Fruit3 v]) = [YES]&gt;&gt; then
+        switch backdrop to [GameOver v]" /></p></li>
 </ol>
 </section>
 <section id="test-your-project-5" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag.</strong> Does the “Game Over” message appear when all 3 Fruits are stopped, regardless of the order you clicked on them?</p>
+<p><strong>Click the green flag.</strong> Does the “Game Over” message appear when you all 3 Fruits are stopped, regardless of the order you clicked on them?</p>
 </section>
 <section id="save-your-project-4" class="level2 save">
 <h2>Save your project</h2>

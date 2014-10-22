@@ -81,11 +81,11 @@
 <li>Create a new sprite from the library, using <strong>Animals/starfish</strong>.<br /></li>
 <li>Use the <code>Shrink</code> sprite tool (above the Stage) to make the sprite smaller.<br /></li>
 <li><p>Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.</p>
-<p><img src="978c64579a9c1f3945f87997c6342877d66cbd3b.png" alt="   when FLAG clicked
-   forever
-       move (2) steps
-       turn right (pick random (-20) to (20)) degrees
-       if on edge, bounce" /></p></li>
+<p><img src="089f8a143fa324ff71d1bad0cb73deb6a84ababe.png" alt="    when FLAG clicked
+        forever
+            move (2) steps
+            turn right (pick random (-20) to (20)) degrees
+            if on edge, bounce" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-1" class="level2 flag">
@@ -147,7 +147,7 @@
 <h2>Test Your Project</h2>
 <p>Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?</p>
 <p>The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey <code class="blockyellow">broadcast</code> the fact that it’s been eaten before vanishing.</p>
-<p><img src="97a00918671080735c4f2ae81b65be868d2283bd.png" alt="    when FLAG clicked
+<p><img src="b7c6d7fc5f000bf5d4c830da366105c300cd7d61.png" alt="    when FLAG clicked
         forever
             move (2) steps
             turn right &lt;pick random (-20) to (20)&gt; degrees
@@ -157,7 +157,8 @@
                 hide
                 wait (3) secs
                 go to x:&lt;pick random (-220) to (220)&gt; y: &lt;pick random (-170) to (170)&gt;
-                show" /></p>
+                show
+" /></p>
 <p>Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.</p>
 <ul>
 <li>Add the <strong>resources/mouth-closed.png</strong> costume and the <strong>resources/chomp.mp3</strong> sound to the Hungry Fish sprite.<br /></li>
