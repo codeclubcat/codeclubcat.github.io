@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>What’s That — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">What’s That</h1>
+      <span class="level-indicator">Level 3</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Term 2</a></li><li class="breadcrumbs-item current">What's That</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduction" class="level1 intro">
+<h1>Introduction</h1>
+<p>A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!</p>
+<p><img src="whatsthat_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="step-1-make-different-things-appear-on-the-blackboard" class="level1 activity">
+<h1>Step 1: Make different things appear on the blackboard</h1>
+<p><strong>We want a few different pictures to show up on the blackboard.</strong></p>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>Start a new Scratch project and delete the cat sprite.</p></li>
+<li>Click Stage and then the Backdrops tab. <code class="blockgrey">Choose Backdrop From Library</code> to change the backdrop to <strong>indoors/chalkboard</strong>.<br /></li>
+<li>Create a new sprite from the library, and give it any costume you like. You can pick something from the things folder.<br /></li>
+<li>Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.<br /></li>
+<li>Click the Costumes tab and import four more things. They can be anything you want, yay!<br /></li>
+<li><p>Let’s now make a random picture appear. Create this script:</p>
+<p><img src="7631c2ebd447f595abcc2922f558ac935efa131d.png" alt="    when FLAG clicked
+    repeat (pick random (1) to (5)
+        next costume
+    end" /></p></li>
+</ul>
+</section>
+<section id="test-your-project" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong></p>
+<p>Does the sprite show a different costume?</p>
+<p><strong>Click on it a few more times.</strong></p>
+<p>Do you get different costumes every time? Sometimes you’ll get the same costume twice in a row, but that’s OK. You’ll also notice that you can see the sprite flicker as it changes costume. We’ll fix that in the next step.</p>
+</section>
+<section id="save-your-project" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-2-make-the-pictures-distorted" class="level1 activity">
+<h1>Step 2: Make the pictures distorted</h1>
+<p><strong>Let’s now make a picture distorted when it appears, and become clearer over a few seconds.</strong></p>
+<p>We’ll use a score variable to control how much distortion there is. If the score is high, there will be lots of distortion. As the score goes down, there will be less and less distortion. The score also acts as a timer, like on the <strong>Timer Scratch Card.</strong></p>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>On the Data palette, create a variable called Score.<br /></li>
+<li><p>Change the script to look like this:</p>
+<p><img src="dec821934aa118a1f0327dd3e24617667aa88e12.png" alt="    when FLAG clicked
+    hide
+    repeat (pick random (1) to (5)
+        next costume
+    end
+    set [score v] to (110)
+    repeat until ((score) = (0)
+        change [score v] by [-10]
+        set [pixelate v] effect to (score)
+        set [colour v] effect to (score)
+        show
+        wait (1) secs
+    end" /></p></li>
+</ul>
+<p>You should add the <code class="blockpurple">hide</code> block at the top and the <code class="blockorange">set [score] to 110</code> block, and everything below it.</p>
+</section>
+<section id="test-your-project-1" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong></p>
+<ul>
+<li>Does a random and distorted picture appear?<br /></li>
+<li>Does the distortion get less in stages?<br /></li>
+<li>Does the score go down as the picture becomes less distorted?<br /></li>
+<li>Do you get an undistorted image when the score reaches zero?<br /></li>
+<li>Do you still get a different picture every time you click the green button?</li>
+</ul>
+</section>
+<section id="save-your-project-1" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="things-to-try" class="level2 try">
+<h2>Things to try</h2>
+<ul>
+<li><strong>Try changing the starting score and how much it changes each time around the loop.</strong> How does this change how the picture looks? Does it make it harder or easier to spot what the picture is?<br /></li>
+<li><strong>Try some different graphic effects from the pull-down lists.</strong> How do they change the difficulty?</li>
+</ul>
+</section>
+</section>
+<section id="step-3-allow-the-player-to-guess-the-picture" class="level1 activity">
+<h1>Step 3: Allow the player to guess the picture</h1>
+<p>So far we’ve got our random picture appearing slowly, and a score which decreases over time, but how do you win the game? We’ll add some sprites at the bottom of the screen for the player to click on. If they click on the right one, they win the game. If they click on the wrong one, that sprite disappears and the game carries on.</p>
+<p>First, we need to know what the right answer is.</p>
+<ul>
+<li><strong>Create a new variable</strong> called <strong>right answer</strong>. Make sure it’s for all sprites.<br /></li>
+<li><p>Change the script you’ve written to record the right answer. Add the <code class="blockorange">set [right answer] to costume #</code> blocks just after the first repeat loop:</p>
+<p><img src="b3cff4c0bf4f2801181030cbdbe76e49821d7ee2.png" alt="    when FLAG clicked
+    hide
+    repeat (pick random (1) to (5)
+        next costume
+    end
+    set [right answer v] to (costume #)
+    set [score v] to (110)
+    repeat until ((score) = (0))
+        change [score v] by (-10)
+        set [pixelate effect v] to (score)
+        set [colour effect v] to (score)
+        show
+        wait (1) secs
+    end" /></p></li>
+</ul>
+<p><strong>Now we need to add the sprites that the player can click on.</strong></p>
+<ul>
+<li>Duplicate the main sprite and drag the duplicate to the bottom left corner of the stage.<br /></li>
+<li>Rename this sprite to <strong>answer1.</strong> (This makes it easier to talk about.)<br /></li>
+<li>Delete <strong>answer1</strong>’s script and all its costumes but its first one.<br /></li>
+<li>Do these last three steps again, but put the <strong>answer2</strong> sprite next to <strong>answer1</strong> and delete all but its second costume.<br /></li>
+<li>Do it three more times for <strong>answer3</strong>, <strong>answer4</strong>, and <strong>answer5.</strong><br />You should end up with a row of five answer sprites along the bottom of the Stage, each showing a different costume the the main sprite can be. <strong>None of the answer sprites should have any scripts.</strong></li>
+</ul>
+<p>Now we want to have each sprite respond to being clicked and do something depending on whether its the right answer or not.</p>
+<ul>
+<li><p>Add this script to the answer1 sprite:</p>
+<p><img src="7617657d5afe535e81c3f85447ed8b6df70fcd62.png" alt="    when this sprite clicked
+        if ((right answer) = (1))
+            broadcast [won v]
+        else
+            hide" /></p></li>
+<li>Drag this script into each of the other answer sprites. <strong>In each sprite, change the 1 to 2, 3, and so on.</strong><br /></li>
+<li><p>We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:</p>
+<p><img src="d3303e7cde5b526eee08f89185721a455cfa2727.png" alt="    when I receive [won v]
+        say (join [Congratulations! You scored] (score))" /></p></li>
+</ul>
+<section id="test-your-project-2" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong></p>
+<ul>
+<li>When you test the game, you can use the <strong>answer monitor</strong> on the stage to tell what the right answer is. That’s good for testing.<br /></li>
+<li>What happens when you click on the <strong>right answer</strong>?<br /></li>
+<li>What happens when you click on the <strong>wrong answer?</strong><br /></li>
+<li>What happens to the wrong answer when you <strong>start a new game?</strong></li>
+</ul>
+<p>The test shows up two problems. First, wrong guesses don’t reappear when the next game starts. Second, the score doesn’t stop going down when we get the right answer.</p>
+<ul>
+<li><p>To fix the first problem, add this script to each of the five answer sprites:</p>
+<p><img src="af8d4416dc5a6ae27af64840c9e05d8043ae3bc2.png" alt="    when FLAG clicked
+        show" /></p></li>
+</ul>
+<p>To fix the second problem, we need to stop the <strong>question sprite</strong>’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to <strong>zero</strong> when the game starts and set it to <strong>one</strong> when the game is won. We’ll make the repeat until loop stop when either the score reaches <strong>zero</strong> OR the <strong>game-winning flag</strong> is set to <strong>one.</strong></p>
+<ul>
+<li>Create a new variable called won?<br /></li>
+<li><p>Change the scripts so they look like this:</p>
+<p><img src="a5175fe0ac6963a3f6b2b403b3c2f6b4c2b97963.png" alt="    when FLAG clicked
+        hide
+        repeat (pick random (1) to (5)
+            next costume
+        end
+        set [right answer v] to (costume)
+        set [score v] to (110)
+        set [won v] to (0)
+        repeat until &lt;&lt;(score) = (0)&gt; or &lt;(won) = (1)&gt;&gt;
+            change [score v] by (-10)
+            set [pixelate effect v] to (score)
+            set [colour effect v] to (score)
+            show
+            wait (1) secs
+        end
+
+when I receive [won v]
+    set [won v] to (1)
+    clear graphic effects
+    say (join [Congratulations! You scored] (score))" /></p></li>
+</ul>
+</section>
+<section id="save-your-project-2" class="level2 save">
+<h2>Save your project</h2>
+<p><strong>Well done you’ve finished the basic game!</strong></p>
+<p>There are more things you can do to your game though. Have a go at these challenges!</p>
+</section>
+<section id="challenge-1-make-the-game-harder-or-easier" class="level2 challenge">
+<h2>Challenge 1: Make the game harder or easier</h2>
+<p>Change how difficult the game is.</p>
+<ul>
+<li>Try changing how fast the picture is revealed and how fast the score goes down.<br /></li>
+<li>Try changing the distortions on the picture.<br /></li>
+<li>Try changing the pictures being guessed, to make them either more similar or more different. If you do this, don’t forget to change the answer sprite’s costume.</li>
+</ul>
+</section>
+<section id="save-your-project-3" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-2-distort-the-picture-differently-in-each-game" class="level2 challenge">
+<h2>Challenge 2: Distort the picture differently in each game</h2>
+<p>At the moment, each play of the game uses the same distortion. In Step 2, you might have tried some different distortions that work at least as well as the colour + pixelation we used.</p>
+<p>Find some different distortions that work well.</p>
+<p>Change the game so that each game uses a different distortion in the repeat until loop.</p>
+<p><strong>Hint:</strong> Try creating a new variable, called distortion to use. Set it to a random value at the start of the game. Use if blocks in the body of the repeat until loop to apply the correct distortion for this game.</p>
+</section>
+<section id="save-your-project-4" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-3-make-a-game-have-a-few-rounds" class="level2 challenge">
+<h2>Challenge 3: Make a game have a few rounds</h2>
+<p>At the moment, each game is independent. Change it so that the game proceeds in several rounds. For instance, have one game take three rounds, so the player has to guess three pictures and can score up to 300 points.</p>
+<p><strong>Hint:</strong> You’ll need an extra variable to store the grand total across all the rounds. You’ll also need a loop to go through the different rounds.</p>
+<p><strong>Hint:</strong> You’ll also have to make the wrong guesses reappear at the start of each round. Perhaps you could use a broadcast message to do that?</p>
+</section>
+<section id="save-your-project-5" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-4-make-later-rounds-more-difficult" class="level2 challenge">
+<h2>Challenge 4: Make later rounds more difficult</h2>
+<p>As you go through different rounds, make the game harder each time.</p>
+<p>Does each round need to score the same? Should you get more points for guessing quickly in the later, more difficult rounds?</p>
+<p><strong>Hint:</strong> How will you know which round you’re in? How can you use that to change the difficulty and the score?</p>
+</section>
+<section id="save-your-project-6" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-5-keep-playing-until-the-player-gets-it-wrong" class="level2 challenge">
+<h2>Challenge 5: Keep playing until the player gets it wrong</h2>
+<p>Instead of using a fixed number of rounds, keep playing the game until the player doesn’t get a picture right. This probably only works if the game gets harder in later rounds.</p>
+</section>
+<section id="save-your-project-7" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-6-make-the-game-harder-or-easier-depending-on-how-well-the-player-does" class="level2 challenge">
+<h2>Challenge 6: Make the game harder or easier depending on how well the player does</h2>
+<p>Rather than always making the game harder, make the game adjust the difficulty depending on the skill of the player. If they get the right picture quickly, make the next game a bit harder. If they don’t get the right picture, or only get it late, make the next game a bit easier.</p>
+<p>This idea only really works if you don’t add up someone’s score over several rounds.</p>
+</section>
+<section id="save-your-project-8" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-7-keep-track-of-the-highest-score" class="level2 challenge">
+<h2>Challenge 7: Keep track of the highest score</h2>
+<p>Keep track of the highest score. If someone manages to beat it, ask for their name and update the highest score. Make sure the highest score, and the name of the person who scored it, are displayed.</p>
+</section>
+<section id="save-your-project-9" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-8-make-wrong-guesses-expensive" class="level2 challenge">
+<h2>Challenge 8: Make wrong guesses expensive</h2>
+<p>At the moment, there’s no penalty to just clicking on all the answer sprites as quickly as you can. Change the game so that the score goes down a bit every time you make an incorrect guess.</p>
+<p>Does this make the game better?</p>
+</section>
+<section id="save-your-project-10" class="level2 save">
+<h2>Save your project</h2>
+<p>Well done, you’ve finished! Now you can enjoy your game!</p>
+<p>Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
+          <td><span class="check_text">Activity Checklist</span></td>
+          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
+          <td><span class="flag_text">Test your Project</span></td>
+          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
+          <td><span class="save_text">Save your Project</span></td>
+          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>

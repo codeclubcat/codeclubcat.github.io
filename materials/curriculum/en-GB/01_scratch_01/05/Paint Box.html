@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>(Beta) Paint Box — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">(Beta) Paint Box</h1>
+      <span class="level-indicator">Term 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Term 1</a></li><li class="breadcrumbs-item current">(Beta) Paint Box</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="heads-up" class="level1 beta">
+<h1>Heads Up!</h1>
+<p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
+<!--
+h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
+</section>
+<section id="introduction" class="level1 intro">
+<h1>Introduction</h1>
+<p>In this project, you will be making your own paint program!</p>
+<div class="scratch-preview">
+    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/28541444/?autostart=true" frameborder="0"></iframe>
+    <img src="paint-final.png">
+</div>
+
+
+</section>
+<section id="step-1-making-a-pen" class="level1 activity">
+<h1>Step 1: Making a pen</h1>
+<p>Let’s start by making a pen, that can be used to draw on the stage.</p>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>Start a new project, and delete the cat sprite, so that your project is empty.</p></li>
+<li><p>For this project, you should have a ‘Resources’ folder, containing all of the images you’ll need. Make sure that you can find this folder, and ask your club leader if you can’t find it.</p>
+<p><img src="paint-resources.png" alt="screenshot" /></p></li>
+<li><p>Let’s add the drawing canvas image to your stage. Click the stage, and then click ‘Upload backdrop from file’.</p>
+<p><img src="paint-file.png" alt="screenshot" /></p></li>
+<li><p>Find your ‘Resources folder’, and choose the file called ‘frame.png’. Your stage should now look like this:</p>
+<p><img src="paint-frame.png" alt="screenshot" /></p></li>
+<li><p>Let’s also add a pen to your project. Click ‘Upload sprite from file’ and choose the image called ‘blue-pencil.png’ from your resources folder. Click the <code class="blockmotion">i</code> icon, and name this sprite ‘Pen’.</p>
+<p><img src="paint-blue-pencil.png" alt="screenshot" /></p></li>
+<li><p>As you’ll be using the mouse to draw, you’ll want the pen to always follow the mouse. Add this code to your pen sprite:</p>
+<p><img src="f9d1ec1c609fd9d387070c8880eca1e830021edd.png" alt="    when flag clicked
+    forever
+      go to [mouse pointer v]
+    end" /></p></li>
+<li><p>Test out this code by clicking the flag and then moving the mouse around the stage. Does this work as you expected?</p></li>
+<li><p>Have you noticed that it’s the center of the pen, and not the tip, that follows the mouse pointer?</p>
+<p><img src="paint-center.png" alt="screenshot" /></p>
+<p>To fix this, click on the ‘blue-pencil’ costume of your pen sprite, and click ‘Set costume center’.</p>
+<p><img src="paint-center-icon.png" alt="screenshot" /></p></li>
+<li><p>You should notice that a crosshair appears on the costume. You can now click just below the tip of the pen, to set this point as the costume center.</p>
+<p><img src="paint-pen-center.png" alt="screenshot" /></p></li>
+<li><p>Click the ‘Scripts’ tab, and then test out your pen again - does it work better than it did before?</p></li>
+<li><p>Next, let’s make your pen draw whenever the mouse has been clicked. Add this code to your pen sprite:</p>
+<p><img src="2b6b0f9c89a25b3f6f42fd2101caaa8eab970917.png" alt="    when flag clicked
+    forever
+      go to [mouse pointer v]
+      if &lt;mouse down?&gt; then
+        pen down
+      else
+        pen up
+      end
+    end" /></p>
+<p>As well as using a <code class="blockcontrol">forever</code> loop to make the pen follow the mouse, you’ve now also used an <code class="blockcontrol">if</code> statement to draw on the stage if the mouse button is being held down.</p></li>
+<li><p>Test your code again. This time, move the pen around the stage and hold down the mouse button. Can you draw with your pen?</p>
+<p><img src="paint-draw.png" alt="screenshot" /></p></li>
+<li><p>There’s one more problem with the pen - you can draw anywhere on the stage, including the bit below the drawing surface!</p>
+<p><img src="paint-draw-problem.png" alt="screenshot" /></p>
+<p>To fix this, you have to tell the pen only to draw if the mouse is clicked <em>and</em> if the y-position of the mouse is greater than -110 (<code class="blocksensing">mouse y</code><code class="blockoperators">&gt; -110</code>). Change your pen’s <code class="blockcontrol">if</code> statement to look like this:</p>
+<p><img src="abd7785482908ff74d45d4c272dbf88b522b9baa.png" alt="    when flag clicked
+    forever
+      go to [mouse pointer v]
+      if &lt; &lt;mouse down?&gt; and &lt; (mouse y) &gt; (-110) &gt; &gt; then
+        pen down
+      else
+        pen up
+      end
+    end" /></p></li>
+<li><p>Test your project; you now shouldn’t be able to draw below the drawing surface.</p>
+<p><img src="paint-fixed.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+<section id="save-your-project" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-2-coloured-pens" class="level1 activity">
+<h1>Step 2: Coloured pens</h1>
+<p>Let’s add different colour pens to your project, and allow the user to choose between them!</p>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>First, let’s add another green pen costume to your pen sprite. Click on your pen sprite, and click ‘Upload costume from file’ and select the ‘green-pencil.png’ image to add it to your sprite. Remember to set the center of your new costume.</p>
+<p><img src="paint-green-costume.png" alt="screenshot" /></p></li>
+<li><p>You also need to add two sprites, that will be used to select the colour of the pen. Click ‘Upload sprite from file’ to add both the ‘blue-selector.png’ and ‘green-selector.png’ images as separate sprites.</p>
+<p>Your stage should now look like this:</p>
+<p><img src="paint-selectors.png" alt="screenshot" /></p></li>
+<li><p>When the green selector icon is clicked, you need to <code class="blockevents">broadcast</code> a message to the pen sprite, telling it to change its costume and pen colour. To do this, firstly add this code to the green selector icon:</p>
+<p><img src="12b76afbc93fd6f541fbdfb35f1537d4c6f6ec4b.png" alt="    when this sprite clicked
+    broadcast [green v]" /></p>
+<p>To create the <code class="blockevents">broadcast</code> block, click the down arrow and select ‘new message…’.</p>
+<p><img src="paint-broadcast.png" alt="screenshot" /></p>
+<p>You can then type ‘green’ to create your new message.</p>
+<p><img src="paint-green-message.png" alt="screenshot" /></p></li>
+<li><p>You now need you tell your pen sprite what to do when it receives the message. Add this code to your pen sprite:</p>
+<p><img src="914776bb8b66052376a436ef9e55f57193ba116b.png" alt="    when I receive [green v]
+    switch costume to [green-pencil v]
+    set pen color to [#00FF00]" /></p>
+<p>To set the pen to colour to green, click the coloured box in the <code class="blockpen">set color</code> block, and click on the green selector icon to choose green as your pen colour.</p></li>
+<li><p>You can now do the same for the blue pen icon, adding this code to the blue selector sprite:</p>
+<p><img src="be3efd2f76301bcb7b2df51758a16ea14f267ff0.png" alt="    when this sprite clicked
+    broadcast [blue v]" /></p>
+<p>…and adding this code to the pen sprite:</p>
+<p><img src="26a3b23dca8abea56ff6af9737f1cf699765aba1.png" alt="    when I receive [blue v]
+    switch costume to [blue-pencil v]
+    set pen color to [#0000FF]" /></p></li>
+<li><p>Finally, you need to tell your pen sprite what costume and pen colour to choose, as well as clearing the screen, when your project is started. Add this code to the beginning of the pen’s <code class="blockevents">when flag clicked</code> code (before the <code class="blockcontrol">forever</code> loop):</p>
+<p><img src="3a0c340cae1e8fc603803c538562e784ac1f8280.png" alt="    clear
+    switch costume to [blue-pencil v]
+    set pen color to [#0000FF]" /></p>
+<p>If you prefer, you can start with a different colour pen!</p></li>
+<li><p>Test out your project. Can you switch between blue and green pens?</p>
+<p><img src="paint-pens-test.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+<section id="save-your-project-1" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-3-making-mistakes" class="level1 activity">
+<h1>Step 3: Making mistakes</h1>
+<p>Sometimes mistakes happen, so let’s add a ‘clear’ button and an eraser to our project!</p>
+<section id="activity-checklist-2" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>As well as clearing the canvas when your project is started, let’s add a button to clear the canvas as well. To do this, add a new sprite using the ‘cancel-button.png’ image in your ‘Resources’ folder.</p>
+<p><img src="paint-clear.png" alt="screenshot" /></p></li>
+<li><p>Add code to this new cancel button to clear the canvas when it’s clicked.</p>
+<p><img src="d5f078150baee1601793640783427b1f8eb0f105.png" alt="    when this sprite clicked
+    clear" /></p>
+<p>Notice that you don’t need to send a message to clear the canvas, as any sprite can do it!</p></li>
+<li><p>You can also create an eraser. To do this, add the ‘eraser.png’ image as a new costume to your pen sprite (remember to set the costume center) <em>and</em> as a new selector sprite.</p>
+<p><img src="paint-eraser.png" alt="screenshot" /></p></li>
+<li><p>You can then add code to the eraser selector sprite, to tell the pen to switch to an eraser.</p>
+<p><img src="9926fa93badc0f1029e281aa0cebf8659023e44e.png" alt="    when this sprite clicked
+    broadcast [eraser v]" /></p></li>
+<li><p>When the pen recieves this message, you can create an eraser by switching the pen costume to the eraser, and switching the pen colour to the same colour as the canvas!</p>
+<p><img src="5ae93d0c6062209c1bc02ff8435e9d08ea6558cf.png" alt="    when I receive [eraser v]
+    switch costume to [eraser v]
+    set pen color to [#8d8d8d]" /></p></li>
+<li><p>Test your project, to see if you can clear and erase on the canvas.</p>
+<p><img src="paint-erase-test.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+</section>
+<section id="step-4-changing-the-pen-width" class="level1 activity">
+<h1>Step 4: Changing the pen width</h1>
+<p>Let’s allow the user to draw using a range of different pen sizes.</p>
+<section id="activity-checklist-3" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>First, add a new variable called ‘width’. If you’re not sure how to do this, the ‘Balloons’ project will help you.</p></li>
+<li><p>Add this line <em>inside</em> the <code class="blockcontrol">forever</code> loop of your pen’s code:</p>
+<p><img src="281d28458c24acd60c364f4a8b8814120353c6bd.png" alt="    set pen size to (width)" /></p>
+<p>Your pen width will now repeatedly be set to the value of your ‘width’ variable.</p></li>
+<li><p>You can change the number stored in this variable by right-clicking on your variable (on the stage) and clicking ‘slider’.</p>
+<p><img src="paint-slider.png" alt="screenshot" /></p>
+<p>You can now drag the slider below the variable to change its value.</p>
+<p><img src="paint-slider-change.png" alt="screenshot" /></p></li>
+<li><p>Test your project, and see if you can modify the pen width.</p>
+<p><img src="paint-width-test.png" alt="screenshot" /></p>
+<p>If you prefer, you can set the minimum and maximum value of ‘width’ that’s allowed. To do this, right-click on your variable again and click ‘set slider min and max’. Set the minimum and maximum values of your variable to something more sensible, like 1 and 20.</p>
+<p><img src="paint-slider-max.png" alt="screenshot" /></p>
+<p>Keep testing your ‘width’ variable until you’re happy.</p></li>
+</ul>
+</section>
+<section id="save-your-project-2" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-shortcuts" class="level2 challenge">
+<h2>Challenge: Shortcuts</h2>
+<p>Can you create keyboard shortcuts for your commands? For example:</p>
+<ul>
+<li>b = Switch to blue pen<br /></li>
+<li>g = switch to green pen<br /></li>
+<li>e = switch to eraser<br /></li>
+<li>c = clear screen</li>
+</ul>
+<p>You could even allow the user to change the pen width with the arrow keys!</p>
+</section>
+<section id="save-your-project-3" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-more-pens" class="level2 challenge">
+<h2>Challenge: More pens</h2>
+<p>Can you add red, yellow and black pens to your paint program? You’ll find all of the images you need in your ‘Resources’ folder. Remember to add keyboard shortcuts for these new pens!</p>
+<p>Can you use your pens to draw a picture?</p>
+<p><img src="paint-final.png" alt="screenshot" /></p>
+</section>
+<section id="save-your-project-4" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
+          <td><span class="check_text">Activity Checklist</span></td>
+          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
+          <td><span class="flag_text">Test your Project</span></td>
+          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
+          <td><span class="save_text">Save your Project</span></td>
+          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>

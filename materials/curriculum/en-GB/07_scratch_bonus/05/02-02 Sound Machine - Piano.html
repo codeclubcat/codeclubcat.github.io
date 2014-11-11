@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Scratch Card - Piano — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Scratch Card - Piano</h1>
+      <span class="level-indicator">Level 5</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Additional Scratch Projects</a></li><li class="breadcrumbs-item current">Piano</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Draw a piano by creating black and white rectangles. <img src="piano-costume-1.png" alt="costume1" /><br /></li>
+<li><p>Now create a script which plays a note when the “a” key is pressed.</p>
+<p><img src="fccc86bec9f1c1e63e2e961e0ad94f44db2f09f4.png" alt="    when [a v] key pressed
+        broadcast [piano-1 v]
+
+when I receive [piano-1 v]
+    play note (60 v) for (0.5) beats" /></p></li>
+<li><p>Create two more notes when you press “s” and “d” on the keyboard.</p>
+<p><img src="def3bed24b0018350ce5e4d8c75d1ec39132eec6.png" alt="    when [a v] key pressed
+        broadcast [piano-1 v]
+
+when [s v] key pressed
+    broadcast [piano-2 v]
+
+when [d v] key pressed
+    broadcast [piano-3 v]
+
+when I receive [piano-1 v]
+    play note (60 v) for (0.5) beats
+
+when I receive [piano-2 v]
+    play note (64 v) for (0.5) beats
+
+when I receive [piano-3 v]
+    play note (67 v) for (0.5) beats" /></p></li>
+<li>Copy the costume 3 times. Fill in a different key on each one. <img src="piano-costume-3.png" alt="costume3" /> <img src="piano-costumes.png" alt="all costumes" /><br /></li>
+<li><p>Make each note switch to a different costume and then switch back to <code class="blockblue">costume1</code>.</p>
+<p><img src="8d61cc7d61bc1301663c56e51b0ca64142fa9803.png" alt="    when I receive [piano-1 v]
+        switch to costume [costume2 v]
+        play note (60 v) for (0.5) beats
+        switch to costume [costume1 v]
+
+when I receive [piano-2 v]
+    switch to costume [costume3 v]
+    play note (64 v) for (0.5) beats
+    switch to costume [costume1 v]
+
+when I receive [piano-3 v]
+    switch to costume [costume4 v]
+    play note (67 v) for (0.5) beats
+    switch to costume [costume1 v]" /></p></li>
+</ul>
+</section>
+<section id="challenge-create-a-way-to-change-the-instrument." class="level1">
+<h1>Challenge: Create a way to change the instrument.</h1>
+<p><img src="3b657334c586de34353d2fe4aae1f2f1d867828e.png" alt="    when [up-arrow v] key pressed
+        set instrument to (pick random (1) to (99))" /></p>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+  </body>
+</html>
