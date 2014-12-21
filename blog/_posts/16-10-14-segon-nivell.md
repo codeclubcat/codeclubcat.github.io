@@ -1,9 +1,9 @@
 ---
 layout: blog
 title: Scratch 2: Dissenyem el nostre monstre!
-date:   2014-10-16 
-tags: test
-author: sergi  mireia
+date: 2014-10-16 
+tags: tallers
+author: sergi mireia
 ---
 
 [![monstre](/blog/images_blog/monstre.png)](http://scratch.mit.edu/studios/603382/)
