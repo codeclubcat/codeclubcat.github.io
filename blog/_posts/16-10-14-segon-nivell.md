@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Scratch 2: Dissenyem el nostre monstre!
+title: Scratch 2, Dissenyem el nostre monstre!
 date:   2014-10-16
 tags: tallers
 author: sergi mireia
