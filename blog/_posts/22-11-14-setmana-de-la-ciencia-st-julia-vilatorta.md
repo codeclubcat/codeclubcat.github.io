@@ -16,6 +16,6 @@ Hem vist que la cinta americana, l'aigua, els plàtans, les llimones, l'aigua de
 
 Llavors, creativitat en mà, hem construït els nostres supercontroladors de cartró per jugar a jocs d'ordinador, com el [Pacman](http://scratch.mit.edu/projects/13701368/) o el [Supermario Bross](http://scratch.mit.edu/projects/20502/). Hem xalat d'allò més!
 
-[![Supercontroladors de cartró](/blog/images_blog/taller_conductivitat_sant_julia.jpg)]()
+[![Supercontroladors de cartró](/blog/images_blog/taller_conductivitat_santjulia.jpg)]()
 
  
