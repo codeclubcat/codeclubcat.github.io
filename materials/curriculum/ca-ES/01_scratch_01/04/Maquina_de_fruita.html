@@ -41,12 +41,12 @@
 <h2>Llista de tasques</h2>
 <p><strong>Anem a importar imatges diferents per el nostre joc</strong></p>
 <ul>
-<li>Comenceu un projecte d’Scratch nou. Esborreu el gat clicant amb el botó de la dreta i triant <strong>Esborra</strong><br /></li>
+<li>Comenceu un projecte d’Scratch nou. Esborreu el gat clicant amb el botó de la dreta i triant <strong>Esborra</strong>.<br /></li>
 <li>Primer de tot afegim un fons de la galeria per a l’escenari. Escolliu el fons <strong>rays</strong> de la categoria <strong>Altres</strong> i llavors esborreu el fons blanc original.<br /></li>
 <li>Importeu un nou personatge<br /></li>
-<li>Trieu qualsevol imatge de qualsevol carpeta. Nosaltres hem utilitzat <strong>things/bananas1</strong>, però podeu triar qualsevol imatge que us agradi.<br /></li>
-<li>Cliqueu la ‘<strong>i</strong>’ blava del personatge i canvieu-li el nom a ‘Fruita’.<br /></li>
-<li>Cliqueu la pestanya Vestits i importeu dues coses més. Ara ja teniu 3 personatges (nosaltres vam utilitzar <strong>animals/bee1</strong> i <strong>things/lego</strong>, però podeu utilitzar el que us vingui més de gust).</li>
+<li>Trieu qualsevol imatge de qualsevol carpeta. Nosaltres hem utilitzat <strong>coses/bananas1</strong>, però podeu triar qualsevol imatge que us agradi.<br /></li>
+<li>Cliqueu la ‘<strong>i</strong>’ blava del personatge i canvieu-li el nom a ‘Fruita1’.<br /></li>
+<li>Cliqueu la pestanya Vestits i importeu dues coses més. Ara ja teniu 3 personatges (nosaltres vam utilitzar <strong>animals/bee1</strong> i <strong>coses/lego</strong>, però podeu utilitzar el que us vingui més de gust).</li>
 </ul>
 <p>Ara que tenim els vestits, volem que el personatge se’ls vagi canviant.</p>
 <!-- 
@@ -103,21 +103,21 @@
 <h2>Llista d’activitats</h2>
 <p>Perfecte! Ara farem que el personatge canvii el vestit per sempre, però com ho fem perquè parin de canviar de vestit quan hi cliquem a sobre?</p>
 <ul>
-<li><p>Creeu una nova variable clicant a la paleta <code>Dades</code> i després al botó <code>Crea una Variable</code>. Anomeneu-la <code class="blockorange">parat</code> i seleccioneu la opció “Només per aquest personatge”, i també desmarqueu la caixeta al costat de la variable perquè no es vegi a l’escenari.</p></li>
-<li><p>Al principi del joc, el personatge no haurà estat clicat i per tant posarem el valor de la variable a <strong>“NO”</strong>.</p>
-<p><img src="6a3ab08dee94a7e31279820c8c163fe49b8628b7.png" alt="   quan la BANDERA VERDA es premi
-      assigna a [parat v] el valor [NO]
+<li><p>Creeu una nova variable clicant a la paleta <code>Dades</code> i després al botó <code>Crea una Variable</code>. Anomeneu-la <code class="blockorange">parat</code> i seleccioneu la opció <strong>“Només per aquest personatge”</strong>, i també desmarqueu la caixeta al costat de la variable perquè no es vegi a l’escenari.</p></li>
+<li><p>Al principi del joc, el personatge no haurà estat clicat i per tant posarem el valor de la variable a <strong>0</strong>.</p>
+<p><img src="2dd1d3c2827a793af8bc39923a29c71b8263937f.png" alt="   quan la BANDERA VERDA es premi
+      assigna a [parat v] el valor [0]
       per sempre
          següent vestit
          espera (0.1) segons" /></p></li>
-<li><p>Ara posarem la variable <code class="blockorange">parat</code> a <strong>“SI”</strong> quan algú clica el personatge.</p>
-<p><img src="94afb22611f8a421d4394513e651ef371a8491e5.png" alt="   quan es cliqui aquest personatge
-      assigna a [parat v] el valor [SI]" /></p></li>
-<li><p>Finalment, hem d’aturar els canvis de vestit quan la variable <code class="blockorange">parat</code> tingui el valor “SI”. Afegiu un bloc <code class="blockyellow">si...llavors</code> i un bloc de <strong>comparació</strong> <code class="blockgreen">[] = []</code> (a la paleta dels <em>Operadors</em>) per mirar si <code class="blockorange">parat</code> està a “NO”.</p>
-<p><img src="fbdb5e88562ba60ce69b211af6720c2324f43946.png" alt="   quan la BANDERA VERDA es premi
-   assigna a [parat v] el valor [NO]
+<li><p>Ara posarem la variable <code class="blockorange">parat</code> a <strong>1</strong> quan algú clica el personatge.</p>
+<p><img src="861683ca98c697cce375aa90b51d1e89c4cbb225.png" alt="   quan es cliqui aquest personatge
+      assigna a [parat v] el valor [1]" /></p></li>
+<li><p>Finalment, hem d’aturar els canvis de vestit quan la variable <code class="blockorange">parat</code> tingui el valor “1”. Afegiu un bloc <code class="blockyellow">si...llavors</code> i un bloc de <strong>comparació</strong> <code class="blockgreen">[] = []</code> (a la paleta dels <em>Operadors</em>) per mirar si <code class="blockorange">parat</code> està a “0”.</p>
+<p><img src="c0b61e6bbca8c208fa226c30f097e84612faf03e.png" alt="   quan la BANDERA VERDA es premi
+   assigna a [parat v] el valor [0]
    per sempre
-      si &lt;(parat) = [NO]&gt; llavors
+      si &lt;(parat) = [0]&gt; llavors
          següent vestit
          espera (0.1) segons" /></p></li>
 </ul>
@@ -148,8 +148,9 @@
 <h1>Pas 4: Crear els altres personatges</h1>
 <p>Ara necessitem crear els altres personatges per tal de poder jugar al nostre joc!</p>
 <ul>
-<li><strong>Dupliqueu el personatge</strong> (Fruita) clicant-hi a sobre amb el botó dret.<br /></li>
+<li><strong>Dupliqueu el personatge</strong> (Fruita1) clicant-hi a sobre amb el botó dret.<br /></li>
 <li>Dupliqueu-lo una altra vegada. Ara heu de tenir 3 personatges sobre l’escenari.<br /></li>
+<li>Anomeneu-los <strong>Fruita1</strong>, <strong>Fruita2</strong> i <strong>Fruita3</strong><br /></li>
 <li>Moveu cada personatge per tal que estiguin en línia. Feu-los una mica més petits si ho necessiteu.</li>
 </ul>
 <section id="proveu-el-projecte-2" class="level2 flag">
@@ -169,18 +170,18 @@
 <section id="pas-5-posar-un-vestit-a-latzar-a-cada-personatge" class="level1 activity">
 <h1>Pas 5: Posar un vestit a l’atzar a cada personatge</h1>
 <p>Anem a fer que quan es premi la bandera verda, cada personatge comenci amb un vestit a l’atzar.</p>
-<p>Quan engegueu el joc just després de carregar-lo, tots els personatges mostren el mateix vestit i canvien plegats. Seria més interessant (i difícil) si canviéssin de forma menys predictible.</p>
+<p>Quan engegueu el joc just després de carregar-lo, tots els personatges mostren el mateix vestit i canvien plegats. Seria més interessant (i difícil) si canviessin de forma menys predictible.</p>
 <section id="llista-dactivitats-2" class="level2 check">
 <h2>Llista d’activitats</h2>
 <ul>
 <li>Si mireu la pestanya <code>Vestits</code> per a un personatge veureu que els vestits estan numerats.<br /></li>
 <li>Per fer que un personatge comenci amb un cert vestit, anem a afegir un bloc <code class="blockpurple">canvia el vestit a ...</code> amb un <code class="blockgreen">nombre a l'atzar entre (1) i (3)</code> (de la paleta <strong>Operadors</strong> verda), per escollir el número del vestit.<br /></li>
 <li><p>També podem fer servir aquest bloc en el <code class="blockyellow">per sempre</code> i així el personatge canviï sempre a un vestit diferent cada vegada.</p>
-<p><img src="3743cd054f926d8f2435119b4208661d466d149a.png" alt="   quan la BANDERA VERDA es premi
-      assigna a [parat v] el valor [NO]
+<p><img src="b42c4bf42df41f2158807986faf8cfe18e5e6ef5.png" alt="   quan la BANDERA VERDA es premi
+      assigna a [parat v] el valor [0]
       canvia el vestit a &lt;nombre a l&#39;atzar entre (1) i (3)&gt;
       per sempre
-         si &lt;(parat) = [NO]&gt; llavors
+         si &lt;(parat) = [0]&gt; llavors
             canvia el vestit a &lt;nombre a l&#39;atzar entre (1) i (3)&gt;
             espera (0.1) segons" /></p></li>
 <li><p>Fes el mateix per a tots els personatges.</p></li>
@@ -225,11 +226,11 @@
 <li>Cliqueu a l’escenari i després a la pestanya <code>Fons</code>. Canvieu el nom del fons actual per <strong>“Jugant”</strong>.<br /></li>
 <li>Dupliqueu el fons i afegiu un text a la còpia que posi <strong>“Game Over”</strong>. Podeu canviar el tamany del text clicant-lo i arrossegant alguna de les cantonades. Poseu el nom <strong>“Game Over”</strong> a aquest fons.<br /></li>
 <li>Cliqueu a la pestanya <code>Programes</code> per a l’escenari i feu que el fons “Jugant” sigui el que s’utilitza quan el joc comença.<br /></li>
-<li><p>Com podem detectar quan tots els personatges s’han parat? Recordeu que hem utilitzat la variable <code class="blockorange">parat</code> per saber si un personatge ha estat clicat? Anem a mirar la variable <code class="blockorange">parat</code> per al personatge <strong>Fruit3</strong> per veure si el joc s’ha acabat. Seleccioneu el personatge Fruit3 i busqueu el bloc <code class="blockblue">[posicio x] de [Fruit3]</code> de la paleta <code class="blocklightgrey">Sensing</code>, però canviant <strong>posició x</strong> a <code class="blockorange">parat</code>.</p>
-<p><img src="e56a4e4e44566d40ca0fad5bc907f707fa22ede1.png" alt="   quan la BANDERA VERDA es premi
+<li><p>Com podem detectar quan tots els personatges s’han parat? Recordeu que hem utilitzat la variable <code class="blockorange">parat</code> per saber si un personatge ha estat clicat? Anem a mirar la variable <code class="blockorange">parat</code> per al personatge <strong>Fruit3</strong> per veure si el joc s’ha acabat. Seleccioneu el personatge Fruit3 i busqueu el bloc <code class="blockblue">[posicio x] de [Fruit3]</code> de la paleta <code class="blocklightgrey">Sensors</code>, però canviant <strong>posició x</strong> a <code class="blockorange">parat</code>.</p>
+<p><img src="960d193644a294c2ac504558836fe521f3a77b43.png" alt="   quan la BANDERA VERDA es premi
       canvia el fons a [Jugant v]
       per sempre
-         si &lt;([parat v] de [Fruita3]) = [SI]&gt; llavors
+         si &lt;([parat v] de [Fruita3]) = [1]&gt; llavors
             canvia el fons a [Game Over v]" /></p></li>
 </ul>
 </section>
@@ -238,12 +239,12 @@
 <p>Cliqueu la bandera verda. Apareix el missatge “Game Over” quan cliqueu el tercer personatge?</p>
 <p>Què succeeix si pareu la Fruita3 abans d’haver parat els dos altres personatges? Anem a modificar el programa per tal que funcioni independentment de l’ordre en què es cliquin els personatges.</p>
 <ul>
-<li><p>Per mirar que <strong>tots tres</strong> personatges tenen la variable <code class="blockorange">parat</code> amb el valor <strong>SI</strong>, podem fer servir el bloc <code class="blockgreen">&lt;&gt; i &lt;&gt;</code>. Aquest és un bloc que pot ser difícil de muntar, intenteu fer-ho per passos i amb molta cura.</p>
-<p><img src="2d15f6ff924cb1b251483069910ebb48fe3c4095.png" alt="   quan la BANDERA VERDA es premi
+<li><p>Per mirar que <strong>tots tres</strong> personatges tenen la variable <code class="blockorange">parat</code> amb el valor <strong>1</strong>, podem fer servir el bloc <code class="blockgreen">&lt;&gt; i &lt;&gt;</code>. Aquest és un bloc que pot ser difícil de muntar, intenteu fer-ho per passos i amb molta cura.</p>
+<p><img src="54480d34a3c960d3ef08f154bd44741c05a1b9b4.png" alt="   quan la BANDERA VERDA es premi
       canvia el fons a [Jugant v]
       per sempre
-         si &lt;&lt;&lt;([parat v] de [Fruita1 v]) = [SI]&gt; i &lt;([parat v] de [Fruita2 v]) = [SI]&gt;&gt; i &lt;([parat v] de [Fruita1 v]) = [SI]&gt;&gt; llavors
-            canvia el fons a [Game Over v]" /></p></li>
+         si &lt;&lt;&lt;([parat v] de [Fruita1 v]) = [1]&gt; i &lt;([parat v] de [Fruita2 v]) = [1]&gt;&gt; i &lt;([1rat v] de [Fruita3 v]) = [1]&gt;&gt; llav1s
+            canvia el fons a [Game1ver v]" /></p></li>
 </ul>
 </section>
 <section id="proveu-el-projecte-5" class="level2 flag">
@@ -269,10 +270,10 @@
 <li>Hem fet el programa que mira si el joc s’ha acabat en el <strong>Pas 6</strong>, ara només caldria mirar també si el jugador ha guanyat. Aneu als fons d’escenari un altre cop i afegiu el text <strong>“Has guanyat!”</strong>. Canvieu el nom del fons a <strong>“Guanyar”</strong>.<br /></li>
 <li>Copieu el fons de nou i canvieu el text per <strong>“Has perdut…”</strong>. Canvia el nom del fons a <strong>“Perdre”</strong>.<br /></li>
 <li><p>Ara necessitem alguns blocs més per decidir quin fons hem de posar quan s’acaba el joc. Podem fer servir un bloc `<code class="blockyellow">si..llavors..sino</code> per veure si el jugador ha guanyat o ha perdut comparant cada <code class="blocklightblue">[vestit nr] de [Fruita3]</code> (a la paleta de <code class="blocklightblue">Sensors</code>) d’un personatge amb el dels altres.</p>
-<p><img src="614d7a92c1ef49492dd97df7060c7c685b86e327.png" alt="   quan la BANDERA VERDA es premi
+<p><img src="12ee6d489e5f6f2ad57acf5d9b69c23f1f21fdf9.png" alt="   quan la BANDERA VERDA es premi
       canvia el fons a [Jugant v]
       per sempre
-         si &lt;&lt;&lt;([parat v] de [Fruit1 v]) = [YES]&gt; i &lt;([parat v]  of [Fruit2 v]) = [YES]&gt;&gt; and &lt;([stopped v]  of [Fruit3 v]) = [YES]&gt;&gt; llavors
+         si &lt;&lt;&lt;([parat v] de [Fruit1 v]) = [1]&gt; i &lt;([parat v]  of [Fruit2 v]) = [1]&gt;&gt; and &lt;([parat v]  of [Fruit3 v]) = [1]&gt;&gt; llavors
             si &lt;&lt;([vestit nr v] de [Fruit1 v]) = ([vestit nr v]  of [Fruit2 v])&gt; and &lt;([vestit nr v]  of [Fruit2 v]) = ([vestit nr v]  of [Fruit3 v])&gt;&gt; llavors
                canvia el fons a [Guanyar v]
             si no
@@ -289,8 +290,8 @@
 <section id="repte-fer-que-el-joc-ajusti-la-dificultat-automaticament" class="level2 challenge">
 <h2>Repte: Fer que el joc ajusti la dificultat automàticament</h2>
 <p>A l’hora de jugar, us trobareu amb persones de diferents habilitats. <strong>Com ajustareu la dificultat del joc depenent del jugador?</strong></p>
-<p>Una manera de fer-ho és <strong>ajustar la velocitat de canvi dels vestits</strong>. Podeu utilitzar una variable, que s’anomeni <code class="blockorange">retard</code>, que ens doni la durada de cada bloc <code class="blockorange">espera</code> per a cada personatge. Si el jugador guanya la partida, la variable <code class="blockorange">retard</code> es pot escurçar una mica (per fer el joc més difícil). Si el jugador perd la partida, la variable<br /><code class="blockorange">retard</code> es pot augmentar una mica (per fer el joc més fàcil).</p>
-<p>Probablement també haureu de pensar en fer servir un manera diferent de començar el joc (que no sigui <code class="blockyellow">quan la bandera verda es premi</code>, perquè així es podran guardar valors que es podran recordar entre diferents partides.</p>
+<p>Una manera de fer-ho és <strong>ajustar la velocitat de canvi dels vestits</strong>. Podeu utilitzar una variable, que s’anomeni <code class="blockorange">retard</code>, que ens doni la durada de cada bloc <code class="blockorange">espera</code> per a cada personatge. Si el jugador guanya la partida, la variable <code class="blockorange">retard</code> es pot escurçar una mica (per fer el joc més difícil). Si el jugador perd la partida, la variable <code class="blockorange">retard</code> es pot augmentar una mica (per fer el joc més fàcil).</p>
+<p>Probablement també haureu de pensar en fer servir un manera diferent de començar el joc (que no sigui <code class="blockyellow">quan la bandera verda es premi</code>), perquè així es podran guardar valors que es podran recordar entre diferents partides.</p>
 </section>
 <section id="deseu-el-projecte-6" class="level2 save">
 <h2>Deseu el projecte</h2>
@@ -302,7 +303,7 @@
 
     <aside class="legal-notice copyright">
       <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
-      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+      <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
 
     <div id="legend">
