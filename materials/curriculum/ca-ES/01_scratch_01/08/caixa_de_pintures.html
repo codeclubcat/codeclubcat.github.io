@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="world"  lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Caixa de Pintures — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Caixa de Pintures</h1>
+      <span class="level-indicator">Nivell 3</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Idiomes</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Català</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Inicial</a></li><li class="breadcrumbs-item current">Caixa de Pintures</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<!--
+*************************************************************************************************
+Comentaris:
+
+Traducció Selma Casanovas
+    
+    - FLAG ->  Bandera, bandereta?, banderola? (Senyera, per més correcte que sigui, ho penso en quatribarrat, no hi puc fer més) 
+    - script. Crec que ja en les trads anteriors ho vaig deixar a script: cap proposta?
+    - Traduccions pendents de les 'Scratch Cards?' 
+      - Cronòmetre
+*************************************************************************************************
+-->
+
+
+<!--
+######################################################################
+######################################################################
+-->
+
+
+<section id="introduccio" class="level1 intro">
+<h1>Introducció</h1>
+<p>En aquest projecte construireu una eina per dibuixar. Hi podreu pintar, canviar de color, netejar la pantalla, estampar, i moltes més coses!!</p>
+</section>
+<section id="pas-1-arrossegar-i-dibuixar" class="level1 activity">
+<h1>Pas 1: Arrossegar i dibuixar</h1>
+<p>Començarem amb un llapis que dibuixa quan l’arrossegueu per l’Escenari.</p>
+<section id="llista-de-tasques" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li><p>Comenceu un projecte nou de Scratch. Elimineu el gat (premeu el botó dret damunt del gat i llavors <strong>esborra</strong>).</p></li>
+<li><p>Seleccioneu l’<strong>Escenari</strong> i llavors la pestanya <strong>Fons</strong>. Importeu el fons <strong>indoors/chalkboard</strong>.</p></li>
+<li><p>Creeu una nova animació que es digui <strong>llapis</strong>, usant el recurs <strong>resources\green-pencil.</strong></p></li>
+<li><p>Canvieu a la pestanya <strong>vestits</strong>, cliqueu <strong>Edita</strong> per aquest vestit, i feu que el centre de la imatge sigui a la punta del llapis. Per fer-ho, cliqueu <strong>Fixa el centre del vestit</strong> i arrossegueu les línies fins que passin per la punta.</p></li>
+<li><p>Feu que el llapis segueixi el ratolí per tot l’escenari utilitzant els blocs <strong>per sempre</strong> i <strong>vés a</strong>.</p>
+<p><img src="106c91aef0ebd0cbfb27535c0d2e282cddcd42ce.png" alt="    quan la BANDERA VERDA es premi
+        per sempre
+            vés a [punter del ratolí v]" /></p></li>
+</ul>
+<p><strong>Ara el que volem és fer servir aquesta animació com un llapis de veritat.</strong> Si mireu dins la secció <strong>llapis</strong>, hi veureu diversos blocs per controlar una eina de dibuix. Els que ens interessen ara són <strong>baixa el llapis</strong> i <strong>puja el llapis</strong></p>
+<ul>
+<li><p>Controlarem el llapis amb el ratolí: quan el botó del ratolí estigui premut, el llapis “tocarà el paper” i quan no ho estigui, el llapis estarà aixecat. Una manera de fer-ho és amb un bloc <strong>si… si no</strong> i el bloc <strong>ratolí premut?</strong>:</p>
+<p><img src="2785f3c8131717017b6c1e0c0b0e9850081e1f72.png" alt="    quan la BANDERA VERDA es premi
+        per sempre
+            vés a [punter del ratolí v]
+            si &lt;ratolí clicat?&gt;
+               baixa el llapis
+            si no
+               puja el llapis" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Comproveu que el llapis va allà on va el ratolí. Què passa si manteniu el botó del ratolí premut mentre moveu el ratolí? (No cal que us preocupeu encara pel color del llapis).</p>
+</section>
+<section id="deseu-el-projecte" class="level2 save">
+<h2>Deseu el projecte</h2>
+<p>Ben aviat us trobareu que la pantalla se us omple de gargots.</p>
+<ul>
+<li><p>Per netejar la pantalla, podem fer servir el bloc <strong>neteja</strong>.</p>
+<p><img src="8ddfec8872a8596870801a98c7b3a3644a68992a.png" alt="    quan la BANDERA VERDA es premi
+        neteja
+        per sempre
+            vés a [punter del ratolí v]
+            si &lt;ratolí clicat?&gt;
+               baixa el llapis
+            si no
+               puja el llapis" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-1" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Comproveu que el que havíeu dibuixat desapareix en clicar la bandera verda.</p>
+</section>
+<section id="deseu-el-projecte-1" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!--
+######################################################################
+######################################################################
+-->
+
+
+</section>
+</section>
+<section id="pas-2-netejar-la-pantalla" class="level1 activity">
+<h1>Pas 2: Netejar la pantalla</h1>
+<p>Per no haver de parar i reiniciar tot el programa cada cop que volem netejar, afegirem un <strong>botó de neteja</strong> de pantalla. Utilitzarà el mateix bloc <strong>neteja</strong> que hem vist abans.</p>
+<section id="llista-de-tasques-1" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Creeu una nova animació a partir del vestit <strong>resources/cancel button</strong>.<br /></li>
+<li>Poseu-li un nom. Per exemple <strong>neteja</strong>.<br /></li>
+<li>Posicioneu l’animació a la part baixa de la pantalla, prop del racó esquerre.<br /></li>
+<li><p>Programeu l’animació amb aquest simple script:</p>
+<p><img src="431e97d2c12ee3164c214703a18ee47eb17512b2.png" alt="    quan es cliqui aquest personatge
+        neteja" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-2" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Comproveu que el botó neteja sí que neteja la vostra pantalla.</p>
+</section>
+<section id="deseu-el-projecte-2" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!--
+######################################################################
+######################################################################
+-->
+
+
+</section>
+</section>
+<section id="pas-3-canviar-de-color" class="level1 activity">
+<h1>Pas 3: Canviar de color</h1>
+<p>Fins aquí només hem pogut dibuixar línies de color blau. Anem ara a dibuixar amb uns quants colors diferents! Afegirem algunes animacions al peu de la pantalla. Les animacions semblaran botons de colors. Si en cliquem un, canviarà el color de la línia que dibuixem. Per tal de saber quin color tenim activat, el botó canviarà també el color de l’animació llapis.</p>
+<ul>
+<li>Afegiu una animació nova, que anomenarem <strong>vermell</strong>, a partir del vestit <strong>resources/red-selector costume</strong>.<br /></li>
+<li>Poseu-la en algun lloc a la part baixa de la pantalla, prop del <strong>botó neteja</strong>.<br /></li>
+<li><p>En prémer l’animació vermell, hauria d’enviar a tots el missatge <strong>vermell</strong>.</p>
+<p><img src="cf92842337bc16f386c8545cbe0e0e647647356d.png" alt="    quan es cliqui aquest personatge
+        envia a tots [VERMELL v]" /></p></li>
+</ul>
+<p><strong>Ja està: això és tot el que fa aquesta animació. El gruix de la feina el farà el llapis.</strong></p>
+<p>Al llapis, importeu un nou vestit, <strong>resources/red-pencil</strong>. Feu que el centre del vestit se situi a la punta del llapis, tal com ho heu fet pel vestit verd original.</p>
+<ul>
+<li><p>Afegiu un script nou al llapis. Quan el llapis rebi el missatge <strong>vermell</strong>, hauria de canviar al vestit de llapis vermell i el color amb què pinta hauria de canviar a vermell (utilitzeu el blocs <strong>fixa el color del llapis a</strong>). <strong>Pista:</strong> si cliqueu al quadret de color del bloc <strong>fixa el color del llapis a</strong>, podeu escollir el color exacte de la vostra animació <strong>vermell</strong> amb el recollidor de mostres.</p>
+<p><img src="930b302b1edb59ed70c191f65a6e1ad90cb46455.png" alt="    quan rebi [VERMELL v]
+        canvia el vestit a [llapis-vermell v]
+            fixa el color del llapis a (vermell)" /></p></li>
+</ul>
+<section id="proveu-el-projecte-3" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Comenceu dibuixant una línia. Cliqueu llavors el selector vermell i dibuixeu una mica més. Que canvia de vestit, el llapis? I que pinta vermell? I ja pinta des de la punta del llapis? O des d’alguna altra part del llapis?</p>
+</section>
+<section id="deseu-el-projecte-3" class="level2 save">
+<h2>Deseu el projecte</h2>
+<ul>
+<li>Repetiu això mateix per als selectors de color blau, groc i verd.</li>
+</ul>
+</section>
+<section id="proveu-el-projecte-4" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Comproveu que tots els botons selectors funcionen. Tots ells canvien el vestit al color esperat? Tots ells fan que el llapis dibuixi en el color esperat? Tots ells pinten des de la punta del llapis?</p>
+</section>
+<section id="deseu-el-projecte-4" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!--
+######################################################################
+######################################################################
+-->
+
+
+</section>
+</section>
+<section id="pas-4-dibuixar-nomes-dins-els-limits" class="level1 activity">
+<h1>Pas 4: Dibuixar només dins els límits</h1>
+<p>Potser ja us heu adonat que es pot pintar per tot l’<strong>Escenari</strong>, fins i tot a les vores. Ara voldríem mantenir els traços només a la part central de l’<strong>Escenari</strong>. Això s’aconsegueix fent que el llapis no pugui sortir de l’àrea de dibuix. La part de color gris clar.</p>
+<p>Si ho recordeu, Scratch defineix els punts a partir dels eixos x i y de coordenades. La nostra àrea de dibuix se situa entre els valors 230 i -230 de l’eix x, i els valors 170 i -120 de l’eix y. Aquests valors es poden usar en un bloc <strong>si</strong>, que s’asseguri que el ratolí és dins l’àrea permesa abans de fer-hi anar el llapis.</p>
+<ul>
+<li><p>Per fer-ho, posarem un nou bloc <strong>si</strong> al voltant del bloc <strong>vés a… si</strong> que ja teníem. Per construir això us caldran 3 blocs <strong>i</strong>: un per a les dues condicions sobre ratolí x, un altre per les de ratolí y, i finalment un altre per unir-les totes:</p>
+<p><img src="ff951a265836c9be3b14fc4665bef920fed056fd.png" alt="    neteja
+    per sempre 
+        si &lt;&lt;&lt;(ratolí x) &gt; (-230)&gt; i &lt;(ratolí x) &lt; (230)&gt;&gt; i &lt;&lt;(ratolí y) &gt; (-120)&gt; i &lt;(ratolí y) &lt; (170)&gt;&gt;&gt;
+            vés a [punter del ratolí v]" /></p></li>
+<li><p>Com que no es pot pintar fora de l’àrea de dibuix, podem amagar el llapis al sortir-ne. Per fer-ho, en lloc d’un bloc <strong>si</strong> n’hi posarem un de <strong>si…si no</strong>. En cas que es compleixi la condició, hi posarem una intrucció <strong>mostra</strong>, i en cas que no, <strong>amaga</strong>.</p>
+<p><img src="fefa01bf266141a919aeb51a1dba9b050668d4cf.png" alt="    quan la BANDERA VERDA es premi
+        puja el llapis
+        neteja
+        per sempre
+            si &lt;&lt;&lt;(ratolí x) &gt; (-230)&gt; i &lt;(ratolí x) &lt; (230)&gt;&gt; i &lt;&lt;(ratolí y) &gt; (-120)&gt; i &lt;(ratolí y) &lt; (170)&gt;&gt;&gt;
+                mostra
+                vés a [punter del ratolí v]
+                si &lt;ratolí clicat?&gt;
+                    baixa el llapis
+                si no
+                    puja el llapis
+                fi
+            si no
+                amaga
+            fi
+        fi" /></p></li>
+</ul>
+<section id="proveu-el-projecte-5" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Encara podeu dibuixar dins l’àrea de dibuix? I fora? Què li passa, al llapis, quan sortiu de l’àrea de dibuix i hi torneu a entrar?</p>
+</section>
+<section id="deseu-el-projecte-5" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!--
+######################################################################
+######################################################################
+-->
+
+
+</section>
+</section>
+<section id="pas-5-esborrador" class="level1 activity">
+<h1>Pas 5: Esborrador</h1>
+<p><strong>Pintar línies està bé però a vegades fem algun eror que volem esborrar.</strong> Ho farem amb un nou llapis que pinta en gris (el color del fons!).</p>
+<p>Afegiu una nova animació-botó a l’<strong>Escenari</strong> per seleccionar l’esborrador, a partir del vestit <strong>resources/eraser</strong>. Feu-lo més petit si cal perquè hi càpiga a la base de la pantalla. Funcionarà com els altres selectors, però enviarà un missatge <strong>ESBORRADOR</strong>.</p>
+<p>Responent a aquest missatge, l’animació <strong>llapis</strong> canviarà el color de dibuix a gris i el vestit al mateix del botó esborrador (<strong>resources/eraser</strong>). <strong>Penseu-hi a reposicionar el centre de l’animació també en aquest cas.</strong></p>
+<section id="proveu-el-projecte-6" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Comproveu que l’esborrador elimina les línies dibuixades. Podeu tornar al llapis, un cop heu seleccionat l’esborrador?</p>
+</section>
+<section id="deseu-el-projecte-6" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!--
+######################################################################
+######################################################################
+-->
+
+
+</section>
+</section>
+<section id="pas-6-estampacions" class="level1">
+<h1>Pas 6: Estampacions</h1>
+<p>La propera cosa que podem afegir és una eina d’estampació, per estampar petites imatges al nostre dibuix.</p>
+<section id="llista-de-tasques-2" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Afegiu una animació nova, a partir del vestit o imatge que preferiu. Feu-la de la mida dels altres botons que ja hi ha a la base de la pantalla (esborrador, neteja, selectors de color). En clicar aquesta animació, s’enviarà a tots el missatge <strong>ESTAMPA</strong>.<br /></li>
+<li>A l’animació <strong>llapis</strong>, afegiu el mateix vestit que heu escollit per a l’estampació.<br /></li>
+<li>A l’animació <strong>llapis</strong> hi afegirem una variable, que es dirà <strong>modeLlapis</strong> (només per aquesta animació). La farem servir per recordar si estem pintant o bé estampant.<br /></li>
+<li>També al <strong>llapis</strong>, hi afegirem un script que reaccioni al missatge <strong>ESTAMPA</strong>. Ha de canviar al vestit de l’estampa i posar el <strong>modeLlapis</strong> a <strong>fals</strong>.<br /></li>
+<li>Canvieu la resposta a la resta de missatges de canvi d’eina (blau,vermell,groc,verd,esborrador) perquè tots posin el <strong>modeLlapis</strong> a <strong>cert</strong>.<br /></li>
+<li>Finalment, allà on hi tenim la instrucció <strong>baixa el llapis</strong>, ara ho farem només si <strong>modeLlapis</strong> està a <strong>cert</strong>, si és <strong>fals</strong>, utilitzarem la instrucció <strong>estampa</strong>.</li>
+</ul>
+</section>
+<section id="proveu-el-projecte-7" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Comproveu que l’eina d’estampació funciona. Què passa si torneu a les eines de llapis? Encara funcionen?</p>
+</section>
+<section id="deseu-el-projecte-7" class="level2 save">
+<h2>Deseu el projecte</h2>
+<p><strong>Molt ben fet!!! heu completat el projecte bàsic. Us atreviu amb uns quants reptes?</strong></p>
+<!--
+######################################################################
+######################################################################
+-->
+
+
+</section>
+<section id="repte-1-llapis-multicolor" class="level2 challenge">
+<h2>Repte 1: Llapis Multicolor</h2>
+<p>Ara afegirem un llapis especial que pinta en multicolors. Això no ho podem fer amb els llapis o rotuladors del món real, i per això té la gràcia de mostrar-nos com un ordinador ens permet de fer coses diferents. El secret de com funciona és al bloc de canvi de color de llapis.</p>
+<p>Per començar, afegireu el botó per escollir aquesta eina, i el vestit corresponent a l’animació llapis:</p>
+<ul>
+<li>Creeu una nova animació per seleccionar aquest llapis especial i poseu-la amb la resta de selectors a la part baixa de la pantalla. Feu servir el vestit <strong>resources/rainbow-selector</strong> i feu que envii a tots <strong>MULTICOLOR</strong> en ser clicat.<br /></li>
+<li>Afegiu també aquest vestit (<strong>resources/rainbow-pencil</strong>) a l’animació <strong>llapis</strong>.</li>
+</ul>
+<p>Fareu un script que canvïi el color de tinta uns quants cops per segon per crear l’efecte Arc de Sant Martí (Nosaltres hem trobat que canviant-lo 5 unitats cada 0.05 segons funciona prou bé, però podeu provar-ho amb altres valors). La tarja Scratch <strong>Cronòmetre</strong> mostra com fer que una cosa passi a cada cert interval de temps. Useu un bloc <strong>augmenta 5 el color del llapis</strong> en lloc de <strong>augmenta -1 el temps</strong> dins el bucle.</p>
+<p>També us caldrà controlar el bucle perquè només canvii el color quan hi ha seleccionat el llapis multicolor, altrament tots els llapis tindrien el mateix efecte!!! Això es pot controlar amb una nova variable <strong>canviMulticolor</strong> que sigui <strong>cert</strong> per aquest llapis i fal per a la resta d’eines. Cada cop que el llapis respon a un missatge de selecció d’eina s’hauria de posar el valor corresponent a aquesta variable.</p>
+<p>Fes servir el que has après per controlar l’efecte multicolor. Els scripts que reaccionen als missatges de selecció de llapis hauran d’actuar sobre dues variables: modeLlapis i canviMulticolor.</p>
+</section>
+<section id="proveu-el-projecte-8" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Funciona com esperaves, el llapis multicolor? Què passa quan tornes a escollir una eina de llapis normal?</p>
+</section>
+<section id="deseu-el-projecte-8" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!--
+######################################################################
+######################################################################
+-->
+
+
+</section>
+<section id="repte-2-tecles-rapides" class="level2 challenge">
+<h2>Repte 2: Tecles ràpides</h2>
+<p>En lloc d’utilitzar les animacions a la base de l’escenari per seleccionar cada eina, podeu fer servir el teclat per seleccionar les diferents eines. Per exemple:</p>
+<ul>
+<li>b = canviar al llapis blau.<br /></li>
+<li>g = canviar al llapis verd.<br /></li>
+<li>e = canviar a l’esborrador.<br /></li>
+<li>c = esborrar la pantalla.</li>
+</ul>
+<p>També es podria permetre al usuari canviar el gruix del llapis amb les fletxes!</p>
+</section>
+<section id="proveu-el-projecte-9" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Cliqueu la bandera verda.</strong></p>
+<p>Les eines es canvien amb les tecles assignades? Les eines funcionen bé quan se seleccionen amb les tecles?</p>
+</section>
+<section id="deseu-el-projecte-9" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!--
+
+[Pau, 23/3/2015]: Això de sota estava a la versió anterior, suposo (el nou "Paint Box" té altres coses). Ho trec de moment...
+
+##Challenge 3: Big and Small
+Another feature that most drawing packages have is the ability to change the
+size of the pencil. Let’s add that.
+There’s one complication, though, which is that sometimes the resizing needs to change the pen size and sometimes it needs to change the pencil sprite’s costume size. It depends on whether you’re using a pencil or a stamp.
+
+Create two new tool-selection sprites, called bigger and smaller. They should have the resources/bigger-selector and resources/smaller-selector costumes and should send the bigger and smaller messages.
+
+The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an if-else block, similar to how the sprite chooses between putting the pen down or stamping)
+Don’t forget the keyboard shortcuts for the bigger and smaller tools. I used the up and down arrows.
+
+SAVE YOUR PROJECT
+
+What you should have noticed is that changing the size of the stamp also changes the size of the pencil on-screen when you change to that tool.
+To stop that, you need to set the size to 100% every time you change to a pencil tool. so that the tools look the right size.
+
+To make it even better, have the stamp remember what size it was before you selected the pencil and go back to that size when you select the stamp tool again. The easiest way to do that is to create a new variable called stampSize, that is updated with the current size every time the stamp is resized. When the stamp tool is selected, it can set its size from the contents of this variable.
+
+## Test Your Project
+__Click on the green flag.__
+
+Do the size controls work for the pencils?
+
+What happens if you switch to the stamp, change the size and then switch back to a pencil?
+
+SAVE YOUR PROJECT
+
+
+￼￼￼￼￼￼￼__Well done you’ve finished, now you can enjoy the game!__
+
+
+Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+
+-->
+
+
+
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Llista de Tasques" /></td>
+          <td><span class="check_text">Llista de Tasques</span></td>
+          <td>Segueix aquestes <span class="check_text upper">instruccions</span> una a una</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Prova el Projecte" /></td>
+          <td><span class="flag_text">Prova el Projecte</span></td>
+          <td>Clica la bandera verda per <span class="flag_text upper">provar</span> el teu programa</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Desa el teu Projecte" /></td>
+          <td><span class="save_text">Desa el teu Projecte</span></td>
+          <td>Assegura't de <span class="save_text upper">desar</span> el que has fet</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>
