@@ -1,12 +1,12 @@
 ---
 layout: blog
-title:  "S'acaba la 1a edició del Codeclub a les Biblioteques i ja estem apunt per la segona"
+title:  "S'acaba la 1a edició del Codeclub a les Biblioteques i ja estem apunt per a la segona"
 date:   2015-04-02 
 tags: biblioteques codeclub
 author: mireia
 ---
 
-# H1 Tardor del 2014: 1a edició
+## Tardor del 2014: 1a edició
 
 Durant l'últim trimestre del 2014, els infants d'entre 9 i 11 anys van poder gaudir dels tallers Codeclub a 18 biblioteques públiques de tot Catalunya. La iniciativa va ser impulsada per la [Xarxa de biblioteques públiques de Catalunya](http://biblioteques.gencat.cat/ca/), per les universitats [UOC](http://www.uoc.edu/portal/ca/index.html) i [UPC](http://www.fib.upc.edu/fib.html) i per [codeclubcat.org](http://codeclubcat.org/biblioteques/index.html). Els voluntaris que van dirigir els tallers van ser estudiants de grau de les universitats anteriorment citades i obtenien a canvi crèdits de lliure elecció. 
 
@@ -16,7 +16,7 @@ L'últim dia de codeclub a les biblioteques ens vam acostar a la [biblioteca Miq
 
 ![imatge1](/blog/images_blog/sant_Gregori_controladors.jpg)
 
-# H1 primavera del 2015: 2a edició
+## Primavera del 2015: 2a edició
 
 Tal com us hem explicat la 1a edició va ser un èxit. És per això que els diferents participants en el projecte vam decidir engegar una segona edició aquesta primavera. Per aquesta [segona edició](http://codeclubcat.org/biblioteques/index.html) s'hi ha afegit també la [Universitat de Girona](http://www.udg.edu/). 16 de les 18 biblioteques participants a la 1a edició repeteixen una segona vegada. L'oferta s'amplia amb 15 noves biblioteques distribuïdes per tot el territori. En total, unes 31 biblioteques gaudiran dels tallers Codeclub aquesta primavera!
 
