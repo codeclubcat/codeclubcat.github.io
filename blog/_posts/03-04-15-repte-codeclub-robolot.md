@@ -10,7 +10,8 @@ author: mireia
 
 Els propers **dissabte i diumenge 18 i 19 d'abril** es celebrarà el [Robolot 2015](https://sites.google.com/site/robolot/home). Robolot són unes jornades de programació i robòtica dirigides a estudiants i professors de secundària i primària. A les jornades hi podreu trobar concursos de robots, de programació amb scratch, exposicions, intercanvis d'experiències i tallers. 
 
-[![image1](/blog/images_blog/cartell_ROBOLOT_2015.png)](https://sites.google.com/site/robolot/programa-robolot)
+
+  [![image 1](/blog/images_blog/cartell_ROBOLOT_2015.png)](https://sites.google.com/site/robolot/programa-robolot)
 
 
 ## Repte Codeclub Robolot
