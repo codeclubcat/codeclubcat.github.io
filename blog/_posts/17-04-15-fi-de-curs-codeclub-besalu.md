@@ -16,7 +16,7 @@ Aquest va ser un dels primers codeclubs establerts a Catalunya. L'any passat, el
 
 Enguany, 8 alumnes que havien participat als tallers l'any passat van empendre el segon nivell. La dificultat era més elevada i els projectes més oberts per deixar via lliure a la creativitat de cadascú. Per veure'n un exemple, els nens i nenes van dissenyar un monstre fet a partir de parts separades amb moviments independents. [Els resultats van ser genials!](https://scratch.mit.edu/studios/603382/)
 
-El passat 26 de març vam fer la cloenda d'aquest segon curs i cadascú va poder ensenyar als companys el projecte en el qual havia estat treballant últimament. Vam amanir la sessió amb un bon pica pica de cloenda!
+El passat 26 de març vam fer la cloenda d'aquest segon curs i cadascú va poder ensenyar als companys el projecte en el qual havia estat treballant últimament. Vam amanir la sessió amb un bon pica pica!
 
 ![imatge1](/blog/images_blog/cloenda_2nivell_1.jpg)
 ![imatge1](/blog/images_blog/cloenda_2nivell_2.jpg)
