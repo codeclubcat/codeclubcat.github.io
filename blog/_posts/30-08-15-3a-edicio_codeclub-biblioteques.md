@@ -2,7 +2,7 @@
 layout: blog
 title:  "Tercera edició del codeclub a les biblioteques"
 date:   2015-08-30 
-tags:  codeclub, biblioteques
+tags:  codeclub biblioteques
 author: mireia
 ---
 
