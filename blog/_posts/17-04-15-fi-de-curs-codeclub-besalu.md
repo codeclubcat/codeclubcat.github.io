@@ -19,8 +19,8 @@ Enguany, 8 alumnes que havien participat als tallers l'any passat van empendre e
 El passat 26 de març vam fer la cloenda d'aquest segon curs i cadascú va poder ensenyar als companys el projecte en el qual havia estat treballant últimament. Vam amanir la sessió amb un bon pica pica!
 
 ![imatge1](/blog/images_blog/cloenda_2nivell_1.jpg)
-![imatge1](/blog/images_blog/cloenda_2nivell_2.jpg)
-![imatge1](/blog/images_blog/cloenda_2nivell_3.jpg)
-![imatge1](/blog/images_blog/cloenda_2nivell_4.jpg)
-![imatge1](/blog/images_blog/cloenda_2nivell_5.jpg)
-![imatge1](/blog/images_blog/cloenda_2nivell_6.jpg)
+![imatge2](/blog/images_blog/cloenda_2nivell_2.jpg)
+![imatge3](/blog/images_blog/cloenda_2nivell_3.jpg)
+![imatge4](/blog/images_blog/cloenda_2nivell_4.jpg)
+![imatge5](/blog/images_blog/cloenda_2nivell_5.jpg)
+![imatge6](/blog/images_blog/cloenda_2nivell_6.jpg)
