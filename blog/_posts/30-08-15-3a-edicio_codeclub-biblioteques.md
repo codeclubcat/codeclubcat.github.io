@@ -24,5 +24,5 @@ Per aquest motiu fem una crida als **voluntaris** que hi vulguin participar. Les
 
 Per ser voluntari de la tercera edició només cal que actualment cursis estudis de grau en Enginyeria Informàtica, en Educació o estudis afins a les universitats [UOC](http://www.uoc.edu/), [UPC](http://www.fib.upc.edu/fib.html) o [UdG](http://www.udg.edu/). Tos aquells que completin els tallers de la tercera edició rebran crèdits de lliure elecció.
 
-Tenim 52 biblioteques disposades a participar en el projecte. Si estàs interessant, omple [**aquest formulari**](https://docs.google.com/forms/d/1BgpRkzhSzOk3Iy82C0URmf1G3tbkz1Drp28Am5Fy-IY/viewform) **abans del 30 de setembre**, triant 3 biblioteques per ordre d'interès. Si ets un dels escollits, en breu la universitat es posarà en contacte amb tu.
+Tenim 52 biblioteques disposades a participar en el projecte. Si estàs interessant, omple [**aquest formulari**](https://docs.google.com/forms/d/1BgpRkzhSzOk3Iy82C0URmf1G3tbkz1Drp28Am5Fy-IY/viewform) **abans del 20 de setembre**, triant 3 biblioteques per ordre d'interès. Si ets un dels escollits, en breu la universitat es posarà en contacte amb tu.
 
