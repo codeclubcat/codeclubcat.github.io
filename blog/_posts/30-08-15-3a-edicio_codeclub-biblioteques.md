@@ -18,9 +18,11 @@ A la imatge següent, hi podeu veure també els voluntaris i els alumnes del tal
 
 
 ### Aquesta tardor, engeguem la tercera edició. Vols ser-ne voluntari?
-Després de carregar piles aquest estiu, aquesta tardor tornem a començar una nova edició de [Codeclub a les biblioteques](http://codeclubcat.org/biblioteques/index.html). És per això que fem una crida als **voluntaris** que hi vulguin participar. Les opinions de voluntaris d'edicions anteriors són molt diverses, però en general estan molt satisfets de l'experiència perquè s'ho passen molt bé aprenent juntament amb els infants.
+Després de carregar piles aquest estiu, aquesta tardor tornem a començar una nova edició de [Codeclub a les biblioteques](http://codeclubcat.org/biblioteques/index.html). Els tallers es duran a terme d'octubre a desembre amb un mínim de 8 tallers d'una hora i mitja de durada. L'horari serà a convenir amb la biblioteca.
+
+Per aquest motiu fem una crida als **voluntaris** que hi vulguin participar. Les opinions de voluntaris d'edicions anteriors són molt diverses, però en general estan molt satisfets de l'experiència perquè s'ho passen molt bé aprenent juntament amb els infants.
 
 Per ser voluntari de la tercera edició només cal que actualment cursis estudis de grau en Enginyeria Informàtica, en Educació o estudis afins a les universitats [UOC](http://www.uoc.edu/), [UPC](http://www.fib.upc.edu/fib.html) o [UdG](http://www.udg.edu/). Tos aquells que completin els tallers de la tercera edició rebran crèdits de lliure elecció.
 
-Tenim 52 biblioteques disposades a participar en el projecte. Si estàs interessant, omple [**aquest formulari**](https://docs.google.com/forms/d/1BgpRkzhSzOk3Iy82C0URmf1G3tbkz1Drp28Am5Fy-IY/viewform) triant 3 biblioteques per ordre d'interès. Si ets un dels escollits, en breu la universitat es posarà en contacte amb tu.
+Tenim 52 biblioteques disposades a participar en el projecte. Si estàs interessant, omple [**aquest formulari**](https://docs.google.com/forms/d/1BgpRkzhSzOk3Iy82C0URmf1G3tbkz1Drp28Am5Fy-IY/viewform) **abans del 30 de setembre**, triant 3 biblioteques per ordre d'interès. Si ets un dels escollits, en breu la universitat es posarà en contacte amb tu.
 
