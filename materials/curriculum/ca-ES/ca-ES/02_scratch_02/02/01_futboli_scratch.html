@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="catalonia"  lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Futbolí Scratch — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template catalonia">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Futbolí Scratch</h1>
+      <span class="level-indicator">Nivell 3</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Idiomes</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Català</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Avançat</a></li><li class="breadcrumbs-item current">Futbolí Scratch</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<!--![screenshot](scratch_table_football_screenshot.png)-->
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+<section id="projecte-de-contribucio-de-la-comunitat" class="level2 challenge">
+<h2>Projecte de contribució de la comunitat</h2>
+<p>Aquest projecte ha estat possible gràcies a <a href="https://twitter.com/hardistymark">Mark Hardisty</a> (idea i diseny original) i <a href="https://codeclubcat.org">Codeclubcat</a> (traducció, edició i formateig a projecte Code Club).</p>
+<!--
+*************************************************************************************************
+
+
+Pràctica creada per: Mark Hardisty i Andy Lulham
+Traducció: Codeclubcat.org
+Pràctica 1 2n Trimestre. Nivell 3.
+    
+    
+*************************************************************************************************
+-->
+</section>
+<section id="introduccio" class="level1 intro">
+<h1>Introducció</h1>
+<p>En aquest projecte crearem una copa del món de futbol amb Scratch!</p>
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+</section>
+<section id="pas-1-preparar-el-terreny-de-joc" class="level1 activity">
+<h1>Pas 1: Preparar el terreny de joc</h1>
+<section id="llista-de-tasques" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Comenceu un projecte nou de Scratch. Aneu a la finestra <strong>personatges</strong> Elimineu el gat (premeu el botó dret damunt del gat i llavors <strong>esborra</strong> . Si aquesta instrucció no funciona, premeu majúscules i apreteu el botó esquerra del ratolí).</li>
+<li>Aneu a l’<strong>escenari</strong>. Seleccioneu l’opció de <code>pujar un fons des d'un fitxer</code>. Seleccioneu la imatge <strong>pitch</strong> de la carpeta de recursos de la pràctica.</li>
+<li>Elimineu el fons de color blanc original. Ho podeu fer anant a la pestanya de <code>Fons</code>.</li>
+<li>Les nostres porteries necessiten xarxes!!! Creeu un nou personatge utilitzant <code>Puja un personatge des d'un fitxer</code>. Seleccioneu la imatge <strong>net</strong> de la carpeta de recursos.</li>
+<li>Mou el personatge que acabes de crear al mig de la porteria del cantó esquerre del terreny de joc.</li>
+<li>Canvia-li el nom al personatge i posa-li el nom de <strong>porteria blava</strong>.</li>
+<li>Premeu el botó dret del ratolí sobre del personatge i premeu <code>duplica</code>. Llavors moveu aquest nou personatge al mig de la porteria dreta i canvieu-li el nom per <strong>porteria vermella</strong>.</li>
+</ul>
+</section>
+<section id="deseu-el-projecte" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+</section>
+<section id="pas-2-afegir-un-porter" class="level2 activity">
+<h2>Pas 2: Afegir un porter</h2>
+<p>De moment el terreny de joc té molt bona pinta! Ara toca afegir alguns jugadors i fer que es moguin.</p>
+</section>
+<section id="llista-dactivitats" class="level2 check">
+<h2>Llista d’activitats</h2>
+<ul>
+<li>Creeu un nou personatge prement <code>Puja un personatge des d'un fitxer</code> i seleccioneu la imatge <strong>goalie blue</strong> de la carpeta de recursos de la pràctica. Canvieu-li el nom al nou personatge i poseu-li <strong>porter blau</strong>.</li>
+<li>Moveu el personatge fins a situar-lo davant de la porteria esquerre.</li>
+<li>Premeu al botó <code>creix</code> i després premeu 10 vegades el personatge <strong>porter blau</strong> fins a fer-lo créixer 10 vegades.</li>
+<li><p>Cliqueu la pestanya de <code>Programes</code> i afegiu el codi següent:</p>
+<p><img src="0c1065a897fd515fbc3bf88bc0e1eaf2152da5f5.png" alt="   quan la BANDERA VERDA es premi
+   vés a x: (-190) y: (0)
+per sempre
+    si &lt;&lt;tecla [q v] premuda?&gt; i &lt;(posició y) &lt; [80]&gt;&gt; llavors
+        suma (5) a y
+    fi
+    si &lt;&lt;tecla [a v] premuda?&gt; i &lt;(posició y) &gt; [-80]&gt;&gt; llavors
+        suma (-5) a y 
+    fi
+fi" /></p></li>
+</ul>
+<p>Mireu un moment el programa que heu creat. Primer posem el porter al lloc d’inici i després el bucle <em>per sempre</em> està escoltant tota l’estona fins que un jugador premi la tecla <strong>Q</strong> o la tecla <strong>A</strong>. Quan un jugador prem la tecla <strong>Q</strong> el porter es mourà cap a dalt, i quan premi la tecla <strong>A</strong> el porter es mourà cap avall. El programa que heu escrit també comprova la <code class="blockblue">posició y</code> perquè el porter no surti de la pantalla (entre la posició y que va de -80 a 80).</p>
+</section>
+<section id="proveu-el-projecte" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Cliqueu la bandera verda.</p>
+<ul>
+<li>Podeu controlar el moviment del porter amb les tecles Q i A?</li>
+<li>Què passa quan el porter toca els límits de la pantalla del joc?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-1" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+</section>
+<section id="pas-3-afegir-mes-jugadors" class="level2 activity">
+<h2>Pas 3: Afegir més jugadors</h2>
+<p>No podem jugar a un partit de futbol només amb un jugador! Necessitem afegir-ne més.</p>
+</section>
+<section id="llista-dactivitats-1" class="level2 check">
+<h2>Llista d’activitats</h2>
+<ul>
+<li>Creeu un nou personatge prement <code>Puja un personatge des d'un fitxer</code> i seleccioneu la imatge <strong>goalie red</strong> de la carpeta de recursos de la pràctica.</li>
+<li>Canvieu-li el nom al nou personatge i poseu-li <strong>porter vermell</strong>.</li>
+<li>Arrossega el personatge fins que estigui situat davant de la porteria dreta.</li>
+<li>Igual que heu fet abans, cliqueu el botó <strong>creix</strong> i féu créixer el personatge 10 vegades clicant sobre d’ell 10 cops.</li>
+<li>Arrossegueu el programa del <strong>porter blau</strong> que heu creat abans sobre el personatge <strong>porter vermell</strong> per copiar el codi al nou personatge.</li>
+<li><p>Vés al personatge <strong>porter vermell</strong> i modifica el programa que li has copiat de la manera següent:<br />
+Només haureu de canviar dues coses, la <code class="blockblue">posició x</code> i les tecles que hauràs de prémer: “p” i “l”.</p>
+<p><img src="50808783661213d0f8b2b5ed7e9974f2c6d3df66.png" alt="   quan la BANDERA VERDA es premi
+   vés a x: (190) y: (0)
+per sempre
+    si &lt;&lt;tecla [p v] premuda?&gt; i &lt;(posició y) &lt; [80]&gt;&gt; llavors
+        suma (5) a y
+    fi
+    si &lt;&lt;tecla [l v] premuda?&gt; i &lt;(posició y) &gt; [-80]&gt;&gt; llavors
+        suma (-5) a y 
+    fi
+fi" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-1" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Premeu bandera verda.</p>
+<ul>
+<li>Podeu controlar el moviment del porter vermell amb les tecles P i L?</li>
+<li>Encara funcionen les tecles per moure el porter blau?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-2" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+</section>
+<section id="pas-4-afegir-jugadors-atacants" class="level2 activity">
+<h2>Pas 4: Afegir jugadors atacants</h2>
+</section>
+<section id="llista-dactivitats-2" class="level2 check">
+<h2>Llista d’activitats</h2>
+<ul>
+<li>Creeu un nou personatge prement <code>Puja un personatge des d'un fitxer</code> i seleccioneu la imatge <strong>attack blue</strong> de la carpeta de recursos de la pràctica.</li>
+<li>Canvieu-li el nom al nou personatge i poseu-li <strong>atacant blau</strong>.</li>
+<li>Arrossega el personatge fins que estigui situat davant del porter vermell, a la dreta de la pantalla.</li>
+<li>Igual que heu fet abans, cliqueu el botó <strong>creix</strong> i féu créixer el personatge 10 vegades clicant sobre d’ell 10 cops.</li>
+<li>Arrossegueu el programa del <strong>porter blau</strong> que heu creat abans sobre el personatge <strong>atacant blau</strong> per copiar el codi al nou personatge.</li>
+<li><p>Vés al personatge <strong>atacant blau</strong> i modifica el programa que li has copiat de la manera següent:<br />
+Només haureu de canviar dues coses, la <code class="blockblue">posició x</code> i les tecles que hauràs de prémer: “w” i “s”.</p>
+<p><img src="6550ca60e3332c849bae767eae65cebb32113a6b.png" alt="   quan la BANDERA VERDA es premi
+   vés a x: (70) y: (0)
+per sempre
+    si &lt;&lt;tecla [w v] premuda?&gt; i &lt;(posició y) &lt; [80]&gt;&gt; llavors
+        suma (5) a y
+    fi
+    si &lt;&lt;tecla [s v] premuda?&gt; i &lt;(posició y) &gt; [-80]&gt;&gt; llavors
+        suma (-5) a y 
+    fi
+fi" /></p></li>
+<li>Creeu un nou personatge prement <code>Puja un personatge des d'un fitxer</code> i seleccioneu la imatge <strong>attack red</strong> de la carpeta de recursos de la pràctica.</li>
+<li>Canvieu-li el nom al nou personatge i poseu-li <strong>atacant vermell</strong>.</li>
+<li>Arrossega el personatge fins que estigui situat davant del porter blau, a l’esquerre de la pantalla.</li>
+<li>Igual que heu fet abans, cliqueu el botó <strong>creix</strong> i féu créixer el personatge 10 vegades clicant sobre d’ell 10 cops.</li>
+<li>Arrossegueu el programa del <em>atacant</em> <em>blau</em> que heu creat abans sobre el personatge <strong>atacant vermell</strong> per copiar el codi al nou personatge.</li>
+<li><p>Vés al personatge <strong>atacant vermell</strong> i modifica el programa que li has copiat de la manera següent:<br />
+Només haureu de canviar dues coses, la <code class="blockblue">posició x</code> i les tecles que hauràs de prémer: “o” i “k”.</p>
+<p><img src="7c6b54bc0d8b3305c26599925eac701f17f15b9c.png" alt="   quan la BANDERA VERDA es premi
+   vés a x: (-70) y: (0)
+per sempre
+    si &lt;&lt;tecla [o v] premuda?&gt; i &lt;(posició y) &lt; [80]&gt;&gt; llavors
+        suma (5) a y
+    fi
+    si &lt;&lt;tecla [k v] premuda?&gt; i &lt;(posició y) &gt; [-80]&gt;&gt; llavors
+        suma (-5) a y 
+    fi
+fi" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-2" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Premeu bandera verda.</p>
+<ul>
+<li>Ja teniu dos equips per jugar?</li>
+<li>Per controlar l’equip blau haureu de prémer les tecles Q, A, W, S.</li>
+<li>Per controlar l’equip vermell haureu de prémer les tecles P, L, O, K.</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-3" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+</section>
+<section id="pas-5-afegir-una-pilota-que-reboti" class="level2 activity">
+<h2>Pas 5: Afegir una pilota que reboti</h2>
+<p>El nostre joc de futbol té molts <strong>peus</strong> però cap <strong>pilota</strong>!! hem d’arreglar-ho.</p>
+</section>
+<section id="llista-dactivitats-3" class="level2 check">
+<h2>Llista d’activitats</h2>
+<ul>
+<li>Creeu un nou personatge prement <code>Puja un personatge des d'un fitxer</code> i seleccioneu la imatge <strong>ball</strong> de la carpeta de recursos de la pràctica.</li>
+<li>Canvieu-li el nom al nou personatge i poseu-li <strong>pilota</strong>.</li>
+<li><p>A la pestanya de <code>Programes</code> del personatge <strong>pilota</strong>, afegeix el codi següent:</p>
+<p><img src="2f5e631df42de736dcae5acc9395f8e4a4e509d6.png" alt="   quan la BANDERA VERDA es premi // rebotar
+   envia a tots [iniciarpilota v]
+per sempre
+    mou-te (10) passos
+    rebota en tocar una vora
+fi" /></p></li>
+<li>Cliqueu sobre del programa amb el botó dret del ratolí i premeu <code>afegeix un comentari</code>. Afegiu el comentari <strong>“rebotar pilota”</strong>.</li>
+<li><p>Afegiu un altre tros de codi al personatge <strong>pilota</strong>:</p>
+<p><img src="c14276a10344b46dc1422d0b8e8946e13d83af90.png" alt="   quan rebi [iniciarpilota v] // preparació per començar
+   vés a x: (0) y: (0)
+   apunta en direcció &lt;nombre a l&#39;atzar entre (1) i (360)&gt;" /></p></li>
+</ul>
+<p>Aquest codi fa que la pilota es posi al mig del camp quan es comença el partit. I després, fa que apunti a una direcció aleatòria. Per què utilitzem el missatge <code class="blockorange">iniciarpilota</code>?</p>
+<ul>
+<li>No oblideu d’afegir el comentari <strong>“preparació per començar”</strong>, per poder recordar més endavant què fa el nostre tros de codi!</li>
+</ul>
+</section>
+<section id="proveu-el-projecte-3" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Premeu bandera verda.</p>
+<ul>
+<li>Es mou la pilota?</li>
+<li>Què pasa quan toca les vores de la pantalla?</li>
+<li>Esteu contents amb a velocitat en què es mou? Intenteu modificar el bloc <code class="blockblue">mou-te</code> per canviar la velocitat de la pilota. Podeu fer que es mogui més ràpid o més lent, configureu-ho al vostre gust!</li>
+<li>Què passa quan la pilota toca als jugadors?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-4" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+</section>
+<section id="pas-6-xutar-la-pilota" class="level2 activity">
+<h2>Pas 6: Xutar la pilota</h2>
+<p>Necessitem que la pilota reboti quan toca els peus dels jugadors.</p>
+</section>
+<section id="llista-dactivitats-4" class="level2 check">
+<h2>Llista d’activitats</h2>
+<ul>
+<li><p>Modifiqueu el programa anterior de la pilota (<strong>“rebotar”</strong>) per tal de que es vegi així:</p>
+<p><img src="b7b374454f710bfdf204730d2bbdcf226c7e9bce.png" alt="   quan la BANDERA VERDA es premi // rebotar
+   envia a tots [iniciarpilota v]
+per sempre
+    mou-te (10) passos
+    rebota en tocar una vora
+    si &lt;&lt;tocant el color [#0A9AF7]?&gt; o &lt;tocant el color [#FF0D01]?&gt;&gt;
+        gira a l&#39;esquerra (nombre a l&#39;atzar entre (140) i (220)) graus
+    fi
+fi" /></p></li>
+</ul>
+<p>Haureu de seleccionar els colors clicant als jugadors de futbol. Aquest canvi al programa fa que la pilota reboti quan toca a algun jugador i que es desvïi uns graus (aleatoris).</p>
+</section>
+<section id="proveu-el-projecte-4" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Premeu bandera verda.</p>
+<ul>
+<li>Què passa quan la pilota toca als jugadors?</li>
+<li>Funciona pels jugadors dels dos equips (blau i vermell)?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-5" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+</section>
+<section id="pas-7-gooooooool" class="level2 activity">
+<h2>Pas 7: Gooooooool!!!!!!!!</h2>
+</section>
+<section id="llista-dactivitats-5" class="level2 check">
+<h2>Llista d’activitats</h2>
+<ul>
+<li><p>Seleccioneu la <strong>porteria vermella</strong> i afegiu el següent programa:</p>
+<p><img src="5b7e52181f4091398f7d2d6e28ce60ebd59705ce.png" alt="quan la BANDERA VERDA es premi // tecnologia de la línia de gol
+   per sempre
+    si &lt;tocant [pilota v]&gt; llavors
+        envia a tots [gol v]
+    fi
+fi" /></p></li>
+</ul>
+<p>Aquest programa funciona com la <strong>tecnologia de la línia de gol</strong>: funciona tota l’estona, comprovant sempre si està tocant la pilota o no, i quan la porteria toca la pilota envia un missatge de gol a tothom.</p>
+<ul>
+<li>Arrossega aquest programa al personatge <strong>porteria blava</strong> per copiar el codi a l’altra porteria.</li>
+<li>Ara necessitem fer alguna cosa amb el missatge que envien les porteries quan és gol. Premeu <code>Puja un personatge des d'un fitxer</code>.</li>
+<li>Seleccioneu la imatge <strong>goal_text</strong> de la carpeta de recursos de la pràctica.</li>
+<li>Poseu el següent nom al personatge: <strong>text de gol</strong>.</li>
+<li><p>Afegiu el programa següent al personatge <strong>text de gol</strong></p>
+<p><img src="c3bd3452b562135961e3554f43001b92ec7864ae.png" alt="quan rebi [gol v] // goal scored
+mostra&#39;t
+espera (1) segons
+amaga&#39;t" /></p></li>
+<li><p>Finalment afegeix un programa més al personatge <strong>text de gol</strong> per tal d’assegurar-nos que el missatge de gol s’amaga a l’inici del joc:</p>
+<p><img src="cbc020bd8d2616e0320b850b45fed6775644c837.png" alt="quan la BANDERA VERDA es premi
+amaga&#39;t" /></p></li>
+</ul>
+</section>
+<section id="deseu-el-projecte-6" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="proveu-el-projecte-5" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Ja teniu el joc apunt per jugar-hi!!!! Premeu bandera verda.</p>
+<ul>
+<li>Què passa quan la pilota comença a moure’s?</li>
+<li>Busca un company per jugar-hi!</li>
+</ul>
+<!-- 
+////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////////////// 
+-->
+</section>
+<section id="repte-1-mantenir-la-puntuacio" class="level2 challenge">
+<h2>Repte 1: Mantenir la puntuació</h2>
+<ul>
+<li>Podeu afegir variables que mostrin la puntuació pels dos equips?</li>
+</ul>
+</section>
+<section id="repte-2-inclinar-el-futboli" class="level2 challenge">
+<h2>Repte 2: Inclinar el futbolí</h2>
+<ul>
+<li>A vegades la pilota es queda encallada i comença a rebotar entre dos llocs on els jugadors no arriben per tocar-la i desencallar-la. Podeu afegir un programa que <strong>inclini el futbolí</strong> quan es premi la tecla <strong>espai</strong> i que solucioni aquest problema?</li>
+</ul>
+</section>
+<section id="repte-3-el-xiulet-de-larbitre" class="level2 challenge">
+<h2>Repte 3: El xiulet de l’àrbitre</h2>
+<ul>
+<li>Podeu afegir un xiulet de l’àrbitre cada vegada que el joc comenci? podeu utilitzar el so <strong>whistle</strong> de la carpeta de recursos de la pràctica.</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-7" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Llista de Tasques" /></td>
+          <td><span class="check_text">Llista de Tasques</span></td>
+          <td>Segueix aquestes <span class="check_text upper">instruccions</span> una a una</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Prova el Projecte" /></td>
+          <td><span class="flag_text">Prova el Projecte</span></td>
+          <td>Clica la bandera verda per <span class="flag_text upper">provar</span> el teu programa</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Desa el teu Projecte" /></td>
+          <td><span class="save_text">Desa el teu Projecte</span></td>
+          <td>Assegura't de <span class="save_text upper">desar</span> el que has fet</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>
