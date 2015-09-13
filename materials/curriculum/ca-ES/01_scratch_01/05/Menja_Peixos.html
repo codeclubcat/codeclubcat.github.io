@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="catalonia"  lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Menja Peixos — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template catalonia">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Menja Peixos</h1>
+      <span class="level-indicator">Nivell 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Idiomes</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Català</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Inicial</a></li><li class="breadcrumbs-item current">Menja Peixos</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduccio" class="level1 intro">
+<h1>Introducció</h1>
+<p>Construirem un joc Menja-peixos! Ajudeu al Peix Gros a menjar-se totes les preses que neden al seu voltant.</p>
+<p>Aquest projecte utilitza recursos externs (no inclosos a l’Scratch). Baixeu-vos els vestits <strong>recursos/peix-gros1</strong> i <strong>recursos/peix-gros2</strong>, i el so <strong>recursos/comp</strong>. Guardeu-los a una carpeta que recordeu.</p>
+<p><img src="menjapeixos_screenshot.png" alt="screenshot" /></p>
+<!------------------------------------------------------>
+</section>
+<section id="pas-1-creeu-un-personatge-que-segueixi-el-ratoli" class="level1 activity">
+<h1>Pas 1: Creeu un personatge que segueixi el ratolí</h1>
+<p><strong>Fem que el Peix Gros nedi pel mar!</strong></p>
+<section id="llista-de-tasques" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Creeu un nou projecte.</li>
+<li>Seleccioneu l’escenari i cliqueu a la pestanya del Fons. Llavors, seleccioneu el fons <strong>natura/underwater3</strong> i suprimiu-ne l’original.</li>
+<li>Canvieu el nom del personatge ‘Sprite1’ per ‘Peix Gros’.</li>
+<li>Seleccioneu de la carpeta on us heu baixat els vestits, el del Peix Gros <strong>peix-gros1</strong> i borreu els vestits anteriors (‘vestit1’ i ‘vestit2’).</li>
+<li>Aneu a la <code>i</code> blava del personatge i marqueu el botó amb dues fletxes per tal que el personatge només miri a esquerra o dreta.</li>
+<li><p>Creeu el següent programa per fer que el Peix Gros persegueixi el punter del ratolí:</p>
+<p><img src="910f046883dfea4ffd9c28eb7fa38da0b6b37d32.png" alt="Quan la BANDERA VERDA es premi
+per sempre
+    apunta cap a [punter del ratolí v]
+    mou-te (3) passos" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Cliqueu la bandera verda.</p>
+<ul>
+<li>Moveu el punter del ratolí pel mar. El peix, segueix el punter del ratolí?</li>
+<li>Què passa si deixeu de moure el ratolí i el peix l’atrapa? Quin aspecte té? Perquè creieu que es comporta d’aquesta forma?</li>
+<li><p>Podeu fer que el Peix Gros deixi de tornar-se boig, fent que només es mogui quan no està massa a prop del punter del ratolí. (Trobareu el bloc <code class="blocklightblur">distància a</code> a la paleta de <code>Sensors</code>).</p>
+<p><img src="613060434c15fecff11e99dbf88869317eff0add.png" alt="Quan la BANDERA VERDA es premi
+per sempre
+    si &lt;(distància a [punter del ratolí v]) &gt; (10)&gt;
+        apunta cap a [punter del ratolí v]
+        mou-te (3) passos" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-1" class="level2 flag">
+<h2>Proveu el projecte</h2>
+</section>
+<section id="coses-per-provar" class="level2 try">
+<h2>Coses per provar</h2>
+<ul>
+<li>Podeu provar de canviar els números del programa. Al canviar el valor d’aquests números, com canvia la forma de moure’s del Peix Gros?</li>
+<li>Canvieu la ‘distància a punter del ratolí’ a un valor més gran (p. ex. 100) o més petit (p. ex. 1).</li>
+<li>Canvieu també els passos que el Peix Gros es mou a un valor més gran (p. ex. 20) o més petit (p. ex. 1 o fins i tot 0).</li>
+</ul>
+<!------------------------------------------------------>
+</section>
+</section>
+<section id="pas-2-afegiu-la-presa" class="level1 activity">
+<h1>Pas 2: Afegiu la presa</h1>
+<p>Ja és hora de posar alguna cosa que el Peix Gros es pugui menjar!</p>
+<section id="llista-de-tasques-1" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Creeu un nou personatge utilitzant <strong>Animals/starfish</strong>.</li>
+<li>Utilitzeu l’eina <code>Encongir</code>, situada al menú de l’Scratch per reduir la mida del nou personatge.</li>
+<li><p>Creeu un programa que faci que les preses nedin pel mar. El nostre objectiu és que les preses es moguin a l’atzar, per tant farem que repetidament es moguin una mica endavant i llavors girin una mica a esquerra o dreta a l’atzar.</p>
+<p><img src="e6fd58d7a7691503ea2b5b3056c38d459e73b0d4.png" alt="Quan la BANDERA VERDA es premi
+per sempre
+    mou-te (2) passos
+    gira a la dreta (nombre a l&#39;atzar entre (-20) i (20)) graus
+    rebota en tocar una vora" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-2" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Cliqueu la bandera verda i mireu si la presa està nedant pel mar. La presa, neda com us esperàveu? El moviment és realista?</p>
+<p>Per ara, el Peix Gros i la presa no interaccionen entre ells. Al següent pas ho resoldrem.</p>
+</section>
+<section id="deseu-el-projecte" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="coses-per-provar-1" class="level2 try">
+<h2>Coses per provar</h2>
+<ul>
+<li><p>Intenteu canviar els números dels blocs <code class="blockgreen">número a l'atzar</code> i del moviment. Com canvia el moviment de la presa?</p></li>
+<li><p>Quina funció té el bloc <code>rebota en tocar una vora</code>? Elimineu-lo i observeu que passa.</p></li>
+</ul>
+<!---------------------------------------------------->
+</section>
+</section>
+<section id="pas-3-el-peix-gros-es-menja-la-presa" class="level1 activity">
+<h1>Pas 3: El Peix Gros es menja la presa</h1>
+<p>Ara volem que el Peix Gros es mengi la presa! Hi ha dues coses que haurien de passar un cop que el Peix Gros ha capturat la presa amb la boca:</p>
+<ul>
+<li>El Peix Gros ha de tancar la boca i reproduir el so “chomp”.</li>
+<li>La presa ha de desaparèixer, i al cap de poc tornar a aparèixer.</li>
+</ul>
+<section id="llista-dactivitats" class="level2 check">
+<h2>Llista d’activitats</h2>
+<ul>
+<li><p>Primer, farem que la presa desaparegui si està tocant el Peix Gros i reaparegui al cap de 3 segons. Feu servir el bloc <code class="blocklightblue">tocant?</code> per veure si la presa està tocant el Peix Gros.</p>
+<p><img src="f845d66299a6310b770010f709a7d310fdcc3a3c.png" alt="Quan la BANDERA VERDA es premi
+per sempre      
+    mou-te (2) passos
+    gira a la dreta (nombre a l&#39;atzar entre (-20) i (20)) graus
+    rebota en tocar una vora
+    si &lt;tocant [Peix Gros v]?&gt;
+        amaga
+        espera (3) segons
+        mostra" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-3" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Proveu el joc un altre cop. Hi trobeu algun problema? Fixeu-vos que la presa desapareix en tocar qualsevol part del Peix Gran. A més, també es podria donar la situació que el Peix Gran esperés 3 segons i es tornés a menjar la presa en el moment que tornés a aparèixer. Això no és just!</p>
+<ul>
+<li>Com ho podríem fer perquè la presa només desaparegués si està tocant la boca del Peix Gros? Podríem utilitzar el bloc <code class="blocklightblue">tocant el color</code> i veure si està tocant la dent blava del Peix Gros. Per provar aquesta opció, canvieu el bloc <code class="blocklightblue">tocant</code> pel bloc <code class="blocklightblue">tocant el color</code> al programa, cliqueu al selector de color del bloc i seguidament a la dent del Peix Gros.</li>
+<li><p>Seguidament, fent servir el bloc <code class="blockblue">ves a</code> amb valors a l’atzar pels valors <strong>x</strong> i <strong>y</strong>, podem fer que la presa es mogui a un punt aleatori abans de reaparèixer de nou a l’escenari.</p>
+<p><img src="038900d211cd9af0a2fae0dac8743b374619db41.png" alt="quan la BANDERA VERDA es premi
+per sempre      
+    mou-te (2) passos
+    gira a la dreta (nombre a l&#39;atzar entre (-20) i (20)) graus
+    rebota en tocar una vora
+    si &lt;tocant el color [#000000]?&gt;, llavors
+        amaga
+        espera (3) segons
+        vés a x: (nombre a l&#39;atzar entre (-220) i (220)) y: (nombre a l&#39;atzar entre (-170) i (170))
+        mostra" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-4" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Proveu el joc un altre cop: la presa, només desapareix quan toca la boca del peix? Reapareix en un punt a l’atzar de l’escenari en comptes del mateix lloc on el Peix se l’havia menjat?</p>
+<p>El peix ha de saber quan s’ha empassat alguna cosa per poder reproduir un so i canviar de vestit. Per fer això, podem fer que la presa, abans de desaparèixer, enviï un missatge indicant que se l’han empassat.</p>
+<p><img src="628626178d0fd85cd9e8ad368dcff05950a68dfe.png" alt="    quan la BANDERA VERDA es premi
+    per sempre      
+        mou-te (2) passos
+        gira a la dreta (nombre a l&#39;atzar entre (-20) i (20)) graus
+        rebota en tocar una vora
+        si &lt;tocant el color [#000000]?&gt;, llavors
+            envia a tots [menjat! v]
+            amaga
+            espera (3) segons
+            vés a x: (nombre a l&#39;atzar entre (-220) i (220)) y: (nombre a l&#39;atzar entre (-170) i (170))
+            mostra" /></p>
+<p>Ara volem que el Peix Gros respongui a aquest missatge reproduint el so ‘chomp’ i tancant la boca.</p>
+<ul>
+<li>Afegiu el vestit <strong>mouth-closed.png</strong> i el so <strong>chomp.mp3</strong>, de la carpeta dels recursos, al personatge Peix Gros.</li>
+<li><p>Llavors, afegiu un nou programa al Peix Gros per tal que respongui al missatge de la presa. Aquest programa hauria de fer que el peix reprodueixi el so ‘chomp’, canviés al vestit amb la boca tancada, esperés una mica i tornés de nou al vestit original.</p>
+<p><img src="ec67dc964d209cef700c59eace81f5c97ce4c49b.png" alt="quan rebi [menjat! v]
+    toca el so [chomp v]
+    repeteix (2) vegades
+        canvia el vestit a [peix-gros2 v]
+        espera (0.5) segons
+        canvia el vestit a [peix-gros1 v]" /></p></li>
+</ul>
+<p>Ara que el Peix Gros estàs llest, omplim l’oceà amb preses! Cliqueu amb el botó dret a la presa i seleccioneu ‘duplica’ varies vegades.</p>
+</section>
+<section id="proveu-el-projecte-5" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Cliqueu la bandera verda.</p>
+<ul>
+<li>El Peix Gros, es menja la presa? Ho fa amb totes les preses?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-1" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="coses-a-pensar" class="level2">
+<h2>Coses a pensar</h2>
+<p>Perquè hem d’afegir el bloc <code class="blockblue">mostra</code> al començament del programa de la presa? Penseu que passaria si la presa fos empassada i el joc s’aturés abans de que reaparegués. Què passaria si el joc es reiniciés en aquest mateix instant?</p>
+<p><strong>Ben fet! Heu acabat el joc principal. Però hi han moltes coses més que podeu fer-hi al joc. Accepteu un desafiament?</strong></p>
+<!-------------------------------------------------------------------------------->
+</section>
+<section id="desafiament-1-feu-que-la-presa-es-mogui-de-forma-diferent" class="level2 challenge">
+<h2>Desafiament 1: Feu que la presa es mogui de forma diferent</h2>
+<p>Fins aquest moment, totes les preses es mouen de la mateixa forma. Podríeu fer que una d’elles es mogués de forma diferent? <strong>Pista:</strong> No us passeu molt de temps amb aquesta part sense mirar primer la resta d’activitats del projecte.</p>
+<p><strong>Seleccioneu un presa per fer-hi proves.</strong> Si aquesta presa té el mateix vestit que la resta, canvieu-li el color utilitzant el bloc <code class="blockpurple">fixa efecte color a</code> per tal de diferenciar-la de la resta.</p>
+<p>Feu que aquesta presa es mogui més lentament que la resta. <strong>Pista:</strong> Mireu el bloc del programa <code class="blockblue">mou-te 2 passos</code>.</p>
+</section>
+<section id="proveu-el-projecte-6" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>La presa, es mou més lentament? El fet que es mogui més lentament fa el joc millor?<br />
+Si podeu fer això, també podeu <strong>fer que un peix es mogui més de pressa que la resta.</strong></p>
+<p>La presa, es mou encara de forma raonable? El fet que es mogui més ràpida fa el joc millor? <strong>Pista:</strong> Si la presa neda en cercles, verifiqueu que els valors dels blocs <code class="blockgreen">nombre a l'atzar</code></p>
+<p>Què tal si feu que la presa es comporti de forma diferent, utilitzant diferents combinacions d’aquestes modificacions?</p>
+<p>Aquests canvis, fan que el joc sigui millor? Fan el joc més interessant, divertit, difícil o fàcil? Quina versió és millor?</p>
+</section>
+<section id="deseu-el-projecte-2" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-------------------------------------------------------------------------------->
+</section>
+<section id="desafiament-2-feu-que-la-presa-eviti-al-peix-gros" class="level2 challenge">
+<h2>Desafiament 2: Feu que la presa eviti al Peix Gros</h2>
+<p>En aquest joc, la presa és una mica ruca! Simplement neda pel mar a l’atzar fins que se la mengen. Els peixos de veritat intenten fugir dels seus depredadors. <strong>Fem que una presa del joc nedi fugint del Peix Gros.</strong></p>
+<p>No hi ha cap bloc a l’Scratch que ens pugui dir la direcció d’algun altre personatge del mateix escenari. Però sí que podeu fer que un personatge apunti cap a un altre i que després giri cua. Els blocs que necessiteu es troben a la paleta de <strong>Moviment</strong>.</p>
+<p>Fent servir aquesta idea, <strong>feu que una de les preses sempre s’allunyi del Peix Gros.</strong> Fins i tot podríeu fer que fugis fent ziga-zagues.</p>
+</section>
+<section id="proveu-el-projecte-7" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>Aquesta modificació, fa que la presa sigui més difícil de capturar? Fa que el joc sigui millor?</p>
+</section>
+<section id="deseu-el-projecte-3" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-------------------------------------------------------------------------------->
+</section>
+<section id="desafiament-3-afegiu-un-marcador" class="level2 challenge">
+<h2>Desafiament 3: Afegiu un marcador</h2>
+<p>No n’hi ha prou de menjant-se la presa. Com podeu saber que se us dóna millor que als vostres amics? Necessiteu un sistema per mantenir un marcador. Mireu la tarja d’Scratch <strong>Guardeu els punts</strong> per saber com fer-ho.</p>
+<p>A on hauríeu de posar els blocs que canviarien el marcador?</p>
+<p>Al començar la partida, assegureu-vos que el marcador sempre comença a zero. A on posaríeu aquest bloc?</p>
+</section>
+<section id="proveu-el-projecte-8" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>El marcador, està a zero al principi de la cada partida? Puja cada cop que us mengeu una nova presa?</p>
+</section>
+<section id="deseu-el-projecte-4" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-------------------------------------------------------------------------------->
+</section>
+<section id="desafiament-4-afegiu-un-compte-enrere" class="level2 challenge">
+<h2>Desafiament 4: Afegiu un compte enrere</h2>
+<p>Doneu-vos un temps límit per partida. Quants peixos sou capaços de menjar-vos en trenta segons?</p>
+<p>Mireu a la tarja d’Scratch <strong>Cronòmetre</strong> per saber com afegir un cronòmetre al joc. Comenceu el joc amb un temps límit de 30 segons.</p>
+</section>
+<section id="proveu-el-projecte-9" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p>El cronòmetre, comença a 30 segons?</p>
+<p>Va baixant a la velocitat correcta?</p>
+<p>Podeu capturar la presa mentre el cronòmetre està en marxa?</p>
+<p>El joc, es para un cop el cronòmetre arriba a zero?</p>
+</section>
+<section id="deseu-el-projecte-5" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-------------------------------------------------------------------------------->
+</section>
+<section id="desafiament-5-afegiu-un-marcador-de-punts-extra" class="level2 challenge">
+<h2>Desafiament 5: Afegiu un marcador de punts extra</h2>
+<p>Afegiu punts extres al marcador si aconseguiu empassar-vos tres peixos alhora. Com podríeu saber quants peixos us heu empassat?</p>
+<p><strong>Pista:</strong> Una forma d’aconseguir-ho utilitza un variable per comptar quantes preses hi ha nedant al mar.</p>
+</section>
+<section id="deseu-el-projecte-6" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-------------------------------------------------------------------------------->
+</section>
+<section id="desafiament-6-invertiu-el-joc-mantingueu-la-presa-sempre-amb-vida" class="level2 challenge">
+<h2>Desafiament 6: Invertiu el joc: Mantingueu la presa sempre amb vida!</h2>
+<p>A vegades, les millors idees sorgeixen al donar-li la volta a una idea inicial.</p>
+<p><strong>Modifiqueu el joc de forma que, en comptes de controlar al Peix Gros que intenta menjar-se a la resta, controleu una presa que neda pel mar entre molts Peixos Grossos.</strong> Quant de temps podeu sobreviure abans que se us empassin?</p>
+</section>
+<section id="deseu-el-projecte-7" class="level2 save">
+<h2>Deseu el projecte</h2>
+<p>Ben fet, ja heu acabat. Ara podeu gaudir del joc! No oblideu de que podeu compartir el vostre joc amb tots els vostres amics i familiars clicant <strong>Comparteix</strong> a la barra de menú.</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Llista de Tasques" /></td>
+          <td><span class="check_text">Llista de Tasques</span></td>
+          <td>Segueix aquestes <span class="check_text upper">instruccions</span> una a una</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Prova el Projecte" /></td>
+          <td><span class="flag_text">Prova el Projecte</span></td>
+          <td>Clica la bandera verda per <span class="flag_text upper">provar</span> el teu programa</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Desa el teu Projecte" /></td>
+          <td><span class="save_text">Desa el teu Projecte</span></td>
+          <td>Assegura't de <span class="save_text upper">desar</span> el que has fet</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>

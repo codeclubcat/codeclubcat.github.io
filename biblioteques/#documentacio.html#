@@ -1,0 +1,171 @@
+---
+layout: biblioteques
+title: Codeclubcat a les biblioteques
+---
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+
+<!-- buttons -->
+</div>
+<div class="row">
+  <div class="twelve columns">
+    <p class="jumplinks"> 
+      <div id="" class="three columns">
+	<center>
+	  <a href="/biblioteques/materials.html" class="button primary round">Materials disponibles</a>
+	</center>
+      </div>
+      <div id="" class="two columns">
+	<center>
+	  <a href="/biblioteques/consells.html" class="button primary round">Consells </a>
+	</center>
+      </div>
+      <div id="" class="two columns">
+	<center>
+	  <a href="/biblioteques/faq.html" class="button primary round">FAQ</a>
+	</center>
+      </div>
+      <div id="" class="two columns">
+	<center>
+	  <a href="/biblioteques/documentacio.html" class="button primary round">Caixa d'eines</a>
+	</center>
+      </div>
+      <div id="" class="two columns">
+	<center>
+	  <a href="/biblioteques/contacte.html" class="button primary round">Contacte</a>
+	</center>
+      </div>
+    </p>
+  </div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<div class="row introduction">
+    <!-- text -->
+    <div class="ten columns">  
+      <h1>Caixa d'eines:</h1>
+
+      <p> En aquest apartat, hem ajuntat tots els materials i enllaços que creiem que us poden ser útils en diferents situacions, com per exemple per fer còpies dels cartells del projecte, demanar els drets d'imatge dels alumnes, descarregar-vos una plantilla de diploma de final de curs, revisar les presentacions realitzades o tornar a veure la formació dels voluntaris que varem dur a terme a principis d'Abril.
+
+	<!-- cartell i primera -->	
+	<div class="row introduction">
+	<div class="ten columns">
+	  <br /><h3>Cartells i logo del projecte:</h3><br />
+	  <table border="" width="100%" cellspacing="0px"  align="center" bgcolor="#f8fbf4">  
+	    <tr>
+	      <!-- Cartell del projecte-->
+	      <th scope "col">
+		<div id="cell_content">
+		  <p><img alt="Cartell per emplenar" height="300" src="/img/cartell_per_emplenar.png" width="300"></p>
+		</div>
+	      </th>
+	      <!-- logo codeclubcat high res -->
+	      <th scope "col">
+		<div id="cell_content">
+		  <p><img alt="Logo codeclubcat" height="300" src="/img/logo.png" width="300"></p>
+		</div>
+	      </th>
+	    </tr>
+	    
+	    <tr>
+	      <th scope "col">
+		<a href="/img/cartell_per_emplenar_2nd.pdf"><h4>Cartell del projecte</h4></a>
+	      </th>
+
+	      <th scope "col">
+		<a href="/img/logo.png"><h4>Logo Codeclubcat</h4></a>
+	      </th>
+
+	    </tr>
+	  </table>
+	</div>
+      </div>
+    </div>
+    
+    <!-- formacio voluntaris -->	
+    <div class="row introduction">
+      <div class="ten columns">
+	<br /><h3>Formació dels voluntaris:</h3><br />
+	<table border="" width="100%" cellspacing="0px"  align="center" bgcolor="#f8fbf4">  
+	  <tr>
+	    <!-- Cartell del projecte-->
+	    <th scope "col">
+	      <div id="cell_content">
+		<p><img alt="Video formació" height="300" src="/img/jornada_formacio.png" width="300"></p>
+	      </div>
+	      </th>
+	    <!-- logo codeclubcat high res -->
+	    <th scope "col">
+	      <div id="cell_content">
+		<p><img alt="Prezi formació" height="300" src="/img/prezi_formacio.png" width="300"></p>
+	      </div>
+	    </th>
+	  </tr>
+	  
+	  <tr>
+	    <th scope "col">
+	      <a href="https://www.youtube.com/playlist?list=PLKaaRyN6BZ0GG8awrERTFYkNkiksUiyy_"><h4>Vídeo de la jornada de formació voluntaris</h4></a>
+	    </th>
+	      <th scope "col">
+		<a href="https://prezi.com/zp6sqjxkgsmf/codeclub-a-les-biblioteques-2a-edicio/?utm_campaign=share&utm_medium=copy"><h4>Presentació </h4></a>
+	      </th>
+	  </tr>
+	</table>
+      </div>
+    </div>
+   
+    <!-- documentacio util  -->
+    <div class="row introduction">
+      <div class="ten columns">
+	<br /><h3>Documentació útil:</h3><br />
+	<table border="" width="100%" cellspacing="0px"  align="center" bgcolor="#f8fbf4">  
+	  <tr>
+	    <!-- Diploma final-->
+	    <th scope "col">
+	      <div id="cell_content">
+		<p><img alt="Diploma" height="300" src="/img/diploma_biblios.png" width="300"></p>
+	      </div>
+	    </th>
+	    
+	    <!-- autoritzacio d'imatge -->
+	    <th scope "col">
+	      <div id="cell_content">
+		<p><img alt="Autorització d'imatge" height="200" src="/img/image_doc.png" width="200"></p>
+	      </div>
+	    </th>
+	    <!-- enquesta alumnes -->
+	    <th scope "col">
+	      <div id="cell_content">
+		<p><img alt="questionari valoracio" height="200" src="/img/image_doc_2.png" width="200"></p>
+	      </div>
+	    </th>
+	  </tr>
+	  
+
+	  <tr>
+	    <!-- NOMS PRIMER COLUMNA  -->
+
+	    <th scope "col">
+	      <a href="https://github.com/codeclubcat/diplomes_finals/blob/master/biblioteques/diploma_biblios.pdf"><h4>Diploma final</h4></a>
+	    </th>
+
+	    <th scope "col">
+	      <a href="autoritzacio_alumnes.doc"><h4>Autorització drets d'imatge alumnes</h4></a>
+	    </th>
+	    <th scope "col">
+	      <a href="http://goo.gl/forms/5Hdeax6Upv"><h4>Qüestionari de valoració de l'impacte de l'activitat</h4></a>
+	    </th>
+
+	  </tr>
+	</table>
+      </div>
+    </div>
+
+
+
+
+
