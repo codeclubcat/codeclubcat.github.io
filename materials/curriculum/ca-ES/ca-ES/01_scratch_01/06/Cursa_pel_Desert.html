@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="catalonia"  lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Cursa pel Desert — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template catalonia">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Cursa pel Desert</h1>
+      <span class="level-indicator">Nivell 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Idiomes</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Català</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Inicial</a></li><li class="breadcrumbs-item current">Cursa pel Desert</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduccio" class="level1 intro">
+<h1>Introducció</h1>
+<p>Aquest és un joc per dos jugadors on competeixen un lloro i un lleó pel desert. Cada jugador ha de prémer una tecla tant ràpid com pugui per fer moure l’animal i guanya el primer que arribi a la vora de la pantalla.</p>
+<p><img src="desertrace_screenshot.png" alt="screenshot" /></p>
+<!----------------------------------------------------------------------------------------->
+</section>
+<section id="pas-1-creeu-lescenari-i-afegiu-hi-els-objectes" class="level1 activity">
+<h1>Pas 1: Creeu l’escenari i afegiu-hi els objectes</h1>
+<section id="llista-de-tasques" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Seleccioneu l’escenari i afegiu-hi el fons <strong>Natura/desert</strong></li>
+<li>Esborreu el personatge ‘Fèlix’</li>
+<li>Afegiu-hi el personatge lleó que trobareu a la carpeta <strong>Animals</strong>.</li>
+<li>Seguidament, afegiu-hi el personatge “parrot” (lloro) que també trobareu a la carpeta <strong>Animals</strong>. Feu-lo més petit per tal que sigui més o menys com el lleó.</li>
+</ul>
+<!----------------------------------------------------------------------------------------->
+</section>
+</section>
+<section id="pas-2-feu-que-el-lleo-i-el-lloro-es-moguin" class="level1 activity">
+<h1>Pas 2: Feu que el lleó i el lloro es moguin</h1>
+<p>Volem que els objectes es moguin quan premem una tecla.</p>
+<section id="llista-de-tasques-1" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li><p>Primer, seleccioneu l’objecte lleó i feu que es faci 4 passos quan premeu la tecla <strong>‘L’</strong>.</p>
+<p><img src="0d6d8996786804888c88b655b882616545fb1904.png" alt="quan la tecla [l v] es premi
+    mou-te (4) passos" /></p></li>
+<li><p>Seguidament, seleccioneu l’objecte lloro i feu que també es mogui 4 passos quan premeu la tecla <strong>‘A’</strong>.</p>
+<p><img src="45dae5c08a63b9e4195f541187c43ab675d07976.png" alt="quan la tecla [a v] es premi
+    mou-te (4) passos" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Feu clic la bandera verda</strong><br />
+El lleó i el lloro, es mouen per la pantalla quan premeu les tecles ‘L’ i ‘A’?</p>
+</section>
+<section id="deseu-el-projecte" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!----------------------------------------------------------------------------------------->
+</section>
+</section>
+<section id="pas-3-comenceu-la-cursa" class="level1">
+<h1>Pas 3: Comenceu la cursa</h1>
+<p>Necessitem un sistema per començar la cursa i saber qui l’ha guanyat. <strong>Primer, crearem un botó d’inici.</strong></p>
+<section id="llista-de-tasques-2" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Afegiu un nou personatge. De la carpeta <strong>“Coses”</strong> escolliu el personatge <strong>Button3</strong>. Canvieu-li el nom per <strong>ComenceuCursa</strong>.</li>
+<li>Modifiqueu el vestit del personatge, afegiu-hi el text <strong>‘inici’</strong> i feu clic a ‘D’acord’. Moveu el personatge al mig de l’escenari.</li>
+<li><p>Afegiu un programa que mostri l’objecte ‘ComenceuCursa’ quan comenci el joc.</p>
+<p><img src="523636441bd7c2277a497b60814f1de6249c3835.png" alt="quan la BANDERA VERDA es premi
+    mostra" /></p></li>
+<li><p>Finalment, volem que quan premem el botó, compti enrere a partir de 3, digui ‘endavant’ i s’amagui.</p>
+<p><img src="0371e8cf9edbbb71cd713d5721a3b84cca3b1841.png" alt="quan es cliqui aquest personatge
+    digues [3] durant (1) segons
+    digues [2] durant (1) segons
+    digues [1] durant (1) segons
+    digues [Endavant!] durant (1) segons
+    amaga" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-1" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<p>Al fer clic sobre el botó d’inici, comença a comptar enrere fins donar la sortida?</p>
+</section>
+<section id="deseu-el-projecte-1" class="level2 save">
+<h2>Deseu el projecte</h2>
+<p>Volem que els corredors només es moguin després de que s’hagi donat l’inici de la cursa. També volem saber quan la cursa s’ha acabat. Per tant, necessitem una variable que mantingui aquesta informació.</p>
+<ul>
+<li><p>Afegiu una variable visible per tots els objectes anomenada <code class="blockorange">corrent</code>. Feu que no sigui visible a l’escenari desmarcant-la al panell de variables.</p></li>
+<li><p>Fixeu la variable <strong>corrent</strong> a <strong>0</strong> a l’inici del joc. Llavors, canvieu el programa <code class="blockyellow">quan la BANDERA VERDA es premi</code> deixant-lo així:</p>
+<p><img src="5f33fe9f38776f24d5fa7a9e18846006eaf66c3b.png" alt="quan la BANDERA VERDA es premi
+    mostra
+    assigna a [corrent v] el valor (0)" /></p></li>
+<li><p>A continuació, fixeu la variable <strong>corrent</strong> a 1 quan el rellotge de sortida hagi finalitzat.</p></li>
+<li><p>Mentre la variable <strong>corrent</strong> no sigui 1, el lleó i el lloro han d’estar aturats. Feu clic a l’objecte Lloro. <strong>Afegiu un bloc de control a l’objecte</strong> que només permeti al lloro moure’s si <strong>corrent = 1</strong>.</p>
+<p><img src="e9c9b7777605504017c49fee399d6d0b37ef59d4.png" alt="quan la tecla [a v] es premi
+    si &lt;(corrent) = [1]&gt; llavors
+        mou-te (4) passos" /></p></li>
+<li><p>Ara cal que feu el mateix per l’objecte lleó.</p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-2" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<p>El lleó i el lloro, es mouen únicament quan el compte enrere s’ha acabat?</p>
+<p>Volem saber qui ha guanyat la cursa per a continuació reiniciar-la i poder començar de nou una partida.</p>
+</section>
+<section id="deseu-el-projecte-2" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!----------------------------------------------------------------------------------------->
+</section>
+</section>
+<section id="pas-4-acabant-la-cursa" class="level1 activity">
+<h1>Pas 4: Acabant la cursa</h1>
+<section id="llista-de-tasques-3" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li><p>Afegiu un nou bloc a l’objecte lloro que fixi la variable <strong>corrent</strong> a 0 quan l’objecte toqui la vora de la pantalla.</p>
+<p><img src="94f411a6788dba061a4de36224bf4ddddbd2aa48.png" alt="quan la tecla [a v] es premi
+    si &lt;(corrent) = [1]&gt; llavors
+        mou-te (4) passos
+        si &lt;tocant [vora v]?&gt; llavors
+            assigna a [corrent v] el valor (0)" /></p></li>
+<li><p>Volem que el lloro ens indiqui si ha guanyat la cursa. Enregistreu un so nou per al lloro que ens avisi en el cas que l’hagi guanyat. Feu clic a <code class="blocklightgrey">sons</code> i graveu el so del lloro guanyant la cursa!</p></li>
+<li><p>A continuació, afegiu els blocs que faran reproduir el so que heu enregistrat i que faran dir al lloro que ha guanyat la cursa.</p>
+<p><img src="99e75b4fb1cabdbd3768fd31b0248c387bc7693c.png" alt="quan la tecla [a v] es premi
+    si &lt;(corrent) = [1]?&gt; llavors
+        mou-te (4) passos
+        si &lt;tocant [vora v]?&gt; llavors
+            assigna a [corrent v] el valor (0)
+            toca el so [gravació1 v] fins que acabi
+            digues [El lloro ha guanyat!] durant (3) segons" /></p></li>
+<li><p>Finalment, repetiu els mateixos passos pel lleó.</p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-3" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Feu clic a la bandera verda.</strong><br />
+Podeu fer clic al botó d’inici i seguidament començar a córrer prement les tecles ‘A’ i ‘L’? Els objectes, toquen el seu corresponent so i missatge de victòria quan arriben al final de la cursa?</p>
+</section>
+<section id="deseu-el-projecte-3" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!----------------------------------------------------------------------------------------->
+</section>
+</section>
+<section id="pas-5-reiniciant-la-partida" class="level1 activity">
+<h1>Pas 5: Reiniciant la partida</h1>
+<p>En acabar la partida necessitem dir-li a la resta d’objectes que hem guanyat la cursa i reiniciar el joc per poder tornar a jugar-hi.</p>
+<p><strong>Necessitem que l’objecte que guanyi enviï un missatge a la resta dient que ha guanyat.</strong></p>
+<section id="llista-de-tasques-4" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li><p>Feu clic a l’objecte Lloro. Afegiu un bloc que enviï <strong>“finalitzat”</strong> després de que l’objecte digui que ha guanyat.</p>
+<p><img src="8157945289b6613becd8afc0efac54397b448a3a.png" alt="quan la tecla [a v] es premi
+si &lt;(corrent) = [1]?&gt; llavors
+    mou-te (4) passos
+    si &lt;tocant [vora v]?&gt; llavors
+        assigna a [corrent v] el valor [0]
+        toca el so [enregistrament1 v]
+        digues [El lloro ha guanyat!] durant (3) segons
+        envia a tots [acabat v]" /></p></li>
+<li><p>Necessitem afegir un nou bloc que escolti els missatges d’acabament i mogui de nou el lloro a la línia de sortida. Què passa si canvieu el valor fixat a <strong>x</strong>?</p>
+<p><img src="822d6b8d71aee6c572218b84fac16df3d2b43a6b.png" alt="quan rebi [acabat v]
+    assigna el valor (-170) a x" /></p></li>
+<li><p>Afegiu el mateix programa al lleó. Proveu diferents valors de <strong>x</strong> per assegurar-vos que el lleó i el lloro tornen a la línia de sortida.</p></li>
+<li><p>També ens interessa posar al lleó i el lloro a la mateixa posició de sortida, per tant afegiu un altre programa als dos objectes que els mogui a la línia de sortida al fer clic sobre la bandera.</p>
+<p><img src="6d5151292d379a42f77954ad0d4bffb61c9ed179.png" alt="quan la BANDERA VERDA es premi
+    assigna el valor (-170) a x" /></p></li>
+<li><p>Finalment, feu clic a l’objecte botó i afegiu-hi un programa que el torni a mostrar quan rep el missatge ‘acabat’.</p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-4" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Feu clic a la bandera verda.</strong><br />
+Podeu competir contra amics si un de vosaltres prem la tecla ‘A’ per moure el lloro i l’altre la tecla ‘L’ pel lleó?</p>
+</section>
+<section id="deseu-el-projecte-4" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!----------------------------------------------------------------------------------------->
+</section>
+<section id="desafiament-afegiu-hi-un-turbo" class="level2 challenge">
+<h2>Desafiament: Afegiu-hi un turbo</h2>
+<ul>
+<li><strong>Intenteu a afegir-hi un turbo</strong> que es pugui fer servir un cop per cursa i faci que el lleó o el lloro es moguin 30 passos de cop.</li>
+<li><strong>Afegiu un nou vestit</strong> pels animals, amb foc sortint pel darrera i que apareixerà en el moment que premeu el turbo.</li>
+<li><strong>Enregistreu nous sons</strong> pels animals, que es sentin quan premeu el turbo.</li>
+</ul>
+</section>
+<section id="proveu-el-projecte-5" class="level2 flag">
+<h2>Proveu el projecte</h2>
+</section>
+<section id="deseu-el-projecte-5" class="level2 save">
+<h2>Deseu el projecte</h2>
+<p>Ben fet, ja heu acabat. Ara podeu gaudir del joc!</p>
+<p>No oblideu de que podeu compartir el vostre joc amb tots els vostres amics i familiars fent clic <strong>Comparteix</strong> a la barra de menú!</p>
+<!-- TODO: Challenge 2 -->
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Llista de Tasques" /></td>
+          <td><span class="check_text">Llista de Tasques</span></td>
+          <td>Segueix aquestes <span class="check_text upper">instruccions</span> una a una</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Prova el Projecte" /></td>
+          <td><span class="flag_text">Prova el Projecte</span></td>
+          <td>Clica la bandera verda per <span class="flag_text upper">provar</span> el teu programa</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Desa el teu Projecte" /></td>
+          <td><span class="save_text">Desa el teu Projecte</span></td>
+          <td>Assegura't de <span class="save_text upper">desar</span> el que has fet</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="catalonia"  lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="None" />
+
+    <title>Què és? — Projectes Code Club Catalunya</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.png">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template catalonia">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/cccat_logo.png"></a>
+      <h1 class="title">Què és?</h1>
+      <span class="level-indicator">Nivell 3</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Idiomes</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Català</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Inicial</a></li><li class="breadcrumbs-item current">Què és?</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduccio" class="level1 intro">
+<h1>Introducció</h1>
+<p>Una animació aleatoria aparareix a la pissarra completament distorsionat. Haureu d’endevinar què és seleccionant la imatge correcta. Quant més ràpid l’endevineu, més alta serà la vostra puntuació!</p>
+<!-------------------------------------------------------------------------------------->
+</section>
+<section id="pas-1-feu-apareixer-personatges-diferents-a-la-pissarra" class="level1 activity">
+<h1>Pas 1: Feu aparèixer personatges diferents a la pissarra</h1>
+<p><strong>Volem fer aparèixer uns quants objectes diferents a la pissarra.</strong></p>
+<section id="llista-de-tasques" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Creeu un nou projecte d’Scratch i suprimiu el personatge Fèlix.</li>
+<li>Feu clic a l’escenari i després a la pestanya Fons. Importeu el fons interiors/chalkboard (pissarra).</li>
+<li>Importeu un nou personatge i doneu-li el nom que volgueu. Podeu escollir-ne algun de la carpeta ‘coses’.</li>
+<li>Col.loqueu-lo al centre de la pantalla. Feu-lo més gran o més petit si us cal.</li>
+<li>Feu clic a la pestanya de vestits i importeu quatre personatges més. Poden ser el que volgueu! I ara, fem que aparegui una imatge aleatòria.</li>
+<li><p>Creeu aquest programa:</p>
+<p><img src="3850541b00c61a9a3839434522ceb83edaff7ba4.png" alt="Quan la BANDERA VERDA es premi
+    repeteix (nombre a l&#39;atzar entre (1) i (5)) vegades
+        següent vestit" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<p>L’animació canvia de vestit?</p>
+<p><strong>Feu-hi clic més vegades.</strong></p>
+<p>Obteniu vertits diferents cada vegada? A vegades obtindreu el mateix vestit consecutivament, no us amoineu: és normal. Noteu també que el personatge parpelleja quan canvia de vestit. Ho arreglarem en el pas següent.</p>
+</section>
+<section id="deseu-el-projecte" class="level2 save">
+<h2>Deseu el projecte</h2>
+<!-------------------------------------------------------------------------------------->
+</section>
+</section>
+<section id="pas-2-distorsioneu-les-imatges" class="level1 activity">
+<h1>Pas 2: Distorsioneu les imatges</h1>
+<p><strong>A continuació distorsionarem les imatges quan apareguin i les corregirem al cap d’uns segons.</strong></p>
+<p>Emprarem una variable de puntuació (puntuació) per controlar el grau de distorsió. Si la puntuació és elevada, hi haurà molta distorsió. La distorsió disminuirà, quan ho faci la puntuació. La variable funcionarà també com a cronòmetre, de la mateixa manera que ho fa la variable del bloc de Sensors <strong>cronòmetre.</strong></p>
+<section id="llista-de-tasques-1" class="level2 check">
+<h2>Llista de tasques</h2>
+<ul>
+<li>Al bloc de Dades, creeu una nova variable i anomeneu-la puntuació.</li>
+<li><p>Modifiqueu el programa així:</p>
+<p><img src="f67026ba5e34334991fb311ad4ed729b30fd57b2.png" alt="Quan la BANDERA VERDA es premi
+   amaga
+   repeteix (nombre a l&#39;atzar entre (1) i (5)) vegades
+      següent vestit
+   fi
+   assigna a [puntuació v] el valor (110)
+   repeteix fins &lt;(puntuació) = (0)&gt;
+      augmenta [puntuació v] en [-10]
+      fixa l&#39;efecte [pixelar v] a (puntuació)
+      fixa l&#39;efecte [color v] a (puntuació)
+      mostra
+      espera (1) segons" /></p></li>
+</ul>
+</section>
+<section id="proveu-el-projecte-1" class="level2 flag">
+<h2>Proveu el projecte</h2>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<ul>
+<li>Apareix una imatge aleatòria i distorsionada?</li>
+<li>El nivell de distorsió disminueix gradualment?</li>
+<li>La variable puntuació disminueix quan la imatge redueix el grau de distorsió?</li>
+<li>Quan puntuació arriba a zero, observeu una imatge sense cap distorsió?</li>
+<li>Cada cop que premeu la bandera verda, observeu una imatge diferent?</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-1" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="per-saber-ne-mes" class="level2 try">
+<h2>Per saber-ne més</h2>
+<ul>
+<li><p><strong>Proveu de canviar el valor inicial de la variable puntuació i quina quantitat canvia.</strong> Com afecten aquests canvis a la imatge? És més fàcil o més difícil d’endevinar què és?</p></li>
+<li><p><strong>Proveu efectes gràfics diferents enlloc de pixelar.</strong> Noteu com varia el grau de dificultat per endevinar el personatge.</p></li>
+</ul>
+<!-------------------------------------------------------------------------------------->
+</section>
+</section>
+<section id="pas-3-permeteu-al-jugador-endevinar-la-imatge" class="level1 activity">
+<h1>Pas 3: Permeteu al jugador endevinar la imatge</h1>
+<p>Fins ara hem fet aparèixer gradualment la nostra imatge aleatòria, mentre la puntuació decreixia amb el temps, però com ho hem de fer per poder guanyar? Afegirem algunes animacions al final de la pantalla de manera que el jugador pugui seleccionar-los. Si premen la imatge correcta, guanyen al joc, sinó, l’animació desapareixerà i el joc continuarà.</p>
+<p>Primer, és necessari conèixer quina és la resposta correcta.</p>
+<ul>
+<li>Creeu una variable anomenada <strong>resposta</strong>. Assegureu-vos que és vàlida per a totes les animacions.</li>
+<li><p>Modifiqueu el programa que heu escrit per emmagatzemar la resposta correcta:</p>
+<p><img src="74ecf3240f2af73119880b8174bed73025787ebb.png" alt="Quan la BANDERA VERDA es premi
+   amaga
+   repeteix (nombre a l&#39;atzar entre (1) i (5)) vegades
+      següent vestit
+   fi
+   assigna a [resposta v] el valor (vestit #)
+   assigna a [puntuació v] el valor (110)
+   repeteix fins &lt;(puntuació) = (0)&gt;
+      augmenta [puntuació v] en [-10]
+      fixa l&#39;efecte [pixelar v] a (puntuació)
+      fixa l&#39;efecte [color v] a (puntuació)
+      mostra
+      espera (1) segons
+   fi" /></p></li>
+</ul>
+<p><strong>Ara afegirem els personatges perquè el jugador els pugui prémer.</strong></p>
+<ul>
+<li>Dupliqueu el personatge principal i arrosegueu el duplicat fins a la cantonada esquerra i a baix de l’escenari.</li>
+<li>Anomeneu-lo <strong>resposta1.</strong> (Així serà més fàcil referir-s’hi.)</li>
+<li>Elimineu el programa de <strong>resposta1</strong> i tots els seus vestits excepte el primer.</li>
+<li>Repetiu els tres últims passos, anomenant <strong>resposta2</strong> el nou personatge i elimineu el programa i tots els seus vestits excepte el segon.</li>
+<li>Repetiu-ho tres cops més anomenant <strong>resposta3</strong>, <strong>resposta4</strong> i <strong>resposta5.</strong><br />
+Hauríeu d’obtenir una fila de cinc personatges ‘resposta’ al final de l’escenari, cadascun mostrant un vestit diferent al del personatge principal. <strong>Cap d’aquests personatges hauria de tenir associat un programa.</strong></li>
+</ul>
+<p>Arribats aquí, voldrem que quan fem clic en cadascun dels personatges, aquests facin alguna cosa en funció de si la resposta és correcta o no.</p>
+<ul>
+<li><p>Afegiu aquest programa al personatge resposta1:</p>
+<p><img src="ed3c77e73677ed6c4ed55d0ca8e8d278f791c623.png" alt="Quan es cliqui aquest personatge
+   si ((resposta) = (1)) llavors
+      envia a tots [encert v]
+   si no
+      amaga" /></p></li>
+<li>Arrossega aquest programa a cadascun dels altres personatges resposta. <strong>A cada personatge, canvia 1 per 2, 3, etc.</strong></li>
+<li><p>Ara cal afegir alguna cosa que respongui al missatge ‘encert’. Torneu al personatge, al que està a la pissarra i afegiu-li aquest programa:</p>
+<p><img src="bea53e2c8da90165b936ac7d010ce774fbdc79d3.png" alt="quan rebi [encert v]
+   digues [Felicitats! Heu augmentat la puntuació]" /></p></li>
+</ul>
+<section id="proveu-el-projecte-2" class="level2 test">
+<h2>Proveu el projecte</h2>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<ul>
+<li>Quan proveu el joc, podeu emprar el camp de l’escenari <strong>resposta monitor</strong> per escriure quina és la resposta correcta. Això us pot ajudar mentre feu proves.</li>
+<li>Què succeeix quan feu clic a <strong>resposta correcta</strong>?</li>
+<li>Què succeeix quan feu clic a <strong>resposta incorrecta</strong>?</li>
+<li>Què li succeeix a <strong>resposta incorrecta</strong> quan comenceu una nova partida?</li>
+</ul>
+<p>Aquesta prova presenta dos problemes. Primer, les respostes errònies no reapareixen al començar una nova partida. Segon, la puntuació continua disminuint un cop s’ha especificat la resposta correcta.</p>
+<ul>
+<li><p>Per solucionar el primer problema, afegeix aquest programa a les cinc animacions:</p>
+<p><img src="c53d21ed17d7a388df95876991bd6d15a3b74d83.png" alt="Quan la BANDERA VERDA es premi
+    mostra" /></p></li>
+</ul>
+<p>Per solucionar el segon, haureu de parar la repetició de <strong>què és</strong> fins que el jugador faci clic a la resposta correcta. Per fer-ho emprarem una nova variable. Li donarem el valor 0 quan comenci la partida i li donarem el valor 1 quan el jugador guanyi. Farem que la repetició ‘repeteix fins’ finalitzi quan la puntuació arribi a 0 o bé quan <strong>encert?</strong> s’assigni a <strong>1.</strong></p>
+<ul>
+<li>Creeu una nova variable i anomeneu-la encertat?</li>
+<li><p>Modifiqueu els programes de la següent manera:</p>
+<p><img src="95565dde5ead6ad3b4d81d63478df4f49fe98291.png" alt="Quan la BANDERA VERDA es premi
+   amaga
+   repeteix (nombre a l&#39;atzar entre (1) i (5)) vegades
+      següent vestit
+   fi
+   assigna a [resposta v] el valor (vestit #)
+   assigna a [puntuació v] el valor (110)
+   assigna a [encert v] el valor (0)
+   repeteix fins &lt;(puntuació) = (0)&gt;
+      augmenta [puntuació v] en [-10]
+      fixa l&#39;efecte [pixelar v] a (puntuació)
+      fixa l&#39;efecte [color v] a (puntuació)
+      mostra
+      espera (1) segons
+   fi
+Quan rebi [encert v]
+  assigna a [encertat? v] el valor (1)
+  treu els efectes gràfics
+  digues [Felicitats! Heu augmentat la puntuació]" /></p></li>
+</ul>
+</section>
+<section id="deseu-el-projecte-2" class="level2 save">
+<h2>Deseu el projecte</h2>
+<p><strong>Felicitats! Heu finalitzat el joc!</strong></p>
+<p>Per saber-ne més, intenteu els següents reptes!</p>
+</section>
+<section id="repte-1-feu-que-el-joc-sigui-mes-facil-o-mes-dificil" class="level2 challenge">
+<h2>Repte 1: Feu que el joc sigui més fàcil o més difícil</h2>
+<p>Modifiqueu el grau de dificultat del joc.</p>
+<ul>
+<li>Intenteu modificar la velocitat amb la que la imatge es mostra sense distorsionar i com de ràpid disminueix la puntuació.</li>
+<li>Intenteu modificar els tipus de distorsió aplicades a la imatge.</li>
+<li>Intenteu modificar les imatges per fer-les més semblants o diferents entre elles. Si proveu aquesta part, no us oblideu de modificar la resposta (resposta) de cada vestit.</li>
+</ul>
+</section>
+<section id="deseu-el-projecte-3" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="repte-2-distorsioneu-la-imatge-de-forma-diferent-a-cada-partida" class="level2 challenge">
+<h2>Repte 2: Distorsioneu la imatge de forma diferent a cada partida</h2>
+<p>Fins ara cada jugada utilitza el mateix tipus de distorsió. En el pas 2, heu provat diferents tipus de distorsions que funcionaben prou bé.</p>
+<p>Trobeu distorsions diferents que funcionin bé.</p>
+<p>Modifiqueu el joc de manera que cada partida utilitzi una distorsió diferent.</p>
+<p><strong>Ajut:</strong> Intenteu crear una nova variable, anomenada distorsió. Fixeu-li un valor a l’atzar al començar la partida. Utilitzeu blocs condicionals dins el bucle per tal d’aplicar la distorsió que correspongui.</p>
+</section>
+<section id="deseu-el-projecte-4" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="repte-3-feu-que-el-joc-disposi-de-varis-intents" class="level2 challenge">
+<h2>Repte 3: Feu que el joc disposi de varis intents</h2>
+<p>Fins ara cada joc és independent. Canvieu-lo de manera que tingui varis intents. Per exemple, feu que tingui tres intents de manera que el jugador hagi d’endevinar tres imatges i pugui aconseguir fins a 300 punts.</p>
+<p><strong>Ajut:</strong> Necessitareu una variable extra per emmagatzemar la puntuació total dels 3 intents. La podeu anomenar puntuacio_partida. També necesitareu un bucle que passi pels diferents intents.</p>
+<p><strong>Ajut:</strong> Haureu de fer reaparèixer de nou totes les imatges de les respostes errònies al principi de cada intent. Podeu enviar el missatge reset, per exemple a través de la instrucció <strong>envia a tots</strong>.</p>
+</section>
+<section id="deseu-el-projecte-5" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="repte-4-incrementeu-la-dificultat-de-cada-intent" class="level2 challenge">
+<h2>Repte 4: Incrementeu la dificultat de cada intent</h2>
+<p>Quan el jugador avanci pels diferents intents, incrementeu-ne el nivell de dificultat, per exemple modificant-ne els efectes de distorsió.</p>
+<p>Cada intent ha de puntuar el mateix? Hi ha alguna manera d’obtenir més punts quan s’endevini més ràpidament la resposta en etapes més difícils? Quina?</p>
+<p><strong>Ajut:</strong> Com sabreu en quin intent us trobeu? Com podreu emprar aquesta informació per modificar el nivell de dificultat i la puntuació?</p>
+</section>
+<section id="deseu-el-projecte-6" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="repte-5-continueu-el-joc-fins-que-el-jugador-cometi-un-error" class="level2 challenge">
+<h2>Repte 5: Continueu el joc fins que el jugador cometi un error</h2>
+<p>Enlloc d’assignar un nombre finit d’intents, feu que el joc continui fins que el jugador s’equivoqui. Això només tindrà sentit si el joc es complica a mesura que avancen els intents.</p>
+</section>
+<section id="repte-6-varieu-la-dificultat-del-joc-en-funcio-de-com-de-be-ho-faci-el-jugador" class="level2">
+<h2>Repte 6: Varieu la dificultat del joc en funció de com de bé ho faci el jugador</h2>
+<p>Enlloc d’incrementar sempre la dificultat, feu que el grau de dificultat s’ajusti al nivell de jugador. Si endevina la imatge ràpidament, feu que el següent intent sigui més difícil. Si, al contrari, el jugador no l’encerta o triga molt a fer-ho, feu el següent intent més senzill.</p>
+<p>Aquesta idea només funcionarà si no sumeu les puntuacions a través dels intents.</p>
+</section>
+<section id="deseu-el-projecte-7" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="repte-7-guardeu-la-puntuacio-mes-alta" class="level2 challenge">
+<h2>Repte 7: Guardeu la puntuació més alta</h2>
+<p>Si algú aconsegueix millorar la puntuació més alta assolida fins llavors, demaneu-li el nom al jugador i actualitzeu la millor puntuació. Asegureu-vos que la puntuació més alta i el nom del jugador que l’ha aconseguit es mostrin a la pantalla.</p>
+</section>
+<section id="deseu-el-projecte-8" class="level2 save">
+<h2>Deseu el projecte</h2>
+</section>
+<section id="repte-8-penalitzeu-les-respostes-erronies" class="level2 challenge">
+<h2>Repte 8: Penalitzeu les respostes errònies</h2>
+<p>Fins ara no hi ha cap penalització si el jugador selecciona totes les animacions tan de pressa com pugui. Modifiqueu el joc de manera que la puntuació disminueixi una mica cada vegada que es premi un resposta incorrecta.</p>
+<p>Considereu que el joc millora?</p>
+</section>
+<section id="deseu-el-projecte-9" class="level2 save">
+<h2>Deseu el projecte</h2>
+<p><strong>Felicitats! Heu finalitzat el joc i ara a gaudir-ne!</strong></p>
+<p>No oblideu que podeu compartir-lo amb els amics i la familia fent clic al botó <strong>Comparteix</strong> a la barra del menú.</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Uneix-te a nosaltres!</p>
+      <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Llista de Tasques" /></td>
+          <td><span class="check_text">Llista de Tasques</span></td>
+          <td>Segueix aquestes <span class="check_text upper">instruccions</span> una a una</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Prova el Projecte" /></td>
+          <td><span class="flag_text">Prova el Projecte</span></td>
+          <td>Clica la bandera verda per <span class="flag_text upper">provar</span> el teu programa</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Desa el teu Projecte" /></td>
+          <td><span class="save_text">Desa el teu Projecte</span></td>
+          <td>Assegura't de <span class="save_text upper">desar</span> el que has fet</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+  </body>
+</html>
