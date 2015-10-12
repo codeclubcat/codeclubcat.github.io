@@ -29,5 +29,4 @@ Hem creat un [fòrum](http://codeclubcat.org/forum/categories/ajuda-biblioteques
 
 En general, tant biblioteques com voluntaris estan molt contents d'haver participat als tallers en edicions anteriors. Us deixem aquí un vídeo on es relata l'experiència de la segona edició a la [biblioteca pública de Tarragona](http://bibliotecatarragona.gencat.cat/ca/).
 
-<iframe id="iframe_chapter" src="http://tac12.xiptv.cat/embed/205852?width=778&amp;iframe_width=800&amp;info=&amp;share=&amp;height=438&amp;iframe_height=514" name="iframe_chapter" width="800" height="514" frameborder="0" scrolling="no"></iframe>
-
+<iframe id="iframe_chapter" src="http://tac12.xiptv.cat/embed/205995?width=778&amp;iframe_width=800&amp;share=&amp;height=438&amp;iframe_height=484" name="iframe_chapter" width="800" height="484" frameborder="0" scrolling="no"></iframe>
