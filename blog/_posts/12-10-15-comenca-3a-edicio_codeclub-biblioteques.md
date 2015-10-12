@@ -25,11 +25,11 @@ Per organitzar-ho, cada club gaudirà d'un o dos voluntaris de les universitats 
 
 ### Fòrum per als voluntaris
 
-Hem creat un [fòrum](http://codeclubcat.org/forum/categories/ajuda-biblioteques_3.html) de comunicació per els voluntaris on ens puguin plantejar dubtes, suggerències així com experiències d'èxit.
+Pensem que la comunicació amb els voluntaris és fonamental per acompanyar-los en la seva tasca. Per aquest motiu hem creat un [fòrum](http://codeclubcat.org/forum/categories/ajuda-biblioteques_3.html) de discussió on ens puguin plantejar dubtes, suggerències així com per explicar experiències d'èxit.
 
 
 ### Comentaris d'altres edicions
 
 En general, tant biblioteques com voluntaris estan molt contents d'haver participat als tallers en edicions anteriors. Us deixem aquí un vídeo on es relata l'experiència de la segona edició a la [biblioteca pública de Tarragona](http://bibliotecatarragona.gencat.cat/ca/).
 
-<iframe id="iframe_chapter" src="http://tac12.xiptv.cat/embed/205995?width=778&amp;iframe_width=800&amp;share=&amp;height=438&amp;iframe_height=484" name="iframe_chapter" width="800" height="484" frameborder="0" scrolling="no"></iframe>
+<iframe id="iframe_chapter" src="http://tac12.xiptv.cat/embed/205995?width=778&amp;iframe_width=800&amp;share=&amp;height=438&amp;iframe_height=484" name="iframe_chapter" width="640" height="480" frameborder="0" scrolling="no"></iframe>
