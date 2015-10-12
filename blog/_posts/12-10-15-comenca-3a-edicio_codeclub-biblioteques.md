@@ -6,9 +6,12 @@ tags:  codeclub biblioteques codeweek.eu
 author: mireia
 ---
 
-### Presentació de la 3a edició
+### Presentació de la 3a edició dins el marc del codeweek.eu
 
  Demà donem el tret de sortida de la [tercera edició del codeclub a les biblioteques](http://codeclubcat.org/biblioteques/index.html). La sessió de presentació serà al [Palau Marc de Barcelona](http://guia.barcelona.cat/detall/palau-marc_92086000560.html) a les 18h. L'objectiu de la sessió és donar a conèixer el projecte a les biblioteques i als nous voluntaris i així donar-los eines per tal que puguin dur a terme els tallers d'una manera fàcil i agradable.
+
+ La iniciativa s'emmarca dins la setmana [codeweek.eu](http://www.codeweek.eu): una sèrie d'activitats per donar a conèixer la programació i robòtica a nivell europeu. Podeu trobar els codeclubs a les biblioteques participants en aquest [enllaç](http://events.codeweek.eu/search/?q=biblioteques&country=ES&past=no).
+
 
 ### Biblioteques participants
 
