@@ -30,6 +30,8 @@ CodeClubWorld.makeMap = function() {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
+    // count the catalan clubs
+    var cat_clubs = 0;
     $.each(clubs, function(i, club) {
       var address = club.venue.address;
       if (!address) return;
@@ -40,8 +42,8 @@ CodeClubWorld.makeMap = function() {
       if (lat === null || lng === null) return;
       // update only clubs from Catalunya
       if (lng < 0.3) return;
-      
-
+      cat_clubs = cat_clubs +1;
+	
       var latLng = new google.maps.LatLng(lat, lng),
           marker = new google.maps.Marker({
             position: latLng,
@@ -81,8 +83,10 @@ CodeClubWorld.makeMap = function() {
         infobox.open(map, marker);
       });
     });
-
+    
+    // all clubs and only catalan clubs
     $('.counter').append(clubs.length);
+    $('.counter_cat').append(cat_clubs);
 
     // TODO: I've commented out the styles section to make
     // this work in jsbin. Leave the styles section of the 
