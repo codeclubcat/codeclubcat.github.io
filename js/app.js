@@ -38,6 +38,9 @@ CodeClubWorld.makeMap = function() {
           lng = address.longitude;
 
       if (lat === null || lng === null) return;
+      // update only clubs from Catalunya
+      if (lng < 0.3) return;
+      
 
       var latLng = new google.maps.LatLng(lat, lng),
           marker = new google.maps.Marker({
