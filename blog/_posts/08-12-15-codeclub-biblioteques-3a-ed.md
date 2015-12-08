@@ -18,17 +18,17 @@ Els caps de club, voluntaris infatigables, han anat compartint les seves inquiet
 
 [L'Edu Serna](https://twitter.com/eduserna) ens envia aquesta foto dels seus codeclubers de la [Biblioteca de Bellvitge](http://www.l-h.cat/biblioteques/bellvitge.aspx):
 
-![Codeclubers Bellvitge](/images_blog/cc_bellvitge_3ed.jpg)
+![Codeclubers Bellvitge](/blog/images_blog/cc_bellvitge_3ed.jpg)
 
 a la [Biblioteca Camp de l'Arpa](http://w110.bcn.cat/portal/site/Biblioteques/menuitem.95987d47df85c50972e072e0a2ef8a0c/?vgnextoid=56900bd37a60a310VgnVCM10000072fea8c0RCRD&vgnextchannel=56900bd37a60a310VgnVCM10000072fea8c0RCRD&lang=ca_ES) de Barcelona, també hi treballen molt:
 
-![Codeclubers Camp de l'Arpa](/images_blog/cc_campdelarpa.jpg)
+![Codeclubers Camp de l'Arpa](/blog/images_blog/cc_campdelarpa.jpg)
 
 
 
 I els codeclubers d'una de les biblioteques de Terrassa, ja es mostren satisfets amb els seus diplomes:
 
-![Codeclubers Terrassa](/images_blog/cc_biblio_terrassa.jpg)
+![Codeclubers Terrassa](/blog/images_blog/cc_biblio_terrassa.jpg)
 
 
 
