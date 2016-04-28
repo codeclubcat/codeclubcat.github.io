@@ -12,7 +12,7 @@ author: mireia
 
  <iframe src="https://www.google.com/maps/d/embed?mid=zExJ8LEkRU2U.kzlUPwc_e_Zo" width="640" height="480"></iframe>
 
-###La nova fornada de codeclubers
+### La nova fornada de codeclubers
 
 Un parell de biblioteques participants ja ens han compartit fotos dels seus codeclubers a través del seu twitter. Els de la [Biblioteca Ernest Lluch de Vilassar de Mar](https://twitter.com/Biblioteca_VdM/status/721006557652197376) van ser els primers. Aquí els teniu:
 
