@@ -26,13 +26,12 @@ Hem creat un [àlbum de fotos](https://goo.gl/photos/tiMwenqRuuRagiiJA) amb tote
 El jurat va tenir molta feina per a decidir els premiats. Després de la deliberació, es van atorgar 4 premis, un primer premi i un finalista per la categoria de 3r i 4t de primària i un altre primer premi i finalista per la categoria de 5è i 6è de primària:
 
 * Primer premi categoria A, 3r i 4t de primària: Eric Medina de l'escola Guillem de Balsareny
-  ![1r premi categoria A](/blog/images_blog/1r_premi_catA_reptecodeclubrobolot2016.jpg)
 * Finalista categoria A, 3r i 4t de primària: Martí Boixader de l'escola Guillem de Balsareny
-  ![2n premi categoria A](/blog/images_blog/2n_premi_catA_reptecodeclubrobolot2016.jpg)
 * Primer premi categoria B, 5è i 6è de primària: Els cosins Tim i Gael de Corçà
-    ![1r premi categoria B](/blog/images_blog/1r_premi_catB_reptecodeclubrobolot2016.jpg)
 * Segon premi categoria B, 5è i 6è de primària: Jordi Bossacoma de Torroella de Montgrí
-      ![2n premi categoria B](/blog/images_blog/2n_premi_catB_reptecodeclubrobolot2016.jpg)
+
+
+![Guanyadors repte codeclub robolot 2016](/blog/images_blog/guanyadors_repte_codeclub_robolot2016.jpg)
 
 Tant els guanyadors com els finalistes van rebre per a ells i la seva escola un kit de robòtica [Imagina 3D bot](http://www.picaxe.biz/tienda/producto/rbl0930/1/kit-imagina3dbot).
 
