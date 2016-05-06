@@ -25,7 +25,7 @@ Hem creat un [àlbum de fotos](https://goo.gl/photos/tiMwenqRuuRagiiJA) amb tote
 
 El jurat va tenir molta feina per a decidir els premiats. Després de la deliberació, es van atorgar 4 premis, un primer premi i un finalista per la categoria de 3r i 4t de primària i un altre primer premi i finalista per la categoria de 5è i 6è de primària:
 
-* Primer premi categoria A, 3r i 4t de primària: Eric Medina de l'escola Guillem de Balsareny
+* Primer premi categoria A, 3r i 4t de primària: Eric Medina de l'escola Guillem de Montrodon
 * Finalista categoria A, 3r i 4t de primària: Martí Boixader de l'escola Guillem de Balsareny
 * Primer premi categoria B, 5è i 6è de primària: Els cosins Tim i Gael de Corçà
 * Segon premi categoria B, 5è i 6è de primària: Jordi Bossacoma de Torroella de Montgrí
