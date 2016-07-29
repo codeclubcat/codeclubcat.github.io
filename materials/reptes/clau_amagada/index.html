@@ -1,0 +1,231 @@
+---
+layout: lesson
+title: Home
+---
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+<title>Perill cibernètic imminent</title>
+
+</head>
+
+<body>
+
+<div class="row">
+  <div class="ten columns"><hr></div>
+</div>
+
+<div class="row">
+  <div class="ten columns">
+    <p><h3>Repte 2</h3></p>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="nine columns">
+    <h1>Perill imminent a la xarxa!</h1>
+    
+
+<p> A partir d'ara oblideu-vos que sou alumnes de primària, ja que ara formeu part d'una organització de ciber-espies que es dedica a desxifrar els missatges criptogràfics que corren per internet. Formeu part d'una organització secreta que intenta capturar a uns pirates informàtics que estan tramant un atac a un banc molt important.</p>
+
+   <br>
+   <img src="imatges/intro_scaled.png" align='middle'>
+   <br><br>
+   <br>
+
+    <p>Tot i que els pirates es comuniquen utilitzant el correu electrònic i la nostra organització ha estat capaç de capturar-ne un parell, els missatges estan xifrats de forma que a primera vista no hi ha forma d'entendre'n el seu contingut, i només utilitzant una clau es pot veure el missatge que contenen.  Per exemple, un dels últims missatges interceptats deia: </p>
+
+<p><TT> SHYLBUPVLYHHSIHYKLSHJHUAVUHKHKLSIHUJ </TT> </p>
+
+    <p>En aquest cas, la nostra organització va poder desxifrar aquest correu electrònic utilitzant una programa informàtic que el servei d'intel.ligència informàtica va dissenyar i que es mostra a continuació: </p>
+<p><iframe allowtransparency="true" width="388" height="321" src="http://scratch.mit.edu/projects/embed/19705633/?autostart=false" frameborder="0" allowfullscreen></iframe></p>
+
+Resulta que la clau per desxifrar el missatge era el nombre 7. Un cop desxifrat el missatge, vàrem veure que deia: </p>
+
+<p><TT>LA REUNIO SERA AL BAR DE LA CANTONADA DEL BANC!</TT></p>
+
+
+<p>Malauradament, els pirates informàtics són molt llestos i tenen un sistema que detecta quan un missatge ha estat interceptat abans que el destinatari el rebi. Per això, cada cop que envien un missatge electrònic canvien el sistema de xifratge i la clau. Tot i això, el nostre servei d'intel.ligència té alguna idea de per on pot anar el sistema de xifratge. A continuació es detalla el que el nostre servei d'intel.ligència sap:</p>
+
+
+<ul>
+  
+<li>Sabem que els pirates utilitzen un alfabet de 26 lletres. Aquest alfabet es pot representar en una llista com es mostra a continuació:</li>
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/abecedari.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+<li> En informàtica, les llistes són estructures on s'emmagatzemen dades de forma ordenada. Imagineu-vos que la llista és un armari amb molts de calaixos que li direm <TT>llista_alfabet</TT>, i que cada lletra està guardada en un calaix. Així, la lletra 'A', està guardada al primer calaix de la <TT>llista_alfabet</TT>, la 'B' a la segona, i així successivament fins a la 'Z' que està guardada al calaix 26. </li>
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/abecedari_calaix.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+
+<li> Ens pensem que els pirates informàtics estan utilitzant un sistema de xifratge que tot i que ja l'utilitzava  <a src="http://ca.wikipedia.org/wiki/Xifratge_de_C%C3%A8sar"> l'emperador romà Juli Cèsar </a> per comunicar-se de forma secreta amb els seus generals, encara es fa servir per xifrar missatges per internet. <b>Aquest sistema xifra els missatges canviant les lletres de calaix de forma que només la persona que envia el correu electrònic (emissor) i el que el rep (receptor) saben l'ordre (la clau) de com s'han canviat les lletres als calaixos.</b> </li>
+<br>
+<li>Suposem que l'emissor i el receptor es posen d'acord en utilitzar la clau secreta "3". Llavors, cada lletra de l'abecedari es canviaria per la lletra que estigués tres calaixos endavant. Mireu l'exemple següent:</li>
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/transformation_scaled.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+
+<li>La lletra 'A' que està al calaix 1, es posaria al calaix de la lletra 'D', que està a la posició 1 + 3 = 4 de la llista. <b>O sigui, a la posició del calaix de cada lletra li hem sumat la clau i ens hem quedat amb la lletra que hi ha al calaix on va a parar</b>. Fixeu-vos que el mateix passa per la lletra 'B', per la 'C', i així successivament.</li>
+<br />
+<li>Utilitzant la mateixa clau 3, si vulguéssim xifrar la paraula 'HOLA' ens trobaríem que es xifraria com a 'KROD'. Fixeu-vos perquè: </li>
+<ul>
+  <li>la 'H' que està a la posició 8, passaria a la 8 + 3 = 11, i per tant es xifraria amb una 'K'.</li>
+  <li>la 'O' que està a la posició 15, passaria a la 15 + 3 = 18, i per tant es xifraria amb una 'R'.</li>
+  <li>la 'L' que està a la posició 12, passaria a la 12 + 3 = 15, i per tant es xifraria amb una 'O'.</li>
+  <li>la 'A' que està a la posició 1, passaria a la 1 + 3 = 4, i per tant es xifraria amb una 'D'.</li>
+</ul>
+</ul>
+
+
+<h2>Quina és la vostra missió?</h2>
+
+<p>El vostre objectiu és desxifrar els últims missatges que s'han interceptat, i que estem quasi segurs de que s'ha codificat amb el mètode que acabem de veure. El missatges, tal com s'han interceptat diuen el següent:</p>
+
+<p><b>missatge 1:</b>   <TT>PE QMWWMS WIVE HMPPYRW </TT></p> <!--la missio sera dilluns (rot4)-->
+<p><b>missatge 2:</b>   <TT>GUVKIWGW CVGPVU </TT></p>       <!--estigueu atents (rot 2) -->
+<p><b>missatge 3:</b>   <TT>HIHUKVULB SH IHZL</TT></p>      <!--abandoneu la base (rot 7)-->
+<p><b>missatge 4:</b>   <TT>KTY KYVOKT </TT></p>        <!--ens espien (rot 6) -->
+
+<p> Com que la nostra organització compta amb una sèrie d'espies (vosaltres), ens han demanat que cada espia s'encarregui d'un missatge diferent, ja que creiem que podria ser que els pirates haguessin utilitzat una clau numèrica diferent per cada un d'ells. </p>
+
+<p>Evidentment aquesta tasca no té res a veure amb els jocs del CodeClub, però degut a la importància de la tasca i a la serietat del problema, els responsables de la organització pensen que amb els coneixements que heu obtingut fins ara ens podreu ajudar a desxifrar el misteriós missatge. <b>Els responsables de la nostra organització secreta han promès 10 punts positius i la medalla de l'honor del CodeClub per cada un dels espies que hagi estat capaç d'entregar un programa que desxifri el seu tros de missatge criptogràfic.</b></p>
+
+<p> Degut a la importància de l'assumpte, els responsables de l'organització ens han dit que podeu demanar ajuda als pares, germans, etcètera. Un cop el resoleu, només caldrà que us poseu en contacte amb als caps de club, i automàticament us donaran la tant merescuda recompensa. </p>.
+
+<h3>Ajuda:</h3>
+
+<p> Us recomanem que utilitzeu les següents indicacions:</p>
+
+<ol>
+<li> Crear una llista anomenada <TT> llista_alfabet</TT>:</li>
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/llista_alfabet.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+<li> Emplenar cada una de les posicions amb les lletres de l'abecedari per ordre: primer la A, llavors la B, fins a arribar a la Z. Això ho podeu fer o bé amb el signe + que hi ha a sota de la llista, o utilitzant el bloc <b>afegeix [] a llista_alfabet</b>. També hi ha la opció d'importar a dins de la llista el <a href="alfabet.txt">següent fitxer</a> que ja conté tot l'abecedari.</li>
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/exemple_llista.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+<li> A continuació, aprendrem a moure'ns pels elements de la llista. El següent programa llegeix cada una de les lletres de la llista i les mostra per pantalla. És molt important que enteneu que està fent aquest programa. Fixeu-vos que primer fem servir una variable <b>numero_calaix</b> on li anem posant el número de calaix on hi ha cada lletra. El bloc <b>repeteix [] vegades</b> es repeteix tantes vegades com calaixos té la llista, o sigui, el nombre que ens retorna <b>llargada de llista_alfabet</b>.
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/recorregut.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+
+<li> També podem fer que el programa accedeixi només a les lletres que nosaltres volem. Per exemple, aquest programa només mostra per pantalla les paraules que estan en un calaix parell, o sigui en el 2,4,6,8,10,12 i fins al 26. </li>
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/recorregut_parell.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+<li> Com que tenim la <TT>llista_alfabet</TT>, podem crear una nova llista amb cada un dels números de calaix (índexs) de les lletres que componen el missatge secret a la <TT>llista_alfabet</TT>. Per exemple, si tenim el missatge xifrat <TT>IPMB</TT>, les posicions del calaix seran la 9 (I), 16 (P), 13 (M), i 2 (B). Per tant, crearem una llista amb aquests elements: </li> 
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/llista_indexs.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+<li>  Utilitzant la llista <TT>posicions_xifrades</TT> que conté les posicions de les lletres de la paraula xifrada, accediu a l'abecedari per comprovar que els índexs són correctes. El següent programa recorre els calaixos de la llista <TT>posicions_xifrades</TT>, guarda el valor de cada calaix a la variable <TT>calaix_actual</TT>, i mostra per pantalla la paraula de l'abecedari que coincideix amb el calaix <TT>calaix_actual</TT>. </li>
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/recorregut_indexs.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+
+<li>El problema principal aquí és que mostrar per pantalla lletra a lletra no es ajuda a desxifrar el missatge. Per tant, podem modificar un xic el programa anterior per fer-lo que guardi la paraula resultant en una variable i després la mostri per pantalla. Fixeu-vos com fer-ho: </li>
+
+<br>
+<div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="imatges/mostra_resultat.png">
+       </div>
+     </div> 
+</div>
+<br>
+
+</ol>
+
+<p> <b>A partir d'aquí, tot està a les vostres mans. Necessitem que cada un de vosaltres desxifri el tros de missatge secret que li hem encomanat. Ajudeu-nos si us plau, estem en un perill imminent!!!</b> </p>
+
+<h3>Estratègia</h3>
+
+    <p>Penseu que no fa masses anys, els espies secrets com vosaltres, resolien aquest tipus de reptes amb plantilles com <a href="matriu_rotacions.pdf">aquestes</a>. Potser us serveix d'ajuda per pensar una estratègia. </p>
+
+    <p>El programa del punt 7 us pot ser de gran ajuda per desxifrar el missatge. Només cal crear una llista amb els índexs del missatge xifrat com al pas 5, i modificar el programa perquè provi diferents claus. <b>Penseu com ho han fet els pirates informàtics per xifrar el missatge</b>. </p>
+
+    <p> Probablement la vostra tasca sigui desfer el procediment que ells han fet per xifrar... </p>
+    <p> <b>Ànims ciberespies! Us espera una recompensa important! I recordeu que podeu demanar ajuda a casa, o als amics!!! </b></p>
+ 
+</div>
+</div>
+
+</body>
+</html>
+
