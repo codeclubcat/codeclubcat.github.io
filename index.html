@@ -1,225 +1,173 @@
 ---
-layout: default
-title: Home
+layout: biblioteques
+title: Codeclub a les biblioteques
 ---
 
-<!-- Utf-8 encoding. Potser només es nececessari -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
-<div class="row">
-  <div class="twelve columns"><hr></div>
+
+<!-- buttons -->
 </div>
+<div class="row">
+  <div class="twelve columns">
+    <p class="jumplinks">
+      <div id="" class="three columns">
+	<center>
+	  <a href="/biblioteques/materials.html" class="button primary round">Materials disponibles</a>
+	</center>
+      </div>
+      <div id="" class="two columns">
+	<center>
+	  <a href="/biblioteques/consells.html" class="button primary round">Consells </a>
+	</center>
+      </div>
+      <div id="" class="two columns">
+	<center>
+	  <a href="/biblioteques/faq.html" class="button primary round">FAQ</a>
+	</center>
+      </div>
+      <div id="" class="two columns">
+	<center>
+	  <a href="/biblioteques/documentacio.html" class="button primary round">Caixa d'eines</a>
+	</center>
+      </div>
+      <div id="" class="two columns">
+	<center>
+	  <a href="/biblioteques/contacte.html" class="button primary round">Contacte</a>
+	</center>
+      </div>
+    </p>
+  </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
 
 <div class="row introduction">
-  <div class="seven columns">
-    <h2>La nostra missió</h2>
-
-    <p><b>La missió del codeclubcat.org</b> és poder oferir a cada infant de Catalunya la possibilitat d'aprendre a programar ordinadors. Disposem d'una sèrie de materials didàctics que han estat pensats amb l'objectiu de que els nens puguin aprendre els fonaments de la programació a través de l'estimulació de la seva creativitat. Aquestes activitats es duen a terme en horari extra-escolar, en forma de "clubs de codi" o "codeclubs" i estan totalment organitzades i gestionades per voluntaris.
-  </div>
-
-  <div class="five columns">
-    <h2>Ajudeu-nos</h2>
-    <p> Ajudeu-nos a fer que la comunitat CodeClub creixi a Catalunya. Necessitem voluntaris amb coneixements informàtics que vulguin engegar nous clubs, dissenyadors gràfics, il·lustradors, programadors de pàgines webs, divulgadors, hackers, etcètera...</p>
-    <p><a href="/contacte" class="button primary round">Ajudeu-nos</a></p>
-  </div>
-</div>
-
-
-<div class="row">
-  <div class="twelve columns"><hr></div>
-</div>
-
-<div class="row how-it-works">
-  <div class="twelve columns">
-
-    <div class="row">
-      <div class="ten columns">
-        <h2>Com funcionen els Code Clubs?</h2>
-
-        <p> El funcionament dels Code Clubs és molt senzill:  durant una hora a la setmana, els voluntaris s'acosten fins a l'escola del seu barri (o a la més propera a la feina, etcètera...) i porten a terme tallers de programació als nens de l'escola seguint els materials didàctics que hem preparat. </p>
-
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="bit">
-        <div class="image">
-          <img src="/img/club-steps/1.png">
-        </div>
-        <h4>Voluntaris</h4>
-        <div class="caption"><p> Un voluntari que sàpiga programar</p></div>
-	
-      </div>
-      <div class="bit">
-        <div class="image">
-          <img src="/img/club-steps/2.png">
-        </div>
-        <h4>Projectes</h4>
-        <div class="caption"><p> Projectes</p></div>
-      </div>
-      <div class="bit">
-        <div class="image">
-          <img src="/img/club-steps/3.png">
-        </div>
-        <h4>Lloc de reunió</h4>
-        <div class="caption"><p> Escoles, biblioteques, ... </p></div>
-      </div>
-      <div class="bit">
-        <div class="image">
-          <img src="/img/club-steps/4.png">
-        </div>
-        <h4>Nens</h4>
-        <div class="caption"><p> que vulguin aprendre a programar </p></div>
-      </div>
-      <div class="bit">
-	<div class="image">
-	  <br><br>
-          <img src="/img/logo-150.png">
-	</div>
-        <p><br><a href="/consells/creant-un-club.html" class="button secondary round">Voleu saber-ne més?</a></p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="row">
-  <div class="twelve columns"><hr></div>
-</div>
-
-
-<div class="row">
-  <div class="twelve columns"><hr></div>
-</div>
-
-<div class="row">
-  <div class="twelve columns">
-
-    <div class="white panel map-wrapper">
-      <div class="row">
-        <div class="ten columns club-count">
-          <h2>Ja som  <span class="counter_cat"></span> <span class="counter-after"> clubs a tot Catalunya!</span></h2>
-        </div>
-        <div class="two columns start-club">
-          <a href="/consells/creant-un-club.html"  class="button primary round">Engegueu un club</a>
-        </div>
-      </div>
-      <div id="map"></div>
-    </div>
-
-    <div class="panel" id="register" style="display:none;">
-
-      <form novalidate>
-
-        <div class="row">
-          <div class="twelve columns">
-            <h3>Engegueu el vostre club i uniu-vos a nosaltres!</h3>
-            
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="nine columns">
-            <div class="row">
-
-              <div class="six columns">
-                <div class="custom-placeholder required">
-                  <label for="venue[name]">Nom del Club</label>
-                  <input class="medium input-text" name="venue[name]" id="venue[name]" type="text" data-trigger="change" required="required">
-                </div>
-
-                <div class="custom-placeholder">
-                  <label>Pàgina web del club</label>
-                  <input class="medium input-text" type="text" name="venue[website]" data-trigger="change">
-                </div>
-
-                <p>El nom del club es mostrarà al mapa.</p>
-
-                <br class="separator">
-
-                <div class="custom-placeholder">
-                  <label for="venue[address_1]">Direcció del club 1</label>
-                  <input class="medium input-text" name="venue[address_1]" id="venue[address_1]" type="text" data-trigger="change" required="required">
-                </div>
-
-                <div class="custom-placeholder">
-                  <label for="venue[address_2]">Direcció del club  2</label>
-                  <input class="medium input-text" name="venue[address_2]" id="venue[address_2]" type="text">
-                </div>
-
-                <div class="custom-placeholder">
-                  <label for="venue[region]">Província</label>
-                  <input class="medium input-text" name="venue[region]" id="venue[region]" type="text">
-                </div>
-
-                <div class="custom-placeholder">
-                  <label for="venue[city]">Ciutat o Poble</label>
-                  <input class="medium input-text" name="venue[city]" id="venue[city]" type="text">
-                </div>
-
-                <p>O La direcció del lloc on es duran a terme les activitats no serà visible al mapa, simplement serà utilitzada per localitzar el club al mapa. programação no mapa.
-               </p>
-
-                <br class="separator">
-
-                <div class="custom-placeholder required">
-                  <label>País</label>
-                  {% include country_select.html %}
-                </div>
-              </div>
-
-              <div class="six columns">
-                <div class="custom-placeholder required">
-                  <label for="contact[name]"> Nom</label>
-                  <input class="medium input-text" type="text" name="contact[name]" id="contact[name]" data-trigger="change" required="required">
-                </div>
-
-                <div class="custom-placeholder required">
-                  <label for="contact[email]">Direcció de correu electrònic</label>
-                  <input class="medium input-text input-email" type="email" name="contact[email]" id="contact[email]" data-trigger="change" required="required">
-                </div>
-
-                <p class="mini-notice">La vostra direcció de correu no serà visible</p>
-
-                <div class="custom-placeholder">
-                  <label for="contact[skype]">Nom d'usuari d'Skype</label>
-                  <input class="medium input-text" type="text" name="contact[skype]" id="contact[skype]">
-                </div>
-
-                <p>Creeu un compte d'Skype pel vostre club de programació per poder comunicar-vos amb altres clubs
-		   Aquesta informació no serà visible al mapa.</p>
-
-                <label id="terms-and-conditions">
-                  <input type="checkbox" name="contact[agreed]" value="1" required="required" data-error-message="You must agree to the terms and conditions to continue.">
-                  <strong>He llegir i accepto <a href="http://codeclub-assets.s3.amazonaws.com/public/CodeClubWorld-Terms-of-Service-v1-clean.pdf">els termes i condicions </a></strong>
-                </label>
-
-                <button type="submit" class="button primary roundAo cadastrar seu clube você terá acesso a certificados, pôsteres e modelos de crachás, para completar o material do seu clube.</p>" id="create-a-club">Crie um clube</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="three columns">
-            <p><strong>Perquè registrar-se?</strong></p>
-            <p> El fet de registrar el club us dóna accés a certificats, plantilles de medalles i pòsters que us seran molt útils al vostre club.</p>
-            <img src="/img/robots/giddy.png" class="giddy" />
-          </div>
-        </div>
-
-      </form>
-
-    </div>
-  </div>
-</div>
-
-<div class="row">
   <div class="ten columns">
-    <h2>Materials didàctics</h2>
+    <h1>5a edició del Codeclub a les biblioteques</h1>
+    <p> <i>Octubre'16 - Gener'17</i><p>
+      <p>
+        Aquesta tardor comencem amb una nova edició. Un total de 22 biblioteques participants, repartides per tot el territori, faran que més de 200 nens puguin gaudir gratuïtament dels tallers de programació.
+      </p>
 
-    <p> La nostra intenció és anar creant nous cursos i activitats. A cada nou curs, els nens aniran aprenent nous conceptes mentre utilitzen la seva imaginació per resoldre els reptes proposats a cada projecte. Durant els dos primers cursos, utilitzarem el programari <a href="http://scratch.mit.edu">Scratch</a> per introduir els conceptes més elementals de la programació. A partir d'aquí, durant el tercer curs s'introduiran conceptes bàsics de la programació web amb <a href="http://ca.wikipedia.org/wiki/HTML">HTML</a> i <a href="http://ca.wikipedia.org/wiki/CSS">CSS</a>. Durant el quart curs ampliarem tots els conceptes anteriors a través d'un llenguatge de programació com <a href="http://python.org">Python</a>, i així successivament. 
- 
-    </p>
-    <br>
+      <div class="row introduction">
+        <div class="ten columns">
+          <h2>Biblioteques participants</h2>
+
+          <p> Aquí podeu veure el mapa amb la ubicació de cada biblioteca. Dirigiu-vos a la que sigui més propera a casa vostra per a rebre'n informació i poder formalitzar la inscripció. </p>
+
+          <iframe src="https://www.google.com/maps/d/embed?mid=1hqOdpRjr1JpKctAgVQOUakIxBOg" width="640" height="480"></iframe>
+
+
+
+            <br />
+            <br />
+            <h3>Província de Barcelona:</h3>
+             <br />
+            <ul>
+      	<li><a href="http://bibliotecavirtual.diba.cat/gava-biblioteca-josep-soler-vidal">Biblioteca Josep Soler Vidal (Gavà)</a></li>
+      	<li><a href="http://www.rocaumbert.cat/">Biblioteca Roca Umbert(Granollers)</a></li>
+      	<li><a href="https://www.ateneulesbases.cat/cat/principal/inici">Biblioteca Ateneu les Bases (Manresa)</a></li>
+        <li><a href="http://www.bibliotecaigualada.cat/">Biblioteca Central(Igualada)</a></li>
+          <li><a href="http://bibliotecavirtual.diba.cat/martorell-biblioteca">Biblioteca de Martorell</a></li>
+          <li><a href="http://www.bibliotequeslh.cat/853094_1.aspx?id=1">Biblioteca Josep Janés (Bellvitge)</a></li>
+          <li><a href="http://www.bibliotequeslh.cat/853094_1.aspx?id=1">Biblioteca de Bellvitge</a></li>
+          <li><a href="https://www.biguesiriells.cat/public/Departaments/Cultura/Biblioteca_municipal/">Biblioteca de Bigues i Riells</a></li>
+          <li><a href="http://bibliotecavirtual.diba.cat/barcelona-nou-barris-biblioteca-zona-nord">Biblioteca Zona Nord (Barcelona)</a></li>
+          <li><a href="http://bibliotecavirtual.diba.cat/esplugues-de-llobregat-biblioteca-pare-miquel-d-esplugues">Biblioteca Pare Miquel (Esplugues)</a></li>
+          <li><a href="http://ajuntament.barcelona.cat/biblioteques/bibelcarmel/ca">Biblioteca El Carmel - Juan Marsé (Barcelona)</a></li>
+          <li><a href="http://www.sabadell.cat/ca/biblioteques/biblioteca-vapor-badia">Biblioteca Vapor Badia (Sabadell)</a></li>
+          <li><a href="http://ajuntament.barcelona.cat/biblioteques/bibcanfabra/ca">Biblioteca Ignasi Iglesias (Barcelona)</a></li>
+            </ul>
+
+            <br />
+            <h3>Província de Girona:</h3>
+
+            <br />
+            <ul>
+      	<li><a href="http://www.bibliotecadefigueres.cat/">Biblioteca Fages de Climent (Figueres)</a></li>
+
+            </ul>
+
+
+            <br />
+            <h3>Província de Tarragona:</h3>
+            <br />
+            <ul>
+      	<li><a href="http://bibliotecatarragona.gencat.cat/ca/">Biblioteca pública de Tarragona</a></li>
+      	<li><a href="https://bibliotecaroquetes.wordpress.com/">Biblioteca Mercè Lleixà (Roquetes)</a></li>
+        <li><a href="http://www.smartcentre.cat/">Biblioteca José Escudé i Albesa (Santa Bàrbara)</a></li>
+        <li><a href="http://www.bibliotecavila-seca.cat/">Biblioteca de Vila-seca</a></li>
+        <li><a href="http://www.reus.cat/serveis/biblioteca-central-xavier-amoros">Biblioteca Central Xavier Amorós (Reus)</a></li>
+        <li><a href="http://www.gandesa.cat/biblioteca/">Biblioteca municipal de Gandesa</a></li>
+            </ul>
+
+<br />
+
+            <h3>Província de Lleida:</h3>
+
+            <br />
+            <ul>
+            <li><a href="http://www.tremp.cat/index_web.php?idwc=czoxMDoiYmlibGlvdGVjYSI7">Biblioteca Maria Barbal (Tremp)</a></li>
+            <li><a href="http://www.elpontdesuert.com/web.asp?u=serveis_cultura_%7BBA4D6737-AECD-4147-A44C-A97420A0DDBE%7D&mod=festes&idc=%7BBA4D6737-AECD-4147-A44C-A97420A0DDBE%7D">Biblioteca del Pont de Suert </a></li>
+
+
+            </ul>
+          </div>
+      </div>
+    <h2>Què és el Codeclub a les biblioteques?</h2>
+    <br />
+    <br />
   </div>
 </div>
 
+<!-- el cartell i el text en dos columnes -->
+<div class="row introduction">
+    <!-- cartell -->
+    <div class="five columns">
+      <img src="/img/ccb_cartell.png" width="100%" alt="Cartell dels Codeclubs a les biblioteques" >
+      <br /> <br />
+      <!--<img src="/img/mapa2aed.png" width="100%" height = "80%" alt="Cartell dels Codeclubs a les biblioteques" >-->
+    </div>
+
+<div>
+
+<div class="row introduction">
+    <div class="five columns">
+
+      <p>Codeclub a les biblioteques és una iniciativa del <a href="http://biblioteques.gencat.cat"> Servei de Biblioteques de la Generalitat</a>, que juntament amb <a href="http://www.codeclubcat.org">Codeclubcat</a> i les universitats <a href="http://www.uoc.edu">UOC</a>, <a href="http://www.fib.upc.edu/fib.html">UPC</a>, <a href="http://www.udg.edu">UDG</a>  i <a href="http://www.upf.edu">UPF</a> vol iniciar als nens i nenes a la programació d'ordinadors. Igual que la resta de Codeclubs, els tallers són també gratuïts i gestionats per voluntaris, que en aquest cas són estudiants de grau de les tres universitats. Pensem que és important que els voluntaris puguin dedicar temps a cada alumne, i per això el nombre màxim d'alumnes per biblioteca és de 12.</p>
+
+      <p>Durant el primer trimestre d'aquest any varem engegar la <a href="/biblioteques/quarta_edicio.html">4a edició</a> del Codeclub a les biblioteques, incorporant noves biblioteques d'arreu de Catalunya respecte edicions anteriors. Davant l'èxit del projecte, en aquest tercer trimestre de l'any posem en marxa la <b>5a edició</b> amb noves biblioteques. El mes de setembre us donarem nous detalls, amb la llista de biblioteques participants.</p>
+ </div>
+</div>
+
+</br>
+</br>
+</br>
+
+
+
+
+
+ <br /><br />
+<div class="row introduction">
+  <div class="ten columns">
+    <!-- text -->
+    <h2>Quins són els nostres objectius?</h2>
+</a></li>
+<p> Amb aquesta nova edició del Codeclub a les biblioteques, ens hem proposat una sèrie d'objectius a assolir:</p>
+    <!--text-->
+    <ul>
+      <li>Acostar els nens i nenes d'entre 10 i 12 anys a les biblioteques públiques, oferint-los la possibilitat d'iniciar-se a la programació d'ordinadors en un dels 39 clubs que hem posat en marxa a diferents biblioteques del territori català.</li>
+      <li>Oferir des de les biblioteques una oferta formativa atractiva per una franja d'edat clau en la fidelització del ciutadà a la biblioteca. El projecte també permet la intervenció de les famílies en el procés d'aprenentatge.</li>
+      <li>Fomentar l'equitat: la iniciativa és gratuïta i oberta a tots els nens i nenes amb la intenció que la participació sigui paritària al 50%.</li>
+      <li>Treballar la creativitat, la planificació i el pensament crític a través de la programació de jocs.</li>
+      <li>Incentivar les vocacions científico-tecnològiques entre els infants.</li>
+      <li>Fomentar la col.laboració de l'entorn universitari a les biblioteques públiques.</li>
+      <li>Avaluar els resultats d'aquest projecte pilot per tal d'extrendre'l a tota la xarxa de biblioteques a curt termini. Si és possible, s'investigaran els resultats obtinguts.</li>
+    </ul>
+  </div>
+</div>
