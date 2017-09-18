@@ -1,9 +1,8 @@
 
 .boxes .button{
-color: white !important;	
-	
-	}	
-	
+color: white !important;
+}
+
 .text_two_column
 {
 -webkit-columns: 2;
@@ -23,7 +22,7 @@ min-height: 0 !important;
   transition: all .5s ease;
 }
 #register.open
-{ 	
+{
 	height: auto;
 	overflow: none;
 	padding: 20px;
@@ -36,14 +35,14 @@ border-width: 2px;
 border-radius: 36px;
 border-color: #006cb0;
 height: auto;
-float: left;	
+float: left;
 	}
 	#lessons .description
 	{
-		
+
 		display: inline-block;
 		width: 50%;
-		
+
 		height: 50%;
 		top:25%;
 		vertical-align:middle
@@ -56,7 +55,7 @@ float: left;
 		margin-left: 5%;
 		padding-left: 30px;
 		border-radius: 36px;
-				
+
 		}
 #lessons .lesson
 {
@@ -64,5 +63,5 @@ float: left;
    overflow: hidden;
 	background-color: white;
 	width: 100%;
-	margin:15px;x	
+	margin:15px;x
 	}
