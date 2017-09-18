@@ -37,7 +37,7 @@ a:hover, a:focus { color: #339933; }
   margin-bottom: 40px;
 }
 
-.navigation .main-menu {
+.navigation .main-menu a {
   font-size: 1.1em;
 }
 
