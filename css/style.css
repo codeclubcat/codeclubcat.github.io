@@ -43,12 +43,6 @@ a:hover, a:focus { color: #339933; }
   font-size: 1.1em;
 }
 
-.navigation .main-menu a{
-  background: #339933;
-  color: #ffffff;
-  font-size: 1.1em;
-}
-
 .header-robot-1, .header-robot-2 {
   width: 145px !important;
   height: 234px;
