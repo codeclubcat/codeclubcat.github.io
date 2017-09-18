@@ -40,7 +40,7 @@ a:hover, a:focus { color: #339933; }
 .navigation .main-menu a:hover {
   background: #339933;
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .header-robot-1, .header-robot-2 {
