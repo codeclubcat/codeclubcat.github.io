@@ -540,6 +540,7 @@ ul {
     background:  #E0E0E0;
     height: 79%;
     overflow: auto;
+    padding: 15px;
 }
 
 #right {
@@ -548,6 +549,7 @@ ul {
     background:  #E0E0E0;
     height: 2%;
     overflow: visible;
+    padding: 15px;
 }
 
 #post_text {
