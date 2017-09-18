@@ -38,12 +38,6 @@ a:hover, a:focus { color: #339933; }
 }
 
 .navigation .main-menu a:hover {
-  background: #339933;
-  color: #ffffff;
-  font-size: 1.1em;
-}
-
-.navigation .main-menu a {
   font-size: 1.1em;
 }
 
