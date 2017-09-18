@@ -37,6 +37,9 @@ a:hover, a:focus { color: #339933; }
   margin-bottom: 40px;
 }
 
+.navigation .main-menu {
+  background: #ffffff;
+}
 .navigation .main-menu a:hover {
   background: #339933;
 }
