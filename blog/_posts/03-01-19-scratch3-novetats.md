@@ -11,7 +11,7 @@ author: martina
 El dia 2 de gener 2019 el MIT ha publicat la última versió de la seva plataforma increïble de programació: 
 <a href="https://scratch.mit.edu">Scratch 3</a>! 
 
-<img src="http://codeclubcat.org/img/Interface-Scratch3.png" width="450px" alt="Captura Scratch 3">
+<img src="http://codeclubcat.org/img/Interface-Scratch3.png" width="600px" alt="Captura Scratch 3">
 
 Scratch ens agrada molt, és el punt de partida perfecte per a joves i infants que vulguin començar a 
 jugar amb la programació de manera lúdica i divertida.
@@ -28,7 +28,7 @@ blocs són ara més grans i més fàcils de llegir.
 Per ajudar-vos i als vostres joves estudiants a navegar per la nova interfície Scratch 3, 
 hem creat un <a href="https://campus.colectic.coop/pluginfile.php/1871/mod_page/content/2/Scratch%2B3%2Binterface%2Bguide.pdf">pòster per imprimir</a> amb l'aparença nova: 
 
-<img src="http://codeclubcat.org/img/Scratch3_interface_CAT.png" width="450px" alt="Pòster Nova Aparença Scratch 3">
+<img src="http://codeclubcat.org/img/Scratch3_interface_CAT.png" width="600px" alt="Pòster Nova Aparença Scratch 3">
 
 Potser la notícia més gran és que Scratch 3 també funciona en tauletes, 
 obrint programació a molts nens que no tenen accés a un ordinador!
