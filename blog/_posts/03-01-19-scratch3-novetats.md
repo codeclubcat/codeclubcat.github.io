@@ -26,7 +26,9 @@ hi ha noves eines d'edició de pintura i so; nous tipus de blocs de codi; i els
 blocs són ara més grans i més fàcils de llegir.
 
 Per ajudar-vos i als vostres joves estudiants a navegar per la nova interfície Scratch 3, 
-hem creat un <a href="https://campus.colectic.coop/pluginfile.php/1871/mod_page/content/2/Scratch%2B3%2Binterface%2Bguide.pdf">pòster per imprimir</a> amb l'aparença nova: <img src="http://codeclubcat.org/img/img/Scratch3_interface_CAT.png" width="450px" alt="Pòster Nova Aparença Scratch 3">
+hem creat un <a href="https://campus.colectic.coop/pluginfile.php/1871/mod_page/content/2/Scratch%2B3%2Binterface%2Bguide.pdf">pòster per imprimir</a> amb l'aparença nova: 
+
+<img src="http://codeclubcat.org/img/img/Scratch3_interface_CAT.png" width="450px" alt="Pòster Nova Aparença Scratch 3">
 
 Potser la notícia més gran és que Scratch 3 també funciona en tauletes, 
 obrint programació a molts nens que no tenen accés a un ordinador!
