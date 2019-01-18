@@ -1,7 +1,7 @@
 ---
 layout: blog
 title:  "Formació online Code Club"
-date:   2017-11-03
+date:   2018-11-03
 tags:  codeclub biblioteques
 author: martina
 ---
