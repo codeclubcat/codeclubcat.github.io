@@ -21,7 +21,7 @@ ja podeu trobar-ne molts projectes adaptats a Scratch 3 en anglès per a tots el
 
 <img src="http://codeclubcat.org/img/diamond.png" width="50px" alt="diamond"> Catalunya busquem persones voluntàries que ens ajudin a adaptar els projectes en català a Scratch 3, i també per traduir nous projectes!
 
-Scratch 3 presenta una aparença nova. El canvi més obvi és que l'escenari està ara al costat dret; 
+Scratch 3 presenta una <b>aparença nova</b>. El canvi més obvi és que l'escenari està ara al costat dret; 
 hi ha noves eines d'edició de pintura i so; nous tipus de blocs de codi; i els 
 blocs són ara més grans i més fàcils de llegir.
 
@@ -30,6 +30,6 @@ hem creat un <a href="https://campus.colectic.coop/pluginfile.php/1871/mod_page/
 
 <img src="http://codeclubcat.org/img/Scratch3_interface_CAT.png" width="600px" alt="Pòster Nova Aparença Scratch 3">
 
-Potser la notícia més gran és que Scratch 3 també funciona en tauletes, 
+Potser la notícia més gran és que Scratch 3 també <b>funciona en tauletes</b>, 
 obrint programació a molts nens que no tenen accés a un ordinador!
 
