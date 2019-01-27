@@ -38,10 +38,9 @@
 <h2>Llista de tasques</h2>
 <ul>
 <li>Creeu un nou projecte.</li>
-<li>Seleccioneu l’escenari i cliqueu a la pestanya del Fons. Llavors, seleccioneu el fons <strong>natura/underwater3</strong> i suprimiu-ne l’original.</li>
-<li>Canvieu el nom del personatge ‘Sprite1’ per ‘Peix Gros’.</li>
+<li>Seleccioneu l’escenari i cliqueu a la pestanya del Fons. Llavors, seleccioneu el fons <strong>natura/underwater1</strong> i suprimiu-ne l’original.</li>
+<li>Canvieu el nom del personatge ‘Personatge1’ per ‘Peix Gros’.</li>
 <li>Seleccioneu de la carpeta on us heu baixat els vestits, el del Peix Gros <strong>peix-gros1</strong> i borreu els vestits anteriors (‘vestit1’ i ‘vestit2’).</li>
-<li>Aneu a la <code>i</code> blava del personatge i marqueu el botó amb dues fletxes per tal que el personatge només miri a esquerra o dreta.</li>
 <li><p>Creeu el següent programa per fer que el Peix Gros persegueixi el punter del ratolí:</p>
 <p><img src="910f046883dfea4ffd9c28eb7fa38da0b6b37d32.png" alt="Quan la BANDERA VERDA es premi
 per sempre
@@ -63,9 +62,6 @@ per sempre
         mou-te (3) passos" /></p></li>
 </ul>
 </section>
-<section id="proveu-el-projecte-1" class="level2 flag">
-<h2>Proveu el projecte</h2>
-</section>
 <section id="coses-per-provar" class="level2 try">
 <h2>Coses per provar</h2>
 <ul>
@@ -82,8 +78,8 @@ per sempre
 <section id="llista-de-tasques-1" class="level2 check">
 <h2>Llista de tasques</h2>
 <ul>
-<li>Creeu un nou personatge utilitzant <strong>Animals/starfish</strong>.</li>
-<li>Utilitzeu l’eina <code>Encongir</code>, situada al menú de l’Scratch per reduir la mida del nou personatge.</li>
+<li>Creeu un nou personatge utilitzant <strong>Animals/fish</strong> i escollint el vestit que mès t'agradi.</li>
+<li>Utilitzeu l’opció <code>Mida</code> situada sobre el personatge per reduir la mida del nou personatge.</li>
 <li><p>Creeu un programa que faci que les preses nedin pel mar. El nostre objectiu és que les preses es moguin a l’atzar, per tant farem que repetidament es moguin una mica endavant i llavors girin una mica a esquerra o dreta a l’atzar.</p>
 <p><img src="e6fd58d7a7691503ea2b5b3056c38d459e73b0d4.png" alt="Quan la BANDERA VERDA es premi
 per sempre
@@ -94,9 +90,12 @@ per sempre
 </section>
 <section id="proveu-el-projecte-2" class="level2 flag">
 <h2>Proveu el projecte</h2>
-<p>Cliqueu la bandera verda i mireu si la presa està nedant pel mar. La presa, neda com us esperàveu? El moviment és realista?</p>
-<p>Per ara, el Peix Gros i la presa no interaccionen entre ells. Al següent pas ho resoldrem.</p>
+<p>Cliqueu la bandera verda i mireu si la presa està nedant pel mar.</p>
+<ul>
+<li>La presa, neda com us esperàveu? El moviment és realista?</li>
+</ul>
 </section>
+<p>Per ara, el Peix Gros i la presa no interaccionen entre ells. Al següent pas ho resoldrem.</p>
 <section id="deseu-el-projecte" class="level2 save">
 <h2>Deseu el projecte</h2>
 </section>
@@ -136,7 +135,7 @@ per sempre
 <p>Proveu el joc un altre cop. Hi trobeu algun problema? Fixeu-vos que la presa desapareix en tocar qualsevol part del Peix Gran. A més, també es podria donar la situació que el Peix Gran esperés 3 segons i es tornés a menjar la presa en el moment que tornés a aparèixer. Això no és just!</p>
 <ul>
 <li>Com ho podríem fer perquè la presa només desaparegués si està tocant la boca del Peix Gros? Podríem utilitzar el bloc <code class="blocklightblue">tocant el color</code> i veure si està tocant la dent blava del Peix Gros. Per provar aquesta opció, canvieu el bloc <code class="blocklightblue">tocant</code> pel bloc <code class="blocklightblue">tocant el color</code> al programa, cliqueu al selector de color del bloc i seguidament a la dent del Peix Gros.</li>
-<li><p>Seguidament, fent servir el bloc <code class="blockblue">ves a</code> amb valors a l’atzar pels valors <strong>x</strong> i <strong>y</strong>, podem fer que la presa es mogui a un punt aleatori abans de reaparèixer de nou a l’escenari.</p>
+<li><p>Seguidament, fent servir el bloc <code class="blockblue">vès a</code> amb el valor <code class="blocklightblue">posició aleatòria</code>, podem fer que la presa es mogui a un punt aleatori abans de reaparèixer de nou a l’escenari.</p>
 <p><img src="038900d211cd9af0a2fae0dac8743b374619db41.png" alt="quan la BANDERA VERDA es premi
 per sempre      
     mou-te (2) passos
@@ -152,7 +151,8 @@ per sempre
 <section id="proveu-el-projecte-4" class="level2 flag">
 <h2>Proveu el projecte</h2>
 <p>Proveu el joc un altre cop: la presa, només desapareix quan toca la boca del peix? Reapareix en un punt a l’atzar de l’escenari en comptes del mateix lloc on el Peix se l’havia menjat?</p>
-<p>El peix ha de saber quan s’ha empassat alguna cosa per poder reproduir un so i canviar de vestit. Per fer això, podem fer que la presa, abans de desaparèixer, enviï un missatge indicant que se l’han empassat.</p>
+<ul>
+<li><p>El peix ha de saber quan s’ha empassat alguna cosa per poder reproduir un so i canviar de vestit. Per fer això, podem fer que la presa, abans de desaparèixer, enviï un missatge indicant que se l’han empassat.</p>
 <p><img src="628626178d0fd85cd9e8ad368dcff05950a68dfe.png" alt="    quan la BANDERA VERDA es premi
     per sempre      
         mou-te (2) passos
@@ -163,11 +163,11 @@ per sempre
             amaga
             espera (3) segons
             vés a x: (nombre a l&#39;atzar entre (-220) i (220)) y: (nombre a l&#39;atzar entre (-170) i (170))
-            mostra" /></p>
+            mostra" /></p></li>
+</ul>
 <p>Ara volem que el Peix Gros respongui a aquest missatge reproduint el so ‘chomp’ i tancant la boca.</p>
 <ul>
-<li>Afegiu el vestit <strong>mouth-closed.png</strong> i el so <strong>chomp.mp3</strong>, de la carpeta dels recursos, al personatge Peix Gros.</li>
-<li><p>Llavors, afegiu un nou programa al Peix Gros per tal que respongui al missatge de la presa. Aquest programa hauria de fer que el peix reprodueixi el so ‘chomp’, canviés al vestit amb la boca tancada, esperés una mica i tornés de nou al vestit original.</p>
+<li><p>Afegiu un nou programa al Peix Gros per tal que respongui al missatge de la presa. Aquest programa hauria de fer que el peix reprodueixi el so ‘chomp’ y fagi l’animació de menjar.</p>
 <p><img src="ec67dc964d209cef700c59eace81f5c97ce4c49b.png" alt="quan rebi [menjat! v]
     toca el so [chomp v]
     repeteix (2) vegades
@@ -201,10 +201,11 @@ per sempre
 </section>
 <section id="proveu-el-projecte-6" class="level2 flag">
 <h2>Proveu el projecte</h2>
-<p>La presa, es mou més lentament? El fet que es mogui més lentament fa el joc millor?<br />
-Si podeu fer això, també podeu <strong>fer que un peix es mogui més de pressa que la resta.</strong></p>
-<p>La presa, es mou encara de forma raonable? El fet que es mogui més ràpida fa el joc millor? <strong>Pista:</strong> Si la presa neda en cercles, verifiqueu que els valors dels blocs <code class="blockgreen">nombre a l'atzar</code></p>
-<p>Què tal si feu que la presa es comporti de forma diferent, utilitzant diferents combinacions d’aquestes modificacions?</p>
+<ul>
+<li>La presa, es mou més lentament? El fet que es mogui més lentament fa el joc millor? Si podeu fer això, també podeu <strong>fer que un peix es mogui més de pressa que la resta.</strong></li>
+<li>La presa, es mou encara de forma raonable? El fet que es mogui més ràpida fa el joc millor? <strong>Pista:</strong> Si la presa neda en cercles, verifiqueu que els valors dels blocs <code class="blockgreen">nombre a l'atzar</code></li>
+<li>Què tal si feu que la presa es comporti de forma diferent, utilitzant diferents combinacions d’aquestes modificacions?</li>
+</ul>
 <p>Aquests canvis, fan que el joc sigui millor? Fan el joc més interessant, divertit, difícil o fàcil? Quina versió és millor?</p>
 </section>
 <section id="deseu-el-projecte-2" class="level2 save">
@@ -233,7 +234,9 @@ Si podeu fer això, també podeu <strong>fer que un peix es mogui més de pressa
 </section>
 <section id="proveu-el-projecte-8" class="level2 flag">
 <h2>Proveu el projecte</h2>
-<p>El marcador, està a zero al principi de la cada partida? Puja cada cop que us mengeu una nova presa?</p>
+<ul>
+<li>El marcador, està a zero al principi de la cada partida? Puja cada cop que us mengeu una nova presa?</li>
+</ul>
 </section>
 <section id="deseu-el-projecte-4" class="level2 save">
 <h2>Deseu el projecte</h2>
@@ -246,10 +249,12 @@ Si podeu fer això, també podeu <strong>fer que un peix es mogui més de pressa
 </section>
 <section id="proveu-el-projecte-9" class="level2 flag">
 <h2>Proveu el projecte</h2>
-<p>El cronòmetre, comença a 30 segons?</p>
-<p>Va baixant a la velocitat correcta?</p>
-<p>Podeu capturar la presa mentre el cronòmetre està en marxa?</p>
-<p>El joc, es para un cop el cronòmetre arriba a zero?</p>
+<ul>
+<li>El cronòmetre, comença a 30 segons?</li>
+<li>Va baixant a la velocitat correcta?</li>
+<li>Podeu capturar la presa mentre el cronòmetre està en marxa?</li>
+<li>El joc, es para un cop el cronòmetre arriba a zero?</li>
+</ul>
 </section>
 <section id="deseu-el-projecte-5" class="level2 save">
 <h2>Deseu el projecte</h2>
