@@ -28,18 +28,15 @@ Nombre de respostes: 15
 
 Avaluació de biblioteques 
 Enquesta de valoració i satisfacció enviada a 24 biblioteques, esperem obtenir més respostes al llarg de juliol i agost. 
-Nombre de respostes
-21
-Nombre de sessions en total
-238
-Mitjana de participants 
-10,90
-Voleu repetir?
-95%
+Nombre de respostes: 21
+Nombre de sessions en total: 238
+Mitjana de participants: 10,90
+Voleu repetir? 95%
 
 
 Respecte a les competències i habilitats de les persones voluntàries destacar el nivell més baix de competències 
 pedagògiques en comparació amb les competències computacionals, resultat que és coherent amb la participació casi 
 exclusiva d’estudiants de graus de tecnologia, audiovisuals i informàtica. 
-Ens agradaria comptar amb persones voluntàries de graus d’’educació que assignarem en parella amb una persona 
+
+Ens agradaria comptar amb persones voluntàries de graus d’educació que assignarem en parella amb una persona 
 estudiant de graus d’informàtica a una biblioteca! 
