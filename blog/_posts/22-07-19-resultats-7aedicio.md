@@ -9,22 +9,31 @@ author: martina
 ### Saps que hem fet durant la 7a edició de Code Club a les biblioteques?  
 
 Resultats Code Club @ biblioteques 2018-19
-    • Servei de Biblioteques amb 96 biblioteques inscrites
-    • 6 Universitats reconeixen entre 1 i 2 crèdits de lliure elecció per 10-12 sessions de Code Club, i 2 més donen suport en la difusió.
-    • 67 persones estudiants i voluntàries inscrites
-    • 3 edicions de formació presencial amb 22 persones participants, i 1 edició en línia amb 11 estudiants aprovats
-    • 24 biblioteques arreu de Catalunya: 17 biblioteques de la província de Barcelona, 4 a Girona, 2 a Lleida i 1 a Tarragona.
-    • 29 persones estudiants i voluntàries participants
+- Servei de Biblioteques amb 96 biblioteques inscrites
+- 6 Universitats reconeixen entre 1 i 2 crèdits de lliure elecció per 10-12 sessions de Code Club, i 2 més donen suport en la difusió.
+- 67 persones estudiants i voluntàries inscrites
+- 3 edicions de formació presencial amb 22 persones participants, i 1 edició en línia amb 11 estudiants aprovats
+- 24 biblioteques arreu de Catalunya: 17 biblioteques de la província de Barcelona, 4 a Girona, 2 a Lleida i 1 a Tarragona.
+- persones estudiants i voluntàries participants
 
+Persones voluntàries per universitat: 
+- FIB-UPC: 8	
+- UDG: 3
+- UOC: 8
+- UPF: 6
+- URV: 2
+- EMPRESES: 2
+- Dones: 27,59%	
+- Homes: 72,41%	
 
 
 Avaluació de persones voluntàries i estudiants
 Nombre de respostes: 15
-    • Nens i nenes s’ho han passat molt bé! 
-    • La persona estudiant/voluntària s’ho ha passat molt bé! 
-    • L’activitat ha sigut poc estressant per la persona estudiant/voluntària! 
-    • La persona estudiant/voluntària ha aprés bastants coses noves! 
-    • 13 de 15 estudiants/persones voluntàries voldrien repetir l’experiència!
+- Nens i nenes s’ho han passat molt bé! 
+- La persona estudiant/voluntària s’ho ha passat molt bé! 
+- L’activitat ha sigut poc estressant per la persona estudiant/voluntària! 
+- La persona estudiant/voluntària ha aprés bastants coses noves! 
+- 13 de 15 estudiants/persones voluntàries voldrien repetir l’experiència!
 
 Avaluació de biblioteques 
 Enquesta de valoració i satisfacció enviada a 24 biblioteques, esperem obtenir més respostes al llarg de juliol i agost. 
