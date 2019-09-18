@@ -6,7 +6,7 @@ tags:  codeclub biblioteques
 author: martina
 ---
 
-### Saps que hem fet durant la 7a edició de Code Club a les biblioteques?  
+## Saps que hem fet durant la 7a edició de Code Club a les biblioteques?  
 
 Resultats Code Club @ biblioteques 2018-19
 - Servei de Biblioteques amb 96 biblioteques inscrites
@@ -19,14 +19,14 @@ Persones voluntàries per universitat: FIB-UPC: 8, UDG: 3, UOC: 8, UPF: 6, URV: 
 
 El biaix de gènere en les carreres d'informàtica es repliquen en el nostre projecte, com a persones voluntàries participen dones en un 28% i homes en un 72%. 
 
-## Avaluació de persones voluntàries i estudiants
+### Avaluació de persones voluntàries i estudiants
 - Nens i nenes s’ho han passat molt bé! 
 - La persona estudiant/voluntària s’ho ha passat molt bé! 
 - L’activitat ha sigut poc estressant per la persona estudiant/voluntària! 
 - La persona estudiant/voluntària ha aprés bastants coses noves! 
 - 13 de 15 estudiants/persones voluntàries voldrien repetir l’experiència!
 
-## Avaluació de biblioteques 
+### Avaluació de biblioteques 
 Enquesta de valoració i satisfacció enviada a 24 biblioteques, esperem obtenir més respostes al llarg de juliol i agost. 21 biblioteques han respost l'enquesta de satisfacció, i reporten haver fet un total de 238 sessions amb una mitjana de 11 nens i nenes participants. I, un 95% de les biblioteques volen repetir el proper curs! 
 
 Respecte a les competències i habilitats de les persones voluntàries destacar el nivell més baix de competències 
