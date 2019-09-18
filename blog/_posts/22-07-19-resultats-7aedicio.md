@@ -9,11 +9,12 @@ author: martina
 ## Saps que hem fet durant la 7a edició de Code Club a les biblioteques?  
 
 Resultats Code Club @ biblioteques 2018-19
-- Servei de Biblioteques amb 96 biblioteques inscrites
-- 6 Universitats reconeixen entre 1 i 2 crèdits de lliure elecció per 10-12 sessions de Code Club, i 2 més donen suport en la difusió.
+- 96 biblioteques inscrites a través del Servei de Biblioteques
+- 6 Universitats reconeixen entre crèdits de lliure elecció per 10-12 sessions de Code Club, i 2 més donen suport en la difusió
 - 67 persones estudiants i voluntàries inscrites
 - 3 edicions de formació presencial amb 22 persones participants, i 1 edició en línia amb 11 estudiants aprovats
-- 24 biblioteques arreu de Catalunya: 17 biblioteques de la província de Barcelona, 4 a Girona, 2 a Lleida i 1 a Tarragona.
+- 24 biblioteques arreu de Catalunya: 17 biblioteques de la província de Barcelona, 4 a Girona, 2 a Lleida i 1 a Tarragona
+- 229 nens i nenes han gaudit d'un trimestre de taller de competències computacionals i programació educativa
 
 Persones voluntàries per universitat: FIB-UPC: 8, UDG: 3, UOC: 8, UPF: 6, URV: 2, Altres empreses: 2
 
