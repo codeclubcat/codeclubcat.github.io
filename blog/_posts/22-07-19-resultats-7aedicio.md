@@ -27,11 +27,7 @@ El biaix de gènere en les carreres d'informàtica es repliquen en el nostre pro
 - 13 de 15 estudiants/persones voluntàries voldrien repetir l’experiència!
 
 ## Avaluació de biblioteques 
-Enquesta de valoració i satisfacció enviada a 24 biblioteques, esperem obtenir més respostes al llarg de juliol i agost. 
-Nombre de respostes: 21
-Nombre de sessions en total: 238
-Mitjana de participants: 10,90
-Voleu repetir? 95%
+Enquesta de valoració i satisfacció enviada a 24 biblioteques, esperem obtenir més respostes al llarg de juliol i agost. 21 biblioteques han respost l'enquesta de satisfacció, i reporten haver fet un total de 238 sessions amb una mitjana de 11 nens i nenes participants. I, un 95% de les biblioteques volen repetir el proper curs! 
 
 Respecte a les competències i habilitats de les persones voluntàries destacar el nivell més baix de competències 
 pedagògiques en comparació amb les competències computacionals, resultat que és coherent amb la participació casi 
@@ -39,3 +35,6 @@ exclusiva d’estudiants de graus de tecnologia, audiovisuals i informàtica.
 
 Ens agradaria comptar amb persones voluntàries de graus d’educació que assignarem en parella amb una persona 
 estudiant de graus d’informàtica a una biblioteca! 
+
+Volíem saber també la valoració de la biblioteca sobre que implica i com encaixa el projecte Code Club amb les seves activitats habituals: si Code Club és complementar amb les altres activitats, si resulta fàcil d'organitzar, si les famílies mostre interès, si Code Club és una activitat motivadora per a nens i nenes, i si la durada és adequada. 
+<img src="/img/valoracio-biblioteca.png" alt="valoracio biblioteques" title="valoracio biblioteques">
