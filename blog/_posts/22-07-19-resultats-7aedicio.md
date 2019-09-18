@@ -17,8 +17,7 @@ Resultats Code Club @ biblioteques 2018-19
 
 Persones voluntàries per universitat: FIB-UPC: 8, UDG: 3, UOC: 8, UPF: 6, URV: 2, Altres empreses: 2
 
-El biaix de gènere en les carreres d'informàtica es repliquen en el nostre projecte, com a persones voluntàries partipen més homes que dónes. 
-<img src="/img/voluntaries-genere.png" alt="biaix de gènere entre persones voluntàries" title="persones voluntàries per gènere">
+El biaix de gènere en les carreres d'informàtica es repliquen en el nostre projecte, com a persones voluntàries participen dones en un 28% i homes en un 72%. 
 
 ## Avaluació de persones voluntàries i estudiants
 - Nens i nenes s’ho han passat molt bé! 
